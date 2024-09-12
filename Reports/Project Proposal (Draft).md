@@ -19,13 +19,24 @@ The following shall be possible in this mode:
 - Adjusting the minumum PWM duty cycle for the fan to continue running
 - The fan speed increasing and decreasing the transient timing factor
   
+*4) Budget Specifications:*  
+The diagonostic tool's design and build phase will not exceed the given $2,000 budget.  
 
 
 # Relevant information
 **Tucker Basham**
 
 # Goals and how they are measured
-**Everyone**
+**Everyone**  
+
+1. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
+2. When powered the diagnostic tool's LCD screen will turn on, and will display data.
+3. The diagnostic tool will be small enough to fit in a toolbox/bag for field use. A successful measure will be placing the tool in a toolbox/bag.
+4. The diagonostic tool will be able to preform at least the fan simulation mode **(PLACE IN OTHER MODE AND DEFINE SUCCESS)**
+5. The design and construction of the diagnostic tool will not exceed the price of $1,500.
+6. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
+7. **Place more in as needed**
+
 
 # Resources and Timeline
 **Ethan Haynes & Everyone for timeline**
