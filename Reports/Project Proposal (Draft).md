@@ -1,17 +1,17 @@
-#Introduction
+# Introduction
 **Conner Vick**
 
-#Specifications and Constraints
+# Specifications and Constraints
 **Layne Bowman**
 
-#Relevant information
+# Relevant information
 **Tucker Basham**
 
-#Goals and how they are measured
+# Goals and how they are measured
 **Everyone**
 
-#Resources and Timeline
+# Resources and Timeline
 **Ethan Haynes & Everyone for timeline**
 
-#Consider Broader Impacts
+# Consider Broader Impacts
 **Jacob Brewer**
