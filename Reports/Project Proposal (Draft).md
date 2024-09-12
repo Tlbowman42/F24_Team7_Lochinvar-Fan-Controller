@@ -15,3 +15,6 @@
 
 # Consider Broader Impacts
 **Jacob Brewer**
+
+# Citations
+Please use IEEE format for citations and cite anything that is not common knowledge for an ECE student. (If your not sure if it should be cited, cite it and we can decide together)
