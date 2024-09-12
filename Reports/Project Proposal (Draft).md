@@ -22,6 +22,7 @@ The following shall be possible in this mode:
 *4) Budget Specifications:*  
 The diagonostic tool's design and build phase will not exceed the given $2,000 budget.  
 
+**Write in Constraints for the tool**
 
 # Relevant information
 **Tucker Basham**
