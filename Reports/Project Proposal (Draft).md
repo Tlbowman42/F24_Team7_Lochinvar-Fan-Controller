@@ -2,7 +2,9 @@
 **Conner Vick**
 
 # Specifications and Constraints
-**Layne Bowman**
+**Layne Bowman** \
+*1) Case Specifications* \
+
 
 # Relevant information
 **Tucker Basham**
