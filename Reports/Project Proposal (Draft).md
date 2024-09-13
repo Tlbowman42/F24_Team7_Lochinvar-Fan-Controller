@@ -25,7 +25,8 @@ The diagonostic tool's design and build phase will not exceed the given $2,000 b
 **Write in Constraints for the tool**
 
 # Relevant information
-**Tucker Basham**
+**Tucker Basham**  
+Some of the most important documents and specifications our team will need to work by include governmental and engineering specifications and regulations. Throughout the entire creation from design to hands on constrcution the team will need to adhere by and follow all rules and regulations corresponding to the project. For instance, standards such as the IEEE 1118.1-1990 speak on the proper use of microcontroller serial bus connections for interdevice connections. Regulations such as this one will both aid and hinder us in our creation of the diagnostic tool. We will need to ensure safe and compliant use in both our microchip connections and communications. Another largly important regulation comes from IEC 61010-1 Which speaks on the proper safety requirements for electrical equipment and measurement devices within a lab. This will be one of the most important regulations we follow as our entire project is based from creation and work inside of a testing lab. Furthermore, this regulation will also place some constraints on our devices eventual field testing applications. Another constraint placed on our design is done so by IEC 62680-1, these regulations work directly with the safe and proper use of USB's for powering and charging devices. As specified by the customer our design will need to have a USB-FTDI cable which can connect to a computer in order to recieve power. Thus, this regulation will need to be followed precisely by our team as to not break regulation requirements.
 
 # Goals and how they are measured
 **Everyone**  
