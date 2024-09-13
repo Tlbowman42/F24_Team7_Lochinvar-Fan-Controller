@@ -42,6 +42,14 @@ The diagonostic tool's design and build phase will not exceed the given $2,000 b
 # Resources and Timeline
 **Ethan Haynes & Everyone for timeline**
 
+*Skill Sets Required:*  
+To ensure the proper functionality of the device skills in circuity design, programming, CAD design, and embedded systems are required. While every team member has foundation of basic circuit and coding skills, the success of our project depends on the building of these skills possessed by each team member.  
+
++ PCB design
++ Circuit design
++ CAD
++ C++
+
 # Consider Broader Impacts
 **Jacob Brewer**  
 Our diagnostic tool will streamline workplace operations by cutting down the time needed to test and assess boiler controls and/or fans. In doing so it will reduce overall cost of the products that the tool is used on. In turn potentially reducing the cost for the customers of lochinvar. It also allows lochinvar to start with a baseline product that can be enhanced. By incorporating additional modes for various applications. As EE majors we are responsible for upholding IEEE code of ethics primarily focusing on the safety and wellness of all members of lochinvar and fellow students. The team also will need to ensure that all work and ideas presented is our own and not duplicated from another tool.
