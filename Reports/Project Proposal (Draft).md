@@ -52,7 +52,7 @@ To ensure the proper functionality of the device skills in circuity design, prog
 + Embedded system design
 
 *Costs and Timeline:*  
-
+The budget for the project compensates for unknown future expenses of the project. It is estimated that the PCB, microcontrollers, and display will be no more than $1500. A list of the proposed budget will be provided in the appendix.
 
 # Consider Broader Impacts
 **Jacob Brewer**  
