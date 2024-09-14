@@ -22,7 +22,14 @@ The following shall be possible in this mode:
 *4) Budget Specifications:*  
 The diagonostic tool's design and build phase will not exceed the given $2,000 budget.  
 
-**Write in Constraints for the tool**
+*Constraints*  
+The following section outlines the constraint statements that the team will adhere to.  
+
+  The diagnostic tool shall adhere to the following standards:  
+  1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety. [3]
+  2. **Maybe ASME Boiler and Pressure Standards mainly section VI in terms of Operational Safety Testing for the cutoff systems, this may be a different type of boiler**
+  3. IEC 61010: The standard for the safety requirements for electrical equipment for measurement, control and laboratory use  [Find a source as everything I find you have to pay for]
+  4. 
 
 # Relevant information
 **Tucker Basham**  
@@ -64,6 +71,8 @@ Our diagnostic tool will streamline workplace operations by cutting down the tim
 Please use IEEE format for citations and cite anything that is not common knowledge for an ECE student. (If your not sure if it should be cited, cite it and we can decide together)  
 [1] “Fan Diagnostic Tool.” Lochinvar, Cookeville, Sep. 11, 2024  
 [2] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
+[3] “Generic Standard on Printed Board Design,” Lawrence Berkley National Laboratory , https://www-eng.lbl.gov/~shuman/NEXT/CURRENT_DESIGN/TP/MATERIALS/IPC_2221.pdf (accessed Sep. 13, 2024).  
+
 
 
 
