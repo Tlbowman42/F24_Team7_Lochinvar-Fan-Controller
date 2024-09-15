@@ -62,6 +62,8 @@ To ensure the proper functionality of the device skills in circuity design, prog
 *Costs and Timeline:*  
 The budget for the project compensates for unknown future expenses of the project. It is estimated that the PCB, microcontrollers, and display will be no more than $1500. A list of the proposed budget will be provided in the appendix.
 
+The timeline is a key factor for viability. Schedules and time for learning skills must be accounted for to meet deadlines. The timeline will consider the time needed for various designing, learning, ordering, implementation, and trouble shooting.  
+
 # Consider Broader Impacts
 **Jacob Brewer**  
 Our diagnostic tool will streamline workplace operations by cutting down the time needed to test and assess boiler controls and/or fans. In doing so it will reduce overall cost of the products that the tool is used on. In turn potentially reducing the cost for the customers of Lochinvar. It also allows Lochinvar to start with a baseline product that can be enhanced. By incorporating additional modes for various applications. As EE majors we are responsible for upholding IEEE code of ethics primarily focusing on the safety and wellness of all members of Lochinvar and fellow students. The team also will need to ensure that all work and ideas presented is our own and not duplicated from another tool.
