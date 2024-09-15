@@ -1,8 +1,6 @@
 # Introduction
 **Conner Vick**  
-Throughout many industry applications testing is one of the upmost priorities, this can be for many reasons such as reliability, safety, and quality. 
-
-In this project, the goal is to design a fan diagnostic tool for Lochinvar to test the communication between fan and controller in their boilers. This is important, because a fault in the communication between these two devices can lead to serious compications with the boiler. Without this tool, the troubleshooting proccess would take longer. Therefore, the project will increase the efficiency of the troubleshooting proccess; saving them time and money. 
+Throughout many industry applications testing is one of the upmost priorities, this can be for many reasons such as reliability, safety, and quality. In this project, the goal is to design a fan diagnostic tool for Lochinvar to test the communication between fan and controller in their boilers. This is important, because a fault in the communication between these two devices can lead to serious compications with the boiler. Without this tool, the troubleshooting proccess would take longer. Therefore, the project will increase the efficiency of the troubleshooting proccess; saving them time and money. 
 # Specifications and Constraints
 **Layne Bowman**  
 *1) Case Specifications:*  
