@@ -60,9 +60,9 @@ To ensure the proper functionality of the device skills in circuity design, prog
 + Embedded system design
 
 *Costs and Timeline:*  
-The budget for the project compensates for unknown future expenses of the project. It is estimated that the PCB, microcontrollers, and display will be no more than $1500. A list of the proposed budget will be provided in the appendix.
+The budget for the project will compensate for components for the device and unknown future expenses of the project.
 
-The timeline is a key factor for viability. Schedules and time for learning skills must be accounted for to meet deadlines. The timeline will consider the time needed for various designing, learning, ordering, implementation, and trouble shooting.  
+The timeline will consider the time needed for various designing, learning, ordering, implementation, and trouble shooting. Schedules and time for learning skills must be accounted for to meet deadlines.   
 
 # Consider Broader Impacts
 **Jacob Brewer**  
