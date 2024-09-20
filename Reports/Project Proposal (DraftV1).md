@@ -33,7 +33,18 @@ The following section outlines the constraint statements that the team will adhe
 
 # Relevant information
 **Tucker Basham**  
-So far there has been no relavent literture or patents found regarding our fan diagnostic tool, however research into said literature will continue.
+As of now there are two documents found that contain relevant literture to the fan diagnostic tool being created in our project. The first comes from the Queensland University of Technology in Brisbane Australia. In this document the author mentions a system that uses front and back end software in order to help boiler technicians acquire better data and information. The author also mentions how the simulator should be able to predict changes or trends in the boilers in response to change in variables such as fan speed or other factors. Alongside this system, the author also mentions having sub-modeling systems for each part of the boiler itself. This information which may not hold the most weight for us, could also offer more solutions to our project via other boiler components.    
+
+The second source comes from the GyeongSang National University ERI in Korea. In this document the author speaks on their development of a thermal power boiler system simulator. This system was implemented using a nueral network where the modeling techniques and software used could adapt and change in response to changes in the boiler itself. This document, while helpful I believe solely speaks on larger power plant uses and not smaller household boiler uses. Regardless this document could prove helpful when developing our software and approaching the problems proposed by our customers.  
+
+Attached below are links to the two documents I found. Keep in mind the Korean document must be translated.  
+
+Thermal Power System Simulator(Korea):
+https://koreascience.kr/article/JAKO202029462558941.page
+
+Boiler Simulation Tool Development(Queensland):  
+https://eprints.qut.edu.au/118512/
+
 
 # Goals and how they are measured
 **Everyone**  
