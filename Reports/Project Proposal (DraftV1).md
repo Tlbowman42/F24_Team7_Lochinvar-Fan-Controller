@@ -39,7 +39,7 @@ The second source comes from the GyeongSang National University ERI in Korea. In
 
 Attached below are links to the two documents I found. Keep in mind the Korean document must be translated.  
 
-Thermal Power System Simulator(Korea):
+Thermal Power System Simulator(Korea):  
 https://koreascience.kr/article/JAKO202029462558941.page
 
 Boiler Simulation Tool Development(Queensland):  
