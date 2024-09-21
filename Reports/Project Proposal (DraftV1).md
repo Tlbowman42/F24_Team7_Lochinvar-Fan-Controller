@@ -28,7 +28,7 @@ The following section outlines the constraint statements that the team will adhe
   The diagnostic tool shall adhere to the following standards:  
   1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety. [3]
   2. **Maybe ASME Boiler and Pressure Standards mainly section VI in terms of Operational Safety Testing for the cutoff systems, this may be a different type of boiler**
-  3. IEC 61010: The standard for the safety requirements for electrical equipment for measurement, control and laboratory use  [Find a source as everything I find you have to pay for]
+  3. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples. [4]
   4. 
 
 # Relevant information
@@ -50,11 +50,10 @@ https://eprints.qut.edu.au/118512/
 **Everyone**  
 
 1. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
-2. When powered the diagnostic tool's LCD screen will turn on, and will display data.
-3. The diagnostic tool will be small enough to fit in a toolbox/bag for field use. A successful measure will be placing the tool in a toolbox/bag.
-4. The diagonostic tool will be able to preform at least the fan simulation mode **(PLACE IN OTHER MODE AND DEFINE SUCCESS)**
-6. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
-7. **Place more in as needed**
+2. When powered the diagnostic tool's LCD screen will turn on, and will display data. To measure this as success the screen will need to power on and display experimental data five times.
+3. The diagonostic tool will be able to preform at the fan simulation mode. For this to be successful the tool will need to adjust the before mentioned parameters five out of five times.
+4. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
+5. **Place more in as needed**
 
 
 # Resources and Timeline
@@ -84,11 +83,20 @@ The timeline will consider the time needed for various designing, learning, orde
 Our diagnostic tool will streamline workplace operations by cutting down the time needed to test and assess boiler controls and/or fans. In doing so it will reduce overall cost of the products that the tool is used on. In turn potentially reducing the cost for the customers of Lochinvar. It also allows Lochinvar to start with a baseline product that can be enhanced. By incorporating additional modes for various applications. As EE majors we are responsible for upholding IEEE code of ethics primarily focusing on the safety and wellness of all members of Lochinvar and fellow students. The team also will need to ensure that all work and ideas presented is our own and not duplicated from another tool.
 
 
-# Citations
-Please use IEEE format for citations and cite anything that is not common knowledge for an ECE student. (If your not sure if it should be cited, cite it and we can decide together)  
+# Appendix
+### Citations:   
 [1] “Fan Diagnostic Tool.” Lochinvar, Cookeville, Sep. 11, 2024  
 [2] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
 [3] “Generic Standard on Printed Board Design,” Lawrence Berkley National Laboratory , https://www-eng.lbl.gov/~shuman/NEXT/CURRENT_DESIGN/TP/MATERIALS/IPC_2221.pdf (accessed Sep. 13, 2024).  
+[4] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024). 
+
+### Statement of Contribution:  
+
+
+### Gantt Chart:  
+
+
+
 
 
 
