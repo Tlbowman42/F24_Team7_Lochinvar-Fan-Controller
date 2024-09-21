@@ -53,8 +53,8 @@ The second source comes from the GyeongSang National University ERI in Korea. In
 4. The diagonostic tool will be able to preform at the fan simulation mode. For this to be successful the tool will need to adjust the before mentioned parameters five out of five times.
 5. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
 6. The tool's design and implementation will not exceed $2000. For us to be successful we can not use more than $2000 for this project.
-7. The tool's PCB will be designed accordingly to the guidelines set in IPC-2221. For this to be successful we will track ***ADD MORE HERE***
-8. The tool will follow the guidelines in IPC J-STD-001 for soldering the components. A measure of success will be for there be no shorts in any of the soldering connections.
+7. The tool's PCB will be designed accordingly to the guidelines set in IPC-2221. For this to be successful we will use a manufacturer that will follow the IPC-2221 guidelines.
+8. The tool will follow the guidelines in IPC J-STD-001 for soldering the components. A measure of success will be for there to be no shorts in any of the soldering connections.
 9. The tool will follow the guidelines set in IEC 61010-2-081. For this to be successful we will test the tool five times for shorts that could lead to the user being shocked.
 
 
