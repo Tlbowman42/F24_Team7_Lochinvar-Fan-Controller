@@ -28,14 +28,20 @@ The following section outlines the constraint statements that the team will adhe
 
   The diagnostic tool shall adhere to the following standards:  
   1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety. [3]
-  2. **Maybe ASME Boiler and Pressure Standards mainly section VI in terms of Operational Safety Testing for the cutoff systems, this may be a different type of boiler**
-  3. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples. [4]
+  2. IPC J-STD-001: This standard is known as the "Requirements for Soldered Electrical and Electronic Assemblies". It correlates to the following key elements [4]:
+     
+- Materials and Equipment used
+- Solder Processes and Procedures (Such as hand soldering)
+- Workmanship and Inspection Criteria
+- Training and Certification 
+
+  3. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples. [5]
 
 # Relevant information
 **Tucker Basham**  
-As of now there are two documents found that contain relevant literture to the fan diagnostic tool being created in our project. The first comes from the Queensland University of Technology in Brisbane Australia. In this document the author mentions a system that uses front and back end software in order to help boiler technicians acquire better data and information. The author also mentions how the simulator should be able to predict changes or trends in the boilers in response to change in variables such as fan speed or other factors. Alongside this system, the author also mentions having sub-modeling systems for each part of the boiler itself. This information which may not hold the most weight for us, could also offer more solutions to our project via other boiler components. [5]  
+As of now there are two documents found that contain relevant literture to the fan diagnostic tool being created in our project. The first comes from the Queensland University of Technology in Brisbane Australia. In this document the author mentions a system that uses front and back end software in order to help boiler technicians acquire better data and information. The author also mentions how the simulator should be able to predict changes or trends in the boilers in response to change in variables such as fan speed or other factors. Alongside this system, the author also mentions having sub-modeling systems for each part of the boiler itself. This information which may not hold the most weight for us, could also offer more solutions to our project via other boiler components. [6]  
 
-The second source comes from the GyeongSang National University ERI in Korea. In this document the author speaks on their development of a thermal power boiler system simulator. This system was implemented using a nueral network where the modeling techniques and software used could adapt and change in response to changes in the boiler itself. This document, while helpful I believe solely speaks on larger power plant uses and not smaller household boiler uses. Regardless this document could prove helpful when developing our software and approaching the problems proposed by our customers. [6]  
+The second source comes from the GyeongSang National University ERI in Korea. In this document the author speaks on their development of a thermal power boiler system simulator. This system was implemented using a nueral network where the modeling techniques and software used could adapt and change in response to changes in the boiler itself. This document, while helpful I believe solely speaks on larger power plant uses and not smaller household boiler uses. Regardless this document could prove helpful when developing our software and approaching the problems proposed by our customers. [7]  
 
 # Goals and how they are measured
 **Everyone**  
@@ -44,7 +50,10 @@ The second source comes from the GyeongSang National University ERI in Korea. In
 3. When powered the diagnostic tool's LCD screen will turn on, and will display data. To measure this as success the screen will need to power on and display experimental data five times.
 4. The diagonostic tool will be able to preform at the fan simulation mode. For this to be successful the tool will need to adjust the before mentioned parameters five out of five times.
 5. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
-6. **Place more in as needed**
+6. The tool's design and implementation will not exceed $2000. For us to be successful we can not use more than $2000 for this project.
+7. The tool's PCB will be designed accordingly to the guidelines set in IPC-2221. For this to be successful we will track ***ADD MORE HERE***
+8. The tool will follow the guidelines in IPC J-STD-001 for soldering the components. A measure of success will be for there be no shorts in any of the soldering connections.
+9. The tool will follow the guidelines set in IEC 61010-2-081. For this to be successful we will test the tool five times for shorts that could lead to the user being shocked.
 
 
 # Resources and Timeline
@@ -79,9 +88,10 @@ Our diagnostic tool will streamline workplace operations by cutting down the tim
 [1] “Fan Diagnostic Tool.” Lochinvar, Cookeville, Sep. 11, 2024  
 [2] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
 [3] “Generic Standard on Printed Board Design,” Lawrence Berkley National Laboratory , https://www-eng.lbl.gov/~shuman/NEXT/CURRENT_DESIGN/TP/MATERIALS/IPC_2221.pdf (accessed Sep. 13, 2024).  
-[4] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
-[5] A. Mann, “BOILER SIMULATION TOOL DEVELOPMENT,” Queensland University of Technology, https://eprints.qut.edu.au/ (accessed Sep. 21, 2024).  
-[6] J. H. Lee, “Development of Thermal Power Boiler System Simulator using neural network algorithm,” Journal of the Korea Society for Simulation, https://koreascience.kr/article/JAKO202029462558941.page (accessed Sep. 21, 2024). 
+[4] Flex PCB, “Joint Industry Standard (J-std-001): All you Need To Know,” Flex PCB, https://flexpcb.org/joint-industry-standard-j-std-001-all-you-need-to-know/#:~:text=What%20is%20the%20J-STD-001%20Standard%3F%20The%20J-STD-001%2C%20also,that%20provides%20guidelines%20for%20producing%20high-quality%20soldered%20interconnections. (accessed Sep. 21, 2024).  
+[5] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
+[6] A. Mann, “BOILER SIMULATION TOOL DEVELOPMENT,” Queensland University of Technology, https://eprints.qut.edu.au/ (accessed Sep. 21, 2024).  
+[7] J. H. Lee, “Development of Thermal Power Boiler System Simulator using neural network algorithm,” Journal of the Korea Society for Simulation, https://koreascience.kr/article/JAKO202029462558941.page (accessed Sep. 21, 2024). 
 
 ### Statement of Contribution:  
 
