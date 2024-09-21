@@ -43,6 +43,8 @@ As of now there are two documents found that contain relevant literture to the f
 
 The second source comes from the GyeongSang National University ERI in Korea. In this document the author speaks on their development of a thermal power boiler system simulator. This system was implemented using a nueral network where the modeling techniques and software used could adapt and change in response to changes in the boiler itself. This document, while helpful I believe solely speaks on larger power plant uses and not smaller household boiler uses. Regardless this document could prove helpful when developing our software and approaching the problems proposed by our customers. [7]  
 
+***Add more in for other products out there***
+
 # Goals and how they are measured
 **Everyone**  
 1. The tool will have a case to encapsulate all of the circuitry. The measure of success will if their is a case.
