@@ -79,8 +79,8 @@ Our diagnostic tool will streamline workplace operations by cutting down the tim
 [1] “Fan Diagnostic Tool.” Lochinvar, Cookeville, Sep. 11, 2024  
 [2] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
 [3] “Generic Standard on Printed Board Design,” Lawrence Berkley National Laboratory , https://www-eng.lbl.gov/~shuman/NEXT/CURRENT_DESIGN/TP/MATERIALS/IPC_2221.pdf (accessed Sep. 13, 2024).  
-[4] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024). 
-[5] A. Mann, “BOILER SIMULATION TOOL DEVELOPMENT,” Queensland University of Technology, https://eprints.qut.edu.au/ (accessed Sep. 21, 2024). 
+[4] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
+[5] A. Mann, “BOILER SIMULATION TOOL DEVELOPMENT,” Queensland University of Technology, https://eprints.qut.edu.au/ (accessed Sep. 21, 2024).  
 [6] J. H. Lee, “Development of Thermal Power Boiler System Simulator using neural network algorithm,” Journal of the Korea Society for Simulation, https://koreascience.kr/article/JAKO202029462558941.page (accessed Sep. 21, 2024). 
 
 ### Statement of Contribution:  
