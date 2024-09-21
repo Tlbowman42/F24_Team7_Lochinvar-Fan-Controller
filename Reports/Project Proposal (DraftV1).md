@@ -9,10 +9,10 @@ The customer does not have any specific guidelines for the materials used nor th
 *2) Power Specifications:*  
 Lochinvar requested the tool be able to run from both the DC power bus from the boiler's fan, which is from 10 to 40 volts, and by a USB connection if a fan is not present. [2] Therefore the tool with need a USB port somewhere on the tool, along with circuitry to step down the DC voltage to a usable level. Specific location and type of circuitry used will be based on the cumalalitive power needs of all system components for the diagnostic tool. (Look into wide range DC-DC Buck covertors) 
 
-*3) Diagnostic Tool Modes Specifications:*  
-The diagnostic tool shall be able to simulate the boiler's fan. In this mode the diagnostic tool will "Control allows an approximate simulation of a fan operation, which can be used for testing boiler controls. In this case, the diagnostic tool might only be connecyed to a boiler control and have no actual fan connected." [2] In this mode the diagnostic tool shall be able to simulate both a PWM signal and Tach signal.  
+*3) Diagnostic Tool Specifications:*  
+The diagnostic tool shall be able to simulate the boiler's fan. In this mode the diagnostic tool will "Control allows an approximate simulation of a fan operation, which can be used for testing boiler controls. In this case, the diagnostic tool might only be connecyed to a boiler control and have no actual fan connected." [2] In this mode the diagnostic tool shall be able to simulate both a PWM signal and Tach signal. In addition to this Micah has requested the tool have the hardware needed to implement the other two modes, Monitoring Mode and Fan Driving Mode. 
 
-The following shall be possible in this mode:  
+The following shall be possible in the Fan Simulation Mode:  
 
 - Adjusting the minumum and maximum fan speed
 - Adjusting the minumum PWM duty cycle needed for the fan to turn on
@@ -53,7 +53,6 @@ https://eprints.qut.edu.au/118512/
 2. When powered the diagnostic tool's LCD screen will turn on, and will display data.
 3. The diagnostic tool will be small enough to fit in a toolbox/bag for field use. A successful measure will be placing the tool in a toolbox/bag.
 4. The diagonostic tool will be able to preform at least the fan simulation mode **(PLACE IN OTHER MODE AND DEFINE SUCCESS)**
-5. The design and construction of the diagnostic tool will not exceed the price of $1,500.
 6. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
 7. **Place more in as needed**
 
