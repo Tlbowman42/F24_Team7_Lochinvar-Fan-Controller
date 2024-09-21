@@ -1,16 +1,17 @@
 # Introduction
 **Conner Vick**  
-Throughout many industry applications testing is one of the upmost priorities, this can be for many reasons such as reliability, safety, and quality. This is especially true for devices that operate countinously because any defects in such a device will show themselves much more quickly than a device that is used intermittently. In this project, the goal is to design a fan diagnostic tool for Lochinvar to test the communication between fan and controller in their boilers. This is important, because a fault in the communication between these two devices can lead to serious compications with the boiler. Without this tool, the troubleshooting proccess would take longer. Therefore, the project will increase the efficiency of the troubleshooting proccess; saving them time and money. 
+Throughout many industry applications testing is one of the upmost priorities, this can be for many reasons such as reliability, safety, and quality. This is especially true for devices that operate countinously because any defects in such a device will show themselves much more quickly than a device that is used intermittently. In this project, the goal is to design a fan diagnostic tool for Lochinvar to test the communication between fan and controller in their boilers. This is important, because a fault in the communication between these two devices can lead to serious compications with the boiler. Without this tool, the troubleshooting proccess would take longer. Therefore, the project will increase the efficiency of the troubleshooting proccess; saving them time and money.  
+
 # Specifications and Constraints
 **Layne Bowman**  
 *1) Case Specifications:*  
-The customer does not have any specific guidelines for the materials used nor the size of the diagnogstic tool. However, the tool shall be smaller than 12 inches in length and width. [1]  
+The tool shall have a case that is no larger than 12 by 12 inches in length and width. [1]
 
 *2) Power Specifications:*  
-Lochinvar requested the tool be able to run from both the DC power bus from the boiler's fan, which is from 10 to 40 volts, and by a USB connection if a fan is not present. [2] Therefore the tool with need a USB port somewhere on the tool, along with circuitry to step down the DC voltage to a usable level. Specific location and type of circuitry used will be based on the cumalalitive power needs of all system components for the diagnostic tool. (Look into wide range DC-DC Buck covertors) 
+The tool shall be able to be powered by both the DC power bus from the boiler's fan, which is 10 to 40 volts, and by a USB connection if a fan is not present. [2]
 
 *3) Diagnostic Tool Specifications:*  
-The diagnostic tool shall be able to simulate the boiler's fan. In this mode the diagnostic tool will "Control allows an approximate simulation of a fan operation, which can be used for testing boiler controls. In this case, the diagnostic tool might only be connecyed to a boiler control and have no actual fan connected." [2] In this mode the diagnostic tool shall be able to simulate both a PWM signal and Tach signal. In addition to this Micah has requested the tool have the hardware needed to implement the other two modes, Monitoring Mode and Fan Driving Mode. 
+The diagnostic tool shall have the hardware to implement all three modes given by Lochinvar; however, the tool will only be programmed to simulate the boiler's fan. [2]  
 
 The following shall be possible in the Fan Simulation Mode:  
 
@@ -20,7 +21,7 @@ The following shall be possible in the Fan Simulation Mode:
 - The fan speed increasing and decreasing the transient timing factor
   
 *4) Budget Specifications:*  
-The diagonostic tool's design and build phase will not exceed the given $2,000 budget.  
+The diagonostic tool's design and build phase shall not exceed the given $2,000 budget.  
 
 *Constraints*  
 The following section outlines the constraint statements that the team will adhere to.  
@@ -38,12 +39,12 @@ The second source comes from the GyeongSang National University ERI in Korea. In
 
 # Goals and how they are measured
 **Everyone**  
-
-1. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
-2. When powered the diagnostic tool's LCD screen will turn on, and will display data. To measure this as success the screen will need to power on and display experimental data five times.
-3. The diagonostic tool will be able to preform at the fan simulation mode. For this to be successful the tool will need to adjust the before mentioned parameters five out of five times.
-4. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
-5. **Place more in as needed**
+1. The tool will have a case to encapsulate all of the circuitry. The measure of success will if their is a case.
+2. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
+3. When powered the diagnostic tool's LCD screen will turn on, and will display data. To measure this as success the screen will need to power on and display experimental data five times.
+4. The diagonostic tool will be able to preform at the fan simulation mode. For this to be successful the tool will need to adjust the before mentioned parameters five out of five times.
+5. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
+6. **Place more in as needed**
 
 
 # Resources and Timeline
