@@ -71,7 +71,12 @@ To ensure the proper functionality of the device skills in circuity design, prog
 + Embedded system design
 
 *Costs and Timeline:*  
-The budget for the project will compensate for components for the device and unknown future expenses of the project.
+The budget for the project will compensate for components for the device and unknown future expenses of the project. Below is a table of the estimated costs of some of the components needed.  
+| Component | Estimated cost |
+| -------- | ------- |
+| Microcontrollers  | $125    |
+| PCB | $100     |
+| Screen    | $100    |  
 
 The timeline will consider the time needed for various designing, learning, ordering, implementation, and trouble shooting. Schedules and time for learning skills must be accounted for to meet deadlines.   
 
