@@ -42,7 +42,7 @@ As of now there are two documents found that contain relevant literture to the f
 
 The second source comes from the GyeongSang National University ERI in Korea. In this document the author speaks on their development of a thermal power boiler system simulator. This system was implemented using a neural network where the modeling techniques and software used could adapt and change in response to changes in the boiler itself. This document, while helpful I believe solely speaks on larger power plant uses and not smaller household boiler uses. Regardless this document could prove helpful when developing our software and approaching the problems proposed by our customers. [7]  
 
-***Add more in for other products out there***
+As of current standings there is only one fan diagnostic tool that shares similarities to our project. This product is a fan diagnostic tool coming from Lochinvar themselves and is called the Lochinvar RLY20119 blower/fan tester. Upon further inspection, this fan diagnostic tool seems to be a possible precursor to the product we're creating in this capstone project. Thus, even with the differences in the RLY20119 blower/fan tester and our project plans, theres a good possibility that we have much to learn from this product. However, on many websites this product is listed as discontinued, because of this we will need to find out why and possibly use the given reason as a chance to avoid an error in the product or possibly build upon it and find a solution to said error. Upon meeting with Lochinvar we will be sure to ask questions about this product and see if theres any chance we could obtain one or at least gain access to the schematics of one of these tools to further help us in the creation of our diagnostic tool.
 
 # Goals and how they are measured
 **Everyone**  
@@ -96,7 +96,8 @@ Our diagnostic tool will streamline workplace operations by cutting down the tim
 
 ### Statement of Contribution:  
 Layne Bowman worked on the Specifications and Constraints, and the Goals / Measures of Success.  
-Ethan Haynes worked on the Skills, Budget, and Timeline / Gantt Chart.
+Ethan Haynes worked on the Skills, Budget, and Timeline / Gantt Chart.  
+Tucker Basham worked on the relevant literature / goals.
 
 ### Gantt Chart:  
 
