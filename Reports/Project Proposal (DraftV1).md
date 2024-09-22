@@ -3,7 +3,6 @@
 Throughout many industry applications testing is one of the upmost priorities, this can be for many reasons such as reliability, safety, and quality. This is especially true for devices that operate countinously because any defects in such a device will show themselves much more quickly than a device that is used intermittently. In this project, the goal is to design a fan diagnostic tool for Lochinvar to test the communication between fan and controller in their boilers. This is important, because a fault in the communication between these two devices can lead to serious compications with the boiler. Without this tool, the troubleshooting proccess would take longer. Therefore, the project will increase the efficiency of the troubleshooting proccess; saving them time and money.  
 
 # Specifications and Constraints
-**Layne Bowman**  
 *1) Case Specifications:*  
 The tool shall have a case that is no larger than 12 by 12 inches in length and width. [1]
 
@@ -96,6 +95,7 @@ Our diagnostic tool will streamline workplace operations by cutting down the tim
 [7] J. H. Lee, “Development of Thermal Power Boiler System Simulator using neural network algorithm,” Journal of the Korea Society for Simulation, https://koreascience.kr/article/JAKO202029462558941.page (accessed Sep. 21, 2024). 
 
 ### Statement of Contribution:  
+Layne Bowman worked on the Specifications and Constraints, and the Goals / Measures of Success.  
 
 
 ### Gantt Chart:  
