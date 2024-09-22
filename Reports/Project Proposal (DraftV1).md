@@ -40,20 +40,20 @@ The following section outlines the constraint statements that the team will adhe
 **Tucker Basham**  
 As of now there are two documents found that contain relevant literture to the fan diagnostic tool being created in our project. The first comes from the Queensland University of Technology in Brisbane Australia. In this document the author mentions a system that uses front and back end software in order to help boiler technicians acquire better data and information. The author also mentions how the simulator should be able to predict changes or trends in the boilers in response to change in variables such as fan speed or other factors. Alongside this system, the author also mentions having sub-modeling systems for each part of the boiler itself. This information which may not hold the most weight for us, could also offer more solutions to our project via other boiler components. [6]  
 
-The second source comes from the GyeongSang National University ERI in Korea. In this document the author speaks on their development of a thermal power boiler system simulator. This system was implemented using a nueral network where the modeling techniques and software used could adapt and change in response to changes in the boiler itself. This document, while helpful I believe solely speaks on larger power plant uses and not smaller household boiler uses. Regardless this document could prove helpful when developing our software and approaching the problems proposed by our customers. [7]  
+The second source comes from the GyeongSang National University ERI in Korea. In this document the author speaks on their development of a thermal power boiler system simulator. This system was implemented using a neural network where the modeling techniques and software used could adapt and change in response to changes in the boiler itself. This document, while helpful I believe solely speaks on larger power plant uses and not smaller household boiler uses. Regardless this document could prove helpful when developing our software and approaching the problems proposed by our customers. [7]  
 
 ***Add more in for other products out there***
 
 # Goals and how they are measured
 **Everyone**  
-1. The tool will have a case to encapsulate all of the circuitry. The measure of success will if their is a case.
+1. The tool will have a case to encapsulate all of the circuitry. The measure of success will if there is a case.
 2. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
 3. When powered the diagnostic tool's LCD screen will turn on, and will display data. To measure this as success the screen will need to power on and display experimental data five times.
-4. The diagonostic tool will be able to preform at the fan simulation mode. For this to be successful the tool will need to adjust the before mentioned parameters five out of five times.
+4. The diagonostic tool will be able to preform the fan simulation mode. For this to be successful the tool will need to adjust the before mentioned parameters five out of five times.
 5. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
 6. The tool's design and implementation will not exceed $2000. For us to be successful we can not use more than $2000 for this project.
 7. The tool's PCB will be designed accordingly to the guidelines set in IPC-2221. For this to be successful we will use a manufacturer that will follow the IPC-2221 guidelines.
-8. The tool will follow the guidelines in IPC J-STD-001 for soldering the components. A measure of success will be for there to be no shorts in any of the soldering connections.
+8. The tool will follow the guidelines in IPC J-STD-001 for soldering the components. A measure of success will be for there to be no shorts in any of the hand soldered connections.
 9. The tool will follow the guidelines set in IEC 61010-2-081. For this to be successful we will test the tool five times for shorts that could lead to the user being shocked.
 
 
