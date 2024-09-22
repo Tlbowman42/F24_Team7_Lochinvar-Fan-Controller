@@ -20,7 +20,7 @@ The following shall be possible in the Fan Simulation Mode:
 - The fan speed increasing and decreasing the transient timing factor
   
 *4) Budget Specifications:*  
-The diagonostic tool's design and build phase shall not exceed the given $2,000 budget.  
+The diagonostic tool's design and build phase shall not exceed the given $2,000 budget. [2]  
 
 *Constraints*  
 The following section outlines the constraint statements that the team will adhere to.  
