@@ -1,5 +1,4 @@
-# Introduction
-**Conner Vick**  
+# Introduction 
 Throughout many industry applications testing is one of the upmost priorities, this can be for many reasons such as reliability, safety, and quality. This is especially true for devices that operate countinously because any defects in such a device will show themselves much more quickly than a device that is used intermittently. In this project, the goal is to design a fan diagnostic tool for Lochinvar to test the communication between fan and controller in their boilers. This is important, because a fault in the communication between these two devices can lead to serious complications with the boiler. Without this tool, the troubleshooting proccess would take longer. Therefore, the project will increase the efficiency of the troubleshooting proccess; saving them time and money.  
 
 # Specifications and Constraints
@@ -37,7 +36,6 @@ The following section outlines the constraint statements that the team will adhe
  3. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples. [5]
 
 # Relevant information
-**Tucker Basham**  
 As of now there are two documents found that contain relevant literture to the fan diagnostic tool being created in our project. The first comes from the Queensland University of Technology in Brisbane Australia. In this document the author mentions a system that uses front and back end software in order to help boiler technicians acquire better data and information. The author also mentions how the simulator should be able to predict changes or trends in the boilers in response to change in variables such as fan speed or other factors. Alongside this system, the author also mentions having sub-modeling systems for each part of the boiler itself. This information which may not hold the most weight for us, could also offer more solutions to our project via other boiler components. [6]  
 
 The second source comes from the GyeongSang National University ERI in Korea. In this document the author speaks on their development of a thermal power boiler system simulator. This system was implemented using a neural network where the modeling techniques and software used could adapt and change in response to changes in the boiler itself. This document, while helpful I believe solely speaks on larger power plant uses and not smaller household boiler uses. Regardless this document could prove helpful when developing our software and approaching the problems proposed by our customers. [7]  
@@ -45,7 +43,6 @@ The second source comes from the GyeongSang National University ERI in Korea. In
 As of current standings there is only one fan diagnostic tool that shares similarities to our project. This product is a fan diagnostic tool coming from Lochinvar themselves and is called the Lochinvar RLY20119 blower/fan tester. Upon further inspection, this fan diagnostic tool seems to be a possible precursor to the product we're creating in this capstone project. Thus, even with the differences in the RLY20119 blower/fan tester and our project plans, theres a good possibility that we have much to learn from this product. However, on many websites this product is listed as discontinued, because of this we will need to find out why and possibly use the given reason as a chance to avoid an error in the product or possibly build upon it and find a solution to said error. Upon meeting with Lochinvar we will be sure to ask questions about this product and see if theres any chance we could obtain one or at least gain access to the schematics of one of these tools to further help us in the creation of our diagnostic tool.[8]
 
 # Goals and how they are measured
-**Everyone**  
 1. The tool will have a case to encapsulate all of the circuitry. The measure of success will if there is a case.
 2. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
 3. When powered the diagnostic tool's LCD screen will turn on, and will display data. To measure this as success the screen will need to power on and display experimental data five times.
@@ -58,7 +55,6 @@ As of current standings there is only one fan diagnostic tool that shares simila
 
 
 # Resources and Timeline
-**Ethan Haynes & Everyone for timeline**
 
 *Skill Sets Required:*    
 To ensure the proper functionality of the device skills in circuity design, programming, CAD design, and embedded systems are required. While every team member has foundation of basic circuit and coding skills, the success of our project depends on the building of these skills possessed by each team member.  
@@ -80,7 +76,6 @@ The budget for the project will compensate for components for the device and unk
 The timeline will consider the time needed for various designing, learning, ordering, implementation, and trouble shooting. Schedules and time for learning skills must be accounted for to meet deadlines.   
 
 # Consider Broader Impacts
-**Jacob Brewer**  
 Our diagnostic tool will streamline workplace operations by cutting down the time needed to test and assess boiler controls and/or fans. In doing so it will reduce overall cost of the products that the tool is used on. In turn potentially reducing the cost for the customers of Lochinvar. It also allows Lochinvar to start with a baseline product that can be enhanced. By incorporating additional modes for various applications. As EE majors we are responsible for upholding IEEE code of ethics primarily focusing on the safety and wellness of all members of Lochinvar and fellow students. The team also will need to ensure that all work and ideas presented is our own and not duplicated from another tool.
 
 
