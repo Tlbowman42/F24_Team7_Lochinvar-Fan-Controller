@@ -98,7 +98,7 @@ Our diagnostic tool will streamline workplace operations by cutting down the tim
 ### Statement of Contribution:  
 Layne Bowman worked on the Specifications and Constraints, and the Goals / Measures of Success.  
 Ethan Haynes worked on the Skills, Budget, and Timeline / Gantt Chart.  
-Tucker Basham worked on the Relevant Literature / Goals.
+Tucker Basham worked on the Relevant Literature / Goals.  
 Matthew Vick worked on the Introduction and the Goals
 ### Gantt Chart:  
 
