@@ -55,7 +55,13 @@ As of current standings there is only one fan diagnostic tool that shares simila
 1. The tool will have a case to encapsulate all of the circuitry. The measure of success will be if there is a case and it measures no more than 12x12 inches.
 2. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
 3. When powered the diagnostic tool's screen will turn on, and will display data. To measure this as success the screen will need to power on and display experimental data five times.
-4. The diagonostic tool will be able to preform the fan simulation mode. For this to be successful the tool will need to adjust the before mentioned parameters five out of five times.
+4. The diagonostic tool will be able to preform the fan simulation mode. For this to be successful the tool will need to adjust the follow parameters five out of five times:
+   
+- Adjusting the minumum and maximum fan speed
+- Adjusting the minumum PWM duty cycle needed for the fan to turn on
+- Adjusting the minumum PWM duty cycle for the fan to continue running
+- The fan speed increasing and decreasing the transient timing factor
+  
 5. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
 6. The tool's design and implementation will not exceed $2000. For us to be successful we can not use more than $2000 for this project.
 7. The tool's PCB will be designed accordingly to the guidelines set in IPC-2221. For this to be successful we will use a manufacturer that will follow the IPC-2221 guidelines.
