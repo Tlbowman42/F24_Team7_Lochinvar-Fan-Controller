@@ -62,7 +62,7 @@ As of current standings there is only one fan diagnostic tool that shares simila
 - Adjusting the minumum PWM duty cycle for the fan to continue running
 - The fan speed increasing and decreasing the transient timing factor  
 
-5. The tool will have all of the necessary hardware needed to implement the three diagnostic modes. The measure of success ***ADD IN THIS PART***
+5. The tool will have all of the necessary hardware needed to implement the three diagnostic modes. The measure of success is the tool will have all of the hardware built and installed on the final product.  
 6. The tool's design and implementation will not exceed $2000. For us to be successful we can not use more than $2000 for this project.
 7. The tool's PCB will be designed accordingly to the guidelines set in IPC-2221. For this to be successful we will use a manufacturer that will follow the IPC-2221 guidelines.
 8. The tool will follow the guidelines in IPC J-STD-001 for soldering the components. A measure of success will be for there to be no shorts in any of the hand soldered connections.
