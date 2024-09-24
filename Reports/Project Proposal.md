@@ -73,7 +73,14 @@ The budget for the project will compensate for components for the device and unk
 | PCB | $100     |
 | Screen    | $100    |  
 
-The timeline will consider the time needed for various designing, learning, ordering, implementation, and trouble shooting. Schedules and time for learning skills must be accounted for to meet deadlines.   
+The timeline will consider the time needed for various designing, learning, ordering, implementation, and trouble shooting. Schedules and time for learning skills must be accounted for to meet deadlines.  
+  
+*Gantt Chart:*  
+![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_1](https://github.com/user-attachments/assets/2698b1b4-6c89-48b4-93c2-1518eb13501d)
+![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_2](https://github.com/user-attachments/assets/883387a8-fd66-4de8-9697-a30ab7e1cdbb)
+![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_3](https://github.com/user-attachments/assets/1f2b35fe-ba07-4e7e-940f-8a4e3984b9d7)
+![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_4](https://github.com/user-attachments/assets/0c140eaf-4c1f-4bbd-9885-bfbd6470584b)
+
 
 # Consider Broader Impacts
 Our diagnostic tool will streamline workplace operations by cutting down the time needed to test and assess boiler controls and/or fans. In doing so it will reduce overall cost of the products that the tool is used on. In turn potentially reducing the cost for the customers of Lochinvar. It also allows Lochinvar to start with a baseline product that can be enhanced. By incorporating additional modes for various applications. As EE majors we are responsible for upholding IEEE code of ethics primarily focusing on the safety and wellness of all members of Lochinvar and fellow students. The team also will need to ensure that all work and ideas presented is our own and not duplicated from another tool.
@@ -96,12 +103,6 @@ Ethan Haynes worked on the Skills, Budget, and Timeline / Gantt Chart.
 Tucker Basham worked on the Relevant Literature / Goals.  
 Matthew Vick worked on the Introduction and the Goals  
 Jacob Brewer worked on the Broader Impacts / Goals.
-### Gantt Chart:  
-![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_1](https://github.com/user-attachments/assets/2698b1b4-6c89-48b4-93c2-1518eb13501d)
-![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_2](https://github.com/user-attachments/assets/883387a8-fd66-4de8-9697-a30ab7e1cdbb)
-![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_3](https://github.com/user-attachments/assets/1f2b35fe-ba07-4e7e-940f-8a4e3984b9d7)
-![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_4](https://github.com/user-attachments/assets/0c140eaf-4c1f-4bbd-9885-bfbd6470584b)
-
 
 
 
