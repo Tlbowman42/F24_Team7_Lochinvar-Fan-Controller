@@ -24,9 +24,7 @@ The following hardware will be needed to implement the three modes:
 - An advanced microcontroller that has the capabilites to generate PWM signals, can have a tachometer as an input and has signal processing capabilites.
 - A screen to display the modes, and given data for each mode. The screen will also need to allow the user to change different parameters based on the mode that has been selected.
 - The tool will also need a USB interface to allow for powering the device or the transmission of data between the controller and diagnostic tool.
-- The tool will also need a molex interface to allow for powering the device from the 10 to 40 VDC power bus or to the transmission of data between the controller and diagnostic tool.
-
-
+- The tool will also need a molex interface to allow for powering the device from the 10 to 40 VDC power bus or to the transmission of data between the controller and diagnostic tool.  
 
 
 *4) Budget Specifications:*  
