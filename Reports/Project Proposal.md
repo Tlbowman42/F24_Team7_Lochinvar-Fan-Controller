@@ -98,7 +98,7 @@ The timeline will consider the time needed for various designing, learning, orde
 
 
 # Consider Broader Impacts
-Our diagnostic tool will streamline workplace operations by cutting down the time needed to test and assess boiler controls and/or fans. In doing so it will reduce overall cost of the products that the tool is used on. In turn potentially reducing the cost for the customers of Lochinvar. It also allows Lochinvar to start with a baseline product that can be enhanced. By incorporating additional modes for various applications. As EE majors we are responsible for upholding IEEE code of ethics primarily focusing on the safety and wellness of all members of Lochinvar and fellow students. The team also will need to ensure that all work and ideas presented is our own and not duplicated from another tool.
+Our diagnostic tool will optimize workplace operations by significantly reducing the time required to test and evaluate boiler controls/ fans. This efficiency not only lowers overall product cost but also has the potential to benefit Lochinvar’s customers by reducing the consumers prices. Furthermore, the tool establishes a baseline product that can be further enhanced with additional modes for various applications. As Electrical Engineering majors, we are committed to upholding the IEEE Code of Ethics, prioritizing the safety and well-being of all members at Lochinvar and our fellow students. Our team will also ensure that all work and ideas are original and not replicated from existing tools.
 
 
 # Appendix
