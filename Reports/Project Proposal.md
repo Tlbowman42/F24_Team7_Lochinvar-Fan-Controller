@@ -18,7 +18,7 @@ The following shall be possible in the Fan Simulation Mode:
 - Adjusting the minumum PWM duty cycle for the fan to continue running
 - The fan speed increasing and decreasing the transient timing factor  
 
-The following hardware will be needed to implement the three modes:
+The following hardware shall be implemented for the three modes:
 
 - A power management system used to power the tool. This system should be able to switch between being powered by a USB or by the 10 to 40 VDC coming from the power bus.
 - An advanced microcontroller that has the capabilites to generate PWM signals, can have a tachometer as an input and has signal processing capabilites.
@@ -60,13 +60,14 @@ As of current standings there is only one fan diagnostic tool that shares simila
 - Adjusting the minumum and maximum fan speed
 - Adjusting the minumum PWM duty cycle needed for the fan to turn on
 - Adjusting the minumum PWM duty cycle for the fan to continue running
-- The fan speed increasing and decreasing the transient timing factor
-  
-5. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
-6. The tool's design and implementation will not exceed $2000. For us to be successful we can not use more than $2000 for this project.
-7. The tool's PCB will be designed accordingly to the guidelines set in IPC-2221. For this to be successful we will use a manufacturer that will follow the IPC-2221 guidelines.
-8. The tool will follow the guidelines in IPC J-STD-001 for soldering the components. A measure of success will be for there to be no shorts in any of the hand soldered connections.
-9. The tool will follow the guidelines set in IEC 61010-2-081. For this to be successful we will test the tool five times for shorts that could lead to the user being shocked.
+- The fan speed increasing and decreasing the transient timing factor  
+
+5. The tool will have all of the necessary hardware needed to implement the three diagnostic modes. The measure of success 
+6. Over 50% of the software will be programmed in C. For this to be successful GitHub will be used as a version control platform and it will be periodically used to determine the distribution of code.
+7. The tool's design and implementation will not exceed $2000. For us to be successful we can not use more than $2000 for this project.
+8. The tool's PCB will be designed accordingly to the guidelines set in IPC-2221. For this to be successful we will use a manufacturer that will follow the IPC-2221 guidelines.
+9. The tool will follow the guidelines in IPC J-STD-001 for soldering the components. A measure of success will be for there to be no shorts in any of the hand soldered connections.
+10. The tool will follow the guidelines set in IEC 61010-2-081. For this to be successful we will test the tool five times for shorts that could lead to the user being shocked.
 
 
 # Resources and Timeline
