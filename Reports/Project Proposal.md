@@ -9,15 +9,24 @@ The tool shall have a case that is no larger than 12 by 12 inches in length and 
 The tool shall be able to be powered by both the DC power bus from the boiler's fan, which is 10 to 40 volts, and by a USB connection if a fan is not present. [2]
 
 *3) Diagnostic Tool Specifications:*  
-The diagnostic tool shall have the hardware to implement all three modes given by Lochinvar; however, the tool will only be programmed to simulate the boiler's fan. [2]  
+The diagnostic tool shall have the hardware to implement all three modes given by Lochinvar. The three modes are as follows: Montioring Mode, which would have both a Physical Pass-through and a Software Pass-through portion, Fan Driving Mode, and the Fan Simulation Mode. The Fan Simulation Mode will be the only mode programmed for this project. [2]
 
 The following shall be possible in the Fan Simulation Mode:  
 
 - Adjusting the minumum and maximum fan speed
 - Adjusting the minumum PWM duty cycle needed for the fan to turn on
 - Adjusting the minumum PWM duty cycle for the fan to continue running
-- The fan speed increasing and decreasing the transient timing factor
-  
+- The fan speed increasing and decreasing the transient timing factor  
+
+The following hardware will be needed to implement the three modes:
+
+- A power management system used to power the tool. This system should be able to switch between being powered by a USB or by the 10 to 40 VDC coming from the power bus.
+- An advanced microcontroller that has the capabilites to generate PWM signals, can have a tachometer as an input and has signal processing capabilites.
+- 
+
+
+
+
 *4) Budget Specifications:*  
 The diagonostic tool's design and build phase shall not exceed the given $2,000 budget. [2]  
 
