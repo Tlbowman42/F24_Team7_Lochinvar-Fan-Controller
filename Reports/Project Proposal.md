@@ -9,15 +9,43 @@ The tool shall have a case that is no larger than 12 by 12 inches in length and 
 The tool shall be able to be powered by both the DC power bus from the boiler's fan, which is 10 to 40 volts, and by a USB connection if a fan is not present. [2]
 
 *3) Diagnostic Tool Specifications:*  
+The following are the specifications for the diagnostic tool's hardware and software.  
+
+1. The diagnostic tool shall have the hardware to accomplish all three modes.
+2. The diagnostic tool shall allow the user to select one of the three modes, only the Fan Simulation mode will be functional.
+3. The diagnostic tool shall have an LCD screen that will display the PWD, tachometer, and 
+
 The diagnostic tool shall have the hardware to implement all three modes given by Lochinvar. The three modes are as follows: Montioring Mode, which would have both a Physical Pass-through and a Software Pass-through portion, Fan Driving Mode, and the Fan Simulation Mode. The Fan Simulation Mode will be the only mode programmed for this project. [2]
 
-The following shall be possible in the Fan Simulation Mode:  
+
+The following shall be possible in the Fan Simulation Mode:  [2]
 
 - Adjusting the minumum and maximum fan speed
 - Adjusting the minumum PWM duty cycle needed for the fan to turn on
 - Adjusting the minumum PWM duty cycle for the fan to continue running
-- The fan speed increasing and decreasing the transient timing factor  
+- The fan speed increasing and decreasing the transient timing factor
 
+
+The following shall be possible in the Fan Driving Mode: [2]  
+
+- Setting a desired PWM signal to send to the fan
+- Setting a desired RPM to drive the fan at
+- User configuarble PID settings for fan speed control, PWM frequency, Enable / Disable control takeover, and Enable / Disable Tachometer Pass-through
+
+
+The following shall be possible in the Monitoring Mode: [2]  
+
+**Physical Pass-through**
+- PWM signal from the control is physically connected to the boiler's fan, while the Fan Diagnostic Tool monitors the signal.
+- Tachometer signal from the fan is physically connected to the tachometer output for the boiler's controller, while the Fan Diagnostic Tool monitors the signal.
+
+**Software Pass-through**
+- PWM signal from the boiler's control is read by the diagnostic tool and is approximately replicated, duty cycle and frequency, in software. The simulated PWM signal is then sent to the fan.
+- Tachometer signal from the fan is read by the diagnostic tool and is approximately replicated, frequency, in software. The simulated tachometer signal is then sent to the boiler control.
+- Signal modifications such as: PWM duty cycle limiting, frequency changing, or duty cycle scaling.
+- The control can convert between pulses per revolution of the tachometer feedback
+
+  
 The following hardware shall be implemented for the three modes:
 
 - A power management system used to power the tool. This system should be able to switch between being powered by a USB or by the 10 to 40 VDC coming from the power bus.
