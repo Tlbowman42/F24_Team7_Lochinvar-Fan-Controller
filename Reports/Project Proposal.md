@@ -15,6 +15,7 @@ The following are the specifications for the diagnostic tool's hardware and soft
 2. The diagnostic tool shall allow the user to select one of the three modes, only the Fan Simulation mode will be functional.
 3. The diagnostic tool shall have an LCD screen that will display the PWD, tachometer, and 
 
+
 The following shall be possible in the Fan Simulation Mode:  [1]
 
 - Adjusting the minumum and maximum fan speed
