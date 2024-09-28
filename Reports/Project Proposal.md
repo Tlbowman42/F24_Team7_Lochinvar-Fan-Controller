@@ -18,9 +18,9 @@ The following are the specifications for the diagnostic tool's hardware and soft
 5. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
 6. The hardware shall be designed to accomplish the Fan Simulation Mode, the Fan Driving Mode, and the Monitoring Mode.
 7. The following shall be possible in the Fan Simulation Mode:  [1]
-   - Adjusting the minumum and maximum fan speed
-   - Adjusting the minumum PWM duty cycle needed for the fan to turn on
-   - Adjusting the minumum PWM duty cycle for the fan to continue running
+   - Adjusting the minimum and maximum fan speed
+   - Adjusting the minimum PWM duty cycle needed for the fan to turn on
+   - Adjusting the minimum PWM duty cycle for the fan to continue running
    - The fan speed increasing and decreasing the transient timing factor
 
 8. The following shall be possible in the Fan Driving Mode: [1]  
@@ -75,9 +75,9 @@ As of current standings there is only one fan diagnostic tool that shares simila
 3. When powered the diagnostic tool's screen will turn on, and will display the following: PWM signal data, tachometer signal data, and mode selection. To measure this as success the team will experimentally create an input PWM signal and monitor the tools output tachometer signal. To call this a success the team will consulate Lochinvar to see if this is typical for what they are expecting five times. (Due to us not having a boiler controller)
 4. The diagonostic tool will be able to preform the fan simulation mode. For this to be successful we will compare the signals on an osciliscope and verify the changes are made to the following parameters five out of five times:
    
-   - Adjusting the minumum and maximum fan speed
-   - Adjusting the minumum PWM duty cycle needed for the fan to turn on
-   - Adjusting the minumum PWM duty cycle for the fan to continue running
+   - Adjusting the minimum and maximum fan speed
+   - Adjusting the minimum PWM duty cycle needed for the fan to turn on
+   - Adjusting the minimum PWM duty cycle for the fan to continue running
    - The fan speed increasing and decreasing the transient timing factor  
 
 5. The tool will have all of the necessary hardware needed to implement the three diagnostic modes. The measure of success is the tool will have all of the hardware built and installed on the final product.  
