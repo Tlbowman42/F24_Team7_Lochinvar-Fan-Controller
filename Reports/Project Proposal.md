@@ -15,9 +15,6 @@ The following are the specifications for the diagnostic tool's hardware and soft
 2. The diagnostic tool shall allow the user to select one of the three modes, only the Fan Simulation mode will be functional.
 3. The diagnostic tool shall have an LCD screen that will display the PWD, tachometer, and 
 
-The diagnostic tool shall have the hardware to implement all three modes given by Lochinvar. The three modes are as follows: Montioring Mode, which would have both a Physical Pass-through and a Software Pass-through portion, Fan Driving Mode, and the Fan Simulation Mode. The Fan Simulation Mode will be the only mode programmed for this project. [2]
-
-
 The following shall be possible in the Fan Simulation Mode:  [1]
 
 - Adjusting the minumum and maximum fan speed
