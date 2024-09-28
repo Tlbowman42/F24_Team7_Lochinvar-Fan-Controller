@@ -18,7 +18,7 @@ The following are the specifications for the diagnostic tool's hardware and soft
 The diagnostic tool shall have the hardware to implement all three modes given by Lochinvar. The three modes are as follows: Montioring Mode, which would have both a Physical Pass-through and a Software Pass-through portion, Fan Driving Mode, and the Fan Simulation Mode. The Fan Simulation Mode will be the only mode programmed for this project. [2]
 
 
-The following shall be possible in the Fan Simulation Mode:  [2]
+The following shall be possible in the Fan Simulation Mode:  [1]
 
 - Adjusting the minumum and maximum fan speed
 - Adjusting the minumum PWM duty cycle needed for the fan to turn on
@@ -26,14 +26,14 @@ The following shall be possible in the Fan Simulation Mode:  [2]
 - The fan speed increasing and decreasing the transient timing factor
 
 
-The following shall be possible in the Fan Driving Mode: [2]  
+The following shall be possible in the Fan Driving Mode: [1]  
 
 - Setting a desired PWM signal to send to the fan
 - Setting a desired RPM to drive the fan at
 - User configuarble PID settings for fan speed control, PWM frequency, Enable / Disable control takeover, and Enable / Disable Tachometer Pass-through
 
 
-The following shall be possible in the Monitoring Mode: [2]  
+The following shall be possible in the Monitoring Mode: [1]  
 
 **Physical Pass-through**
 - PWM signal from the control is physically connected to the boiler's fan, while the Fan Diagnostic Tool monitors the signal.
@@ -44,6 +44,11 @@ The following shall be possible in the Monitoring Mode: [2]
 - Tachometer signal from the fan is read by the diagnostic tool and is approximately replicated, frequency, in software. The simulated tachometer signal is then sent to the boiler control.
 - Signal modifications such as: PWM duty cycle limiting, frequency changing, or duty cycle scaling.
 - The control can convert between pulses per revolution of the tachometer feedback
+- Ability to freeze PWM signal to the fan
+- Ability to set an overriding max and min RPM that will prevent the control from seeing a fan operating above a certain max speed or below a certain min speed.
+- Ability to set a cutoff / turn-on PWM cycle.
+- Ability to cause fan oscillation.
+- Ability to Dampen PWM duty cycle changes that are sent to the fan.
 
   
 The following hardware shall be implemented for the three modes:
