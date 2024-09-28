@@ -17,24 +17,20 @@ The following are the specifications for the diagnostic tool's hardware and soft
 4. The diagnostic tool shall allow the user to change the minumum and maximum fan speed, the minumum PWM duty cycle needed for the fan to turn on, the minumum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
 5. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
 6. The hardware shall be designed to accomplish the Fan Simulation Mode, the Fan Driving Mode, and the Monitoring Mode.
-
-
-The following shall be possible in the Fan Simulation Mode:  [1]
+7. The following shall be possible in the Fan Simulation Mode:  [1]
 
 - Adjusting the minumum and maximum fan speed
 - Adjusting the minumum PWM duty cycle needed for the fan to turn on
 - Adjusting the minumum PWM duty cycle for the fan to continue running
 - The fan speed increasing and decreasing the transient timing factor
 
-
-The following shall be possible in the Fan Driving Mode: [1]  
+8. The following shall be possible in the Fan Driving Mode: [1]  
 
 - Setting a desired PWM signal to send to the fan
 - Setting a desired RPM to drive the fan at
 - User configuarble PID settings for fan speed control, PWM frequency, Enable / Disable control takeover, and Enable / Disable Tachometer Pass-through
 
-
-The following shall be possible in the Monitoring Mode: [1]  
+9. The following shall be possible in the Monitoring Mode: [1]  
 
 **Physical Pass-through**
 - PWM signal from the control is physically connected to the boiler's fan, while the Fan Diagnostic Tool monitors the signal.
