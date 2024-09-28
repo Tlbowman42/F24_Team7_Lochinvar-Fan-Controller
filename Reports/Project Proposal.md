@@ -55,11 +55,10 @@ The following section outlines the constraint statements that the team will adhe
   The diagnostic tool shall adhere to the following standards:  
   1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety. [3]
   2. IPC J-STD-001: This standard is known as the "Requirements for Soldered Electrical and Electronic Assemblies". It correlates to the following key elements [4]:
-     
-   - Materials and Equipment used
-   - Solder Processes and Procedures (Such as hand soldering)
-   - Workmanship and Inspection Criteria
-   - Training and Certification 
+     - Materials and Equipment used
+     - Solder Processes and Procedures (Such as hand soldering)
+     - Workmanship and Inspection Criteria
+     - Training and Certification 
 
  3. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples. [5]
 
