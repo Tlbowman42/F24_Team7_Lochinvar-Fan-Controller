@@ -16,7 +16,6 @@ The following are the specifications for the diagnostic tool's hardware and soft
 3. The diagnostic tool shall have an LCD screen that will display the PWD signal, tachometer signal, and a user interface designed at a later date.
 4. The diagnostic tool shall allow the user to change the minumum and maximum fan speed, the minumum PWM duty cycle needed for the fan to turn on, the minumum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
 5. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
-6. 
 
 
 The following shall be possible in the Fan Simulation Mode:  [1]
@@ -88,7 +87,7 @@ As of current standings there is only one fan diagnostic tool that shares simila
 # Goals and how they are measured
 1. The tool will have a case to encapsulate all of the circuitry. The measure of success will be if there is a case and it measures no more than 12x12 inches.
 2. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
-3. When powered the diagnostic tool's screen will turn on, and will display data. To measure this as success the screen will need to power on and display experimental data five times.
+3. When powered the diagnostic tool's screen will turn on, and will display the following: PWM signal data, tachometer signal data, and mode selection. To measure this as success the tool will need to 
 4. The diagonostic tool will be able to preform the fan simulation mode. For this to be successful the tool will need to adjust the follow parameters five out of five times:
    
 - Adjusting the minumum and maximum fan speed
