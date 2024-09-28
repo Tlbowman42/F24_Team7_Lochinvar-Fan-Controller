@@ -34,16 +34,16 @@ The following are the specifications for the diagnostic tool's hardware and soft
    - PWM signal from the control is physically connected to the boiler's fan, while the Fan Diagnostic Tool monitors the signal.
    - Tachometer signal from the fan is physically connected to the tachometer output for the boiler's controller, while the Fan Diagnostic Tool monitors the signal.
 
-**Software Pass-through**
-   - PWM signal from the boiler's control is read by the diagnostic tool and is approximately replicated, duty cycle and frequency, in software. The simulated PWM signal is then sent to the fan.
-   - Tachometer signal from the fan is read by the diagnostic tool and is approximately replicated, frequency, in software. The simulated tachometer signal is then sent to the boiler control.
-   - Signal modifications such as: PWM duty cycle limiting, frequency changing, or duty cycle scaling.
-   - The control can convert between pulses per revolution of the tachometer feedback
-   - Ability to freeze PWM signal to the fan
-   - Ability to set an overriding max and min RPM that will prevent the control from seeing a fan operating above a certain max speed or below a certain min speed.
-   - Ability to set a cutoff / turn-on PWM cycle.
-   - Ability to cause fan oscillation.
-   - Ability to Dampen PWM duty cycle changes that are sent to the fan.
+**Software Pass-through**  
+  - PWM signal from the boiler's control is read by the diagnostic tool and is approximately replicated, duty cycle and frequency, in software. The simulated PWM signal is then sent to the fan.
+  - Tachometer signal from the fan is read by the diagnostic tool and is approximately replicated, frequency, in software. The simulated tachometer signal is then sent to the boiler control.
+  - Signal modifications such as: PWM duty cycle limiting, frequency changing, or duty cycle scaling.
+  - The control can convert between pulses per revolution of the tachometer feedback
+  - Ability to freeze PWM signal to the fan
+  - Ability to set an overriding max and min RPM that will prevent the control from seeing a fan operating above a certain max speed or below a certain min speed.
+  - Ability to set a cutoff / turn-on PWM cycle.
+  - Ability to cause fan oscillation.
+  - Ability to Dampen PWM duty cycle changes that are sent to the fan.
 
 
 *4) Budget Specifications:*  
@@ -56,10 +56,10 @@ The following section outlines the constraint statements that the team will adhe
   1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety. [3]
   2. IPC J-STD-001: This standard is known as the "Requirements for Soldered Electrical and Electronic Assemblies". It correlates to the following key elements [4]:
      
-- Materials and Equipment used
-- Solder Processes and Procedures (Such as hand soldering)
-- Workmanship and Inspection Criteria
-- Training and Certification 
+   - Materials and Equipment used
+   - Solder Processes and Procedures (Such as hand soldering)
+   - Workmanship and Inspection Criteria
+   - Training and Certification 
 
  3. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples. [5]
 
@@ -76,10 +76,10 @@ As of current standings there is only one fan diagnostic tool that shares simila
 3. When powered the diagnostic tool's screen will turn on, and will display the following: PWM signal data, tachometer signal data, and mode selection. To measure this as success the team will experimentally create an input PWM signal and monitor the tools output tachometer signal. To call this a success the team will consulate Lochinvar to see if this is typical for what they are expecting five times. (Due to us not having a boiler controller)
 4. The diagonostic tool will be able to preform the fan simulation mode. For this to be successful the tool will need to adjust the follow parameters five out of five times:
    
-- Adjusting the minumum and maximum fan speed
-- Adjusting the minumum PWM duty cycle needed for the fan to turn on
-- Adjusting the minumum PWM duty cycle for the fan to continue running
-- The fan speed increasing and decreasing the transient timing factor  
+   - Adjusting the minumum and maximum fan speed
+   - Adjusting the minumum PWM duty cycle needed for the fan to turn on
+   - Adjusting the minumum PWM duty cycle for the fan to continue running
+   - The fan speed increasing and decreasing the transient timing factor  
 
 5. The tool will have all of the necessary hardware needed to implement the three diagnostic modes. The measure of success is the tool will have all of the hardware built and installed on the final product.  
 6. The tool's design and implementation will not exceed $2000. For us to be successful we can not use more than $2000 for this project.
