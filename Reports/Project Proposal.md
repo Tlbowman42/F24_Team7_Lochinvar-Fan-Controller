@@ -16,6 +16,7 @@ The following are the specifications for the diagnostic tool's hardware and soft
 3. The diagnostic tool shall have an LCD screen that will display the PWD signal, tachometer signal, and a user interface designed at a later date.
 4. The diagnostic tool shall allow the user to change the minumum and maximum fan speed, the minumum PWM duty cycle needed for the fan to turn on, the minumum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
 5. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
+6. The hardware shall be designed to accomplish the Fan Simulation Mode, the Montioring Mode, and the Fan Driving Mode.
 
 
 The following shall be possible in the Fan Simulation Mode:  [1]
@@ -49,15 +50,6 @@ The following shall be possible in the Monitoring Mode: [1]
 - Ability to set a cutoff / turn-on PWM cycle.
 - Ability to cause fan oscillation.
 - Ability to Dampen PWM duty cycle changes that are sent to the fan.
-
-  
-The following hardware shall be implemented for the three modes:
-
-- A power management system used to power the tool. This system should be able to switch between being powered by a USB or by the 10 to 40 VDC coming from the power bus.
-- An advanced microcontroller that has the capabilites to generate PWM signals, can have a tachometer as an input and has signal processing capabilites.
-- A screen to display the modes, and given data for each mode. The screen will also need to allow the user to change different parameters based on the mode that has been selected.
-- The tool will also need a USB interface to allow for powering the device or the transmission of data between the controller and diagnostic tool.
-- The tool will also need a molex interface to allow for powering the device from the 10 to 40 VDC power bus or to the transmit the data between the controller and diagnostic tool.  
 
 
 *4) Budget Specifications:*  
