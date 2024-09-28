@@ -87,7 +87,7 @@ As of current standings there is only one fan diagnostic tool that shares simila
 # Goals and how they are measured
 1. The tool will have a case to encapsulate all of the circuitry. The measure of success will be if there is a case and it measures no more than 12x12 inches.
 2. The diagnostic tool will be able to be powered by two different sources, a 10 to 40 volt DC bus and through a USB. For this to be successful the tool will need to be powered through both the mediums seperately ten out of ten times.
-3. When powered the diagnostic tool's screen will turn on, and will display the following: PWM signal data, tachometer signal data, and mode selection. To measure this as success the team will experimentally create a PWM signal and monitor the tools tachometer signal. 
+3. When powered the diagnostic tool's screen will turn on, and will display the following: PWM signal data, tachometer signal data, and mode selection. To measure this as success the team will experimentally create an input PWM signal and monitor the tools output tachometer signal. To call this a success the team will consulate Lochinvar to see if this is typical for what they are expecting five times. (Due to us not having a boiler controller)
 4. The diagonostic tool will be able to preform the fan simulation mode. For this to be successful the tool will need to adjust the follow parameters five out of five times:
    
 - Adjusting the minumum and maximum fan speed
