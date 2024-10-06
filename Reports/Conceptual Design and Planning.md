@@ -15,7 +15,11 @@
 **Please place your customer specifications in your specific subsection so the designer can start their work**
 
 ## Back-End Software Design
-
+**(Comments)**
+1) Needs to be able to take in PWM anolog and output TACH anolog(?? I do not know if anolog is the right word).  
+2) Needs to be able to convert PWM into a dataset for signal proccessing(sampling).  
+3) Needs to be able to take PWM dataset and output the appropriate signal with a given set of fan characteristics decided by the user(Will have to most likely look up how TACH is supposed to work in relation to PWM).  
+4) Needs to be able to recive data from front-end to use for signal proccessing(User interface data).  
 ## Front-End Software Design
 
 ## Ciruitry 
