@@ -53,7 +53,7 @@
 Layne Bowman  
 Ethan Haynes  
 Tucker Basham  
-Matthew Vick  
+Matthew Vick- Back-end specifications, (I can do intro as well and restate the problem)  
 Jacob Brewer  
 
 
