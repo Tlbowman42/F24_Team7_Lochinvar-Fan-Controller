@@ -1,9 +1,11 @@
 Place any questions you will have for Abbey here.
-1. Can you provide anymore information for the signals for our device, such as PWM input, tachometer output.
+1. Can you provide anymore information for the signals for our device, such as PWM input, tachometer output, and could you provide examples of the PWM and tachometer signals?
 2. On the provided block diagram what does Circuitry / Isolation mean? In what way is the circuitry isolated?
+3. In the fan driving mode, what voltage does the blower run off of? (Single-Phase 120 V?)
+4. For the monitoring mode how many data points do our graphs need to be comprised of? (This will determine how complex our microcontroller needs to be for the software pass through mode.)
 
 
-Get more details on the characteristics in terms of data points for these graphs. All of the scale (3 million or 3 points)
+
 Come up with some crazy senarios, all of the ways it can go wrong and then go back to Abbey to get some more information. (These are big pictures then go into the more detail stuff) Throw the block diagram on the screen and just come up with what if scenario.  
 
 
