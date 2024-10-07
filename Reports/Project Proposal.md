@@ -43,7 +43,7 @@ The following are the specifications for the diagnostic tool's hardware and soft
   - Ability to set an overriding max and min RPM that will prevent the control from seeing a fan operating above a certain max speed or below a certain min speed.
   - Ability to set a cutoff / turn-on PWM cycle.
   - Ability to cause fan oscillation.
-  - Ability to Dampen PWM duty cycle changes that are sent to the fan.
+  - Ability to dampen PWM duty cycle changes that are sent to the fan.
 
 
 *4) Budget Specifications:*  
