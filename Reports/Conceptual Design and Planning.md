@@ -1,14 +1,24 @@
-# Introduction 
+# Introduction  
+
+**Tucker Basham**  
 
 ## Restate the Fully Forumlate Problem
+
+**Conner Vick**  
 
 ## Comparative Analysis of Potential Solutions
 
 # High Level Solution
 
+**Conner Vick**  
+
 ## Hardware Block Diagram
 
+**Team** Maybe could use powerpoint or maybe autocad.  
+
 ## Operational Flow Chart
+
+**Layne Bowman**  
 
 # Atomic Subsytem Specifications
 
@@ -31,12 +41,11 @@ The device shall be powered by the fan DC power bus (10-40Vdc) as well as by the
 
 # Resources and Timeline
 
+**Ethan Haynes**
+
 *Skill Sets Required:*    
 
-
 *Costs and Timeline:*  
-
-
   
 *Gantt Chart:*  
 
@@ -44,6 +53,7 @@ The device shall be powered by the fan DC power bus (10-40Vdc) as well as by the
 
 # Ethical, Professional, and Standards Considerations
 
+**Jacob Brewer**
 
 # Appendix
 ### Citations:   
