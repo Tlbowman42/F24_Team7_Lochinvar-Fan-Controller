@@ -27,7 +27,7 @@
 ## Physical Design
 
 ## Power Management
-
+The device shall be powered by the fan DC power bus (10-40Vdc) as well as by the USB connection in case no fan is connected. Ideally the device doesn’t need a separate power source and uses the fan DC power bus.
 
 # Resources and Timeline
 
