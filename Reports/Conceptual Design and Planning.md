@@ -28,16 +28,28 @@
 
 ## Back-End Software Design
 **(Comments)**
+
 1) Needs to be able to take in PWM anolog and output TACH anolog(?? I do not know if anolog is the right word).  
 2) Needs to be able to convert PWM into a dataset for signal proccessing(sampling).  
 3) Needs to be able to take PWM dataset and output the appropriate signal with a given set of fan characteristics decided by the user(Will have to most likely look up how TACH is supposed to work in relation to PWM).  
 4) Needs to be able to recive data from front-end to use for signal proccessing(User interface data).  
+
 ## Front-End Software Design
 
 ## Ciruitry 
 
 ## Physical Design
 
+1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
+2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.)
+3. The PCB shall consist of four layers.
+   - Top layer: Components and signals
+   - Inner layer 1: Ground plane
+   - Inner layer 2: Power plane
+   - Bottom layer: Components and signals
+4. 
+
+   
 ## Power Management
 The device shall be powered by the fan DC power bus (10-40Vdc) as well as by the USB connection in case no fan is connected. Ideally the device doesn’t need a separate power source and uses the fan DC power bus.
 
