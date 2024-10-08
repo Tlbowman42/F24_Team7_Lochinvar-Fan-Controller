@@ -1,6 +1,7 @@
 # Introduction  
 
 **Tucker Basham**  
+The ability to properly test and or simulate a system once completed is a fundamental cornerstone of engineering. Proper testing of manufactured and engineered goods allow us to hone in on a device or machines functionality as well as simulate and assess the what if's and worst or best cases. Thus, for this project we have been tasked with the conceptual and physical design of a boiler fan simulation unit. This, appopriately deemed, fan diagnostic tool will simulate a boiler fan for our customer Lochinvar and will do so by taking in a PWM signal and returning a TACH signal. The reason a product such as this should exist is to save time and money, and allow for a full range of boiler diagnostic testing for lochinvar. This device will in turn allow for much faster testing procedures thus increasing productivity and saving the time and money of Lochinvar.
 
 ## Restate the Fully Forumlate Problem
 
@@ -36,7 +37,13 @@
 
 ## Front-End Software Design
 
-## Ciruitry 
+## Ciruitry   
+1. The circuitry shall encompass safe and proper connections between all subsections of the project.
+2. The circuitry shall ensure proper connections and data transfer between different sections of our project.
+3. The circuitry shall be able to take in various DC voltage loads and adjust values appropriately.
+4. The circuitry shall be able to take in TACH and PWM signal as well as output either.
+5. The circuitry shall be presented via a block diagram.
+6. The circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient.
 
 ## Physical Design
 
