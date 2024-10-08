@@ -48,13 +48,14 @@ The ability to properly test and or simulate a system once completed is a fundam
 ## Physical Design
 
 1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
-2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.)
+2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.).
 3. The PCB shall consist of four layers.
    - Top layer: Components and signals
    - Inner layer 1: Ground plane
    - Inner layer 2: Power plane
    - Bottom layer: Components and signals
-4. 
+4. The PCB shall incorporate thermal managment techniques to reduce overheating and increase longivity of the board.
+5. The PCB shall incorporate testing points to allow for easy probing during debugging.
 
    
 ## Power Management
