@@ -21,7 +21,8 @@ The ability to properly test and or simulate a system once completed is a fundam
 
 ## Operational Flow Chart
 
-**Layne Bowman**  
+![Operational Flow Chart](https://github.com/user-attachments/assets/52b749fb-b345-4b3a-8c1d-126e047e38a1)
+
 
 # Atomic Subsytem Specifications
 
