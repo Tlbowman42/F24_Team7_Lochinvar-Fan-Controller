@@ -28,25 +28,26 @@ The ability to properly test and or simulate a system once completed is a fundam
 
 **Please place your customer specifications in your specific subsection so the designer can start their work**
 
-## Back-End Software Design
-**(Comments)**
+## Microntroller 
 
-1) Needs to be able to take in PWM anolog and output TACH anolog(?? I do not know if anolog is the right word).  
-2) Needs to be able to convert PWM into a dataset for signal proccessing(sampling).  
-3) Needs to be able to take PWM dataset and output the appropriate signal with a given set of fan characteristics decided by the user(Will have to most likely look up how TACH is supposed to work in relation to PWM).  
-4) Needs to be able to recive data from front-end to use for signal proccessing(User interface data).  
+1. The microcontroller shall be able to take in and output both PWM and tachometer signals. (Needs to be able to take in PWM anolog and output TACH anolog(?? I do not know if anolog is the right word).)
+2. The microcotroller shall be able to communicate with the display to take and store user inputs. (Needs to be able to convert PWM into a dataset for signal proccessing(sampling).)
+3. Needs to be able to take PWM dataset and output the appropriate signal with a given set of fan characteristics decided by the user(Will have to most likely look up how TACH is supposed to work in relation to PWM).  
+4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardawre Specifications and not software specifications.) (Needs to be able to recive data from front-end to use for signal proccessing(User interface data).)
 
-## Front-End Software Design
+## Display Design
 
-## Ciruitry   
+## Power / Ciruitry   
+
 1. The circuitry shall encompass safe and proper connections between all subsections of the project.
-2. The circuitry shall ensure proper connections and data transfer between different sections of our project.
+2. The circuitry shall ensure proper connections and data transfer between different sections of our project. **Is this the same specification as #1**
 3. The circuitry shall be able to take in various DC voltage loads and adjust values appropriately.
 4. The circuitry shall be able to take in TACH and PWM signal as well as output either.
 5. The circuitry shall be presented via a block diagram.
 6. The circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient.
+7. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. Ideally the device doesn’t need a separate power source and uses the fan DC power bus.
 
-## PCB design
+## PCB Design
 
 1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
 2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.).
@@ -54,12 +55,9 @@ The ability to properly test and or simulate a system once completed is a fundam
 4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
 
 ## Case  
+
 1. The case shall encase the the board.
 2. The case shall protect the board if a drop occurs.
-
-   
-## Power Management
-The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. Ideally the device doesn’t need a separate power source and uses the fan DC power bus.
 
 # Resources and Timeline
 
