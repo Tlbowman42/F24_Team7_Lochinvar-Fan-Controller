@@ -58,7 +58,7 @@ The ability to properly test and or simulate a system once completed is a fundam
 
 1. The case shall encase the the board.
 2. The case shall protect the board if a drop occurs.
-
+3. The case shall have openings for the display, controls, and ports.  
 # Resources and Timeline
 
 **Ethan Haynes**
