@@ -17,7 +17,8 @@ The ability to properly test and or simulate a system once completed is a fundam
 
 ## Hardware Block Diagram
 
-**Team** Maybe could use powerpoint or maybe autocad.  
+![Hardware Block Diagram](https://github.com/user-attachments/assets/a5f96d97-f1a4-4459-9a31-c11c07cb50e2)
+
 
 ## Operational Flow Chart
 
