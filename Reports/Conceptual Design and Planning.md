@@ -32,8 +32,9 @@ The ability to properly test and or simulate a system once completed is a fundam
 
 1. The microcontroller shall be able to take in and output both PWM and tachometer signals. (Needs to be able to take in PWM anolog and output TACH anolog(?? I do not know if anolog is the right word).)
 2. The microcotroller shall be able to **Plug in here**. (Needs to be able to convert PWM into a dataset for signal proccessing(sampling).)
-3. The microcotroller shall be able to communicate with the display to take and store user inputs. (Needs to be able to take PWM dataset and output the appropriate signal with a given set of fan characteristics decided by the user(Will have to most likely look up how TACH is supposed to work in relation to PWM).)
-4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardawre Specifications and not software specifications.) (Needs to be able to recive data from front-end to use for signal proccessing(User interface data).)
+3. The microcotroller shall be able to communicate to the display to take and store user inputs. (Needs to be able to take PWM dataset and output the appropriate signal with a given set of fan characteristics decided by the user(Will have to most likely look up how TACH is supposed to work in relation to PWM).)
+4. The microcontroller shall be shall to review user inputs to change selected parameters and/or change what is being displayed when necessary.
+5. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardawre Specifications and not software specifications.) (Needs to be able to recive data from front-end to use for signal proccessing(User interface data).)
 
 ## Display Design
 
