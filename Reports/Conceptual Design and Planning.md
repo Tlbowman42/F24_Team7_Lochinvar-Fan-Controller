@@ -46,16 +46,20 @@ The ability to properly test and or simulate a system once completed is a fundam
 5. The circuitry shall be presented via a block diagram.
 6. The circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient.
 
-## Physical Design
+## PCB design
 
 1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
 2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.).
 3. The PCB shall incorporate thermal managment techniques to reduce overheating and increase longivity of the board.
-4. The PCB shall incorporate testing points to allow for easy probing during debugging.
+4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
+
+## Case  
+1. The case shall encase the the board.
+2. The case shall protect the board if a drop occurs.
 
    
 ## Power Management
-The device shall be powered by the fan DC power bus (10-40Vdc) as well as by the USB connection in case no fan is connected. Ideally the device doesn’t need a separate power source and uses the fan DC power bus.
+The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. Ideally the device doesn’t need a separate power source and uses the fan DC power bus.
 
 # Resources and Timeline
 
