@@ -48,6 +48,10 @@ The ability to properly test and or simulate a system once completed is a fundam
 6. The circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient.
 7. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. Ideally the device doesn’t need a separate power source and uses the fan DC power bus.
 
+The Power/Circuitry subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and **Maybe Add in safety features**. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges.
+
+
+
 ## PCB Design
 
 1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
