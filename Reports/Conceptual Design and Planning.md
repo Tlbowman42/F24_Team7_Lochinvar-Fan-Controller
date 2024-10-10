@@ -21,7 +21,7 @@ The ability to properly test and or simulate a system once completed is a fundam
 
 ## Operational Flow Chart
 
-![Operational Flow Chart](https://github.com/user-attachments/assets/52b749fb-b345-4b3a-8c1d-126e047e38a1)
+![Operational Flow Chart](https://github.com/user-attachments/assets/1dbedbe4-67ea-484a-a8bd-07bfb2d6a8da)
 
 
 # Atomic Subsytem Specifications
