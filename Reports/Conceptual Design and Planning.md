@@ -3,7 +3,7 @@
 **Tucker Basham**  
 The ability to properly test and or simulate a system once completed is a fundamental cornerstone of engineering. Proper testing of manufactured and engineered goods allow us to hone in on a device or machines functionality as well as simulate and assess the what if's and worst or best cases. Thus, for this project we have been tasked with the conceptual and physical design of a boiler fan simulation unit. This, appopriately deemed, fan diagnostic tool will simulate a boiler fan for our customer Lochinvar and will do so by taking in a PWM signal and returning a TACH signal. The reason a product such as this should exist is to save time and money, and allow for a full range of boiler diagnostic testing for lochinvar. This device will in turn allow for much faster testing procedures thus increasing productivity and saving the time and money of Lochinvar.
 
-## Restate the Fully Forumlate Problem
+# Restate the Fully Forumlate Problem
 
 **Conner Vick**  
 The problem is to create a diagnostic tool to help troubleshoot blower fans in boilers with the following specifications and constraints:  
@@ -65,18 +65,27 @@ The following section outlines the constraint statements that the team will adhe
      - Workmanship and Inspection Criteria
      - Training and Certification 
 
-## Comparative Analysis of Potential Solutions
+# Comparative Analysis of Potential Solutions
 
+## Potential PCB Solutions
+
+## Potential Microcontroller Solutions
+
+## Potential Display Solutions
+
+## Potential Power/Circuitry Solutions
+
+## Potential Case Solutions
 
 # High Level Solution
 
 **Conner Vick**  
 
-## Hardware Block Diagram
+# Hardware Block Diagram
 
 ![Hardware Block Diagram](https://github.com/user-attachments/assets/ca0c93cc-edce-4dcb-9229-e3a34758b63b)
 
-## Operational Flow Chart
+# Operational Flow Chart
 
 ![Operational Flow Chart](https://github.com/user-attachments/assets/1dbedbe4-67ea-484a-a8bd-07bfb2d6a8da)
 
@@ -140,7 +149,8 @@ The PCB is responsible for linking together the various components and allows th
 
 1. The case shall encase the the board.
 2. The case shall protect the board if a drop occurs.
-3. The case shall have openings for the display, controls, and ports.  
+3. The case shall have openings for the display, controls, and ports.
+   
 # Resources and Timeline
 
 **Ethan Haynes**
