@@ -83,6 +83,8 @@ Since Lochinvar already knows what type of tool they are wanting we will compare
    - Since the PCB has multiple layers of conductive material this helps to reduce signal noise and interference between components. [1]
    - Some advantages for the multi-layer PCB are the following: they have a more compact size, they have improved signal integrity due to being able to place the power and ground planes inbetween components, and they can operate at a faster speed. [3]
    - Some disadvantages are they cost more to produce, they are more complex to design, and they are harder to debug due to the inner layers. [3]
+  
+Our design needs to handle PWM and tachometer signals with high signal integrity due to the nature of the diagnostic tool. **This needs more added to it** Due to the design considerations we will be pursuing a multi-layered PCB design for our fan diagnostic tool.
    
 ## Potential Microcontroller Solutions
 
