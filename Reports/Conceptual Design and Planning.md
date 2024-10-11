@@ -38,6 +38,12 @@ The ability to properly test and or simulate a system once completed is a fundam
 
 ## Display Design
 
+1. The display shall show the PWM signal.  
+2. The display shall show the tachometer signal.  
+3. The display shall show the different options for the user interface.  
+4. The display shall show the correct operations based on the user input.  
+5. The display shall have working buttons for the user to operate the diagnostic tool.  
+
 ## Power / Ciruitry   
 
 1. The circuitry shall encompass safe and proper connections between all subsections of the project.
