@@ -124,6 +124,10 @@ Below describes the interfaces between the Power/Circuitry subsystem and the oth
    - The Microcontroller subsystem will recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
 3. Display
    - The Display subsystem will also recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
+4. PCB
+    - The PCB subsystem will be the physical integration of the Power/Circuitry subsystem. The Power/Circuotry subsystem will output DC power to the PCB and the PCB will distribute the power throughout to all necessary components.
+5. Case
+   - The Case and Power/Circuitry subsystems are not connected.
 
 ## PCB Design
 
