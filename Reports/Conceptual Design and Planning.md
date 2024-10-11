@@ -67,8 +67,17 @@ The following section outlines the constraint statements that the team will adhe
 
 # Comparative Analysis of Potential Solutions
 
+Since Lochinvar already knows what type of tool they are wanting we will compare different solutions for the subsystems instead of overall solutions for the problem. A list of different solutions for each subsystem is shown below, along with design considerations, and the chosen solutions.  
 ## Potential PCB Solutions
-
+1. Single-Layer PCB
+   - Single-layer PCBs consists of a single layer of conductive material with components and traces on one side. [1]
+   - They are relatively simple and cost-effective, making them ideal for basic electronic devices. [1]
+     
+2. Multi-Layer PCB
+   - Multi-layer PCBs consists of multiple layers of conductive material, with insulated layers in between with the traces and components on both sides. [1]
+   - They can accommodate more complex circuit designs, which results in more flexibility for routing traces. [1]
+   - Since the PCB has multiple layers of conductive material this helps to reduce signal noise and interference between components. [1]
+   
 ## Potential Microcontroller Solutions
 
 ## Potential Display Solutions
@@ -182,7 +191,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 
 # Appendix
 ### Citations:   
-
+[1] “Single-layer vs. multi-layer PCBS: What’s the difference?,” ElectronicsHacks, https://electronicshacks.com/single-layer-vs-multi-layer-pcbs/ (accessed Oct. 11, 2024). 
 
 ### Statement of Contribution:  
 Layne Bowman  
