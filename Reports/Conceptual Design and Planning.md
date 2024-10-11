@@ -118,9 +118,11 @@ The Power/Circuitry subsystem is responsible for delivering power to all compone
 
 
 Below describes the interfaces between the Power/Circuitry subsystem and the other subsystems:
-1. Microcontroller
+1. External Connections
+   - The Power/Circuitry subsystem will recieve power through an external source. Either the boiler controller will act as that source and will power the device through a molex connection, or the power will come from an USB connection.
+2. Microcontroller
    - The Microcontroller subsystem will recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
-2. Display
+3. Display
    - The Display subsystem will also recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
 
 ## PCB Design
