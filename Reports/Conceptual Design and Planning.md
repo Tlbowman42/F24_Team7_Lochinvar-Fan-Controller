@@ -6,6 +6,64 @@ The ability to properly test and or simulate a system once completed is a fundam
 ## Restate the Fully Forumlate Problem
 
 **Conner Vick**  
+The problem is to create a diagnostic tool to help troubleshoot blower fans in boilers with the following specifications and constraints:  
+*1) Case Specifications:*  
+The tool shall have a case that is no larger than 12 by 12 inches in length and width.  
+
+*2) Power Specifications:*  
+The tool shall be able to be powered by both the DC power bus from the boiler's fan, which is 10 to 40 volts, and by a USB connection if a fan is not present.  
+
+*3) Diagnostic Tool Specifications:*  
+The following are the specifications for the diagnostic tool's hardware and software.  
+
+1. The diagnostic tool shall have the hardware to accomplish all three modes.
+2. The diagnostic tool shall allow the user to select one of the three modes, only the Fan Simulation mode will be functional.
+3. The diagnostic tool shall have an LCD screen that will display the PWD signal, tachometer signal, and a user interface designed at a later date.
+4. The diagnostic tool shall allow the user to change the minumum and maximum fan speed, the minumum PWM duty cycle needed for the fan to turn on, the minumum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
+5. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
+6. The hardware shall be designed to accomplish the Fan Simulation Mode, the Fan Driving Mode, and the Monitoring Mode.
+7. The following shall be possible in the Fan Simulation Mode:  
+   - Adjusting the minimum and maximum fan speed
+   - Adjusting the minimum PWM duty cycle needed for the fan to turn on
+   - Adjusting the minimum PWM duty cycle for the fan to continue running
+   - The fan speed increasing and decreasing the transient timing factor
+
+8. The following shall be possible in the Fan Driving Mode:    
+   - Setting a desired PWM signal to send to the fan
+   - Setting a desired RPM to drive the fan at
+   - User configuarble PID settings for fan speed control, PWM frequency, Enable / Disable control takeover, and Enable / Disable Tachometer Pass-through
+
+9. The following shall be possible in the Monitoring Mode:    
+
+**Physical Pass-through**
+   - PWM signal from the control is physically connected to the boiler's fan, while the Fan Diagnostic Tool monitors the signal.
+   - Tachometer signal from the fan is physically connected to the tachometer output for the boiler's controller, while the Fan Diagnostic Tool monitors the signal.
+
+**Software Pass-through**  
+  - PWM signal from the boiler's control is read by the diagnostic tool and is approximately replicated, duty cycle and frequency, in software. The simulated PWM signal is then sent to the fan.
+  - Tachometer signal from the fan is read by the diagnostic tool and is approximately replicated, frequency, in software. The simulated tachometer signal is then sent to the boiler control.
+  - Signal modifications such as: PWM duty cycle limiting, frequency changing, or duty cycle scaling.
+  - The control can convert between pulses per revolution of the tachometer feedback
+  - Ability to freeze PWM signal to the fan
+  - Ability to set an overriding max and min RPM that will prevent the control from seeing a fan operating above a certain max speed or below a certain min speed.
+  - Ability to set a cutoff / turn-on PWM cycle.
+  - Ability to cause fan oscillation.
+  - Ability to dampen PWM duty cycle changes that are sent to the fan.
+
+
+*4) Budget Specifications:*  
+The diagonostic tool's design and build phase shall not exceed the given $2,000 budget.   
+
+*Constraints*  
+The following section outlines the constraint statements that the team will adhere to.  
+
+  The diagnostic tool shall adhere to the following standards:  
+  1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety.  
+  2. IPC J-STD-001: This standard is known as the "Requirements for Soldered Electrical and Electronic Assemblies". It correlates to the following key elements:  
+     - Materials and Equipment used
+     - Solder Processes and Procedures (Such as hand soldering)
+     - Workmanship and Inspection Criteria
+     - Training and Certification 
 
 ## Comparative Analysis of Potential Solutions
 
