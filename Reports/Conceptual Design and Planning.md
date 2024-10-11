@@ -96,7 +96,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 ### Statement of Contribution:  
 Layne Bowman  
 Ethan Haynes  
-Tucker Basham  
+Tucker Basham - Introduction and customer specifications for power/circuitry section.  
 Matthew Vick- Back-end specifications, (I can do intro as well and restate the problem)  
 Jacob Brewer - Specifications for the display also Ethical, Professional, and Standards Considerations section.
 
