@@ -107,8 +107,8 @@ The following section outlines the constraint statements that the team will adhe
 2. The power/circuitry shall be able to take in various DC voltage loads and adjust values appropriately.
 3. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. 
 4. The power/circuitry shall be able to take in TACH and PWM signal as well as output either. **Should this be in this section?**
-5. The power/circuitry shall be presented via a block diagram. 
-6. The power/circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient.
+5. The power/circuitry shall be presented via a block diagram. **Should I make a block diagram for this subsection**
+6. The power/circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient. **Should this be in the PCB section**
 7. The power/circuitry shall output DC power to the display and microcontroller.
 8. The power/circuitry shall ensure stable power is output to all sensitive components such as the microcontroller.
 9. The power/circuitry shall have safety measures in place to deal with noise and surges.
