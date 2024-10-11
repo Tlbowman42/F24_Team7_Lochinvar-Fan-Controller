@@ -89,8 +89,12 @@ Below describes the interfaces between the Power/Circuitry subsystem and the oth
 
 
 # Ethical, Professional, and Standards Considerations
+**Jacob Brewer**  
+Our diagnostic tool enhances workplace efficiency by reducing the time needed to test and evaluate boiler controls and fans. This improvement not only lowers production costs but also has the potential to reduce consumer prices, benefiting Lochinvar’s customers. In turn, this could attract more customers, driving increased revenue for the company and its employees. Additionally, the tool establishes a solid baseline product that can be further customized with additional modes for various applications.
 
-**Jacob Brewer**
+As Electrical Engineering students, we are committed to adhering to the IEEE Code of Ethics, prioritizing safety, and ensuring the well-being of both Lochinvar’s team and our peers. In line with these principles, our group has explored design enhancements such as incorporating hermetically sealed buttons to minimize contamination risk and adding protective devices to guard against overcurrent and voltage spikes.
+
+
 
 # Appendix
 ### Citations:   
@@ -101,7 +105,7 @@ Layne Bowman
 Ethan Haynes  
 Tucker Basham  
 Matthew Vick- Back-end specifications, (I can do intro as well and restate the problem)  
-Jacob Brewer  
+Jacob Brewer - Specifications for the display also Ethical, Professional, and Standards Considerations section.
 
 
 
