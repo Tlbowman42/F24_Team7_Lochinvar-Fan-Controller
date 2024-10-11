@@ -75,14 +75,14 @@ Since Lochinvar already knows what type of tool they are wanting we will compare
    - Single-layer PCBs consists of a single layer of conductive material with components and traces on one side. [1]
    - They are relatively simple and cost-effective, making them ideal for basic electronic devices. [1]
    - Some advantages for the single-layer PCB are the following: they are inexpensive, they can be manufactored faster, and since it is a single layer the designs are easier to produce. [1]
-   - Some disadvantages are they operate at a slower speed, and they have less freedom for the layout of the design. [2]
+   - Some disadvantages are they operate at a slower speed, they have less freedom for the layout of the design, and they are larger. [2]
      
 2. Multi-Layer PCB
    - Multi-layer PCBs consists of multiple layers of conductive material, with insulated layers in between with the traces and components on both sides. [1]
    - They can accommodate more complex circuit designs, which results in more flexibility for routing traces. [1]
    - Since the PCB has multiple layers of conductive material this helps to reduce signal noise and interference between components. [1]
-   - Some advantages for the multi-layer PCB are the following: they are inexpensive, they can be manufactured faster, and since it is a single layer the designs are easier to produce. [1]
-   - Some disadvantages are they operate at a slower speed, and they have less freedom for the layout of the design. [2]
+   - Some advantages for the multi-layer PCB are the following: they have a more compact size, they have improved signal integrity due to being able to place the power and ground planes inbetween components, and they can operate at a faster speed. [3]
+   - Some disadvantages are they cost more to produce, they are more complex to design, and they are harder to debug due to the inner layers. [3]
    
 ## Potential Microcontroller Solutions
 
@@ -202,6 +202,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 ### Citations:   
 [1] “Single-layer vs. multi-layer PCBS: What’s the difference?,” ElectronicsHacks, https://electronicshacks.com/single-layer-vs-multi-layer-pcbs/ (accessed Oct. 11, 2024). 
 [2] Ibe, “Single-layer PCB and its types - the ultimate guide,” IBE Electronics, https://www.pcbaaa.com/single-layer-pcb/ (accessed Oct. 11, 2024). 
+[3] “Advantages and disadvantages of multilayer PCBS,” Highleap Electronic, https://hilelectronic.com/multilayer-pcbs/#:~:text=Disadvantages%20of%20Multilayer%20PCBs%201%201.%20Increased%20Complexity,Design%20Time%20...%205%205.%20Thermal%20Management%20Challenges (accessed Oct. 11, 2024). 
 
 
 ### Statement of Contribution:  
