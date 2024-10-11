@@ -17,8 +17,7 @@ The ability to properly test and or simulate a system once completed is a fundam
 
 ## Hardware Block Diagram
 
-![Hardware Block Diagram](https://github.com/user-attachments/assets/a5f96d97-f1a4-4459-9a31-c11c07cb50e2)
-
+![Hardware Block Diagram](https://github.com/user-attachments/assets/ca0c93cc-edce-4dcb-9229-e3a34758b63b)
 
 ## Operational Flow Chart
 
