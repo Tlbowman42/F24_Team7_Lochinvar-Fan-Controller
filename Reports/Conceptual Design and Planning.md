@@ -89,7 +89,10 @@ Since Lochinvar already knows what type of tool they are wanting we will compare
 # High Level Solution
 
 **Conner Vick**  
-
+The diogonstic tool will be developed primarly using a display and a microcontroller. The microcontroller will take in a desrired signal 
+and output a desired signal corresponding to a set of user-defined parameters. The user will use the buttons connected to the microcontroller
+to set desired settings, and the display will be used to view the menus required to do so. The display will also display the PWM and TACH signals 
+in relation to a mode chosen by the user. 
 # Hardware Block Diagram
 
 ![Hardware Block Diagram](https://github.com/user-attachments/assets/ca0c93cc-edce-4dcb-9229-e3a34758b63b)
