@@ -105,16 +105,18 @@ The following section outlines the constraint statements that the team will adhe
 
 1. The power/circuitry shall encompass safe and proper connections between all subsections of the project.
 2. The power/circuitry shall be able to take in various DC voltage loads and adjust values appropriately.
-3. The power/circuitry shall be able to take in TACH and PWM signal as well as output either.
-4. The power/circuitry shall be presented via a block diagram.
-5. The power/circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient.
-6. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. Ideally the device doesn’t need a separate power source and uses the fan DC power bus.
+3. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. 
+4. The power/circuitry shall be able to take in TACH and PWM signal as well as output either. **Should this be in this section?**
+5. The power/circuitry shall be presented via a block diagram. 
+6. The power/circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient.
 7. The power/circuitry shall output DC power to the display and microcontroller.
-8. The power/circuitry shall ensure stable power is output to all sensitive components.
+8. The power/circuitry shall ensure stable power is output to all sensitive components such as the microcontroller.
 9. The power/circuitry shall have safety measures in place to deal with noise and surges.
 10. The power/circuitry shall use an LED to display the state of the power within the board.
 
-The Power/Circuitry subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and **Maybe Add in safety features**. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges. **Maybe add in adding an LED to show the power status and if there are any issues present.**
+The Power/Circuitry subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and features to protect against overvoltage or overcurrent events. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges. Additionally this subsystem will have LEDs to indicate the power status of other subsystems.
+
+
 Below describes the interfaces between the Power/Circuitry subsystem and the other subsystems:
 1. Microcontroller
    - The Microcontroller subsystem will recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
