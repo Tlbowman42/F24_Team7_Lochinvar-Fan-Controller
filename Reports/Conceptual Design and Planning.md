@@ -83,11 +83,11 @@ Below describes the interfaces between the Power/Circuitry subsystem and the oth
 *Skill Sets Required:*    
 To ensure the proper functionality of the device skills in circuity design, programming, CAD design, and embedded systems are required. While every team member has foundation of basic circuit and coding skills, the project requires on building these skills.
 
-PCB design
-Circuit design
-CAD
-C++
-Embedded system design
+- PCB design
+- Circuit design
+- CAD
+- C++
+- Embedded system design
 
 Softwares will need to be learned by various members to design subsystems of the project. Possible softwares that could be used include KiCad, for PCB and circuitry design, and Inventor, for the case design. The board will also require the use of soldering skills to attach the components.
 
