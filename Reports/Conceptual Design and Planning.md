@@ -136,6 +136,7 @@ Below describes the interfaces between the Power/Circuitry subsystem and the oth
 3. The PCB shall incorporate thermal managment techniques to reduce overheating and increase longivity of the board.
 4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
 
+The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. 
 ## Case  
 
 1. The case shall encase the the board.
