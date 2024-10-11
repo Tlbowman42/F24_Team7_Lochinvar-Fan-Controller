@@ -67,7 +67,6 @@ The following section outlines the constraint statements that the team will adhe
 
 ## Comparative Analysis of Potential Solutions
 
-**Layne Bowman**
 
 # High Level Solution
 
