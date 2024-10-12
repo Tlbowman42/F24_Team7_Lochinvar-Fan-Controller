@@ -88,12 +88,36 @@ Our design needs to handle PWM and tachometer signals with high signal integrity
    
 ## Potential Microcontroller Solutions
 
+1. Single Microcontroller
+   - haha
+2. Multiple Microcontrollers
+   - hahah
+
 ## Potential Display Solutions
+
+1. Charatcer LCD Display (Liquid-Crystal Display)
+   - haha
+2. Graphical LCB Display (Liquid-Crystal Display)
+   - haha
+3. OLED Display (Organic Light Emitting Diode)
+   - ahha
 
 ## Potential Power/Circuitry Solutions
 
+1. Linear Regulators
+   - haha
+2. Switching Regulators
+   - haha
+3. Protective Power Circuitry
+   - haha
+
 ## Potential Case Solutions
 
+1. Plastic
+    - haha
+2. 3-D Printed
+    - hhaha
+   
 # High Level Solution
 
 **Conner Vick**  
