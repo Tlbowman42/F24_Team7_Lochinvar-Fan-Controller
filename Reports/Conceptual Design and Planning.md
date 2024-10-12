@@ -223,9 +223,10 @@ The PCB is responsible for linking together the various components and allows th
 
 ## Case  
 
-1. The case shall encase the the board.
-2. The case shall protect the board if a drop occurs.
-3. The case shall have openings for the display, controls, and ports.
+1. The case shall encase and protect the the board.
+2. The case shall have openings for the display, controls, buttons, and ports.
+3. The case shall have mounting points to secure the board.
+4. The case shall include (raised bezel and extended/recessed buttons?)
    
 # Resources and Timeline
 
