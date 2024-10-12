@@ -137,11 +137,13 @@ Our design needs to handle a DC voltage range from 10-40 volts.  **This needs mo
     - Basic PLA is a thermoplastic monomer. (A type of plastic) [10]
     - Some advantages to basic PLA is it is environmentally friendly, it has a good print quality, and it is easy to use. [11]
     - Some disadvantages to basic PLA is it has a lower strength and durability when compared to other 3D printing materials. It has a poor heat resistance and it is not easy to achieve a smooth polished finish. [11]
-2. 3D Printed with PLA+
-    - hhaha
-3. 3D Printed with High Temperature PLA
-    - hhaha 
 
+2. 3D Printed with PLA+
+    - PLA plus is an enhanced version of the basic PLA, that boosts the materials strength. [12]
+    - Some advantages to PLA plus is it is stronger, has higher heat resistance, and can achieve a polished finish easier when compared to basic PLA. [12]
+    - Some disadvantages to PLA plus is it takes longer to print, it is a harder to print with, and is more expensive when compared to basic PLA. [12]
+
+Our design needs a case that will encase and protect all other subsystems.  **This needs more added to it** Due to the design considerations we will be pursuing **Ask the team which type of PLA would be best** for our fan diagnostic tool.
    
 # High Level Solution
 
@@ -189,6 +191,7 @@ Below describes the interfaces between the Display subsystem and the other subsy
    - The Display subsystem will also recieve an input power signal from the Power/Circuitry subsystem.
 3. PCB
     - The PCB subsystem will distribute the input power signal from the Power/Circuitry subsystem to the Display subsystem. The Display subsystme is connected to the PCB subsystem with screws.
+
 ## Power / Ciruitry   
 
 1. The power/circuitry shall encompass safe and proper connections between all subsections of the project.
@@ -275,7 +278,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [9] “Switching voltage regulator: How it works, application & advantages,” Electricity Magnetism, https://www.electricity-magnetism.org/switching-voltage-regulator/ (accessed Oct. 11, 2024).  
 [10] “What is pla? (everything you need to know),” TWI, https://www.twi-global.com/technical-knowledge/faqs/what-is-pla#WhatisitUsedFor (accessed Oct. 11, 2024).  
 [11] Z. Warner, “Advantages and disadvantages of PLA material in 3D printing,” Overture 3D, https://overture3d.com/blogs/beginners-guide/advantages-and-disadvantages-of-pla-material-in-3d-printing#:~:text=In%20conclusion%2C%20PLA%20material%20offers%20several%20advantages%20in,and%20durability%2C%20poor%20heat%20resistance%2C%20and%20limited%20flexibility. (accessed Oct. 11, 2024).  
-
+[12] “Pla vs pla+: Is pla plus filament better for 3D printing?,” 3DSourced, https://www.3dsourced.com/3d-printer-materials/pla-vs-pla-plus-filament/#:~:text=PLA%2B%20is%20an%20enhanced%20version%20of%20regular%20PLA,conventional%20PLA%2C%20but%20it%20will%20also%20costs%20more. (accessed Oct. 11, 2024).  
 
 
 ### Statement of Contribution:  
