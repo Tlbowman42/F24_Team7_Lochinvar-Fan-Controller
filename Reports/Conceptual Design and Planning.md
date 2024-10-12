@@ -195,7 +195,8 @@ Below describes the interfaces between the Power/Circuitry subsystem and the oth
 3. The PCB shall incorporate thermal managment techniques to reduce overheating and increase longivity of the board.
 4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
 
-The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. 
+The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard.  
+
 ## Case  
 
 1. The case shall encase the the board.
