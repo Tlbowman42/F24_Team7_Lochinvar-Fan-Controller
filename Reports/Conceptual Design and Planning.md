@@ -112,7 +112,7 @@ Our design needs to handle PWM and tachometer signal processing, different opera
    - Some advantages for this type of display is the flexibility to display any graphical information and they can offer a broader range of colors. [5]
    - Some disadvatanges for this type of display is it requires more complex software , they consume more power, and they cost more when compared to character LCDs. [6]  
   
-Our design needs to display both numbers and replicated signals  **This needs more added to it** Due to the design considerations we will be pursuing a graphical LCD display for our fan diagnostic tool.
+Our design needs to display both numbers and replicated signals. **This needs more added to it** Due to the design considerations we will be pursuing a graphical LCD display for our fan diagnostic tool.
 
 ## Potential Power/Circuitry Solutions
 
@@ -123,8 +123,13 @@ Our design needs to display both numbers and replicated signals  **This needs mo
   
 2. Switching Voltage Regulators
    - Switching voltage regulators are a type of power supply that efficiently converts an input voltage into a steady output voltage. [9]
+   - Some advantages for this type of voltage regulation is it can step-up, step-down, and invert voltages. This type is highly efficient, and due to this it is not prone to thermal issues. It can also handle a wide range of voltage levels. [8] [9]
+   - Some disadvantages for this type of voltage regulation is due to the high frequency switching operation it has a medium to high amount of noise. Due to this increased noise the design needs to be more complex to combat that. Finally this type of voltage regulation is more expensive. [8][9]
+     
 3. Protective Power Circuitry
-   - haha
+   - Diodes at the input terminals for power. **Add more in if the team feels it is necessary.**
+
+Our design needs to handle a DC voltage range from 10-40 volts.  **This needs more added to it** Due to the design considerations we will be pursuing a switching voltage regulator design for our fan diagnostic tool.
 
 ## Potential Case Solutions
 
