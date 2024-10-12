@@ -116,10 +116,13 @@ Our design needs to display both numbers and replicated signals  **This needs mo
 
 ## Potential Power/Circuitry Solutions
 
-1. Linear Regulators
-   - haha
-2. Switching Regulators
-   - haha
+1. Linear Voltage Regulators
+   - Linear voltage regulators are a system that maintains a consistent output voltage level, regardless of changes in the input voltage or load conditions. [7]
+   - Some advantages for this type of voltage regulation is it is simple in design, inexpensive, and has better noise rejection. [7] [8]
+   - Some disadvantages for this type of voltage regulation is they can only step down voltage, thermal issues when there is a large difference between the input and output voltages, and they are not very efficient when there is a large difference between the input and output voltages. [7] [8]
+  
+2. Switching Voltage Regulators
+   - Switching voltage regulators are a type of power supply that efficiently converts an input voltage into a steady output voltage. [9]
 3. Protective Power Circuitry
    - haha
 
@@ -246,7 +249,10 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [3] “Advantages and disadvantages of multilayer PCBS,” Highleap Electronic, https://hilelectronic.com/multilayer-pcbs/#:~:text=Disadvantages%20of%20Multilayer%20PCBs%201%201.%20Increased%20Complexity,Design%20Time%20...%205%205.%20Thermal%20Management%20Challenges (accessed Oct. 11, 2024).  
 [4] “Pros and cons of a character LCD displays,” Focus LCDs, https://focuslcds.com/journals/pros-and-cons-of-a-character-lcd/ (accessed Oct. 11, 2024).  
 [5] “Graphic lcds: How it works, application & advantages,” Electricity Magnetism, https://www.electricity-magnetism.org/graphic-lcds/ (accessed Oct. 11, 2024).  
-[6] “What is the difference between character and graphic LCD module?,” Shijiazhuang Dianguang Hi Tech Electronics Co., Ltd., https://www.dght-oledlcd.com/news/what-is-the-difference-between-character-and-graphic-lcd-module.html#:~:text=Both%20Character%20LCD%20and%20Graphic%20LCD%20modules%20have,excel%20in%20providing%20high-resolution%20graphics%20and%20dynamic%20content. (accessed Oct. 11, 2024). 
+[6] “What is the difference between character and graphic LCD module?,” Shijiazhuang Dianguang Hi Tech Electronics Co., Ltd., https://www.dght-oledlcd.com/news/what-is-the-difference-between-character-and-graphic-lcd-module.html#:~:text=Both%20Character%20LCD%20and%20Graphic%20LCD%20modules%20have,excel%20in%20providing%20high-resolution%20graphics%20and%20dynamic%20content. (accessed Oct. 11, 2024).  
+[7] “Linear Voltage Regulator: How It Works, Application & Advantages,” Electricity Magnetism, https://www.electricity-magnetism.org/linear-voltage-regulator/ (accessed Oct. 11, 2024).  
+[8] B. Schweber, “Understanding the advantages and disadvantages of linear regulators,” DigiKey, https://www.digikey.com/en/articles/understanding-the-advantages-and-disadvantages-of-linear-regulators?msockid=29ca711416706eb91ae8630a175c6f61 (accessed Oct. 11, 2024).  
+[9] “Switching voltage regulator: How it works, application & advantages,” Electricity Magnetism, https://www.electricity-magnetism.org/switching-voltage-regulator/ (accessed Oct. 11, 2024).  
 
 
 ### Statement of Contribution:  
