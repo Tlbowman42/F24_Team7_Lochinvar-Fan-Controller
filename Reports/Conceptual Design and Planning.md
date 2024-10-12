@@ -106,11 +106,13 @@ Our design needs to handle PWM and tachometer signal processing, different opera
    - Character LCD displays are able to display letters, numbers, and punctuation. [4]
    - Some advantages for this type of display are it is easy to program, it has low power consumption, and it is inexpensive. [4]
    - Some disadvantages for this type of display is it can only display letters, numbers, and punctuation. It also is limited on the colors it is able to display.
+     
 2. Graphical LCB Display (Liquid-Crystal Display)
    - Graphical LCD displays are able to display letters, numbers, punctuation, and custom graphics. [5]
-   - Some advantages for this type of display is the flexibility to display any graphical information. [5]
-3. OLED Display (Organic Light Emitting Diode)
-   - ahha
+   - Some advantages for this type of display is the flexibility to display any graphical information and they can offer a broader range of colors. [5]
+   - Some disadvatanges for this type of display is it requires more complex software , they consume more power, and they cost more when compared to character LCDs. [6]  
+  
+Our design needs to display both numbers and replicated signals  **This needs more added to it** Due to the design considerations we will be pursuing a graphical LCD display for our fan diagnostic tool.
 
 ## Potential Power/Circuitry Solutions
 
@@ -244,6 +246,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [3] “Advantages and disadvantages of multilayer PCBS,” Highleap Electronic, https://hilelectronic.com/multilayer-pcbs/#:~:text=Disadvantages%20of%20Multilayer%20PCBs%201%201.%20Increased%20Complexity,Design%20Time%20...%205%205.%20Thermal%20Management%20Challenges (accessed Oct. 11, 2024).  
 [4] “Pros and cons of a character LCD displays,” Focus LCDs, https://focuslcds.com/journals/pros-and-cons-of-a-character-lcd/ (accessed Oct. 11, 2024).  
 [5] “Graphic lcds: How it works, application & advantages,” Electricity Magnetism, https://www.electricity-magnetism.org/graphic-lcds/ (accessed Oct. 11, 2024).  
+[6] “What is the difference between character and graphic LCD module?,” Shijiazhuang Dianguang Hi Tech Electronics Co., Ltd., https://www.dght-oledlcd.com/news/what-is-the-difference-between-character-and-graphic-lcd-module.html#:~:text=Both%20Character%20LCD%20and%20Graphic%20LCD%20modules%20have,excel%20in%20providing%20high-resolution%20graphics%20and%20dynamic%20content. (accessed Oct. 11, 2024). 
 
 
 ### Statement of Contribution:  
