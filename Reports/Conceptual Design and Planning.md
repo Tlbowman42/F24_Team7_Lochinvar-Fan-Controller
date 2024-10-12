@@ -103,9 +103,12 @@ Our design needs to handle PWM and tachometer signal processing, different opera
 ## Potential Display Solutions
 
 1. Charatcer LCD Display (Liquid-Crystal Display)
-   - haha
+   - Character LCD displays are able to display letters, numbers, and punctuation. [4]
+   - Some advantages for this type of display are it is easy to program, it has low power consumption, and it is inexpensive. [4]
+   - Some disadvantages for this type of display is it can only display letters, numbers, and punctuation. It also is limited on the colors it is able to display.
 2. Graphical LCB Display (Liquid-Crystal Display)
-   - haha
+   - Graphical LCD displays are able to display letters, numbers, punctuation, and custom graphics. [5]
+   - Some advantages for this type of display is the flexibility to display any graphical information. [5]
 3. OLED Display (Organic Light Emitting Diode)
    - ahha
 
@@ -234,9 +237,11 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 
 # Appendix
 ### Citations:   
-[1] “Single-layer vs. multi-layer PCBS: What’s the difference?,” ElectronicsHacks, https://electronicshacks.com/single-layer-vs-multi-layer-pcbs/ (accessed Oct. 11, 2024). 
-[2] Ibe, “Single-layer PCB and its types - the ultimate guide,” IBE Electronics, https://www.pcbaaa.com/single-layer-pcb/ (accessed Oct. 11, 2024). 
-[3] “Advantages and disadvantages of multilayer PCBS,” Highleap Electronic, https://hilelectronic.com/multilayer-pcbs/#:~:text=Disadvantages%20of%20Multilayer%20PCBs%201%201.%20Increased%20Complexity,Design%20Time%20...%205%205.%20Thermal%20Management%20Challenges (accessed Oct. 11, 2024). 
+[1] “Single-layer vs. multi-layer PCBS: What’s the difference?,” ElectronicsHacks, https://electronicshacks.com/single-layer-vs-multi-layer-pcbs/ (accessed Oct. 11, 2024).  
+[2] Ibe, “Single-layer PCB and its types - the ultimate guide,” IBE Electronics, https://www.pcbaaa.com/single-layer-pcb/ (accessed Oct. 11, 2024).  
+[3] “Advantages and disadvantages of multilayer PCBS,” Highleap Electronic, https://hilelectronic.com/multilayer-pcbs/#:~:text=Disadvantages%20of%20Multilayer%20PCBs%201%201.%20Increased%20Complexity,Design%20Time%20...%205%205.%20Thermal%20Management%20Challenges (accessed Oct. 11, 2024).  
+[4] “Pros and cons of a character LCD displays,” Focus LCDs, https://focuslcds.com/journals/pros-and-cons-of-a-character-lcd/ (accessed Oct. 11, 2024).  
+[5] “Graphic lcds: How it works, application & advantages,” Electricity Magnetism, https://www.electricity-magnetism.org/graphic-lcds/ (accessed Oct. 11, 2024).  
 
 
 ### Statement of Contribution:  
