@@ -231,7 +231,7 @@ The PCB is responsible for linking together the various components and allows th
 1. The case shall encase and protect the the board.
 2. The case shall have openings for the display, controls, buttons, and ports.
 3. The case shall have mounting points to secure the board.
-4. The case shall include (raised bezel and extended/recessed buttons?)
+4. The case shall include (raised bezel and extended/recessed buttons?) **Discuss if this is a specification or not**  
    
 # Resources and Timeline
 
