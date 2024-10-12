@@ -251,9 +251,20 @@ To ensure the proper functionality of the device skills in circuity design, prog
 
 Softwares will need to be learned by various members to design subsystems of the project. Possible softwares that could be used include KiCad, for PCB and circuitry design, and Inventor, for the case design. The board will also require the use of soldering skills to attach the components.
 
-*Costs and Timeline:*  
-  
+*Costs:*  
+Below is a rough estimation of some of the items needed for the project.  
+| Component | Estimated cost |
+| -------- | ------- |
+| Microcontroller  | $125    |
+| PCB | $200     |
+| Screen    | $200    | 
+| Case | $50 |  
+
 *Gantt Chart:*  
+![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_1](https://github.com/user-attachments/assets/2698b1b4-6c89-48b4-93c2-1518eb13501d)
+![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_2](https://github.com/user-attachments/assets/883387a8-fd66-4de8-9697-a30ab7e1cdbb)
+![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_3](https://github.com/user-attachments/assets/1f2b35fe-ba07-4e7e-940f-8a4e3984b9d7)
+![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_4](https://github.com/user-attachments/assets/0c140eaf-4c1f-4bbd-9885-bfbd6470584b)
 
 
 
