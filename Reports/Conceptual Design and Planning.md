@@ -136,7 +136,7 @@ Our design needs to handle a DC voltage range from 10-40 volts.  **This needs mo
 1. 3D Printed with Basic PLA
     - Basic PLA is a thermoplastic monomer. (A type of plastic) [10]
     - Some advantages to basic PLA is it is environmentally friendly, it has a good print quality, and it is easy to use. [11]
-    - Some disadvantages to basic PLA is it has a lower strength and durability when compared to other 3D printing materials. It has a poor heat resistance and is it a [11]
+    - Some disadvantages to basic PLA is it has a lower strength and durability when compared to other 3D printing materials. It has a poor heat resistance and it is not easy to achieve a smooth polished finish. [11]
 2. 3D Printed with PLA+
     - hhaha
 3. 3D Printed with High Temperature PLA
@@ -274,6 +274,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [8] B. Schweber, “Understanding the advantages and disadvantages of linear regulators,” DigiKey, https://www.digikey.com/en/articles/understanding-the-advantages-and-disadvantages-of-linear-regulators?msockid=29ca711416706eb91ae8630a175c6f61 (accessed Oct. 11, 2024).  
 [9] “Switching voltage regulator: How it works, application & advantages,” Electricity Magnetism, https://www.electricity-magnetism.org/switching-voltage-regulator/ (accessed Oct. 11, 2024).  
 [10] “What is pla? (everything you need to know),” TWI, https://www.twi-global.com/technical-knowledge/faqs/what-is-pla#WhatisitUsedFor (accessed Oct. 11, 2024).  
+[11] Z. Warner, “Advantages and disadvantages of PLA material in 3D printing,” Overture 3D, https://overture3d.com/blogs/beginners-guide/advantages-and-disadvantages-of-pla-material-in-3d-printing#:~:text=In%20conclusion%2C%20PLA%20material%20offers%20several%20advantages%20in,and%20durability%2C%20poor%20heat%20resistance%2C%20and%20limited%20flexibility. (accessed Oct. 11, 2024).  
 
 
 
