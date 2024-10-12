@@ -175,6 +175,15 @@ The display will also display the PWM and TACH signals in relation to a mode cho
 4. The display shall show the correct operations based on the user input.  
 5. The display shall have working buttons for the user to operate the diagnostic tool.  
 
+The Display is responsible for showing the PWM and TACH signals to the user and the menus needed to operate the device. This also includes the code responsible for making this happen. Even though the microcontroller is techanically responsible for this on a component level, this subsystem will include this for the sake of dividing work up appropriately.  
+
+Below describes the interfaces between the Display subsystem and the other subsystems:
+1. Microcontroller
+   - The Microcontroller subsystem will send graphical information to the Display subsytem through a serial connection.
+2. Power/Circuitry
+   - The Display subsystem will also recieve an input power signal from the Power/Circuitry subsystem.
+3. PCB
+    - The PCB subsystem will distribute the input power signal from the Power/Circuitry subsystem to the Display subsystem. The Display subsystme is connected to the PCB subsystem with screws.
 ## Power / Ciruitry   
 
 1. The power/circuitry shall encompass safe and proper connections between all subsections of the project.
