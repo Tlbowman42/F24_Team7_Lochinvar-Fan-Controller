@@ -89,9 +89,16 @@ Our design needs to handle PWM and tachometer signals with high signal integrity
 ## Potential Microcontroller Solutions
 
 1. Single Microcontroller
-   - haha
+   - If we used a single high preformance microcontroller it would handle all the tasks for the tool.
+   - Some advantages to this would be a simplier hardware design due to fewer components, more efficient communication due to all tasks being managed by the same microcontroller, and it would be easier to debug and maintain since it is a single microcontroller.
+   - Some disadvantages are with a more advanced microcontroller it will be more expensive, there is a single point of failure, and the programming will take longer due to all of the tasks the microcontroller will need to complete.
+     
 2. Multiple Microcontrollers
-   - hahah
+   - If we used multiple lower prefomance microcontrollers we could distribute the tasks.
+   - Some advantages to this would be that each microcontroller could be developed and tested independently leading to decreased design and debug time.
+   - Some disadvantages are due to having multiple microcontrollers the communication between all of them could be more complex, increased delays due to having to communicate between the microcontrollers, and the design would need to incorporate more hardware.  
+
+Our design needs to handle PWM and tachometer signal processing, different operating modes, and communication with the display and other subsystems.  **This needs more added to it** Due to the design considerations we will be pursuing a single high preformance microcontroller for our fan diagnostic tool.
 
 ## Potential Display Solutions
 
