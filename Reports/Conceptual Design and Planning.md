@@ -179,8 +179,7 @@ The display will also display the PWM and TACH signals in relation to a mode cho
 1. The display shall show the PWM signal.  
 2. The display shall show the tachometer signal.  
 3. The display shall show the different options for the user interface.  
-4. The display shall show the correct operations based on the user input.  
-5. The display shall have working buttons for the user to operate the diagnostic tool.  
+4. The display shall show the correct operations based on the user input.   
 
 The Display is responsible for showing the PWM and TACH signals to the user and the menus needed to operate the device. This also includes the code responsible for making this happen. Even though the microcontroller is techanically responsible for this on a component level, this subsystem will include this for the sake of dividing work up appropriately.  
 
