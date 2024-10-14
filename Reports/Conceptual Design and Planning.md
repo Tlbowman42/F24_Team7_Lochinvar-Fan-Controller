@@ -84,7 +84,7 @@ Since Lochinvar already knows what type of tool they are wanting we will compare
    - Some advantages for the multi-layer PCB are the following: they have a more compact size, they have improved signal integrity due to being able to place the power and ground planes inbetween components, and they can operate at a faster speed. [3]
    - Some disadvantages are they cost more to produce, they are more complex to design, and they are harder to debug due to the inner layers. [3]
   
-Our design needs to handle PWM and tachometer signals with high signal integrity due to the nature of the diagnostic tool. **This needs more added to it** Due to the design considerations we will be pursuing a multi-layered PCB design for our fan diagnostic tool.
+Our design needs to handle PWM and tachometer signals with high signal integrity due to the nature of the diagnostic tool. We also need to take into account size accomadations for our tool. Due to the design considerations we will be pursuing a multi-layered PCB design for our fan diagnostic tool.
    
 ## Potential Microcontroller Solutions
 
@@ -98,7 +98,7 @@ Our design needs to handle PWM and tachometer signals with high signal integrity
    - Some advantages to this would be that each microcontroller could be developed and tested independently leading to decreased design and debug time.
    - Some disadvantages are due to having multiple microcontrollers the communication between all of them could be more complex, increased delays due to having to communicate between the microcontrollers, and the design would need to incorporate more hardware.  
 
-Our design needs to handle PWM and tachometer signal processing, different operating modes, and communication with the display and other subsystems.  **This needs more added to it** Due to the design considerations we will be pursuing a single high preformance microcontroller for our fan diagnostic tool.
+Our design needs to handle PWM and tachometer signal processing, user-inputs, different operating modes, communication with the display and other subsystems. Due to the design considerations we will be pursuing a single high preformance microcontroller for our fan diagnostic tool.
 
 ## Potential Display Solutions
 
@@ -112,7 +112,7 @@ Our design needs to handle PWM and tachometer signal processing, different opera
    - Some advantages for this type of display is the flexibility to display any graphical information and they can offer a broader range of colors. [5]
    - Some disadvatanges for this type of display is it requires more complex software , they consume more power, and they cost more when compared to character LCDs. [6]  
   
-Our design needs to display both numbers and replicated signals. **This needs more added to it** Due to the design considerations we will be pursuing a graphical LCD display for our fan diagnostic tool.
+Our design needs to display both numbers and replicated signals as graphs. Our design also needs to take into account the clarity of the graphs. Due to the design considerations we will be pursuing a graphical LCD display for our fan diagnostic tool.
 
 ## Potential Power/Circuitry Solutions
 
@@ -125,11 +125,8 @@ Our design needs to display both numbers and replicated signals. **This needs mo
    - Switching voltage regulators are a type of power supply that efficiently converts an input voltage into a steady output voltage. [9]
    - Some advantages for this type of voltage regulation is it can step-up, step-down, and invert voltages. This type is highly efficient, and due to this it is not prone to thermal issues. It can also handle a wide range of voltage levels. [8] [9]
    - Some disadvantages for this type of voltage regulation is due to the high frequency switching operation it has a medium to high amount of noise. Due to this increased noise the design needs to be more complex to combat that. Finally this type of voltage regulation is more expensive. [8][9]
-     
-3. Protective Power Circuitry
-   - Diodes at the input terminals for power. **Add more in if the team feels it is necessary.**
 
-Our design needs to handle a DC voltage range from 10-40 volts.  **This needs more added to it** Due to the design considerations we will be pursuing a switching voltage regulator design for our fan diagnostic tool.
+Our design needs to handle a DC voltage range from 10-40 volts. The tool also needs to have room to grow, therefore versatility is an important considerations. Due to the design considerations we will be pursuing a switching voltage regulator design for our fan diagnostic tool.
 
 ## Potential Case Solutions
 
@@ -143,7 +140,7 @@ Our design needs to handle a DC voltage range from 10-40 volts.  **This needs mo
     - Some advantages to PLA plus is it is stronger, has higher heat resistance, and can achieve a polished finish easier when compared to basic PLA. [12]
     - Some disadvantages to PLA plus is it takes longer to print, it is a harder to print with, and is more expensive when compared to basic PLA. [12]
 
-Our design needs a case that will encase and protect all other subsystems.  **This needs more added to it** Due to the design considerations we will be pursuing **Ask the team which type of PLA would be best** for our fan diagnostic tool.
+Our design needs a case that will encase and protect all other subsystems. Due to the design considerations we will be pursuing PLA+ for our fan diagnostic tool.
    
 # High Level Solution
 
@@ -171,15 +168,17 @@ The display will also display the PWM and TACH signals in relation to a mode cho
 
 1. The microcontroller shall be able to take in and output both PWM and tachometer signals.
 2. The microcotroller shall be able to communicate to the display to update what is being displayed. 
-3. The microcontroller shall be shall to review user inputs through the form of push buttons to change selected parameters and/or change what is being displayed when necessary.
-4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardawre Specifications and not software specifications.) 
+3. The microcontroller shall be able to review user inputs through the form of push buttons to change selected parameters and/or change what is being displayed when necessary.
+4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.) 
+
+**Add in description**
 
 ## Display Design
 
 1. The display shall show the PWM signal.  
 2. The display shall show the tachometer signal.  
 3. The display shall show the different options for the user interface.  
-4. The display shall show the correct operations based on the user input.   
+4. The display shall show the correct operations based on the user input.  
 
 The Display is responsible for showing the PWM and TACH signals to the user and the menus needed to operate the device. This also includes the code responsible for making this happen. Even though the microcontroller is techanically responsible for this on a component level, this subsystem will include this for the sake of dividing work up appropriately.  
 
@@ -196,44 +195,42 @@ Below describes the interfaces between the Display subsystem and the other subsy
 1. The power/circuitry shall encompass safe and proper connections between all subsections of the project.
 2. The power/circuitry shall be able to take in various DC voltage loads and adjust values appropriately.
 3. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. 
-4. The power/circuitry shall be able to take in TACH and PWM signal as well as output either. **Should this be in this section?**
-5. The power/circuitry shall be presented via a block diagram. **Should I make a block diagram for this subsection**
-6. The power/circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient. **Should this be in the PCB section**
-7. The power/circuitry shall output DC power to the display and microcontroller.
-8. The power/circuitry shall ensure stable power is output to all sensitive components such as the microcontroller.
-9. The power/circuitry shall have safety measures in place to deal with noise and surges.
-10. The power/circuitry shall use an LED to display the state of the power within the board.
+4. The power/circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient. 
+5. The power/circuitry shall output DC power to the display and microcontroller.
+6. The power/circuitry shall ensure stable power is output to all sensitive components such as the microcontroller.
+7. The power/circuitry shall have safety measures in place to deal with noise and surges.
+8. The power/circuitry shall use an LED to display the state of the power within the board.
 
-The Power/Circuitry subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and features to protect against overvoltage or overcurrent events. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges. Additionally this subsystem will have LEDs to indicate the power status of other subsystems.
+The Power/Circuitry subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and features to protect against overvoltage or overcurrent events. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges. The subsystem will recieve power through an external source. Either the boiler controller will act as that source and will power the device through a molex connection, or the power will come from an USB connection. Additionally this subsystem will have LEDs to indicate the power status of other subsystems.
 
 
 Below describes the interfaces between the Power/Circuitry subsystem and the other subsystems:
-1. External Connections
-   - The Power/Circuitry subsystem will recieve power through an external source. Either the boiler controller will act as that source and will power the device through a molex connection, or the power will come from an USB connection.
-2. Microcontroller
+1. Microcontroller
    - The Microcontroller subsystem will recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
-3. Display
+2. Display
    - The Display subsystem will also recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
-4. PCB
+3. PCB
     - The PCB subsystem will be the physical integration of the Power/Circuitry subsystem. The Power/Circuotry subsystem will output DC power to the PCB and the PCB will distribute the power throughout to all necessary components.
-5. Case
+4. Case
    - The Case and Power/Circuitry subsystems are not connected.
 
 ## PCB Design
 
 1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
 2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.).
-3. The PCB shall incorporate thermal managment techniques to reduce overheating and increase longivity of the board.
+3. The PCB shall incorporate thermal managment techniques where applicable to reduce overheating and increase longivity of the board.
 4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
 
 The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. All members of the team have completed the HSI soldering safety certification. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard. The PCB subsection and power/circuitry subsection are related in that the mapping of the circuitry and demand of the power will affect how the PCB is laid out and the specific trace sizes on the board. The PCB will interconnect all of the components with copper traces, and solder joints to attach them physically to the board and ensure a good electrical connection. The PCB is responsible for being the physical model of the interconnections determined by the circuitry design. The PCB will be the pathway for the necessary power and signal to get to each component.  
 
 ## Case  
 
-1. The case shall encase and protect the the board.
+1. The case shall encase and protect the board.
 2. The case shall have openings for the display, controls, buttons, and ports.
 3. The case shall have mounting points to secure the board.
 4. The case shall include a raised bezel for the display for protection.  
+
+**Add in Description**
    
 ## Resources 
 
@@ -247,6 +244,8 @@ To ensure the proper functionality of the device skills in circuity design, prog
 - Embedded system design
 
 Softwares will need to be learned by various members to design subsystems of the project. Possible softwares that could be used include KiCad, for PCB and circuitry design, and Inventor, for the case design. The board will also require the use of soldering skills to attach the components.
+
+**Add in customer assignments**
 
 *Costs:*  
 Below is a rough estimation of some of the items needed for the project. The estimates for the microcontoller and display come from looking at components that have similar capabilities. The PCB estimation is based upon what a board of our specifications could cost and accounting for having to get multiple. The case estimation is based on the general price of what a roll of filament is.  
@@ -273,7 +272,6 @@ Our diagnostic tool enhances workplace efficiency by reducing the time needed to
 As Electrical Engineering students, we are committed to adhering to the IEEE Code of Ethics, prioritizing safety, and ensuring the well-being of both Lochinvar’s team and our peers. In line with these principles, our group has explored design enhancements such as incorporating hermetically sealed buttons to minimize contamination risk and adding protective devices to guard against overcurrent and voltage spikes.
 
 
-
 # Appendix
 ### Citations:   
 [1] “Single-layer vs. multi-layer PCBS: What’s the difference?,” ElectronicsHacks, https://electronicshacks.com/single-layer-vs-multi-layer-pcbs/ (accessed Oct. 11, 2024).  
@@ -296,10 +294,3 @@ Ethan Haynes - Resources, speficications for case, and PCB solution.
 Tucker Basham - Introduction and customer specifications for power/circuitry section.  
 Matthew Vick- Back-end specifications, (I can do intro as well and restate the problem)  
 Jacob Brewer - Specifications for the display also Ethical, Professional, and Standards Considerations section.
-
-
-
-
-
-
-
