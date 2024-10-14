@@ -227,7 +227,7 @@ Below describes the interfaces between the Power/Circuitry subsystem and the oth
 3. The PCB shall incorporate thermal managment techniques to reduce overheating and increase longivity of the board.
 4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
 
-The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard.  
+The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. All members of the team have completed the HSI soldering safety certification. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard.  
 
 ## Case  
 
@@ -236,9 +236,7 @@ The PCB is responsible for linking together the various components and allows th
 3. The case shall have mounting points to secure the board.
 4. The case shall include (raised bezel and extended/recessed buttons?) **Discuss if this is a specification or not**  
    
-# Resources and Timeline
-
-**Ethan Haynes**
+## Resources 
 
 *Skill Sets Required:*    
 To ensure the proper functionality of the device skills in circuity design, programming, CAD design, and embedded systems are required. While every team member has foundation of basic circuit and coding skills, the project requires on building these skills.
@@ -252,12 +250,13 @@ To ensure the proper functionality of the device skills in circuity design, prog
 Softwares will need to be learned by various members to design subsystems of the project. Possible softwares that could be used include KiCad, for PCB and circuitry design, and Inventor, for the case design. The board will also require the use of soldering skills to attach the components.
 
 *Costs:*  
-Below is a rough estimation of some of the items needed for the project.  
+Below is a rough estimation of some of the items needed for the project. The estimates for the microcontoller and display come from looking at components that have similar capabilities. The PCB estimation is based upon what a board of our specifications could cost and accounting for having to get multiple. The case estimation is based on the general price of what a roll of filament is.  
+
 | Component | Estimated cost |
 | -------- | ------- |
 | Microcontroller  | $125    |
 | PCB | $200     |
-| Screen    | $200    | 
+| Display    | $200    | 
 | Case | $50 |  
 
 *Gantt Chart:*  
@@ -294,7 +293,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 
 ### Statement of Contribution:  
 Layne Bowman  
-Ethan Haynes  
+Ethan Haynes - Resources, speficications for case, and PCB solution.  
 Tucker Basham - Introduction and customer specifications for power/circuitry section.  
 Matthew Vick- Back-end specifications, (I can do intro as well and restate the problem)  
 Jacob Brewer - Specifications for the display also Ethical, Professional, and Standards Considerations section.
