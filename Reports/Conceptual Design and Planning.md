@@ -152,7 +152,8 @@ The microcontroller will take in a desired signal and output a desired signal co
 (depennding on the mode of operation these will be some variation of PWM and TACH). 
 The user will use the buttons connected to the microcontroller to set desired settings, 
 and the display will be used to view the menus required to do so. 
-The display will also display the PWM and TACH signals in relation to a mode chosen by the user in order for the user troubleshoot the issues regarding the blower fan properly. 
+The display will also display the PWM and TACH signals in relation to a mode chosen by the user in order for the user troubleshoot the issues regarding the blower fan properly.  
+This setup will allow for the stakeholders to receive the product that was promised. It will fall within the standards mentioned prior. This solution will work due to its simple setup. This helps mitigate risk and optimize resource utilization by reducing the likelihood of a potential failure.  
 # Hardware Block Diagram
 
 ![Hardware Block Diagram](https://github.com/user-attachments/assets/ca0c93cc-edce-4dcb-9229-e3a34758b63b)
