@@ -171,8 +171,6 @@ The display will also display the PWM and TACH signals in relation to a mode cho
 3. The microcontroller shall be able to review user inputs through the form of push buttons to change selected parameters and/or change what is being displayed when necessary.
 4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.) 
 
-**Add in description**
-
 ## Display Design
 
 1. The display shall show the PWM signal.  
