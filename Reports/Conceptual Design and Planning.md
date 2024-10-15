@@ -8,10 +8,11 @@ The ability to properly test and or simulate a system once completed is a fundam
 **Conner Vick**  
 The problem is to create a diagnostic tool to help troubleshoot blower fans in boilers with the following specifications and constraints:  
 *1) Case Specifications:*  
-The tool shall have a case that is no larger than 12 by 12 inches in length and width.  
+The tool shall have a case that is no larger than 12 by 12 inches in length and width.[13]    
 
 *2) Power Specifications:*  
-The tool shall be able to be powered by both the DC power bus from the boiler's fan, which is 10 to 40 volts, and by a USB connection if a fan is not present.  
+The tool shall be able to be powered by both the DC power bus from the boiler's fan, which is 10 to 40 volts, and by a USB connection if a fan is not present.[14] 
+   
 
 *3) Diagnostic Tool Specifications:*  
 The following are the specifications for the diagnostic tool's hardware and software.  
@@ -22,18 +23,18 @@ The following are the specifications for the diagnostic tool's hardware and soft
 4. The diagnostic tool shall allow the user to change the minumum and maximum fan speed, the minumum PWM duty cycle needed for the fan to turn on, the minumum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
 5. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
 6. The hardware shall be designed to accomplish the Fan Simulation Mode, the Fan Driving Mode, and the Monitoring Mode.
-7. The following shall be possible in the Fan Simulation Mode:  
+7. The following shall be possible in the Fan Simulation Mode:[13]  
    - Adjusting the minimum and maximum fan speed
    - Adjusting the minimum PWM duty cycle needed for the fan to turn on
    - Adjusting the minimum PWM duty cycle for the fan to continue running
    - The fan speed increasing and decreasing the transient timing factor
 
-8. The following shall be possible in the Fan Driving Mode:    
+8. The following shall be possible in the Fan Driving Mode:[13]   
    - Setting a desired PWM signal to send to the fan
    - Setting a desired RPM to drive the fan at
    - User configuarble PID settings for fan speed control, PWM frequency, Enable / Disable control takeover, and Enable / Disable Tachometer Pass-through
 
-9. The following shall be possible in the Monitoring Mode:    
+9. The following shall be possible in the Monitoring Mode:[13]    
 
 **Physical Pass-through**
    - PWM signal from the control is physically connected to the boiler's fan, while the Fan Diagnostic Tool monitors the signal.
@@ -52,19 +53,20 @@ The following are the specifications for the diagnostic tool's hardware and soft
 
 
 *4) Budget Specifications:*  
-The diagonostic tool's design and build phase shall not exceed the given $2,000 budget.   
+The diagonostic tool's design and build phase shall not exceed the given $2,000 budget.[14]     
 
 *Constraints*  
 The following section outlines the constraint statements that the team will adhere to.  
 
   The diagnostic tool shall adhere to the following standards:  
-  1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety.  
-  2. IPC J-STD-001: This standard is known as the "Requirements for Soldered Electrical and Electronic Assemblies". It correlates to the following key elements:  
+  1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety.[15]  
+  2. IPC J-STD-001: This standard is known as the "Requirements for Soldered Electrical and Electronic Assemblies". It correlates to the following key elements:[16]   
      - Materials and Equipment used
      - Solder Processes and Procedures (Such as hand soldering)
      - Workmanship and Inspection Criteria
      - Training and Certification 
-   3. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples.
+   3. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples.[17]
+
 # Comparative Analysis of Potential Solutions
 
 Since Lochinvar already knows what type of tool they are wanting we will compare different solutions for the subsystems instead of overall solutions for the problem. A list of different solutions for each subsystem is shown below, along with design considerations, and the chosen solutions.  
