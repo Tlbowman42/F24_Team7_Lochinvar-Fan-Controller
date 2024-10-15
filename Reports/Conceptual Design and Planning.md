@@ -164,7 +164,7 @@ The display will also display the PWM and TACH signals in relation to a mode cho
 
 **Please place your customer specifications in your specific subsection so the designer can start their work**
 
-## Microntroller 
+## Microcontroller 
 
 1. The microcontroller shall be able to take in and output both PWM and tachometer signals.
 2. The microcotroller shall be able to communicate to the display to update what is being displayed. 
@@ -243,8 +243,25 @@ Below describes the interfaces between the PCB subsystem and the other subsystem
 **Add in Description**
    
 ## Resources 
-
-*Skill Sets Required:*    
+   
+*Subsection:*
+1. Microcontroller
+   - Customer: Matthew Vick
+   - Solution: Tucker Basham
+2. Display
+   - Customer: Jacob Brewer
+   - Solution: Matthew Vick
+3. Power/Circuitry
+   - Customer: Tucker Basham
+   - Solution: Layne Bowman
+4. PCB
+   - Customer: Layne Bowman
+   - Solution: Ethan Haynes
+5. Case
+   - Customer: Ethan Haynes
+   - Solution: Jacob Brewer
+   
+*Skill Sets Required:*  
 To ensure the proper functionality of the device skills in circuity design, programming, CAD design, and embedded systems are required. While every team member has foundation of basic circuit and coding skills, the project requires on building these skills.
 
 - PCB design
