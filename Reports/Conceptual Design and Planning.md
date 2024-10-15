@@ -221,12 +221,22 @@ Below describes the interfaces between the Power/Circuitry subsystem and the oth
 3. The PCB shall incorporate thermal managment techniques where applicable to reduce overheating and increase longivity of the board.
 4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
 
-The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. All members of the team have completed the HSI soldering safety certification. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard. The PCB subsection and power/circuitry subsection are related in that the mapping of the circuitry and demand of the power will affect how the PCB is laid out and the specific trace sizes on the board. The PCB will interconnect all of the components with copper traces, and solder joints to attach them physically to the board and ensure a good electrical connection. The PCB is responsible for being the physical model of the interconnections determined by the circuitry design. The PCB will be the pathway for the necessary power and signal to get to each component.  
+The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. All members of the team have completed the HSI soldering safety certification. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard. The components will need to be properly soldered to the board to attach them physically and to ensure a good electrical connection
+
+Below describes the interfaces between the PCB subsystem and the other subsystems:
+1. Microcontroller
+   - The Microcontroller subsystem is connected to the rest of the components through the traces provided by the PCB.
+2. Display
+   - The Display subsystem will recieve its signals from the microcontroller through the traces provided by the PCB.
+3. Power/Circuitry
+    - The PCB subsystem will be the physical model of the interconnections of the Power/Circuitry subsystem. The Power/Circuitry subsystem will output DC power to the PCB and the PCB will distribute the power throughout to all necessary components. The PCB will be the pathway for delivering the necessary power and signals to the corresponding component.
+4. Case
+   - The Case will encapsulate the board and provide openings for the display, ports, and buttons.
 
 ## Case  
 
 1. The case shall encase and protect the board.
-2. The case shall have openings for the display, controls, buttons, and ports.
+2. The case shall have openings for the display, buttons, and ports.
 3. The case shall have mounting points to secure the board.
 4. The case shall include a raised bezel for the display for protection.  
 
