@@ -294,6 +294,7 @@ Below is a rough estimation of some of the items needed for the project. The est
 | PCB | $200     |
 | Display    | $200    | 
 | Case | $50 |  
+| Power/Circuitry | $50 |  
 
 *Gantt Chart:*  
 ![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_1](https://github.com/user-attachments/assets/2698b1b4-6c89-48b4-93c2-1518eb13501d)
