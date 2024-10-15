@@ -313,7 +313,11 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [10] “What is pla? (everything you need to know),” TWI, https://www.twi-global.com/technical-knowledge/faqs/what-is-pla#WhatisitUsedFor (accessed Oct. 11, 2024).  
 [11] Z. Warner, “Advantages and disadvantages of PLA material in 3D printing,” Overture 3D, https://overture3d.com/blogs/beginners-guide/advantages-and-disadvantages-of-pla-material-in-3d-printing#:~:text=In%20conclusion%2C%20PLA%20material%20offers%20several%20advantages%20in,and%20durability%2C%20poor%20heat%20resistance%2C%20and%20limited%20flexibility. (accessed Oct. 11, 2024).  
 [12] “Pla vs pla+: Is pla plus filament better for 3D printing?,” 3DSourced, https://www.3dsourced.com/3d-printer-materials/pla-vs-pla-plus-filament/#:~:text=PLA%2B%20is%20an%20enhanced%20version%20of%20regular%20PLA,conventional%20PLA%2C%20but%20it%20will%20also%20costs%20more. (accessed Oct. 11, 2024).  
-
+[13] “Fan Diagnostic Tool.” Lochinvar, Cookeville, Sep. 11, 2024  
+[14] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
+[15] “Generic Standard on Printed Board Design,” Lawrence Berkley National Laboratory , https://www-eng.lbl.gov/~shuman/NEXT/CURRENT_DESIGN/TP/MATERIALS/IPC_2221.pdf (accessed Sep. 13, 2024).  
+[16] Flex PCB, “Joint Industry Standard (J-std-001): All you Need To Know,” Flex PCB, https://flexpcb.org/joint-industry-standard-j-std-001-all-you-need-to-know/#:~:text=What%20is%20the%20J-STD-001%20Standard%3F%20The%20J-STD-001%2C%20also,that%20provides%20guidelines%20for%20producing%20high-quality%20soldered%20interconnections. (accessed Sep. 21, 2024).  
+[17] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
 
 ### Statement of Contribution:  
 Layne Bowman  
