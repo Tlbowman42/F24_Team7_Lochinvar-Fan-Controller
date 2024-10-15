@@ -171,7 +171,17 @@ The display will also display the PWM and TACH signals in relation to a mode cho
 1. The microcontroller shall be able to take in and output both PWM and tachometer signals.
 2. The microcotroller shall be able to communicate to the display to update what is being displayed. 
 3. The microcontroller shall be able to review user inputs through the form of push buttons to change selected parameters and/or change what is being displayed when necessary.
-4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.) 
+4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.)
+
+The microcontroller is responsible for handling the various GPIO applications as well as the background signal processing and control systems. The icrocontroller will be able to take in TACH and PWM signals as well as output such signals. The microcontroller encompasses both the hardware and software to complete the desired simulation modes as well as leaves room for future improvement.     
+
+Below describes the interfaces betwen the Microprocessor subsystem and the other subsystems:
+1. Display
+   - The microcontroller will send graphical information for display on the systems LCD via serial communication.
+3. Power/Circuitry
+   - The microcontroller will receive input power from the Power/Circuitry subsystem
+4. PCB
+   - The power/circuitry will distribute the DC input voltage to power the microcontroller through the PCB subsystem. The Microcontroller will be connected to the PCB via physical connection.
 
 ## Display Design
 
