@@ -251,7 +251,7 @@ Below describes the interfaces between the PCB subsystem and the other subsystem
 3. The case shall have mounting points to secure the board.
 4. The case shall include a raised bezel for the display for protection.  
 
-**Add in Description**
+The case is responsible for completely enclosing the PCB and protecting it. It will have various openings for the display, buttons, and ports. The only true connection the case has with any of the other subsections is the PCB. Via screws or some other form of physical connection.
    
 ## Resources 
    
