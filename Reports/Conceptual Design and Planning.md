@@ -1,11 +1,9 @@
 # Introduction  
 
-**Tucker Basham**  
 The ability to properly test and or simulate a system once completed is a fundamental cornerstone of engineering. Proper testing of manufactured and engineered goods allow us to hone in on a device's functionality as well as simulate various scenarios. The goal for this project is the conceptual and physical design of a boiler fan simulation unit. This fan diagnostic tool will simulate a boiler fan for our customer Lochinvar. The reason a product such as this should exist is to save time and money, and allow for a full range of boiler diagnostic testing for Lochinvar. This device will in turn allow for much faster testing procedures thus increasing productivity and saving the time and money of Lochinvar.
 
 # Restate the Fully Forumlate Problem
 
-**Conner Vick**  
 The problem is to create a diagnostic tool to help troubleshoot blower fans in boilers with the following specifications and constraints:  
 *1) Case Specifications:*  
 The tool shall have a case that is no larger than 12 by 12 inches in length and width.[13]    
@@ -146,7 +144,6 @@ Our design needs a case that will encase and protect all other subsystems. Due t
    
 # High Level Solution
 
-**Conner Vick**  
 The diagnostic tool will be developed primarily using a display and a microcontroller. 
 The microcontroller will take in a desired signal and output a desired signal corresponding to a set of user-defined parameters 
 (depennding on the mode of operation these will be some variation of PWM and TACH). 
@@ -154,6 +151,7 @@ The user will use the buttons connected to the microcontroller to set desired se
 and the display will be used to view the menus required to do so. 
 The display will also display the PWM and TACH signals in relation to a mode chosen by the user in order for the user troubleshoot the issues regarding the blower fan properly.  
 This setup will allow for the stakeholders to receive the product that was promised. It will fall within the standards mentioned prior. This solution will work due to its simple setup. This helps mitigate risk and optimize resource utilization by reducing the likelihood of a potential failure.  
+
 # Hardware Block Diagram
 
 ![Hardware Block Diagram](https://github.com/user-attachments/assets/ca0c93cc-edce-4dcb-9229-e3a34758b63b)
@@ -164,8 +162,6 @@ This setup will allow for the stakeholders to receive the product that was promi
 
 
 # Atomic Subsytem Specifications
-
-**Please place your customer specifications in your specific subsection so the designer can start their work**
 
 ## Microcontroller 
 
@@ -213,7 +209,6 @@ Below describes the interfaces between the Display subsystem and the other subsy
 8. The power/circuitry shall use an LED to display the state of the power within the board.
 
 The Power/Circuitry subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and features to protect against overvoltage or overcurrent events. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges. The subsystem will recieve power through an external source. Either the boiler controller will act as that source and will power the device through a molex connection, or the power will come from an USB connection. Additionally this subsystem will have LEDs to indicate the power status of other subsystems.
-
 
 Below describes the interfaces between the Power/Circuitry subsystem and the other subsystems:
 1. Microcontroller
@@ -283,8 +278,6 @@ To ensure the proper functionality of the device skills in circuity design, prog
 
 Softwares will need to be learned by various members to design subsystems of the project. Possible softwares that could be used include KiCad, for PCB and circuitry design, and Inventor, for the case design. The board will also require the use of soldering skills to attach the components.
 
-**Add in customer assignments**
-
 *Costs:*  
 Below is a rough estimation of some of the items needed for the project. The estimates for the microcontoller and display come from looking at components that have similar capabilities. The PCB estimation is based upon what a board of our specifications could cost and accounting for having to get multiple. The case estimation is based on the general price of what a roll of filament is.  
 
@@ -302,14 +295,10 @@ Below is a rough estimation of some of the items needed for the project. The est
 ![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_3](https://github.com/user-attachments/assets/1f2b35fe-ba07-4e7e-940f-8a4e3984b9d7)
 ![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_4](https://github.com/user-attachments/assets/0c140eaf-4c1f-4bbd-9885-bfbd6470584b)
 
-
-
 # Ethical, Professional, and Standards Considerations
-**Jacob Brewer**  
 Our diagnostic tool enhances workplace efficiency by reducing the time needed to test and evaluate boiler controls and fans. This improvement not only lowers production costs but also has the potential to reduce consumer prices, benefiting Lochinvar’s customers. In turn, this could attract more customers, driving increased revenue for the company and its employees. Additionally, the tool establishes a solid baseline product that can be further customized with additional modes for various applications.
 
 As Electrical Engineering students, we are committed to adhering to the IEEE Code of Ethics, prioritizing safety, and ensuring the well-being of both Lochinvar’s team and our peers. In line with these principles, our group has explored design enhancements such as incorporating hermetically sealed buttons to minimize contamination risk and adding protective devices to guard against overcurrent and voltage spikes.
-
 
 # Appendix
 ### Citations:   
@@ -332,7 +321,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [17] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
 
 ### Statement of Contribution:  
-Layne Bowman  
+Layne Bowman - I contributed to the Microcontroller subsystem specifications, the potential solutions section, the hardware block diagram, the flow chart, and how the Power/Circuitry subsystem interfaces with all the other subsystems.  
 Ethan Haynes - Resources, speficications for case, and PCB solution.  
 Tucker Basham - Introduction and customer specifications for power/circuitry section.  
 Matthew Vick- Display solution, PCB specifications, High-level solution, and re-introduce the problem.  
