@@ -290,10 +290,10 @@ Below is a rough estimation of some of the items needed for the project. The est
 | Power/Circuitry | $50 |  
 
 *Gantt Chart:*  
-![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_1](https://github.com/user-attachments/assets/2698b1b4-6c89-48b4-93c2-1518eb13501d)
-![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_2](https://github.com/user-attachments/assets/883387a8-fd66-4de8-9697-a30ab7e1cdbb)
-![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_3](https://github.com/user-attachments/assets/1f2b35fe-ba07-4e7e-940f-8a4e3984b9d7)
-![1727126681866-7f68bf22-5c86-4794-9fba-536b8495a20f_4](https://github.com/user-attachments/assets/0c140eaf-4c1f-4bbd-9885-bfbd6470584b)
+![Gantt Chart 10-22-24_page-0001](https://github.com/user-attachments/assets/d7147e24-e9b9-404d-b42e-017b4b2c08b5)
+![Gantt Chart 10-22-24_page-0004](https://github.com/user-attachments/assets/0eec46d2-4e7f-4231-8570-d61e6be901a7)
+![Gantt Chart 10-22-24_page-0003](https://github.com/user-attachments/assets/5dae89a3-bab6-4c39-905d-8c29512b1e42)
+![Gantt Chart 10-22-24_page-0002](https://github.com/user-attachments/assets/b079c820-a0b8-4d22-bd4c-f7863db4724c)
 
 # Ethical, Professional, and Standards Considerations
 Our diagnostic tool enhances workplace efficiency by reducing the time needed to test and evaluate boiler controls and fans. This improvement not only lowers production costs but also has the potential to reduce consumer prices, benefiting Lochinvar’s customers. In turn, this could attract more customers, driving increased revenue for the company and its employees. Additionally, the tool establishes a solid baseline product that can be further customized with additional modes for various applications.
