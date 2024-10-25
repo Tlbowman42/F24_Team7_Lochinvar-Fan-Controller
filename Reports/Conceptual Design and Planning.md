@@ -299,10 +299,10 @@ Below is a rough estimation of some of the items needed for the project. The est
 | -------- | ------- |------- |
 | Microcontroller  | STM32L4S9ZIJ6 | $15    |
 | Memory        | 25AA640-I/SN| $15    |
-| PCB | |$100     |
+| PCB | NA |$100     |
 | Display    | 4DLCD-35480320-IPS |$34    | 
-| Case | |$50 |  
-| Power | |$50 |  
+| Case | PA07011 |$30 |  
+| Opto-isolators | ACPL-C87A-500E, ISO1211 |$10 |  
 | USB Port | UJ2-AV-1-SMT-TR| $1.45 |
 
 *Gantt Chart:*  
