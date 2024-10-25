@@ -141,10 +141,21 @@ Our design will require an EEPROM with larger storage capacity rather than as op
 
 ## Potential Pre-processing Solutions
 
+1. Voltage Divider with an Opto-Isolator.
+
+2. 
 ## Potential Post-processing Solutions
 
+1. Op-Amp Circuit with an Opto-Isolator.
+
+2. 
 ## Potential Connections & Buttons Solutions
 
+The connections will not have any possible solutions. We are to use the connections Lochinvar has requested. Those connectors are a molex and usb connection.
+
+1. Button
+
+2. button but better
 # High Level Solution
 
 The diagnostic tool will be developed primarily using a display and a microcontroller. 
