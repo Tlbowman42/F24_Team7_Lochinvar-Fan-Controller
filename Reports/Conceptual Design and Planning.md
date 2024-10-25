@@ -247,6 +247,8 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
 ## Post-processing  
 
 ***Jacob fill in how this interfaces with everything, and Ethan provide the customer specs***  
+1. The Post-processing shall step up the tachometer signal to send to the boiler controller.
+2. The Post-processing shall isolate the signal from backfeed.
 
 ## Connections & Buttons  
 
