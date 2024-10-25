@@ -127,6 +127,18 @@ Our design needs a case that will encase and protect all other subsystems. Due t
 
 ## Potential Memory Solutions
 
+1. 64Kbit EEPROM Chip
+   - Non-volatile memory with easy microcontroller W/R integration over an I2C bus.[18]
+   - Higher 8x8Kbit memory capabilities for greater storage.
+   - Compact size and low power consuming design allow for perfect integraton with low power microcontrollers.[18]
+  
+2. 32Kbit EEPROM Chip
+   - Lower cost per unit and power consumption than other higher memory EEPROMs.
+   - smaller storage size yet slightly faster read/write speeds.
+   - Good for small data sets such as basic settings or small logs.[18]  
+
+Our design will require an EEPROM with larger storage capacity rather than as opposed to slightly faster access speeds. Due to this we have chosen to go with the 64Kbit EEprom chip as it fills our need for greater storage capacity while also maintaining fast read/write speeds.  
+
 ## Potential Pre-processing Solutions
 
 ## Potential Post-processing Solutions
@@ -337,6 +349,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [15] “Generic Standard on Printed Board Design,” Lawrence Berkley National Laboratory , https://www-eng.lbl.gov/~shuman/NEXT/CURRENT_DESIGN/TP/MATERIALS/IPC_2221.pdf (accessed Sep. 13, 2024).  
 [16] Flex PCB, “Joint Industry Standard (J-std-001): All you Need To Know,” Flex PCB, https://flexpcb.org/joint-industry-standard-j-std-001-all-you-need-to-know/#:~:text=What%20is%20the%20J-STD-001%20Standard%3F%20The%20J-STD-001%2C%20also,that%20provides%20guidelines%20for%20producing%20high-quality%20soldered%20interconnections. (accessed Sep. 21, 2024).  
 [17] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
+[18] R. Awati, “What is EEPROM (electrically erasable programmable read-only memory)?,” WhatIs, https://www.techtarget.com/whatis/definition/EEPROM-electrically-erasable-programmable-read-only-memory#:~:text=Finally%2C%20different%20voltages%20are%20required,data%20from%20or%20onto%20EEPROM. (accessed Oct. 25, 2024).  
 
 ### Statement of Contribution:  
 Layne Bowman - I contributed to the Microcontroller subsystem specifications, the potential solutions section, the hardware block diagram, the flow chart, and how the Power subsystem interfaces with all the other subsystems.  
