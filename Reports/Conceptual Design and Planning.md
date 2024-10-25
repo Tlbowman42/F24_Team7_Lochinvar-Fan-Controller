@@ -154,7 +154,7 @@ This setup will allow for the stakeholders to receive the product that was promi
 
 # Hardware Block Diagram
 
-![Hardware Block Diagram](https://github.com/user-attachments/assets/ca0c93cc-edce-4dcb-9229-e3a34758b63b)
+![Hardware Block Diagram V2](https://github.com/user-attachments/assets/64ed51f6-fe86-49b8-9733-5229c70998be)
 
 # Operational Flow Chart
 
