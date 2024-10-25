@@ -253,7 +253,10 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
    -
 
 ## Pre-processing  
+1. The Pre-processing shall step down the PWM signal to send to the Microcontroller subsystem.
+2. The Pre-processing shall isolate the signal from any flucations in the signal from the Molex.
 
+   
 ***Ethan fill in how this interfaces with everything, and Layne provide the customer specs***  
 
 ## Post-processing  
