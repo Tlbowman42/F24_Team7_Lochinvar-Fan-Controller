@@ -124,7 +124,15 @@ Our design needs to handle a DC voltage range from 10-40 volts. The tool also ne
     - Some disadvantages to PLA plus is it takes longer to print, it is a harder to print with, and is more expensive when compared to basic PLA. [12]
 
 Our design needs a case that will encase and protect all other subsystems. Due to the design considerations we will be pursuing PLA+ for our fan diagnostic tool.
-   
+
+## Potential Memory Solutions
+
+## Potential Pre-processing Solutions
+
+## Potential Post-processing Solutions
+
+## Potential Connections & Buttons Solutions
+
 # High Level Solution
 
 The diagnostic tool will be developed primarily using a display and a microcontroller. 
