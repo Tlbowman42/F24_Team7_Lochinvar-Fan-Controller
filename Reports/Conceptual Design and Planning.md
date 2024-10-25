@@ -141,23 +141,31 @@ Our design will require an EEPROM with larger storage capacity rather than as op
 
 ## Potential Pre-processing Solutions
 
-1. Voltage Divider with an Opto-Isolator.
+1. Voltage Divider
+   - A simple design to implement.
+   - Does not work very well at high frequencies. (Can add in a parallel capacitance to correct this) [19]
+   - This is a very cost efficient solution.
 
-2. Level-Shifter IC
-
+2. Opto-Isolator
+   - Lower cost per unit and power consumption than other higher memory EEPROMs.
+     
 ## Potential Post-processing Solutions
 
-1. Op-Amp Circuit with an Opto-Isolator.
+1. Op-Amp Circuit.
+   - Lower cost per unit and power consumption than other higher memory EEPROMs.
 
 2. BJT Transistor Circuit
+   - Lower cost per unit and power consumption than other higher memory EEPROMs.
 
 ## Potential Connections & Buttons Solutions
 
 The connections will not have any possible solutions. We are to use the connections Lochinvar has requested. Those connectors are a molex and usb connection.
 
 1. Button
+   - Lower cost per unit and power consumption than other higher memory EEPROMs.
 
 2. button but better
+   - Lower cost per unit and power consumption than other higher memory EEPROMs.
 
 # High Level Solution
 
@@ -367,6 +375,8 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [16] Flex PCB, “Joint Industry Standard (J-std-001): All you Need To Know,” Flex PCB, https://flexpcb.org/joint-industry-standard-j-std-001-all-you-need-to-know/#:~:text=What%20is%20the%20J-STD-001%20Standard%3F%20The%20J-STD-001%2C%20also,that%20provides%20guidelines%20for%20producing%20high-quality%20soldered%20interconnections. (accessed Sep. 21, 2024).  
 [17] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
 [18] R. Awati, “What is EEPROM (electrically erasable programmable read-only memory)?,” WhatIs, https://www.techtarget.com/whatis/definition/EEPROM-electrically-erasable-programmable-read-only-memory#:~:text=Finally%2C%20different%20voltages%20are%20required,data%20from%20or%20onto%20EEPROM. (accessed Oct. 25, 2024).  
+[19] D. Mercer and Antoniu Miclaus Download PDF and A. Miclaus, “ADALM1000 SMU training topic 11: Frequency compensated voltage dividers,” ADALM1000 SMU Training Topic 11: Frequency Compensated Voltage Dividers | Analog Devices, https://www.analog.com/en/resources/analog-dialogue/studentzone/studentzone-november-2018.html#:~:text=A%20problem%20seen%20at%20high%20frequencies%20is%20that,to%20introduce%20capacitors%20in%20parallel%20to%20the%20resistors. (accessed Oct. 25, 2024).  
+
 
 ### Statement of Contribution:  
 Layne Bowman - I contributed to the Microcontroller subsystem specifications, the potential solutions section, the hardware block diagram, the flow chart, and how the Power subsystem interfaces with all the other subsystems.  
