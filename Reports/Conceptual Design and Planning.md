@@ -114,7 +114,7 @@ Our design needs to handle PWM and tachometer signal processing, user-inputs, di
   
 Our design needs to display both numbers and replicated signals as graphs. Our design also needs to take into account the clarity of the graphs. Due to the design considerations we will be pursuing a graphical LCD display for our fan diagnostic tool.
 
-## Potential Power/Circuitry Solutions
+## Potential Power Solutions
 
 1. Linear Voltage Regulators
    - Linear voltage regulators are a system that maintains a consistent output voltage level, regardless of changes in the input voltage or load conditions. [7]
@@ -161,7 +161,16 @@ This setup will allow for the stakeholders to receive the product that was promi
 ![Operational Flow Chart](https://github.com/user-attachments/assets/1dbedbe4-67ea-484a-a8bd-07bfb2d6a8da)
 
 
-# Atomic Subsytem Specifications
+# Atomic Subsytem Specifications  
+
+The PCB will be imperative for most if not all of our subsystems, therefore the PCB shall follow the specifications listed below.  
+
+1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
+2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.).
+3. The PCB shall incorporate thermal management techniques where applicable to reduce overheating and increase longivity of the board.
+4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
+
+The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. All members of the team have completed the HSI soldering safety certification. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard. The components will need to be properly soldered to the board to attach them physically and to ensure a good electrical connection.  
 
 ## Microcontroller 
 
@@ -175,10 +184,10 @@ The microcontroller is responsible for handling the various GPIO applications as
 Below describes the interfaces betwen the microcontroller subsystem and the other subsystems:
 1. Display
    - The microcontroller will send graphical information for display on the systems LCD via serial communication.
-3. Power/Circuitry
-   - The microcontroller will receive input power from the Power/Circuitry subsystem
+3. Power
+   - The microcontroller will receive input power from the Power subsystem
 4. PCB
-   - The power/circuitry will distribute the DC input voltage to power the microcontroller through the PCB subsystem. The microcontroller will be connected to the PCB via physical connection.
+   - The Power will distribute the DC input voltage to power the microcontroller through the PCB subsystem. The microcontroller will be connected to the PCB via physical connection.
 
 ## Display Design
 
@@ -192,52 +201,33 @@ The Display is responsible for showing the PWM and TACH signals to the user and 
 Below describes the interfaces between the Display subsystem and the other subsystems:
 1. Microcontroller
    - The Microcontroller subsystem will send graphical information to the Display subsytem through a serial connection.
-2. Power/Circuitry
-   - The Display subsystem will also recieve an input power signal from the Power/Circuitry subsystem.
+2. Power
+   - The Display subsystem will also recieve an input power signal from the Power subsystem.
 3. PCB
-    - The PCB subsystem will distribute the input power signal from the Power/Circuitry subsystem to the Display subsystem. The Display subsystem is connected to the PCB subsystem by a physical connection.
+    - The PCB subsystem will distribute the input power signal from the Power subsystem to the Display subsystem. The Display subsystem is connected to the PCB subsystem by a physical connection.
 
-## Power / Ciruitry   
+## Power 
 
-1. The power/circuitry shall encompass safe and proper connections between all subsections of the project.
-2. The power/circuitry shall be able to take in various DC voltage loads and adjust values appropriately.
+1. The Power shall encompass safe and proper connections between all subsections of the project.
+2. The Power shall be able to take in various DC voltage loads and adjust values appropriately.
 3. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. 
-4. The power/circuitry shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient. 
-5. The power/circuitry shall output DC power to the display and microcontroller.
-6. The power/circuitry shall ensure stable power is output to all sensitive components such as the microcontroller.
-7. The power/circuitry shall have safety measures in place to deal with noise and surges.
-8. The power/circuitry shall use an LED to display the state of the power within the board.
+4. The Power shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient. 
+5. The Power shall output DC power to the display and microcontroller.
+6. The Power shall ensure stable power is output to all sensitive components such as the microcontroller.
+7. The Power shall have safety measures in place to deal with noise and surges.
+8. The Power shall use an LED to display the state of the power within the board.
 
-The Power/Circuitry subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and features to protect against overvoltage or overcurrent events. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges. The subsystem will recieve power through an external source. Either the boiler controller will act as that source and will power the device through a molex connection, or the power will come from an USB connection. Additionally this subsystem will have LEDs to indicate the power status of other subsystems.
+The Power subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and features to protect against overvoltage or overcurrent events. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges. The subsystem will recieve power through an external source. Either the boiler controller will act as that source and will power the device through a molex connection, or the power will come from an USB connection. Additionally this subsystem will have LEDs to indicate the power status of other subsystems.
 
-Below describes the interfaces between the Power/Circuitry subsystem and the other subsystems:
+Below describes the interfaces between the Power subsystem and the other subsystems:
 1. Microcontroller
-   - The Microcontroller subsystem will recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
+   - The Microcontroller subsystem will recieve an input power signal from the Power subsystem. Therefore the Power subsystem will be outputting a DC power signal.
 2. Display
-   - The Display subsystem will also recieve an input power signal from the Power/Circuitry subsystem. Therefore the Power/Circuitry subsystem will be outputting a DC power signal.
+   - The Display subsystem will also recieve an input power signal from the Power subsystem. Therefore the Power subsystem will be outputting a DC power signal.
 3. PCB
-    - The PCB subsystem will be the physical integration of the Power/Circuitry subsystem. The Power/Circuotry subsystem will output DC power to the PCB and the PCB will distribute the power throughout to all necessary components.
+    - The PCB subsystem will be the physical integration of the Power subsystem. The Power/Circuotry subsystem will output DC power to the PCB and the PCB will distribute the power throughout to all necessary components.
 4. Case
-   - The Case and Power/Circuitry subsystems are not connected.
-
-## PCB Design
-
-1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
-2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.).
-3. The PCB shall incorporate thermal managment techniques where applicable to reduce overheating and increase longivity of the board.
-4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
-
-The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. All members of the team have completed the HSI soldering safety certification. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard. The components will need to be properly soldered to the board to attach them physically and to ensure a good electrical connection
-
-Below describes the interfaces between the PCB subsystem and the other subsystems:
-1. Microcontroller
-   - The Microcontroller subsystem is connected to the rest of the components through the traces provided by the PCB.
-2. Display
-   - The Display subsystem will recieve its signals from the microcontroller through the traces provided by the PCB.
-3. Power/Circuitry
-    - The PCB subsystem will be the physical model of the interconnections of the Power/Circuitry subsystem. The Power/Circuitry subsystem will output DC power to the PCB and the PCB will distribute the power throughout to all necessary components. The PCB will be the pathway for delivering the necessary power and signals to the corresponding component.
-4. Case
-   - The Case will encapsulate the board and provide openings for the display, ports, and buttons.
+   - The Case and Power subsystems are not connected.
 
 ## Case  
 
@@ -247,25 +237,51 @@ Below describes the interfaces between the PCB subsystem and the other subsystem
 4. The case shall include a raised bezel for the display for protection.  
 
 The case is responsible for completely enclosing the PCB and protecting it. It will have various openings for the display, buttons, and ports. The only true connection the case has with any of the other subsections is the PCB. Via screws or some other form of physical connection.
+
+## Memory  
+
+***Tucker fill in how this interfaces with everything, and Conner provide the customer specs***  
+
+## Pre-processing  
+
+***Ethan fill in how this interfaces with everything, and Layne provide the customer specs***  
+
+## Post-processing  
+
+***Jacob fill in how this interfaces with everything, and Ethan provide the customer specs***  
+
+## Connections & Buttons  
+
+***Ethan fill in how this interfaces with everything, and Jacob provide the customer specs***  
    
-## Resources 
+## Resources  
    
 *Subsection:*
 1. Microcontroller
-   - Customer: Matthew Vick
-   - Solution: Tucker Basham
+   - Customer: Matthew Conner Vick
+   - Solution: Tucker Basham & Matthew Conner Vick
 2. Display
    - Customer: Jacob Brewer
-   - Solution: Matthew Vick
-3. Power/Circuitry
+   - Solution: Matthew Conner Vick
+3. Power
    - Customer: Tucker Basham
    - Solution: Layne Bowman
-4. PCB
-   - Customer: Layne Bowman
-   - Solution: Ethan Haynes
+4. Memory
+   - Customer: Matthew Conner Vick
+   - Solution: Tucker Basham
 5. Case
    - Customer: Ethan Haynes
    - Solution: Jacob Brewer
+6. Pre-processing
+   - Customer: Layne Bowman
+   - Solution: Ethan Haynes
+7. Post-processing
+   - Customer: Ethan Haynes
+   - Solution: Jacob Brewer
+8. Connections & Buttons
+   - Customer: Jacob Brewer
+   - Solution: Ethan Haynes
+
    
 *Skill Sets Required:*  
 To ensure the proper functionality of the device skills in circuity design, programming, CAD design, and embedded systems are required. While every team member has foundation of basic circuit and coding skills, the project requires on building these skills.
@@ -287,7 +303,7 @@ Below is a rough estimation of some of the items needed for the project. The est
 | PCB | $200     |
 | Display    | $200    | 
 | Case | $50 |  
-| Power/Circuitry | $50 |  
+| Power | $50 |  
 
 *Gantt Chart:*  
 ![Gantt Chart 10-22-24_page-0001](https://github.com/user-attachments/assets/d7147e24-e9b9-404d-b42e-017b4b2c08b5)
@@ -321,8 +337,8 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [17] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
 
 ### Statement of Contribution:  
-Layne Bowman - I contributed to the Microcontroller subsystem specifications, the potential solutions section, the hardware block diagram, the flow chart, and how the Power/Circuitry subsystem interfaces with all the other subsystems.  
+Layne Bowman - I contributed to the Microcontroller subsystem specifications, the potential solutions section, the hardware block diagram, the flow chart, and how the Power subsystem interfaces with all the other subsystems.  
 Ethan Haynes - Resources, speficications for case, and PCB solution.  
-Tucker Basham - Introduction and customer specifications for power/circuitry subsystem and microcontroller interface section.  
+Tucker Basham - Introduction and customer specifications for Power subsystem and microcontroller interface section.  
 Matthew Vick- Display solution, PCB specifications, High-level solution, and re-introduce the problem.  
 Jacob Brewer - Specifications for the display also Ethical, Professional, and Standards Considerations section.
