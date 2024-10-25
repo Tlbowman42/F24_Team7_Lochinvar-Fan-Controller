@@ -69,23 +69,6 @@ The following section outlines the constraint statements that the team will adhe
 
 Since Lochinvar already knows what type of tool they are wanting we will compare different solutions for the subsystems instead of overall solutions for the problem. A list of different solutions for each subsystem is shown below, along with design considerations, and the chosen solutions.  
 
-## Potential PCB Solutions
-
-1. Single-Layer PCB
-   - Single-layer PCBs consists of a single layer of conductive material with components and traces on one side. [1]
-   - They are relatively simple and cost-effective, making them ideal for basic electronic devices. [1]
-   - Some advantages for the single-layer PCB are the following: they are inexpensive, they can be manufactored faster, and since it is a single layer the designs are easier to produce. [1]
-   - Some disadvantages are they operate at a slower speed, they have less freedom for the layout of the design, and they are larger. [2]
-     
-2. Multi-Layer PCB
-   - Multi-layer PCBs consists of multiple layers of conductive material, with insulated layers in between with the traces and components on both sides. [1]
-   - They can accommodate more complex circuit designs, which results in more flexibility for routing traces. [1]
-   - Since the PCB has multiple layers of conductive material this helps to reduce signal noise and interference between components. [1]
-   - Some advantages for the multi-layer PCB are the following: they have a more compact size, they have improved signal integrity due to being able to place the power and ground planes inbetween components, and they can operate at a faster speed. [3]
-   - Some disadvantages are they cost more to produce, they are more complex to design, and they are harder to debug due to the inner layers. [3]
-  
-Our design needs to handle PWM and tachometer signals with high signal integrity due to the nature of the diagnostic tool. We also need to take into account size accomadations for our tool. Due to the design considerations we will be pursuing a multi-layered PCB design for our fan diagnostic tool.
-   
 ## Potential Microcontroller Solutions
 
 1. Single Microcontroller
