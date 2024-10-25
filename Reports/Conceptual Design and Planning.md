@@ -288,13 +288,15 @@ Softwares will need to be learned by various members to design subsystems of the
 *Costs:*  
 Below is a rough estimation of some of the items needed for the project. The estimates for the microcontoller and display come from looking at components that have similar capabilities. The PCB estimation is based upon what a board of our specifications could cost and accounting for having to get multiple. The case estimation is based on the general price of what a roll of filament is.  
 
-| Component | Estimated cost |
-| -------- | ------- |
-| Microcontroller  | $125    |
-| PCB | $200     |
-| Display    | $200    | 
-| Case | $50 |  
-| Power | $50 |  
+| Component | Part Number |Estimated Cost |
+| -------- | ------- |------- |
+| Microcontroller  | STM32L4S9ZIJ6 | $15    |
+| Memory        | 25AA640-I/SN| $15    |
+| PCB | |$100     |
+| Display    | 4DLCD-35480320-IPS |$34    | 
+| Case | |$50 |  
+| Power | |$50 |  
+| USB Port | UJ2-AV-1-SMT-TR| $1.45 |
 
 *Gantt Chart:*  
 ![Gantt Chart 10-22-24_page-0001](https://github.com/user-attachments/assets/d7147e24-e9b9-404d-b42e-017b4b2c08b5)
