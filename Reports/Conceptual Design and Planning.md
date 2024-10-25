@@ -232,8 +232,7 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
 ## Memory  
 
 ***Tucker fill in how this interfaces with everything, and Conner provide the customer specs***  
-
-
+    
 1.  Microcontroller
    -
 2.  Power
