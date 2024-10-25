@@ -137,7 +137,7 @@ Our design needs a case that will encase and protect all other subsystems. Due t
    - smaller storage size yet slightly faster read/write speeds.
    - Good for small data sets such as basic settings or small logs.[18]  
 
-Our design will require an EEPROM with larger storage capacity rather than as opposed to slightly faster access speeds. Due to this we have chosen to go with the 64Kbit EEprom chip as it fills our need for greater storage capacity while also maintaining fast read/write speeds.  
+Our design will require an EEPROM with larger storage capacity rather than as opposed to slightly faster access speeds. Due to this we have chosen to go with the 64Kbit EEPROM chip as it fills our need for greater storage capacity while also maintaining fast read/write speeds.  
 
 ## Potential Pre-processing Solutions
 
