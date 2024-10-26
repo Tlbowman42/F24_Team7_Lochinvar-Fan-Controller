@@ -2,7 +2,7 @@
 
 The ability to properly test and or simulate a system once completed is a fundamental cornerstone of engineering. Proper testing of manufactured and engineered goods allow us to hone in on a device's functionality as well as simulate various scenarios. The goal for this project is the conceptual and physical design of a boiler fan simulation unit. This fan diagnostic tool will simulate a boiler fan for our customer Lochinvar. The reason a product such as this should exist is to save time and money, and allow for a full range of boiler diagnostic testing for Lochinvar. This device will in turn allow for much faster testing procedures thus increasing productivity and saving the time and money of Lochinvar.
 
-# Restate the Fully Forumlate Problem
+# Restate the Fully Formulate Problem
 
 The problem is to create a diagnostic tool to help troubleshoot blower fans in boilers with the following specifications and constraints:  
 *1) Case Specifications:*  
@@ -18,7 +18,7 @@ The following are the specifications for the diagnostic tool's hardware and soft
 1. The diagnostic tool shall have the hardware to accomplish all three modes.
 2. The diagnostic tool shall allow the user to select one of the three modes, only the Fan Simulation mode will be functional.
 3. The diagnostic tool shall have an LCD screen that will display the PWD signal, tachometer signal, and a user interface designed at a later date.
-4. The diagnostic tool shall allow the user to change the minumum and maximum fan speed, the minumum PWM duty cycle needed for the fan to turn on, the minumum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
+4. The diagnostic tool shall allow the user to change the minimum and maximum fan speed, the minimum PWM duty cycle needed for the fan to turn on, the minimum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
 5. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
 6. The hardware shall be designed to accomplish the Fan Simulation Mode, the Fan Driving Mode, and the Monitoring Mode.
 7. The following shall be possible in the Fan Simulation Mode:[13]  
@@ -30,7 +30,7 @@ The following are the specifications for the diagnostic tool's hardware and soft
 8. The following shall be possible in the Fan Driving Mode:[13]   
    - Setting a desired PWM signal to send to the fan
    - Setting a desired RPM to drive the fan at
-   - User configuarble PID settings for fan speed control, PWM frequency, Enable / Disable control takeover, and Enable / Disable Tachometer Pass-through
+   - User configurable PID settings for fan speed control, PWM frequency, Enable / Disable control takeover, and Enable / Disable Tachometer Pass-through
 
 9. The following shall be possible in the Monitoring Mode:[13]    
 
@@ -51,7 +51,7 @@ The following are the specifications for the diagnostic tool's hardware and soft
 
 
 *4) Budget Specifications:*  
-The diagonostic tool's design and build phase shall not exceed the given $2,000 budget.[14]     
+The diagnostic tool's design and build phase shall not exceed the given $2,000 budget.[14]     
 
 *Constraints*  
 The following section outlines the constraint statements that the team will adhere to.  
@@ -72,20 +72,20 @@ Since Lochinvar already knows what type of tool they are wanting we will compare
 ## Potential Microcontroller Solutions
 
 1. Single Microcontroller
-   - If we used a single high preformance microcontroller it would handle all the tasks for the tool.
-   - Some advantages to this would be a simplier hardware design due to fewer components, more efficient communication due to all tasks being managed by the same microcontroller, and it would be easier to debug and maintain since it is a single microcontroller.
+   - If we used a single high performance microcontroller it would handle all the tasks for the tool.
+   - Some advantages to this would be a simpler hardware design due to fewer components, more efficient communication due to all tasks being managed by the same microcontroller, and it would be easier to debug and maintain since it is a single microcontroller.
    - Some disadvantages are with a more advanced microcontroller it will be more expensive, there is a single point of failure, and the programming will take longer due to all of the tasks the microcontroller will need to complete.
      
 2. Multiple Microcontrollers
-   - If we used multiple lower prefomance microcontrollers we could distribute the tasks.
+   - If we used multiple lower performance microcontrollers we could distribute the tasks.
    - Some advantages to this would be that each microcontroller could be developed and tested independently leading to decreased design and debug time.
    - Some disadvantages are due to having multiple microcontrollers the communication between all of them could be more complex, increased delays due to having to communicate between the microcontrollers, and the design would need to incorporate more hardware.  
 
-Our design needs to handle PWM and tachometer signal processing, user-inputs, different operating modes, communication with the display and other subsystems. Due to the design considerations we will be pursuing a single high preformance microcontroller for our fan diagnostic tool.
+Our design needs to handle PWM and tachometer signal processing, user-inputs, different operating modes, communication with the display and other subsystems. Due to the design considerations we will be pursuing a single high performance microcontroller for our fan diagnostic tool.
 
 ## Potential Display Solutions
 
-1. Charatcer LCD Display (Liquid-Crystal Display)
+1. Character LCD Display (Liquid-Crystal Display)
    - Character LCD displays are able to display letters, numbers, and punctuation. [4]
    - Some advantages for this type of display are it is easy to program, it has low power consumption, and it is inexpensive. [4]
    - Some disadvantages for this type of display is it can only display letters, numbers, and punctuation. It also is limited on the colors it is able to display.
@@ -93,7 +93,7 @@ Our design needs to handle PWM and tachometer signal processing, user-inputs, di
 2. Graphical LCB Display (Liquid-Crystal Display)
    - Graphical LCD displays are able to display letters, numbers, punctuation, and custom graphics. [5]
    - Some advantages for this type of display is the flexibility to display any graphical information and they can offer a broader range of colors. [5]
-   - Some disadvatanges for this type of display is it requires more complex software , they consume more power, and they cost more when compared to character LCDs. [6]  
+   - Some disadvantages for this type of display is it requires more complex software , they consume more power, and they cost more when compared to character LCDs. [6]  
   
 Our design needs to display both numbers and replicated signals as graphs. Our design also needs to take into account the clarity of the graphs. Due to the design considerations we will be pursuing a graphical LCD display for our fan diagnostic tool.
 
@@ -130,7 +130,7 @@ Our design needs a case that will encase and protect all other subsystems. Due t
 1. 64Kbit EEPROM Chip
    - Non-volatile memory with easy microcontroller W/R integration over an I2C bus.[18]
    - Higher 8x8Kbit memory capabilities for greater storage.
-   - Compact size and low power consuming design allow for perfect integraton with low power microcontrollers.[18]
+   - Compact size and low power consuming design allow for perfect integration with low power microcontrollers.[18]
   
 2. 32Kbit EEPROM Chip
    - Lower cost per unit and power consumption than other higher memory EEPROMs.
@@ -169,25 +169,25 @@ Our design would benefit the versatility and simulation support that Op-Amps can
 
 ## Potential Connections & Buttons Solutions
 
-The connections will not have any possible solutions. We are to use the connections Lochinvar has requested. Those connectors are a molex and usb connection.
+The connections will not have any possible solutions. We are to use the connections Lochinvar has requested. Those connectors are a Molex and usb connection.
 
 1. Push Button
    - They are simple to use.
    - They are durable.
-   - The more you use it the more wear it will recieve. [23]
+   - The more you use it the more wear it will receive. [23]
 
 2. Rotary Encoder
    - They are very reliable.
    - There different types of rotary encoders to choose from depending on all of our needs (Absolute, Rotary, and Incremental)
    - They are more susceptible to dirt and grime due to them being raised. [24]
   
-Due to this tool being used in a testing envirnoment and potentially in the field in furture applications we will choose to use push buttons on our fan diagnostic tool.
+Due to this tool being used in a testing environment and potentially in the field in future applications we will choose to use push buttons on our fan diagnostic tool.
 
 # High Level Solution
 
 The diagnostic tool will be developed primarily using a display and a microcontroller. 
 The microcontroller will take in a desired signal and output a desired signal corresponding to a set of user-defined parameters 
-(depennding on the mode of operation these will be some variation of PWM and TACH). 
+(depending on the mode of operation these will be some variation of PWM and TACH). 
 The user will use the buttons connected to the microcontroller to set desired settings, 
 and the display will be used to view the menus required to do so. 
 The display will also display the PWM and TACH signals in relation to a mode chosen by the user in order for the user troubleshoot the issues regarding the blower fan properly.  
@@ -202,27 +202,27 @@ This setup will allow for the stakeholders to receive the product that was promi
 ![Operational Flow Chart](https://github.com/user-attachments/assets/1dbedbe4-67ea-484a-a8bd-07bfb2d6a8da)
 
 
-# Atomic Subsytem Specifications  
+# Atomic Subsystem Specifications  
 
 The PCB will be imperative for most if not all of our subsystems, therefore the PCB shall follow the specifications listed below.  
 
 1. The PCB shall have the connectors for the USB, power, fan interface, and controller interface near the edges to ensure easy access.
-2. The PCB shall clearly label designators for easy assembly and debugging (e.g, R1, C2, etc.).
-3. The PCB shall incorporate thermal management techniques where applicable to reduce overheating and increase longivity of the board.
+2. The PCB shall clearly label designators for easy assembly and debugging (e.g., R1, C2, etc.).
+3. The PCB shall incorporate thermal management techniques where applicable to reduce overheating and increase longevity of the board.
 4. The PCB shall incorporate testing points to allow for easy probing during debugging.  
 
-The PCB is responsible for linking together the various components and allows them to recieve the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. All members of the team have completed the HSI soldering safety certification. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard. The components will need to be properly soldered to the board to attach them physically and to ensure a good electrical connection.  
+The PCB is responsible for linking together the various components and allows them to receive the power and signals necessary. To adhere with the IPC-2221 standard, once the PCB is designed, the board will be produced by a company that creates boards in accordance with all the regulations covered in the standard. To adhere to IPC-J-STD-001 group members must be informed on the acceptable practices and materials used for soldering. All members of the team have completed the HSI soldering safety certification. The team must also ensure that suppliers of components and materials meet these requirements. Finally, preventing contamination of materials, tools, and surfaces is also required to meet this standard. The components will need to be properly soldered to the board to attach them physically and to ensure a good electrical connection.  
 
 ## Microcontroller 
 
 1. The microcontroller shall be able to take in and output both PWM and tachometer signals.
-2. The microcotroller shall be able to communicate to the display to update what is being displayed. 
+2. The microcontroller shall be able to communicate to the display to update what is being displayed. 
 3. The microcontroller shall be able to review user inputs through the form of push buttons to change selected parameters and/or change what is being displayed when necessary.
 4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.)
 
 The microcontroller is responsible for handling the various GPIO applications as well as the background signal processing and control systems. The microcontroller will be able to take in TACH and PWM signals as well as output such signals. The microcontroller encompasses both the hardware and software to complete the desired simulation modes as well as leaves room for future improvement.     
 
-Below describes the interfaces betwen the microcontroller subsystem and the other subsystems:
+Below describes the interfaces between the microcontroller subsystem and the other subsystems:
 1. Display
    - The microcontroller will send graphical information for display on the systems LCD via serial communication.
 3. Power
@@ -237,13 +237,13 @@ Below describes the interfaces betwen the microcontroller subsystem and the othe
 3. The display shall show the different options for the user interface.  
 4. The display shall show the correct operations based on the user input.  
 
-The Display is responsible for showing the PWM and TACH signals to the user and the menus needed to operate the device. This also includes the code responsible for making this happen. Even though the microcontroller is techanically responsible for this on a component level, this subsystem will include this for the sake of dividing work up appropriately.  
+The Display is responsible for showing the PWM and TACH signals to the user and the menus needed to operate the device. This also includes the code responsible for making this happen. Even though the microcontroller is technically responsible for this on a component level, this subsystem will include this for the sake of dividing work up appropriately.  
 
 Below describes the interfaces between the Display subsystem and the other subsystems:
 1. Microcontroller
-   - The Microcontroller subsystem will send graphical information to the Display subsytem through a serial connection.
+   - The Microcontroller subsystem will send graphical information to the Display subsystem through a serial connection.
 2. Power
-   - The Display subsystem will also recieve an input power signal from the Power subsystem.
+   - The Display subsystem will also receive an input power signal from the Power subsystem.
 3. PCB
     - The PCB subsystem will distribute the input power signal from the Power subsystem to the Display subsystem. The Display subsystem is connected to the PCB subsystem by a physical connection.
 
@@ -258,17 +258,23 @@ Below describes the interfaces between the Display subsystem and the other subsy
 7. The Power shall have safety measures in place to deal with noise and surges.
 8. The Power shall use an LED to display the state of the power within the board.
 
-The Power subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and features to protect against overvoltage or overcurrent events. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller recieves stable power without noise or surges. The subsystem will recieve power through an external source. Either the boiler controller will act as that source and will power the device through a molex connection, or the power will come from an USB connection. Additionally this subsystem will have LEDs to indicate the power status of other subsystems.
+The Power subsystem is responsible for delivering power to all components throughout the Fan Diagnostic Tool. It includes voltage regulation, power distribution and features to protect against overvoltage or overcurrent events. Additionally, this subsystem will be responsible for ensuring the sensitive components such as the microcontroller receives stable power without noise or surges. The subsystem will receive power through an external source. Either the boiler controller will act as that source and will power the device through a Molex connection, or the power will come from an USB connection. This subsystem will have LEDs to indicate the power status of other subsystems. Finally this subsystem will also incorporate the electrical isolation through the use of opto-isolators.
 
 Below describes the interfaces between the Power subsystem and the other subsystems:
 1. Microcontroller
-   - The Microcontroller subsystem will recieve an input power signal from the Power subsystem. Therefore the Power subsystem will be outputting a DC power signal.
+   - The Microcontroller subsystem will receive an input power signal from the Power subsystem. The voltage will initially come from a Molex connection from the boiler controller or to from the USB. This will either be 24V DC or 5V DC respectively. The Power subsystem will then step down the voltage to a useable 3.3V for the microcontroller. It will additionally provide electrical isolation between the USB and Molex connector through the use of an opto-isolator. Therefore the Power subsystem will be outputting a 3.3V DC power signal.  
 2. Display
-   - The Display subsystem will also recieve an input power signal from the Power subsystem. Therefore the Power subsystem will be outputting a DC power signal.
-3. PCB
-    - The PCB subsystem will be the physical integration of the Power subsystem. The Power/Circuotry subsystem will output DC power to the PCB and the PCB will distribute the power throughout to all necessary components.
-4. Case
+   - The Display subsystem will also receive the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.
+3. Case
    - The Case and Power subsystems are not connected.
+4. Pre-Processing
+ - The Case and Power subsystems are not connected.
+5. Post-processing
+ - The Case and Power subsystems are not connected.  
+6. Memory
+ - The Case and Power subsystems are not connected.  
+7. Connections and Buttons
+ - The Connections and Buttons subsystem is directly connected to the Power subsystem. Specifically the Molex and USB connections providing the 24V DC and 5V DC needed to power the tool. Therefore the Connections and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words the DC voltage will be an input to the Power subsystem.
 
 ## Case  
 
@@ -283,7 +289,8 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
 
 ***Tucker fill in how this interfaces with everything, and Conner provide the customer specs***  
    1. The memory shall have a width of a byte (Is this the correct way of saying this)  
-   2. The memory shall be able to communicate with the microcontroller though a serial protocal  
+   2. The memory shall be able to communicate with the microcontroller though a serial protocol  
+    
 1.  Microcontroller
    -
 2.  Power
@@ -293,17 +300,17 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
 
 ## Pre-processing  
 1. The Pre-processing shall step down the PWM signal to send to the Microcontroller subsystem.
-2. The Pre-processing shall isolate the signal from any flucations in the signal from the Molex.
+2. The Pre-processing shall isolate the signal from any fluctuations in the signal from the Molex.
 
-The molex connector will provide a PWM signal to the tool to take in as the fan speed. In order to process the signal an opto-couple circuit will be implemented to both adjust the signal so that it can be read by the microcontroller and will be used to protect the circuit from any power surge from the molex connector. AFterwards, signal is then ready to be sent to the microcontroller.
+The Molex connector will provide a PWM signal to the tool to take in as the fan speed. In order to process the signal an opto-couple circuit will be implemented to both adjust the signal so that it can be read by the microcontroller and will be used to protect the circuit from any power surge from the Molex connector. Afterwards, signal is then ready to be sent to the microcontroller.
 
 Below describes the interfaces between the Pre-processing subsystem and the other subsystems:
 1. Microcontroller
-   - The Microcontroller subsystem will recieve a PWM signal that has went through the pre-processing circuit.
+   - The Microcontroller subsystem will receive a PWM signal that has went through the pre-processing circuit.
 2. Display
    - The Display subsystem will display the interpreted version of the PWM signal from the microcontroller.
 3. Case
-   - The Case will account for the opening needed for the molex connector.
+   - The Case will account for the opening needed for the Molex connector.
 
 ## Post-processing  
 
