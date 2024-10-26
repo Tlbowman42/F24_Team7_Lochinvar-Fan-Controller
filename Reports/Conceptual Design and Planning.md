@@ -278,7 +278,7 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
 1. The Pre-processing shall step down the PWM signal to send to the Microcontroller subsystem.
 2. The Pre-processing shall isolate the signal from any flucations in the signal from the Molex.
 
-The molex connector will provide a PWM signal to the tool to take in as the fan speed. In order to process the signal a voltage divider circuit will be implemented to adjust the signal to be read by the microcontrollor. Additionally, an opto-isolator will be used to protect the circuit from any surge from the molex connector. The signal is then ready to be sent to the microcontroller.
+The molex connector will provide a PWM signal to the tool to take in as the fan speed. In order to process the signal an opto-couple circuit will be implemented to both adjust the signal so that it can be read by the microcontroller and will be used to protect the circuit from any power surge from the molex connector. AFterwards, signal is then ready to be sent to the microcontroller.
 
 Below describes the interfaces between the Pre-processing subsystem and the other subsystems:
 1. Microcontroller
