@@ -171,11 +171,17 @@ Our design would benefit the versatility and simulation support that Op-Amps can
 
 The connections will not have any possible solutions. We are to use the connections Lochinvar has requested. Those connectors are a molex and usb connection.
 
-1. Button
-   - Lower cost per unit and power consumption than other higher memory EEPROMs.
+1. Push Button
+   - They are simple to use.
+   - They are durable.
+   - The more you use it the more wear it will recieve. [23]
 
-2. button but better
-   - Lower cost per unit and power consumption than other higher memory EEPROMs.
+2. Rotary Encoder
+   - They are very reliable.
+   - There different types of rotary encoders to choose from depending on all of our needs (Absolute, Rotary, and Incremental)
+   - They are more susceptible to dirt and grime due to them being raised. [24]
+  
+Due to this tool being used in a testing envirnoment and potentially in the field in furture applications we will choose to use push buttons on our fan diagnostic tool.
 
 # High Level Solution
 
@@ -399,6 +405,8 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [20] Electrical4U, “Optoisolators: What they are and how they work,” Electrical4U, https://www.electrical4u.com/optoisolator-construction-and-operating-principle-of-optoisolator/#:~:text=Some%20of%20the%20advantages%20of%20optoisolators%20are%3A%201,can%20handle%20high%20switching%20speeds%20and%20data%20rates. (accessed Oct. 25, 2024).  
 [21] Ovaga |, “Advantages and disadvantages of operational amplifier (op-amp),” Ovaga, https://www.ovaga.com/blog/package/advantages-and-disadvantages-of-operational-amplifier (accessed Oct. 25, 2024).  
 [22] A. T. Editor, “Advantages and disadvantages of Bipolar Junction Transistor (BJT),” Polytechnic Hub, https://www.polytechnichub.com/advantages-disadvantages-bipolar-junction-transistor-bjt/ (accessed Oct. 25, 2024).  
+[23] G. Wood, “Push Buttons vs switches: What are the pros and cons?,” aviewfromthehill.com.au, https://aviewfromthehill.com.au/push-buttons-vs-switches-what-are-the-pros-and-cons/ (accessed Oct. 25, 2024).  
+[24] Admin, “What is rotary encoder? Construction & Working of rotary encoder,” How To Electronics, https://how2electronics.com/construction-working-rotary-encoder/#:~:text=Advantages%20%26%20Disadvantages%20of%20Rotary%20Encoders%3A%201%201.,incorporated%20into%20existing%20applications%207%207.%20Compact%20size (accessed Oct. 25, 2024).  
 
 
 ### Statement of Contribution:  
