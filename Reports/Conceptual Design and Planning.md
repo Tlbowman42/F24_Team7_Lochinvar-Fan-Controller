@@ -297,6 +297,14 @@ The memory subsystem is the EEPROM responsible for the display setting and log s
    - The memory subsystem will receive a stepped down input voltage of 3.3v DC from the power subsystem in order to be powered on.
 3.  Ports & Buttons
    - The memory subsystem will connect to the ports/buttons subsystem via the FTDI connection to the microcontroller.
+4.  Case
+   - The case and memory subsystems are not connected.
+5.  Post-Processing
+   - The memory and post-processing subsystems are not connected.
+6.  Pre-Processing
+   - The memory and pre-processing subsystems are not connected.
+7.  Display
+   - The memory subsystem wont have a physical connection to the display however, the EEPROM will contain data logs from the periheral devices on the board such as the display. This information will most likely be data logs and error messages pertaining to the display.
 
 ## Pre-processing  
 1. The Pre-processing shall step down the PWM signal to send to the Microcontroller subsystem.
