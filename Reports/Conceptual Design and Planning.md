@@ -268,13 +268,13 @@ Below describes the interfaces between the Power subsystem and the other subsyst
 3. Case
    - The Case and Power subsystems are not connected.
 4. Pre-Processing
- - The Case and Power subsystems are not connected.
+   - The Case and Power subsystems are not connected.
 5. Post-processing
- - The Case and Power subsystems are not connected.  
+   - The Case and Power subsystems are not connected.  
 6. Memory
- - The Case and Power subsystems are not connected.  
+   - The Case and Power subsystems are not connected.  
 7. Ports and Buttons
- - The Ports and Buttons subsystem is directly connected to the Power subsystem. Specifically the Molex and USB Ports providing the 24V DC and 5V DC needed to power the tool. Therefore the Ports and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words the DC voltage will be an input to the Power subsystem.
+   - The Ports and Buttons subsystem is directly connected to the Power subsystem. Specifically the Molex and USB Ports providing the 24V DC and 5V DC needed to power the tool. Therefore the Ports and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words the DC voltage will be an input to the Power subsystem.
 
 ## Case  
 
@@ -286,27 +286,29 @@ Below describes the interfaces between the Power subsystem and the other subsyst
 The case is responsible for completely enclosing the PCB and protecting it. It will have various openings for the display, buttons, and ports. The only true connection the case has with any of the other subsections is the PCB. Via screws or some other form of physical connection.
 
 ## Memory  
+
 1. The memory shall have a width of a byte.  
 2. The memory shall be able to communicate with the microcontroller though a serial protocol  
 
 The memory subsystem is the EEPROM responsible for the display setting and log storage. The EEPROM will also be responsible for holding the boot settings for the diagnostic tool as well as other small memory caches such as the error codes, calibration data, and hardware lifetime counters and timestamps.
   
 1.  Microcontroller
-   - The memory subsystem will be connected to the microcontroller via the I2C port on the microcontroller, thus allowing for proper data storage and interfacing.
+    - The memory subsystem will be connected to the microcontroller via the I2C port on the microcontroller, thus allowing for proper data storage and interfacing.
 2.  Power
-   - The memory subsystem will receive a stepped down input voltage of 3.3v DC from the power subsystem in order to be powered on.
+    - The memory subsystem will receive a stepped down input voltage of 3.3v DC from the power subsystem in order to be powered on.
 3.  Ports & Buttons
-   - The memory subsystem will connect to the ports/buttons subsystem via the FTDI connection to the microcontroller.
+    - The memory subsystem will connect to the ports/buttons subsystem via the FTDI connection to the microcontroller.
 4.  Case
-   - The case and memory subsystems are not connected.
+    - The case and memory subsystems are not connected.
 5.  Post-Processing
-   - The memory and post-processing subsystems are not connected.
+    - The memory and post-processing subsystems are not connected.
 6.  Pre-Processing
-   - The memory and pre-processing subsystems are not connected.
+    - The memory and pre-processing subsystems are not connected.
 7.  Display
-   - The memory subsystem wont have a physical connection to the display however, the EEPROM will contain data logs from the periheral devices on the board such as the display. This information will most likely be data logs and error messages pertaining to the display.
+    - The memory subsystem wont have a physical connection to the display however, the EEPROM will contain data logs from the periheral devices on the board such as the display. This information will most likely be data logs and error messages pertaining to the display.
 
-## Pre-processing  
+## Pre-processing 
+
 1. The Pre-processing shall step down the PWM signal to send to the Microcontroller subsystem.
 2. The Pre-processing shall isolate the signal from any fluctuations in the signal from the Molex.
 
@@ -329,8 +331,7 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 *Op-amp circuit*
    
 ## Ports & Buttons  
-
-***Ethan fill in how this interfaces with everything, and Jacob provide the customer specs***  
+ 
 1. There shall be a molex and a USB port.  
 2. There shall be buttons to allow the user to easily navigate the menu on the display.  
 
