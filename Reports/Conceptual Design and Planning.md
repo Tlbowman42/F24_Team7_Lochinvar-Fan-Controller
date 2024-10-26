@@ -288,15 +288,15 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
 ## Memory  
 
 ***Tucker fill in how this interfaces with everything, and Conner provide the customer specs***  
-   1. The memory shall have a width of a byte (Is this the correct way of saying this)  
+   1. The memory shall have a width of a byte.  
    2. The memory shall be able to communicate with the microcontroller though a serial protocol  
     
 1.  Microcontroller
-   -
+   - The memory subsystem will be connected to the microcontroller via the I2C port on the microcontroller, thus allowing for proper data storage and interfacing.
 2.  Power
-   -
+   - The memory subsystem will receive a stepped down input voltage of 3.3v from the power subsystem.
 3.  Ports & Buttons
-   -
+   - The memory subsystem will connect to the ports/buttons subsystem via the FTDI connection to the microcontroller.
 
 ## Pre-processing  
 1. The Pre-processing shall step down the PWM signal to send to the Microcontroller subsystem.
