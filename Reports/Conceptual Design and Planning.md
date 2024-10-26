@@ -278,15 +278,22 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
 1. The Pre-processing shall step down the PWM signal to send to the Microcontroller subsystem.
 2. The Pre-processing shall isolate the signal from any flucations in the signal from the Molex.
 
-   
-***Ethan fill in how this interfaces with everything, and Layne provide the customer specs***  
+The molex connector will provide a PWM signal to the tool to take in as the fan speed. In order to process the signal a voltage divider circuit will be implemented to adjust the signal to be read by the microcontrollor. Additionally, an opto-isolator will be used to protect the circuit from any surge from the molex connector. The signal is then ready to be sent to the microcontroller.
+
+Below describes the interfaces between the Pre-processing subsystem and the other subsystems:
+1. Microcontroller
+   - The Microcontroller subsystem will recieve a PWM signal that has went through the pre-processing circuit.
+2. Display
+   - The Display subsystem will display the interpreted version of the PWM signal from the microcontroller.
+3. Case
+   - The Case will account for the opening needed for the molex connector.
 
 ## Post-processing  
 
 ***Jacob fill in how this interfaces with everything, and Ethan provide the customer specs***  
-1. The Post-processing shall step up the tachometer signal to send to the boiler controller.
-2. The Post-processing shall isolate the signal from backfeed.
-
+1. The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.
+2. The Post-processing shall isolate the signal from backfeed.  
+   
 ## Connections & Buttons  
 
 ***Ethan fill in how this interfaces with everything, and Jacob provide the customer specs***  
