@@ -250,7 +250,7 @@ Below describes the interfaces between the Display subsystem and the other subsy
 ## Power 
 
 1. The Power shall encompass safe and proper Ports between all subsections of the project.
-2. The Power shall be able to take in various DC voltage loads and adjust values appropriately.
+2. The Power shall be able to take in various DC voltage loads (24V & 5V) and adjust those voltages to usable levels (3.3V).
 3. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. 
 4. The Power shall be placed in a design such that all I/O ports are properly mapped and subsection Ports are clear and efficient. 
 5. The Power shall output DC power to the display and microcontroller.
