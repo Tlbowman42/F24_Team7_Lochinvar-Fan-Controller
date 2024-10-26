@@ -286,15 +286,15 @@ Below describes the interfaces between the Power subsystem and the other subsyst
 The case is responsible for completely enclosing the PCB and protecting it. It will have various openings for the display, buttons, and ports. The only true connection the case has with any of the other subsections is the PCB. Via screws or some other form of physical connection.
 
 ## Memory  
+1. The memory shall have a width of a byte.  
+2. The memory shall be able to communicate with the microcontroller though a serial protocol  
 
-***Tucker fill in how this interfaces with everything, and Conner provide the customer specs***  
-   1. The memory shall have a width of a byte.  
-   2. The memory shall be able to communicate with the microcontroller though a serial protocol  
-    
+The memory subsystem is the EEPROM responsible for the display setting and log storage. The EEPROM will also be responsible for holding the boot settings for the diagnostic tool as well as other small memory caches such as the error codes, calibration data, and hardware lifetime counters and timestamps.
+  
 1.  Microcontroller
    - The memory subsystem will be connected to the microcontroller via the I2C port on the microcontroller, thus allowing for proper data storage and interfacing.
 2.  Power
-   - The memory subsystem will receive a stepped down input voltage of 3.3v from the power subsystem.
+   - The memory subsystem will receive a stepped down input voltage of 3.3v DC from the power subsystem in order to be powered on.
 3.  Ports & Buttons
    - The memory subsystem will connect to the ports/buttons subsystem via the FTDI connection to the microcontroller.
 
