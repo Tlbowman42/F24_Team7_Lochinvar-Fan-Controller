@@ -301,7 +301,10 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 ## Connections & Buttons  
 
 ***Ethan fill in how this interfaces with everything, and Jacob provide the customer specs***  
-   
+1. Each connection shall be properly secured and reliable.  
+2. Each button shall operate as attended and be properly secured.
+
+
 ## Resources  
    
 *Subsection:*
