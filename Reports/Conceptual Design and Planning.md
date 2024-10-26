@@ -167,9 +167,9 @@ Our design needs to isolate the signal as well as step the voltage down. Due to 
   
 Our design would benefit the versatility and simulation support that Op-Amps can provide. Due to the design considerations we will be pursuing an op-amp circuit for our fan diagnostic tool.
 
-## Potential Connections & Buttons Solutions
+## Potential Ports & Buttons Solutions
 
-The connections will not have any possible solutions. We are to use the connections Lochinvar has requested. Those connectors are a Molex and usb connection.
+The Ports will not have any possible solutions. We are to use the Ports Lochinvar has requested. Those connectors are a Molex and usb connection.
 
 1. Push Button
    - They are simple to use.
@@ -249,10 +249,10 @@ Below describes the interfaces between the Display subsystem and the other subsy
 
 ## Power 
 
-1. The Power shall encompass safe and proper connections between all subsections of the project.
+1. The Power shall encompass safe and proper Ports between all subsections of the project.
 2. The Power shall be able to take in various DC voltage loads and adjust values appropriately.
 3. The device shall be powered by the fan DC power bus as well as by the USB connection in case no fan is connected. 
-4. The Power shall be placed in a design such that all I/O ports are properly mapped and subsection connections are clear and efficient. 
+4. The Power shall be placed in a design such that all I/O ports are properly mapped and subsection Ports are clear and efficient. 
 5. The Power shall output DC power to the display and microcontroller.
 6. The Power shall ensure stable power is output to all sensitive components such as the microcontroller.
 7. The Power shall have safety measures in place to deal with noise and surges.
@@ -273,8 +273,8 @@ Below describes the interfaces between the Power subsystem and the other subsyst
  - The Case and Power subsystems are not connected.  
 6. Memory
  - The Case and Power subsystems are not connected.  
-7. Connections and Buttons
- - The Connections and Buttons subsystem is directly connected to the Power subsystem. Specifically the Molex and USB connections providing the 24V DC and 5V DC needed to power the tool. Therefore the Connections and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words the DC voltage will be an input to the Power subsystem.
+7. Ports and Buttons
+ - The Ports and Buttons subsystem is directly connected to the Power subsystem. Specifically the Molex and USB Ports providing the 24V DC and 5V DC needed to power the tool. Therefore the Ports and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words the DC voltage will be an input to the Power subsystem.
 
 ## Case  
 
@@ -295,7 +295,7 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
    -
 2.  Power
    -
-3.  Connections & Buttons
+3.  Ports & Buttons
    -
 
 ## Pre-processing  
@@ -318,7 +318,7 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 1. The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.
 2. The Post-processing shall isolate the signal from backfeed.  
    
-## Connections & Buttons  
+## Ports & Buttons  
 
 ***Ethan fill in how this interfaces with everything, and Jacob provide the customer specs***  
 1. There shall be a molex and a USB port.  
@@ -348,7 +348,7 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 7. Post-processing
    - Customer: Ethan Haynes
    - Solution: Jacob Brewer
-8. Connections & Buttons
+8. Ports & Buttons
    - Customer: Jacob Brewer
    - Solution: Ethan Haynes
 
@@ -405,7 +405,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [13] “Fan Diagnostic Tool.” Lochinvar, Cookeville, Sep. 11, 2024  
 [14] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
 [15] “Generic Standard on Printed Board Design,” Lawrence Berkley National Laboratory , https://www-eng.lbl.gov/~shuman/NEXT/CURRENT_DESIGN/TP/MATERIALS/IPC_2221.pdf (accessed Sep. 13, 2024).  
-[16] Flex PCB, “Joint Industry Standard (J-std-001): All you Need To Know,” Flex PCB, https://flexpcb.org/joint-industry-standard-j-std-001-all-you-need-to-know/#:~:text=What%20is%20the%20J-STD-001%20Standard%3F%20The%20J-STD-001%2C%20also,that%20provides%20guidelines%20for%20producing%20high-quality%20soldered%20interconnections. (accessed Sep. 21, 2024).  
+[16] Flex PCB, “Joint Industry Standard (J-std-001): All you Need To Know,” Flex PCB, https://flexpcb.org/joint-industry-standard-j-std-001-all-you-need-to-know/#:~:text=What%20is%20the%20J-STD-001%20Standard%3F%20The%20J-STD-001%2C%20also,that%20provides%20guidelines%20for%20producing%20high-quality%20soldered%20interPorts. (accessed Sep. 21, 2024).  
 [17] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
 [18] R. Awati, “What is EEPROM (electrically erasable programmable read-only memory)?,” WhatIs, https://www.techtarget.com/whatis/definition/EEPROM-electrically-erasable-programmable-read-only-memory#:~:text=Finally%2C%20different%20voltages%20are%20required,data%20from%20or%20onto%20EEPROM. (accessed Oct. 25, 2024).  
 [19] D. Mercer and Antoniu Miclaus Download PDF and A. Miclaus, “ADALM1000 SMU training topic 11: Frequency compensated voltage dividers,” ADALM1000 SMU Training Topic 11: Frequency Compensated Voltage Dividers | Analog Devices, https://www.analog.com/en/resources/analog-dialogue/studentzone/studentzone-november-2018.html#:~:text=A%20problem%20seen%20at%20high%20frequencies%20is%20that,to%20introduce%20capacitors%20in%20parallel%20to%20the%20resistors. (accessed Oct. 25, 2024).  
