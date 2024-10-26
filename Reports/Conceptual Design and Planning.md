@@ -282,7 +282,8 @@ The case is responsible for completely enclosing the PCB and protecting it. It w
 ## Memory  
 
 ***Tucker fill in how this interfaces with everything, and Conner provide the customer specs***  
-    
+   1. The memory shall have a width of a byte (Is this the correct way of saying this)  
+   2. The memory shall be able to communicate with the microcontroller though a serial protocal  
 1.  Microcontroller
    -
 2.  Power
