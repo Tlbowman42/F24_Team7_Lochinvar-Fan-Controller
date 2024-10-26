@@ -321,7 +321,8 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 ## Connections & Buttons  
 
 ***Ethan fill in how this interfaces with everything, and Jacob provide the customer specs***  
-
+1. There shall be a molex and a USB port.  
+2. There shall be buttons to allow the user to easily navigate the menu on the display.  
 
 ## Resources  
    
