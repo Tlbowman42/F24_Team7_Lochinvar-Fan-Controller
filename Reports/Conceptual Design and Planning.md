@@ -155,11 +155,17 @@ Our design needs to isolate the signal as well as step the voltage down. Due to 
      
 ## Potential Post-processing Solutions
 
-1. Op-Amp Circuit.
-   - Lower cost per unit and power consumption than other higher memory EEPROMs.
+1. Op-Amp Circuit
+   - Lots of versatility and availability, due to this it adds a lot of freedom to circuit design.
+   - They are cost effective.
+   - Many companies offering op-amps provide simulation support which is important for initial designing and testing. [21]
 
 2. BJT Transistor Circuit
-   - Lower cost per unit and power consumption than other higher memory EEPROMs.
+   - BJTs can be used in many different circuit configurations to amplify specific parameters depending on what you need (CB, CE, and CC Amplifier) [22]
+   - These are also cost-effective solutions.
+   - These circuits produce more noise.
+  
+Our design would benefit the versatility and simulation support that Op-Amps can provide. Due to the design considerations we will be pursuing an op-amp circuit for our fan diagnostic tool.
 
 ## Potential Connections & Buttons Solutions
 
@@ -391,7 +397,8 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [18] R. Awati, “What is EEPROM (electrically erasable programmable read-only memory)?,” WhatIs, https://www.techtarget.com/whatis/definition/EEPROM-electrically-erasable-programmable-read-only-memory#:~:text=Finally%2C%20different%20voltages%20are%20required,data%20from%20or%20onto%20EEPROM. (accessed Oct. 25, 2024).  
 [19] D. Mercer and Antoniu Miclaus Download PDF and A. Miclaus, “ADALM1000 SMU training topic 11: Frequency compensated voltage dividers,” ADALM1000 SMU Training Topic 11: Frequency Compensated Voltage Dividers | Analog Devices, https://www.analog.com/en/resources/analog-dialogue/studentzone/studentzone-november-2018.html#:~:text=A%20problem%20seen%20at%20high%20frequencies%20is%20that,to%20introduce%20capacitors%20in%20parallel%20to%20the%20resistors. (accessed Oct. 25, 2024).  
 [20] Electrical4U, “Optoisolators: What they are and how they work,” Electrical4U, https://www.electrical4u.com/optoisolator-construction-and-operating-principle-of-optoisolator/#:~:text=Some%20of%20the%20advantages%20of%20optoisolators%20are%3A%201,can%20handle%20high%20switching%20speeds%20and%20data%20rates. (accessed Oct. 25, 2024).  
-
+[21] Ovaga |, “Advantages and disadvantages of operational amplifier (op-amp),” Ovaga, https://www.ovaga.com/blog/package/advantages-and-disadvantages-of-operational-amplifier (accessed Oct. 25, 2024).  
+[22] A. T. Editor, “Advantages and disadvantages of Bipolar Junction Transistor (BJT),” Polytechnic Hub, https://www.polytechnichub.com/advantages-disadvantages-bipolar-junction-transistor-bjt/ (accessed Oct. 25, 2024).  
 
 
 ### Statement of Contribution:  
