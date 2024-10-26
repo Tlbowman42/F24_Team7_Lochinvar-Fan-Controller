@@ -316,7 +316,9 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 
 ***Jacob fill in how this interfaces with everything, and Ethan provide the customer specs***  
 1. The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.
-2. The Post-processing shall isolate the signal from backfeed.  
+2. The Post-processing shall isolate the signal from backfeed.
+
+*Op-amp circuit*
    
 ## Ports & Buttons  
 
@@ -324,6 +326,16 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 1. There shall be a molex and a USB port.  
 2. There shall be buttons to allow the user to easily navigate the menu on the display.  
 
+The tool needs ports for both the molex connector and USB connector. The molex connection will provide both 24 Vdc for power, a PWM signal as input, and an additional pin will be used to send a tachometer signal. The USB port will provide 5 Vdc if the user chooses. The device will have multiple buttons which the user will use to navigate the menu and adjust the 6 parameters for the fan driving mode.  
+
+Below describes the interfaces between the Ports and Buttons subsystem and the other subsystems:
+1. Microcontroller
+   - The Microcontroller subsystem will recieve power through either the USB or Molex port. These ports are also where the PWM and Tachometer signals will be sent and recieved from. The signals recieved from the buttons will be used by the microcontroller to both update the fan or boiler's parameters and the screen for the user.
+2. Display
+   - The Display subsystem will display the interpreted version of the PWM signal from the microcontroller. THe display will also change based on the user's inputs.
+3. Case
+   - The Case will account for the opening needed for the Molex, USB, and the buttons.
+     
 ## Resources  
    
 *Subsection:*
