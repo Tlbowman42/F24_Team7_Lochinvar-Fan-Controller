@@ -141,13 +141,17 @@ Our design will require an EEPROM with larger storage capacity rather than as op
 
 ## Potential Pre-processing Solutions
 
-1. Voltage Divider
+1. Resistive Voltage Divider
    - A simple design to implement.
    - Does not work very well at high frequencies. (Can add in a parallel capacitance to correct this) [19]
-   - This is a very cost efficient solution.
+   - This circuit does not have any isolation capabilities.
 
 2. Opto-Isolator
-   - Lower cost per unit and power consumption than other higher memory EEPROMs.
+   - Can electrically isolate the circuit.
+   - They can handle high switching speeds or data rates. [20]
+   - They may distort the signals, so they will not give you highly precise signals at high frequency rates. [20]
+
+Our design needs to isolate the signal as well as step the voltage down. Due to the design considerations we will be pursuing an opto-isolator circuit for our fan diagnostic tool.
      
 ## Potential Post-processing Solutions
 
@@ -383,6 +387,8 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 [17] “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
 [18] R. Awati, “What is EEPROM (electrically erasable programmable read-only memory)?,” WhatIs, https://www.techtarget.com/whatis/definition/EEPROM-electrically-erasable-programmable-read-only-memory#:~:text=Finally%2C%20different%20voltages%20are%20required,data%20from%20or%20onto%20EEPROM. (accessed Oct. 25, 2024).  
 [19] D. Mercer and Antoniu Miclaus Download PDF and A. Miclaus, “ADALM1000 SMU training topic 11: Frequency compensated voltage dividers,” ADALM1000 SMU Training Topic 11: Frequency Compensated Voltage Dividers | Analog Devices, https://www.analog.com/en/resources/analog-dialogue/studentzone/studentzone-november-2018.html#:~:text=A%20problem%20seen%20at%20high%20frequencies%20is%20that,to%20introduce%20capacitors%20in%20parallel%20to%20the%20resistors. (accessed Oct. 25, 2024).  
+[20] Electrical4U, “Optoisolators: What they are and how they work,” Electrical4U, https://www.electrical4u.com/optoisolator-construction-and-operating-principle-of-optoisolator/#:~:text=Some%20of%20the%20advantages%20of%20optoisolators%20are%3A%201,can%20handle%20high%20switching%20speeds%20and%20data%20rates. (accessed Oct. 25, 2024).  
+
 
 
 ### Statement of Contribution:  
