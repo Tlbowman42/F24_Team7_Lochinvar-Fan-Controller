@@ -332,7 +332,7 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 1. The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.
 2. The Post-processing shall isolate the signal from backfeed.
 
-The post-processing system starts off with a tachometer signal that it steps up from the microcontroller to send to the boiler controller. In order to isolate the post-processing signal, we will use an opto-coupler. This will protect our device from any power surges.  
+The post-processing system starts off with a tachometer signal (3.3V) that it steps up from the microcontroller to send to the boiler controller (24V). In order to isolate the post-processing signal, we will use an opto-coupler. This will protect our device from any power surges.  
 
 Below are the interfaces between the Post-processing and the other subsystems:   
 1.  Microcontroller  
