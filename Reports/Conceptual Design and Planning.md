@@ -244,9 +244,6 @@ Below describes the interfaces between the Display subsystem and the other subsy
    - The Microcontroller subsystem will send graphical information to the Display subsystem through a serial connection.
 2. Power
    - The Display subsystem will also receive an input power signal from the Power subsystem.
-3. PCB
-    - The PCB subsystem will distribute the input power signal from the Power subsystem to the Display subsystem. The Display subsystem is connected to the PCB subsystem by a physical connection.
-
 ## Power 
 
 1. The Power shall encompass safe and proper Ports between all subsections of the project.
