@@ -232,7 +232,7 @@ Below describes the interfaces between the microcontroller subsystem and the oth
 4. Ports and Buttons
    - The microcontoller will receive input from the ports and buttons subsection allowing for changes in the display menu and values in both the PWM and Tach signals.
 5. Case
-   - The microcontroller will have no physical connection to the case.
+   - The microcontroller and case subsystems share no connection.
 6. Pre-Processing
    - The microcontroller will receive a stepped down voltage signal from the pre-processing subsystem that will allow for the logging and modulation of PWM and Tach signals based off the selected diagnostic mode.
 7. Post-Processing
