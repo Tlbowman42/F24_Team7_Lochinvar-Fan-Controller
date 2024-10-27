@@ -321,7 +321,6 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 
 ## Post-processing  
 
-***Jacob fill in how this interfaces with everything, and Ethan provide the customer specs***  
 1. The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.
 2. The Post-processing shall isolate the signal from backfeed.
 
