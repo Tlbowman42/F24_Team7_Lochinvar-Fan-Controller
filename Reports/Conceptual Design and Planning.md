@@ -249,9 +249,9 @@ The Display is responsible for showing the PWM and TACH signals to the user and 
 
 Below describes the interfaces between the Display subsystem and the other subsystems:
 1. Microcontroller
-   - The Microcontroller subsystem will send graphical information to the Display subsystem through a serial connection.
+   - The Microcontroller subsystem will send graphical information to the Display subsystem through a serial UART connection.
 2. Power
-   - The Display subsystem will also receive an input power signal from the Power subsystem.
+   - The Display subsystem will also receive an input 3.3V DC power signal from the Power subsystem.
 ## Power 
 
 1. The Power shall encompass safe and proper Ports between all subsections of the project.
