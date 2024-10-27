@@ -283,12 +283,20 @@ Below describes the interfaces between the Power subsystem and the other subsyst
 
 ## Case  
 
-1. The case shall encase and protect the board.
-2. The case shall have openings for the display, buttons, and ports.
+1. The case shall encase and protect the board.  
+2. The case shall have openings for the display, buttons, and ports.  
 3. The case shall have mounting points to secure the board.
 4. The case shall include a raised bezel for the display for protection.  
 
-The case is responsible for completely enclosing the PCB and protecting it. It will have various openings for the display, buttons, and ports. The only true connection the case has with any of the other subsections is the PCB. Via screws or some other form of physical connection.
+The case is responsible for completely enclosing the PCB and protecting it. It will have various openings for the display, buttons, and ports. The only true connection the case has with any of the other subsections is the PCB. Via screws or some other form of physical connection.  
+
+Interfaces with other subsystems:  
+
+1. PCB  
+   - The PCB is the only true connection physical connection with the case.  
+
+2. Ports and buttons  
+   - The case will have to have openings for the various ports and buttons.  
 
 ## Memory  
 
