@@ -443,7 +443,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 
 ### Statement of Contribution:  
 Layne Bowman - I contributed to the Microcontroller subsystem specifications, the Pre-processing subsystem, the potential solutions section, the hardware block diagram, the flow chart, and how the Power subsystem interfaces with all the other subsystems.  
-Ethan Haynes - Resources, speficications for case, and PCB solution.  
+Ethan Haynes - Resources and timeline, case specificaitons, post-processing specifications, ports and buttons solution, and pre-processing solution.  
 Tucker Basham - Introduction and customer specifications for Power subsystem and microcontroller interface section.  
 Matthew Vick- Display solution, PCB specifications, High-level solution, and re-introduce the problem.  
 Jacob Brewer - Specifications for the display also Ethical, Professional, and Standards Considerations section. Then did the customers specs for the buttons & connections. Finally the details and connections for the post-processing system.  
