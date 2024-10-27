@@ -350,7 +350,7 @@ Below describes the interfaces between the Ports and Buttons subsystem and the o
 *Subsection:*
 1. Microcontroller
    - Customer: Matthew Conner Vick
-   - Solution: Tucker Basham & Matthew Conner Vick
+   - Solution: Tucker Basham
 2. Display
    - Customer: Jacob Brewer
    - Solution: Matthew Conner Vick
