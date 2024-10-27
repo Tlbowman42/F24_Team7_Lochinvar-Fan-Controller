@@ -325,7 +325,15 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 1. The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.
 2. The Post-processing shall isolate the signal from backfeed.
 
-*Op-amp circuit*
+The post-processing system starts off with a tachometer signal that it steps up from the microcontroller to send to the boiler controller. In order to isolate the post-processing signal, we will use an opto-coupler. This will protect our device from any power surges.  
+
+Below are the interfaces between the Post-processing and the other subsystems:   
+1.  Microcontroller  
+   -The microcontroller subsystem will send a tachometer signal that has gone through the post-processing circuit.  
+2. Display  
+   - The Display subsystem will display the interpreted version of the tachometer signal from the microcontroller.  
+3. Case  
+   - The Case will account for the opening needed for the Molex connector.  
    
 ## Ports & Buttons  
  
@@ -439,4 +447,4 @@ Layne Bowman - I contributed to the Microcontroller subsystem specifications, th
 Ethan Haynes - Resources, speficications for case, and PCB solution.  
 Tucker Basham - Introduction and customer specifications for Power subsystem and microcontroller interface section.  
 Matthew Vick- Display solution, PCB specifications, High-level solution, and re-introduce the problem.  
-Jacob Brewer - Specifications for the display also Ethical, Professional, and Standards Considerations section.
+Jacob Brewer - Specifications for the display also Ethical, Professional, and Standards Considerations section. Then did the customers specs for the buttons & connections. Finally the details and connections for the post-processing system.  
