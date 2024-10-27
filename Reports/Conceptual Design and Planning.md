@@ -225,10 +225,18 @@ The microcontroller is responsible for handling the various GPIO applications as
 Below describes the interfaces between the microcontroller subsystem and the other subsystems:
 1. Display
    - The microcontroller will send graphical information for display on the systems LCD via serial communication.
-3. Power
-   - The microcontroller will receive input power from the Power subsystem
-4. PCB
-   - The Power will distribute the DC input voltage to power the microcontroller through the PCB subsystem. The microcontroller will be connected to the PCB via physical connection.
+2. Power
+   - The microcontroller will receive a 3.3V DC input power from the Power subsystem.
+3. Memory
+   - The microconroller subsystem will be connected to the memory subsystem via an I2C connection. This connection allows both proper and fast data transfer between the microcontroller and memory subsytem allowing for ease of data transfer and storage.
+4. Ports and Buttons
+   - The microcontoller will receive input from the ports and buttons subsection allowing for changes in the display menu and values in both the PWM and Tach signals.
+5. Case
+   - The microcontroller will have no physical connection to the case.
+6. Pre-Processing
+   - The microcontroller will receive a stepped down voltage signal from the pre-processing subsystem that will allow for the logging and modulation of PWM and Tach signals based off the selected diagnostic mode.
+7. Post-Processing
+   - The microcontroller will output a PWM or Tach signal based off the diagnostic mode selection to the post processing subsystem where the signal will be stepped up to match the voltage of the boiler unit.
 
 ## Display Design
 
