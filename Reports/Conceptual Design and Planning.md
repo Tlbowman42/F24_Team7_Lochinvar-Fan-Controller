@@ -379,7 +379,7 @@ Below describes the interfaces between the Ports and Buttons subsystem and the o
    - Solution: Layne Bowman
 4. Memory
    - Customer: Matthew Conner Vick
-   - Solution: Tucker Basham
+   - Solution: Tucker Basham & Matthew Conner Vick
 5. Case
    - Customer: Ethan Haynes
    - Solution: Jacob Brewer
