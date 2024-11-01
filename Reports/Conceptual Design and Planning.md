@@ -433,7 +433,7 @@ As Electrical Engineering students, we are committed to adhering to the IEEE Cod
 
 For our standards we will be in compliance with the IPC-2221 ,IPC-J-STD-001, and IEC 61010-2-081. To comply with the IPC-2221 standard, the PCB will be manufactured by a company that follows all specified regulations within that standard. For IPC-J-STD-001, team members will be informed about the approved practices and materials for soldering. All team members have completed the HSI soldering safety certification, and the team must also confirm that component and material suppliers meet these standards. 
 
-To comply with IEC 61010-2-082 standard, we will ensure protection against electrical shock through isolation, proper grounding, and insulation. Next we will make sure that our tempature never exceeds the limits set in this standard to protect our equipment and ourselves.Then, we will adhere to any mechanical hazards by using adequate guards or locking mechanisms. Lastly, we will adhere to the standards on software control by rigorusly testing our product to ensure safety.
+To comply with IEC 61010-2-082 standard, we will ensure protection against electrical shock through isolation, proper grounding, and insulation. Next we will make sure that our tempature never exceeds the limits set in this standard to protect our equipment and ourselves. Then, we will adhere to any mechanical hazards by using adequate guards or locking mechanisms. Lastly, we will adhere to the standards on software control by rigorusly testing our product to ensure safety.
 
 # Appendix
 ### Citations:   
