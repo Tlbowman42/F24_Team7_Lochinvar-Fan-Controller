@@ -435,6 +435,8 @@ For our standards we will be in compliance with the IPC-2221 ,IPC-J-STD-001, and
 
 To comply with IEC 61010-2-082 standard, we will ensure protection against electrical shock through isolation, proper grounding, and insulation. We will do this through specifications 1 and 7 in the Power subsystem. Next we will ensure adequate heat dissapation through the use of heat sink pads on our PCB and this will be done through specification 3 in the PCB section. Lastly, we will adhere to the standards on software control by rigorusly testing our product to ensure safety. We will also follow the same coding guide that Dr. Bruce has provided for us to ensure adequately commented and readable code.
 
+The IPC-J-STD-001 standard influenced our design by guiding our selection of materials to meet its specified guidelines and ensuring that each team member understands proper soldering techniques to achieve reliable connections. The IEC 61010-2-081 standard impacted our design by requiring us to implement isolation methods, such as using an optocoupler, and ensuring sufficient heat dissipation by using components like heat sinks.
+
 # Appendix
 ### Citations:   
 [1] “Single-layer vs. multi-layer PCBS: What’s the difference?,” ElectronicsHacks, https://electronicshacks.com/single-layer-vs-multi-layer-pcbs/ (accessed Oct. 11, 2024).  
