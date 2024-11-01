@@ -406,7 +406,7 @@ To ensure the proper functionality of the device skills in circuity design, prog
 Softwares will need to be learned by various members to design subsystems of the project. Possible softwares that could be used include KiCad, for PCB and circuitry design, and Inventor, for the case design. The board will also require the use of soldering skills to attach the components.
 
 *Costs:*  
-Below is a rough estimation of components needed for the project. These estimates are based upon items with similar functionalities of that required by the corresponding subsections.
+Below is a rough estimation of some of the known major components needed for the project. These estimates are based upon items with similar functionalities of that required by the corresponding subsections.
 
 | Component        | Part Number             |Estimated Cost |
 | --------         | -------                 |-------        |
@@ -417,6 +417,8 @@ Below is a rough estimation of components needed for the project. These estimate
 | Case             | PA07011                 |$30 |  
 | Opto-isolators   | ACPL-C87A-500E, ISO1211 |$10 |  
 | USB Port         | UJ2-AV-1-SMT-TR         | $1.45 |
+| | | |
+| Total | | $205.45 |
 
 *Gantt Chart:*  
 ![Gantt Chart 10-22-24_page-0001](https://github.com/user-attachments/assets/d7147e24-e9b9-404d-b42e-017b4b2c08b5)
