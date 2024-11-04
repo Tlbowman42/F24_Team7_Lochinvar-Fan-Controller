@@ -355,7 +355,7 @@ Below are the interfaces between the Post-processing and the other subsystems:
 1. There shall be a molex and a USB port.  
 2. There shall be buttons to allow the user to easily navigate the menu on the display.  
 
-The tool needs ports for both the molex connector and USB connector. The molex connection will provide both 24 Vdc for power, a PWM signal as input, and an additional pin will be used to send a tachometer signal. The USB port will provide 5 Vdc if the user chooses. The device will have multiple buttons which the user will use to navigate the menu and adjust the 6 parameters for the fan driving mode.  
+The tool needs ports for both the molex connector and USB connector. The molex connection will provide both 24 Vdc for power, a PWM signal, and a tachometer signal. The USB port will provide 5 Vdc if the user chooses. The device will have multiple buttons which the user will use to navigate the menu and adjust the 6 parameters for the fan driving mode.  
 
 Below describes the interfaces between the Ports and Buttons subsystem and the other subsystems:
 1. Microcontroller
