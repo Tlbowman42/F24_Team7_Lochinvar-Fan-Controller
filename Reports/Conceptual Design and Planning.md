@@ -325,7 +325,7 @@ The memory subsystem is the EEPROM responsible for the display setting and log s
 1. The Pre-processing shall step down the PWM signal to send to the Microcontroller subsystem.
 2. The Pre-processing shall isolate the signal from any fluctuations in the signal from the Molex.
 
-The Molex connector will provide a PWM signal to the tool to take in as the fan speed. In order to process the signal an opto-couple circuit will be implemented to both adjust the signal so that it can be read by the microcontroller and will be used to protect the circuit from any power surge from the Molex connector. Afterwards, signal is then ready to be sent to the microcontroller.
+The Molex connector will provide a PWM signal to the tool to take in as the fan speed. In order to process the signal an opto-coupler circuit will be implemented to adjust the signal so that it can be read by the microcontroller and will be used to protect the circuit from any power surge from the Molex connector. Afterwards, signal is then ready to be sent to the microcontroller.
 
 Below describes the interfaces between the Pre-processing subsystem and the other subsystems:
 1. Microcontroller
@@ -340,7 +340,7 @@ Below describes the interfaces between the Pre-processing subsystem and the othe
 1. The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.
 2. The Post-processing shall isolate the signal from backfeed.
 
-The post-processing system starts off with a tachometer signal (3.3V) that it steps up from the microcontroller to send to the boiler controller (24V). In order to isolate the post-processing signal, we will use an opto-coupler. This will protect our device from any power surges.  
+The post-processing system starts off with a tachometer signal (3.3V) that it steps up from the microcontroller to send to the boiler controller (24V). In order to isolate and step up the post-processing signal, we will use an opto-coupler. This will protect our device from any power surges.  
 
 Below are the interfaces between the Post-processing and the other subsystems:   
 1.  Microcontroller  
