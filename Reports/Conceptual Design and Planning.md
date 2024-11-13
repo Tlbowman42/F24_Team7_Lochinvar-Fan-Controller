@@ -1,6 +1,6 @@
 # Introduction  
 
-The ability to properly test and or simulate a system once completed is a fundamental cornerstone of engineering. Proper testing of manufactured and engineered goods allow us to hone in on a device's functionality as well as simulate various scenarios. The goal for this project is the conceptual and physical design of a boiler fan simulation unit. This fan diagnostic tool will simulate a boiler fan for our customer Lochinvar. The reason a product such as this should exist is to save time and money, and allow for a full range of boiler diagnostic testing for Lochinvar. This device will in turn allow for much faster testing procedures thus increasing productivity and saving the time and money of Lochinvar.
+The ability to properly test and or simulate a system once completed is a fundamental cornerstone of engineering. Proper testing of manufactured and engineered goods allow us to hone in on a device's functionality as well as simulate various scenarios. The goal for this project is the conceptual and physical design of a boiler fan simulation unit. This fan diagnostic tool will simulate a boiler fan for our customer Lochinvar. The reason a product such as this should exist is to save time and money, and allow for a full range of boiler diagnostic testing for Lochinvar. This device will in turn allow for much faster testing procedures thus increasing productivity and saving the time and money of Lochinvar.  
 
 # Restate the Fully Formulate Problem
 
