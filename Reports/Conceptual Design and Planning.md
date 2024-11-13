@@ -15,6 +15,9 @@ The tool shall be able to be powered by both the DC power bus from the boiler's 
 *3) Diagnostic Tool Specifications:*  
 The following are the specifications for the diagnostic tool's hardware and software.  
 
+> [!IMPORTANT]  
+> describe the three operating modes first, then items #1-6 will make more sense.
+
 1. The diagnostic tool shall have the hardware to accomplish all three modes.
 2. The diagnostic tool shall allow the user to select one of the three modes, only the Fan Simulation mode will be functional.
 3. The diagnostic tool shall have an LCD screen that will display the PWD signal, tachometer signal, and a user interface designed at a later date.
@@ -52,6 +55,10 @@ The following are the specifications for the diagnostic tool's hardware and soft
 
 *4) Budget Specifications:*  
 The diagnostic tool's design and build phase shall not exceed the given $2,000 budget.[14]     
+
+> [!IMPORTANT]  
+> don't end your sentences with a preposistion like "to"
+
 
 *Constraints*  
 The following section outlines the constraint statements that the team will adhere to.  
