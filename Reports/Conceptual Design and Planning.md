@@ -1,6 +1,6 @@
 # Introduction  
 
-The ability to properly test and or simulate a system once completed is a fundamental cornerstone of engineering. Proper testing of manufactured and engineered goods allow us to hone in on a device's functionality as well as simulate various scenarios. The goal for this project is the conceptual and physical design of a boiler fan simulation unit. This fan diagnostic tool will simulate a boiler fan for our customer Lochinvar. The reason a product such as this should exist is to save time and money, and allow for a full range of boiler diagnostic testing for Lochinvar. This device will in turn allow for much faster testing procedures thus increasing productivity and saving the time and money of Lochinvar.
+The ability to properly test and or simulate a system once completed is a fundamental cornerstone of engineering. Proper testing of manufactured and engineered goods allow us to hone in on a device's functionality as well as simulate various scenarios. The goal for this project is the conceptual and physical design of a boiler fan simulation unit. This fan diagnostic tool will simulate a boiler fan for our customer Lochinvar. The reason a product such as this should exist is to save time and money, and allow for a full range of boiler diagnostic testing for Lochinvar. This device will in turn allow for much faster testing procedures thus increasing productivity and saving the time and money of Lochinvar.  
 
 # Restate the Fully Formulate Problem
 
@@ -15,24 +15,18 @@ The tool shall be able to be powered by both the DC power bus from the boiler's 
 *3) Diagnostic Tool Specifications:*  
 The following are the specifications for the diagnostic tool's hardware and software.  
 
-1. The diagnostic tool shall have the hardware to accomplish all three modes.
-2. The diagnostic tool shall allow the user to select one of the three modes, only the Fan Simulation mode will be functional.
-3. The diagnostic tool shall have an LCD screen that will display the PWD signal, tachometer signal, and a user interface designed at a later date.
-4. The diagnostic tool shall allow the user to change the minimum and maximum fan speed, the minimum PWM duty cycle needed for the fan to turn on, the minimum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
-5. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
-6. The hardware shall be designed to accomplish the Fan Simulation Mode, the Fan Driving Mode, and the Monitoring Mode.
-7. The following shall be possible in the Fan Simulation Mode:[13]  
+1. The following shall be possible in the Fan Simulation Mode:[13]  
    - Adjusting the minimum and maximum fan speed
    - Adjusting the minimum PWM duty cycle needed for the fan to turn on
    - Adjusting the minimum PWM duty cycle for the fan to continue running
    - The fan speed increasing and decreasing the transient timing factor
 
-8. The following shall be possible in the Fan Driving Mode:[13]   
+2. The following shall be possible in the Fan Driving Mode:[13]   
    - Setting a desired PWM signal to send to the fan
    - Setting a desired RPM to drive the fan at
    - User configurable PID settings for fan speed control, PWM frequency, Enable / Disable control takeover, and Enable / Disable Tachometer Pass-through
 
-9. The following shall be possible in the Monitoring Mode:[13]    
+3. The following shall be possible in the Monitoring Mode:[13]    
 
 **Physical Pass-through**
    - PWM signal from the control is physically connected to the boiler's fan, while the Fan Diagnostic Tool monitors the signal.
@@ -49,12 +43,19 @@ The following are the specifications for the diagnostic tool's hardware and soft
   - Ability to cause fan oscillation.
   - Ability to dampen PWM duty cycle changes that are sent to the fan.
 
+4. The diagnostic tool shall have the hardware to accomplish all three modes.
+5. The diagnostic tool shall allow the user to select one of the three modes, only the Fan Simulation mode will be functional.
+6. The diagnostic tool shall have an LCD screen that will display the PWD signal, tachometer signal, and a user interface designed at a later date.
+7. The diagnostic tool shall allow the user to change the minimum and maximum fan speed, the minimum PWM duty cycle needed for the fan to turn on, the minimum PWM duty cycle needed for the fan to continue running, and the fan speed to increase or decrease the transient timing factor.
+8. The diagnostic tool will have buttons for the user to adjust which mode and/or the parameters for that mode.
+9. The hardware shall be designed to accomplish the Fan Simulation Mode, the Fan Driving Mode, and the Monitoring Mode.
+
 
 *4) Budget Specifications:*  
 The diagnostic tool's design and build phase shall not exceed the given $2,000 budget.[14]     
 
 *Constraints*  
-The following section outlines the constraint statements that the team will adhere to.  
+The following section outlines the constraint statements to which the team will adhere.
 
   The diagnostic tool shall adhere to the following standards:  
   1. IPC-2221: This standard outlines how PCB's should be designed to ensure the reliability, quality, and safety.[15]  
