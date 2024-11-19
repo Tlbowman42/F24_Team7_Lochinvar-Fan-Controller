@@ -274,11 +274,11 @@ Below describes the interfaces between the Power subsystem and the other subsyst
 3. Case
    - The Case and Power subsystems are not connected.
 4. Pre-Processing
-   - The Case and Power subsystems are not connected.
+   - The Pre-Processing will recieve the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.
 5. Post-processing
-   - The Case and Power subsystems are not connected.  
+   - The Post-Processing will recieve the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.
 6. Memory
-   - The Case and Power subsystems are not connected.  
+   - The Memory and Power subsystems are not connected.  
 7. Ports and Buttons
    - The Ports and Buttons subsystem is directly connected to the Power subsystem. Specifically the Molex and USB Ports providing the 24V DC and 5V DC needed to power the tool. Therefore the Ports and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words the DC voltage will be an input to the Power subsystem.
 
