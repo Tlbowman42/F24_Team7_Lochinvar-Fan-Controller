@@ -86,6 +86,7 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 | Onsemi / Fairchild | 1N4743A | Mouser Electronics | 512-1N4743A | 1 | $0.16 | https://www.mouser.com/ProductDetail/onsemi-Fairchild/1N4743A?qs=SSucg2PyLi6p0vxmcuBOaA%3D%3D |
 | Diotec Semiconductor | 1N4007 | Digikey | 4878-1N4007CT-ND - Cut Tape (CT) | 1 | $0.10 | https://www.digikey.com/en/products/detail/diotec-semiconductor/1N4007/18833652 |
 | Switch to choose U5V and E5V |  | Digikey |  | 1 |  |  |
+| USB |  | Digikey |  | 1 |  |  |
 | Total | | | | | $143.20   | |
 
 # Analysis
