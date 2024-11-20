@@ -14,7 +14,6 @@ The power subsystem shall adhere to the following specifications and constraints
 6. The Power shall output DC power to the display and microcontroller.
 7. The Power shall ensure stable power is output to all sensitive components such as the microcontroller.
 8. The Power shall have safety measures in place to deal with noise and surges.
-9. The Power shall use an LED to display the state of the power within the board.
 
 ***I may end up taking away some of these specifications depending on what the group consensus is***  
 
