@@ -35,10 +35,10 @@ The input PWM and Tach signals must be stepped down to an amplitude suitable for
 | Vishay/Dale | 71-CMF55300R00BER6 | Mouser |CMF55300R00BER6 | 2 | $5.52| https://www.mouser.com/ProductDetail/Vishay-Dale/CMF55300R00BER6?qs=%2FI5vA73T%252BYIBRycreqlPGg%3D%3D | R4 and R5|
 
 # Analysis
-<img width="959" alt="Preprocessing circuit ltspice_TACH_CURRENT" src="https://github.com/user-attachments/assets/a3c452ae-4712-498f-b268-63548e5d7f32">
-
-<img width="959" alt="Preprocessing circuit ltspice_PWM_CURRENT" src="https://github.com/user-attachments/assets/cef58671-24c7-40ff-9caf-4c9a4cd27f40">
 <img width="546" alt="Preprocessing circuit ltspice V2" src="https://github.com/user-attachments/assets/0680a3c8-14f2-42e0-abc8-1b5adba8ef31">
+
+<img width="959" alt="Preprocessing circuit ltspice_TACH_CURRENT" src="https://github.com/user-attachments/assets/3f18157c-823c-4b63-b5d5-bcd59df698e2">
+<img width="959" alt="Preprocessing circuit ltspice_PWM_CURRENT" src="https://github.com/user-attachments/assets/cef58671-24c7-40ff-9caf-4c9a4cd27f40">
 
 <img width="959" alt="Preprocessing circuit ltspice_TACH" src="https://github.com/user-attachments/assets/d989a517-e490-45f3-83d0-7a34aacfb296">
 <img width="959" alt="Preprocessing circuit ltspice_PWM" src="https://github.com/user-attachments/assets/69429fcf-42ba-41a1-bdc1-0ee5f6ae4b18">
