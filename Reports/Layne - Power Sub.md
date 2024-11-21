@@ -90,7 +90,7 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 | TDK Corporation | FG28X7R1A225KRT06 | Digikey | 445-173582-1-ND - Cut Tape (CT) | 1 | $0.33 | https://www.digikey.com/en/products/detail/tdk-corporation/FG28X7R1A225KRT06/5803196?s=N4IgTCBcDaIGIHEwA4AaB2ASgRgIJjAFYBpTAFQAYA2EAXQF8g | C1 |
 | KEMET | C322C103K3G5TA | Mouser Electronics | 80-C322C103K3G5TA | 1 | $0.51 | https://www.mouser.com/ProductDetail/KEMET/C322C103K3G5TA?qs=h3%2Fj8evtlm2CUEq59T%2FBjg%3D%3D | C2 |
 | Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | S0.26 | 1 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
-| Total | | | | | $147.64   | |
+| Total | | | | | $147.90   | |
 
 # Analysis
 
@@ -138,11 +138,18 @@ Therefore this circuit helps to achieve constraint one, due to allowing for a mo
 
 ## Analysis over the Flyback Converter with an Isolated Output
 
-I am using the LM5180EVM-S05 Flyback Converter for our design. The purpose of this flyback converter is to step down our 10-40V DC source from the fan controller and output an isolated 5V DC for our diagnostic tool. The datasheet states, " The LM5180-Q1 single-output EVM is designed to use a regulated or non-regulated high-voltage input rail ranging from 10 V to 65 V to produce a tightly-regulated, isolated output voltage of 5V at load currents of 1 A(or higher depending on VIN)." [4]
+I am using the LM5180EVM-S05 Flyback Converter for our design. The purpose of this flyback converter is to step down our 10-40V DC source from the fan controller and output an isolated 5V DC for our diagnostic tool. The datasheet states, " The LM5180-Q1 single-output EVM is designed to use a regulated or non-regulated high-voltage input rail ranging from 10 V to 65 V to produce a tightly-regulated, isolated output voltage of 5V at load currents of 1 A(or higher depending on VIN)." [4] 
+
+As shown in the image below the Vin can be from 10V to 65V with a nominal voltage of 24V, which also aligns with the nominal voltage of the controller voltage that we will be provided. This voltage will then be stepped down to 4.95V to 5.1V with a nominal voltage of 5.025V.  
 
 ![image](https://github.com/user-attachments/assets/7da3340c-f8d6-419a-9f0f-548b510badf8)
 
+I have also shown the Kicad schematic downloaded from Texas Instruments website for reference. [5]
 
+![image](https://github.com/user-attachments/assets/1d33beff-ed7e-4b84-bdc2-cee85cc021db)
+
+
+The flyback converter shown above will also achieve constraint 1. By allowing our diagnostic tool to be electrically isolated from the "dirty" power supply.  
 
 ## Analysis over the Diode-oring Circuit and the LDO Voltage Regulator
 
@@ -151,3 +158,4 @@ I am using the LM5180EVM-S05 Flyback Converter for our design. The purpose of th
 [2]  “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
 [1] “IRF9540NPBF,” Infineon Technologies, https://www.infineon.com/dgdl/irf9540npbf.pdf?fileId=5546d462533600a401535611cfa21dc8 (accessed Nov. 21, 2024).  
 [4] “Ti,” Texas Instruments, https://www.ti.com/lit/ug/slvu261/slvu261.pdf?ts=1719995246833&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS61500%253Fbm-verify%253DAAQAAAAJ_____9MmIuL_yBQIIZ_XbUMP7Hy669m5KhAc66gboQ_qz98FypIehgkez1fwBw-DwTL1fvTIi5dUWsQAhqRgd8atqHnL9vzYwWqX5UjgEs9IuKniEUz7mniIxQyloEzs0Z4McU5-MRMCUG9NoCHWNH1QACawps0fBNVFaeMSUeU66PAmgiylHob45TdnbC89xvDUYzBTbRLkKgLp2q_CUWA0I99tiu0NDrq5wYGQhKu0aXECLj9RpgP33Z3w4ahQQ8ZbkfaYRWgso2j7mYY2WvKetO2fq8BdVfUUgzHGhVwWKfzBXQ (accessed Nov. 21, 2024).  
+[5] “LM5180EVM-S05,” LM5180EVM-S05 Evaluation board | TI.com, https://www.ti.com/tool/LM5180EVM-S05?keyMatch=LM5180EVM-S05&tisearch=universal_search&usecase=hardware#design-files (accessed Nov. 21, 2024).  
