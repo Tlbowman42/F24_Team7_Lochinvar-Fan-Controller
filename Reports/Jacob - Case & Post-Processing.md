@@ -13,9 +13,9 @@ The case shall include a raised bezel for the display for protection.
 The post-processing system starts off with a tachometer signal (3.3V) that it steps up from the microcontroller to send to the boiler controller (24V). In addition to this, the signal must be isolated to protect the system from power surges. To accomplish this, an opto-coupler circuit will be implemented to meet both of these requirements. This circuit will consist of an opto-coupler, a current limiting resistor, and a pull up resistor. The case will be designed in solidworks then 3D printed.  
 
 # Interfacing with Other Subsystems
-Microcontroller  
+Microcontroller   
 -The microcontroller subsystem will send a tachometer signal that has gone through the post-processing circuit.
-Displa 
+Display  
 -The Display subsystem will display the interpreted version of the tachometer signal from the microcontroller.
-Case
+Case  
 -The Case will account for the openings needed for the Molex connector and buttons.  
