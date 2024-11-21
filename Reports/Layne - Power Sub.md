@@ -67,8 +67,7 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 
 # Buildable Schematic
 
-![image](https://github.com/user-attachments/assets/5372b5e2-c959-4062-a198-a93db6a56d5c)
-
+![image](https://github.com/user-attachments/assets/799e6c8f-e0e2-4153-ae29-1e028998ebe8)
 
 # PCB Layout
 
@@ -85,12 +84,12 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 | Onsemi | MBRS410LT3G | Mouser Electronics | 863-MBRS410LT3G | 1 | $1.81 | https://www.mouser.com/ProductDetail/onsemi/MBRS410LT3G?qs=3JMERSakebpTz7AxvU6YQw%3D%3D | D1 |
 | Onsemi / Fairchild | 1N4743A | Mouser Electronics | 512-1N4743A | 1 | $0.16 | https://www.mouser.com/ProductDetail/onsemi-Fairchild/1N4743A?qs=SSucg2PyLi6p0vxmcuBOaA%3D%3D | D2 |
 | Diotec Semiconductor | 1N4007 | Digikey | 4878-1N4007CT-ND - Cut Tape (CT) | 1 | $0.10 | https://www.digikey.com/en/products/detail/diotec-semiconductor/1N4007/18833652 | D3 |
-| C&K | S102031MS02Q | Mouser Electronics | 611-S1020301 | 1 | $3.50 | https://www.mouser.com/ProductDetail/CK/S102031MS02Q?qs=qUgWstB0J2PTi4u40fuqgg%3D%3D |
+| C&K | S102031MS02Q | Mouser Electronics | 611-S1020301 | 1 | $3.50 | https://www.mouser.com/ProductDetail/CK/S102031MS02Q?qs=qUgWstB0J2PTi4u40fuqgg%3D%3D | N/A |
 | Micro USB |  | Digikey |  | 1 |  |  |
 | TDK Corporation | FK28X5R1A105KN000 | Digikey | 445-FK28X5R1A105K-ND | 1 | $0.36 | https://www.digikey.com/en/products/detail/tdk-corporation/FK28X5R1A105KN000/1008877 | C3 |
 | TDK Corporation | FG28X7R1A225KRT06 | Digikey | 445-173582-1-ND - Cut Tape (CT) | 1 | $0.33 | https://www.digikey.com/en/products/detail/tdk-corporation/FG28X7R1A225KRT06/5803196?s=N4IgTCBcDaIGIHEwA4AaB2ASgRgIJjAFYBpTAFQAYA2EAXQF8g | C1 |
 | KEMET | C322C103K3G5TA | Mouser Electronics | 80-C322C103K3G5TA | 1 | $0.51 | https://www.mouser.com/ProductDetail/KEMET/C322C103K3G5TA?qs=h3%2Fj8evtlm2CUEq59T%2FBjg%3D%3D | C2 |
-| 100k Resistor |  | Digikey |  | 1 |  |  |
+| Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | S0.26 | 1 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
 | Total | | | | | $147.64   | |
 
 # Analysis
@@ -98,8 +97,8 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 I will split my analysis into three main parts.  
 
 1. Analysis over the Reverse Polarity Protection Circuit
-2. Analysis over the Flyback Converter with an isolated output
-3. Analysis over the diode-oring circuit and the LDO Voltage Regulator
+2. Analysis over the Flyback Converter with an Isolated Output
+3. Analysis over the Diode-oring Circuit and the LDO Voltage Regulator
 
 ## Analysis over the Reverse Polarity Protection Circuit
 
@@ -137,8 +136,18 @@ Therefore this circuit helps to achieve constraint one, due to allowing for a mo
 
 ![image](https://github.com/user-attachments/assets/e41b66e6-d378-49e2-93ec-252ee4787c82)
 
+## Analysis over the Flyback Converter with an Isolated Output
 
+I am using the LM5180EVM-S05 Flyback Converter for our design. The purpose of this flyback converter is to step down our 10-40V DC source from the fan controller and output an isolated 5V DC for our diagnostic tool. The datasheet states, " The LM5180-Q1 single-output EVM is designed to use a regulated or non-regulated high-voltage input rail ranging from 10 V to 65 V to produce a tightly-regulated, isolated output voltage of 5V at load currents of 1 A(or higher depending on VIN)." [4]
+
+![image](https://github.com/user-attachments/assets/7da3340c-f8d6-419a-9f0f-548b510badf8)
+
+
+
+## Analysis over the Diode-oring Circuit and the LDO Voltage Regulator
 
 # References
 [1] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
 [2]  “IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Sep. 21, 2024).  
+[1] “IRF9540NPBF,” Infineon Technologies, https://www.infineon.com/dgdl/irf9540npbf.pdf?fileId=5546d462533600a401535611cfa21dc8 (accessed Nov. 21, 2024).  
+[4] “Ti,” Texas Instruments, https://www.ti.com/lit/ug/slvu261/slvu261.pdf?ts=1719995246833&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS61500%253Fbm-verify%253DAAQAAAAJ_____9MmIuL_yBQIIZ_XbUMP7Hy669m5KhAc66gboQ_qz98FypIehgkez1fwBw-DwTL1fvTIi5dUWsQAhqRgd8atqHnL9vzYwWqX5UjgEs9IuKniEUz7mniIxQyloEzs0Z4McU5-MRMCUG9NoCHWNH1QACawps0fBNVFaeMSUeU66PAmgiylHob45TdnbC89xvDUYzBTbRLkKgLp2q_CUWA0I99tiu0NDrq5wYGQhKu0aXECLj9RpgP33Z3w4ahQQ8ZbkfaYRWgso2j7mYY2WvKetO2fq8BdVfUUgzHGhVwWKfzBXQ (accessed Nov. 21, 2024).  
