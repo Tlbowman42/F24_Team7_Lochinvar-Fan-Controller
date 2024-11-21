@@ -118,7 +118,7 @@ Therefore this circuit helps to achieve constraint one, due to allowing for a mo
 
 ***Circuit Diagram in Ltspice***
 
-![image](https://github.com/user-attachments/assets/93e606e2-be11-4cc5-ba8d-1f1a40a96382)
+![image](https://github.com/user-attachments/assets/9d20e92f-9fc4-4c1e-bfaa-4ca874593da0)
 
 ***Transient Graph for V_pol (Positive Source)***
 
