@@ -1,0 +1,35 @@
+
+Direct Newton iteration for .op point succeeded.
+.step run=1
+.step run=2
+.step run=3
+.step run=4
+.step run=5
+
+
+Measurement: vout_value
+  step	v(vout)
+     1	4.94981
+     2	5.03458
+     3	4.97877
+     4	5.07154
+     5	5.03781
+
+
+Date: Thu Nov 21 16:28:30 2024
+Total elapsed time: 0.341 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2138
+traniter = 2114
+tranpoints = 1058
+accept = 1056
+rejected = 2
+matrix size = 7
+fillins = 0
+solver = Normal
+Matrix Compiler1:      13 opcodes  0.1/[0.0]/0.1
+Matrix Compiler2: off  [0.0]/0.1/0.1
+

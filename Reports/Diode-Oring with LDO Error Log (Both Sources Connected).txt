@@ -1,0 +1,85 @@
+
+Direct Newton iteration for .op point succeeded.
+.step run=1 v_usb=0
+.step run=2 v_usb=0
+.step run=3 v_usb=0
+.step run=4 v_usb=0
+.step run=5 v_usb=0
+.step run=1 v_usb=1
+.step run=2 v_usb=1
+.step run=3 v_usb=1
+.step run=4 v_usb=1
+.step run=5 v_usb=1
+.step run=1 v_usb=2
+.step run=2 v_usb=2
+.step run=3 v_usb=2
+.step run=4 v_usb=2
+.step run=5 v_usb=2
+.step run=1 v_usb=3
+.step run=2 v_usb=3
+.step run=3 v_usb=3
+.step run=4 v_usb=3
+.step run=5 v_usb=3
+.step run=1 v_usb=4
+.step run=2 v_usb=4
+.step run=3 v_usb=4
+.step run=4 v_usb=4
+.step run=5 v_usb=4
+.step run=1 v_usb=5
+.step run=2 v_usb=5
+.step run=3 v_usb=5
+.step run=4 v_usb=5
+.step run=5 v_usb=5
+
+
+Measurement: vout_value
+  step	v(vout)
+     1	4.94981
+     2	5.03458
+     3	4.97877
+     4	5.07154
+     5	5.03781
+     6	5.02197
+     7	5.00243
+     8	5.08469
+     9	5.07367
+    10	5.06218
+    11	4.97587
+    12	5.07911
+    13	5.05673
+    14	5.02704
+    15	4.99545
+    16	4.95188
+    17	4.9634
+    18	5.00457
+    19	4.97183
+    20	4.97463
+    21	5.09865
+    22	5.01681
+    23	4.96758
+    24	4.95033
+    25	4.95097
+    26	5.00659
+    27	5.02977
+    28	5.03573
+    29	5.04034
+    30	5.04116
+
+
+Date: Thu Nov 21 16:22:57 2024
+Total elapsed time: 1.997 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2126
+traniter = 2104
+tranpoints = 1053
+accept = 1052
+rejected = 1
+matrix size = 7
+fillins = 0
+solver = Normal
+Matrix Compiler1: 214 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+
