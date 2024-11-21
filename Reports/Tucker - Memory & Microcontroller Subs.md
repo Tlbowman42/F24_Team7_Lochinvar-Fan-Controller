@@ -9,17 +9,21 @@ The microcontroller subsystem shall adhere to the following specifications and c
 1. The microcontroller shall be able to take in and output both PWM and tachometer signals.  
 2. The microcontroller shall be able to communicate to the display to update what is being displayed.  
 3. The microcontroller shall be able to review user inputs through the form of push buttons to change selected parameters and/or change what is being displayed 4 when necessary.  
-5. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.)  
+4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.)  
 
 *Constraints*
 1. As of current circumstances the microcontroller does not face any known constraints.
 
 *Justification for Constraints*  
 
-Constraint one is applicable to the Power Subsystem due to the electrical safety concerns for equipment that is used for measurement, control, and in laboratories.  
+Constraint one pertains to the specified mode abilities required from Lochinvar and ensures that first and foremost, the microcontrolleer will be able to accept and output PWM and TACH signals.  
+  
+Constraint two pertains to the connection between the microcontroller and display subsystems, this constraint ensures that the microcontroller will be able to send output information to the LCD for further user diagnosis.  
 
-Constraint two is applicable to the Power Subsystem due to the nature of the DC voltage supply the Fan Diagnostic Tool will be supplied by. This constraint was never written in words; however, through discussion with our customer, Lochinvar, we will need an isolated power output for our Diagnostic Tool.  
-
+Constraint three refers to the microcontrollers ability to take in user GPIO inputs and translate that to data sent and displayed on the LCD. This constraint makes sure of the microcontrollers ability to both input and output data through the subsystems.  
+  
+Constraint four refers to the software pass through mode required by the customer Lochinvar. This constraint ensures the microcontroller will have the proper GPIO functionality and peripherals to take in PSM and TACH signals and clean/process them to eliminate noise and unwanted signals.  
+  
 # Overview of Proposed Solution
 The Power Subsystem will be comprised of a few main parts:  
 
