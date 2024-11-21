@@ -1,4 +1,4 @@
-**Function of the Subsystem  
+**Function of the Subsystem**  
 The role of the post-processing subsystem is to prepare the incoming PWM and Tach signals to be read by the microcontroller. This subsystem will be responsible for isolation from the Molex connection. It also will step up the signals to the necessary 3.3V DC.
 
 Specifications and Constraints  
