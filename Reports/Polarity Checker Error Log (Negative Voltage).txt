@@ -1,0 +1,156 @@
+Circuit: * C:\Users\layne\OneDrive\Documents\Capstone 1 - Fall 2024\Power ICs & Circuits\LTSpice\Polarity Checker with PFET.asc
+
+Direct Newton iteration for .op point succeeded.
+.step vin=-40
+.step vin=-39
+.step vin=-38
+.step vin=-37
+.step vin=-36
+.step vin=-35
+.step vin=-34
+.step vin=-33
+.step vin=-32
+.step vin=-31
+.step vin=-30
+.step vin=-29
+.step vin=-28
+.step vin=-27
+.step vin=-26
+.step vin=-25
+.step vin=-24
+.step vin=-23
+.step vin=-22
+.step vin=-21
+.step vin=-20
+.step vin=-19
+.step vin=-18
+.step vin=-17
+.step vin=-16
+.step vin=-15
+.step vin=-14
+.step vin=-13
+.step vin=-12
+.step vin=-11
+.step vin=-10
+
+
+Measurement: v_polvalue
+  step	v(v_pol)
+     1	-0.513895
+     2	-0.512735
+     3	-0.511557
+     4	-0.510361
+     5	-0.509145
+     6	-0.507909
+     7	-0.506652
+     8	-0.505372
+     9	-0.504067
+    10	-0.502737
+    11	-0.501379
+    12	-0.499992
+    13	-0.498573
+    14	-0.49712
+    15	-0.495631
+    16	-0.494103
+    17	-0.492532
+    18	-0.490914
+    19	-0.489247
+    20	-0.487524
+    21	-0.48574
+    22	-0.483889
+    23	-0.481964
+    24	-0.479956
+    25	-0.477855
+    26	-0.475648
+    27	-0.47332
+    28	-0.470854
+    29	-0.468226
+    30	-0.465407
+    31	-0.46236
+
+Measurement: vgv_pol_voltage
+  step	v(vg) - v(v_pol)
+     1	0.494105
+     2	0.493444
+     3	0.492766
+     4	0.492069
+     5	0.491353
+     6	0.490616
+     7	0.489858
+     8	0.489078
+     9	0.488272
+    10	0.487441
+    11	0.486583
+    12	0.485695
+    13	0.484776
+    14	0.483822
+    15	0.482832
+    16	0.481803
+    17	0.480731
+    18	0.479613
+    19	0.478445
+    20	0.477221
+    21	0.475936
+    22	0.474585
+    23	0.473159
+    24	0.47165
+    25	0.470047
+    26	0.468339
+    27	0.466511
+    28	0.464543
+    29	0.462414
+    30	0.460094
+    31	0.457545
+
+Measurement: powerd1
+  step	v(v_pol)*i(r1)
+     1	1.01701e-006
+     2	9.89108e-007
+     3	9.61286e-007
+     4	9.33548e-007
+     5	9.05897e-007
+     6	8.78332e-007
+     7	8.50854e-007
+     8	8.23466e-007
+     9	7.96168e-007
+    10	7.68962e-007
+    11	7.41848e-007
+    12	7.14828e-007
+    13	6.87904e-007
+    14	6.61078e-007
+    15	6.34351e-007
+    16	6.07726e-007
+    17	5.81203e-007
+    18	5.54787e-007
+    19	5.28479e-007
+    20	5.02281e-007
+    21	4.76198e-007
+    22	4.50232e-007
+    23	4.24387e-007
+    24	3.98668e-007
+    25	3.73078e-007
+    26	3.47623e-007
+    27	3.22309e-007
+    28	2.97143e-007
+    29	2.72133e-007
+    30	2.47288e-007
+    31	2.2262e-007
+
+
+Date: Thu Nov 21 13:23:49 2024
+Total elapsed time: 1.420 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2458
+traniter = 2096
+tranpoints = 1046
+accept = 1046
+rejected = 0
+matrix size = 18
+fillins = 8
+solver = Normal
+Matrix Compiler1: 1.29 KB object code size  0.2/0.1/[0.1]
+Matrix Compiler2:     124 opcodes  0.2/[0.1]/0.2
+
