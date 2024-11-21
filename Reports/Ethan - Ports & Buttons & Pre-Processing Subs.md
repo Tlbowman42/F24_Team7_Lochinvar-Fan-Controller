@@ -28,6 +28,11 @@ The input PWM and Tach signals must be stepped down to an amplitude suitable for
 # PCB Layout
 
 # BOM
+| Manufacturor | Manufacturor Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name|
+| :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
+| Sharp Microelectronics | PC817X1YSZW | Mouser |852-PC817X1YSZW | 2 | $1.28| https://www.mouser.com/ProductDetail/Sharp-Microelectronics/PC817X1YSZW?qs=t7xnP681wgVcLhY5Ec%252BPYQ%3D%3D | U3 and U4|
+| Vishay/Dale | CPF21K8000FKE14 | Mouser |71-CPF21K8000FKE14 | 2 | $4.12| url | R3 and R6|
+| Vishay/Dale | 71-CMF55300R00BER6 | Mouser |CMF55300R00BER6 | 2 | $5.52| url | R4 and R5|
 
 # Analysis
 <img width="959" alt="Preprocessing circuit ltspice_TACH" src="https://github.com/user-attachments/assets/d989a517-e490-45f3-83d0-7a34aacfb296">
