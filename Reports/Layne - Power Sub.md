@@ -116,9 +116,9 @@ Comparing the second two graphs titled "Transient Graph for Vg - V_pol (Positive
 
 Therefore this circuit helps to achieve constraint one, due to allowing for a more electrically safe circuit due to polarities not being reversed. 
 
-***Circuit Diagram in Ltspice***
+***Reverse Polarity Protection Circuit Diagram in Ltspice***
 
-![image](https://github.com/user-attachments/assets/9d20e92f-9fc4-4c1e-bfaa-4ca874593da0)
+![image](https://github.com/user-attachments/assets/c9acf289-bb04-4b74-a05f-86253ec2bb07)
 
 ***Transient Graph for V_pol (Positive Source)***
 
@@ -152,6 +152,22 @@ I have also shown the Kicad schematic downloaded from Texas Instruments website 
 The flyback converter shown above will also achieve constraint 1. By allowing our diagnostic tool to be electrically isolated from the "dirty" power supply.  
 
 ## Analysis over the Diode-oring Circuit and the LDO Voltage Regulator
+
+***Diode-oring with LDO Voltage Regulator Circuit Diagram in Ltspice***
+
+![image](https://github.com/user-attachments/assets/7bea0a73-2286-4cbd-8a55-7e614296ffb3)
+
+***Transient Graph for Vout (Both Sources Connected)***
+
+![image](https://github.com/user-attachments/assets/08569702-9d76-4118-b2b6-773877ce32f6)
+
+***Transient Graph for Vout (Only Molex Connected)***
+
+![image](https://github.com/user-attachments/assets/fa2fa99f-8bc8-470f-b301-63e2a1bbc997)
+
+***Transient Graph for Vout (Only USB Connected)***
+
+![image](https://github.com/user-attachments/assets/c1ab5732-d870-4444-9bd8-54b407603398)
 
 # References
 [1] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
