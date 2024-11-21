@@ -14,8 +14,8 @@ The post-processing system starts off with a tachometer signal (3.3V) that it st
 
 # Interfacing with Other Subsystems
 Microcontroller   
--The microcontroller subsystem will send a tachometer signal that has gone through the post-processing circuit.
+-The microcontroller subsystem will send a tachometer signal that has gone through the post-processing circuit.  
 Display  
--The Display subsystem will display the interpreted version of the tachometer signal from the microcontroller.
+-The Display subsystem will display the interpreted version of the tachometer signal from the microcontroller.  
 Case  
 -The Case will account for the openings needed for the Molex connector and buttons.  
