@@ -21,7 +21,7 @@ The input PWM and Tach signals must be stepped down to an amplitude suitable for
 
 # Buildable Schematic
 
-<img width="372" alt="Preprocessing circuit kicad V4" src="https://github.com/user-attachments/assets/dcb9634a-3b48-49d6-a22f-8a0a1421f5a2">
+<img width="378" alt="Preprocessing circuit kicad V5" src="https://github.com/user-attachments/assets/1d3b6077-40df-40d8-b309-3004df6fd68e">
 <img width="501" alt="Buttons circuit kicad V2" src="https://github.com/user-attachments/assets/852243e5-a7fa-45b8-b416-8c54ed998564">
 
 
@@ -35,8 +35,13 @@ The input PWM and Tach signals must be stepped down to an amplitude suitable for
 | Vishay/Dale | 71-CMF55300R00BER6 | Mouser |CMF55300R00BER6 | 2 | $5.52| https://www.mouser.com/ProductDetail/Vishay-Dale/CMF55300R00BER6?qs=%2FI5vA73T%252BYIBRycreqlPGg%3D%3D | R4 and R5|
 
 # Analysis
+<img width="959" alt="Preprocessing circuit ltspice_TACH_CURRENT" src="https://github.com/user-attachments/assets/a3c452ae-4712-498f-b268-63548e5d7f32">
+
+<img width="959" alt="Preprocessing circuit ltspice_PWM_CURRENT" src="https://github.com/user-attachments/assets/cef58671-24c7-40ff-9caf-4c9a4cd27f40">
+<img width="546" alt="Preprocessing circuit ltspice V2" src="https://github.com/user-attachments/assets/0680a3c8-14f2-42e0-abc8-1b5adba8ef31">
+
 <img width="959" alt="Preprocessing circuit ltspice_TACH" src="https://github.com/user-attachments/assets/d989a517-e490-45f3-83d0-7a34aacfb296">
 <img width="959" alt="Preprocessing circuit ltspice_PWM" src="https://github.com/user-attachments/assets/69429fcf-42ba-41a1-bdc1-0ee5f6ae4b18">
-<img width="556" alt="Preprocessing circuit ltspice" src="https://github.com/user-attachments/assets/87de5f02-f232-4d58-bccd-6764666816cd">
+
 
 # References
