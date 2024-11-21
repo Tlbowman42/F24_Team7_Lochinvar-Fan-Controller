@@ -1,4 +1,4 @@
-# Function of the Subsystem
+[Polarity Checker Error Log (Positive Voltage).txt](https://github.com/user-attachments/files/17850994/Polarity.Checker.Error.Log.Positive.Voltage.txt)# Function of the Subsystem
 
 The role of the Power subsystem is to ensure stable power throughout the diagnostic tool. Specifically, this subsystem accepts power from a DC bus or USB connection, stepping the input voltage down to a manageable 3.3V DC that will power the tool's microcontroller, display, and all other components. Additionally, this subsystem will offer electrical isolation from the fan controller's Molex connection and the diagnostic tool.  
 
@@ -95,7 +95,49 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 
 # Analysis
 
-I will split my analysis into 
+I will split my analysis into three main parts.  
+
+1. Analysis over the Reverse Polarity Protection Circuit
+2. Analysis over the Flyback Converter with an isolated output
+3. Analysis over the diode-oring circuit and the LDO Voltage Regulator
+
+## Analysis over the Reverse Polarity Protection Circuit
+
+I have shown my Ltspice circuit diagram below. The simulation is stepping through source voltages, it will step from the voltage source being +10 volts to it being +40 volts in steps of one. I am then measuring the voltage after the PFET (V_pol), and this voltage will be what is given to the flyback converter. The results of this simulation can be found in the text document labeled "Polarity Checker Error Log (Positive Voltage)", or I have also shown the transient graphs below.  
+
+Comparing the first two graphs titled "Transient Graph for V_pol (Positive Source)" and "Transient Graph for V_pol (Negative Source)" we observe the following: 
+
+1. When the source voltage is positive the flyback converter will be recieving the voltage given by the molex connecter. This is due to the Vgs or threshold voltage being high enough for the PMOS to be in the saturation region.
+2. When the source voltage is negative the flyback converter will be recieving little to no voltage since the PFET will open due to its Vgs voltage not being high enough. The voltage that does get through is the result of leakage and because the Vgs value is hovering close enough to the threshold voltage of -2 to -4 volts for the IRF9540NPBF PMOS.
+
+Comparing the second two graphs titled "Transient Graph for Vg - V_pol (Positive Source)" and "Transient Graph for Vg - V_pol (Negative Source)" we observe the following: 
+
+1. The diode will clamp the Vgs voltage to around -13V when needed. The reason for this is to not violate the Vgs rating for the IRF9540NPBF PMOS which is plus or minus 20 volts.
+2. If the source is negative the Vgs voltage will not be in the threshold region of -2V to -4V therefore the PMOS will be acting in the cutoff region.
+
+Therefore this circuit helps to achieve constraint one, due to allowing for a more electrically safe circuit due to polarities not being reversed. 
+
+***Circuit Diagram in Ltspice***
+
+![image](https://github.com/user-attachments/assets/93e606e2-be11-4cc5-ba8d-1f1a40a96382)
+
+***Transient Graph for V_pol (Positive Source)***
+
+![image](https://github.com/user-attachments/assets/120dfb87-78d4-4fae-8f15-4f35389870af)
+
+***Transient Graph for V_pol (Negative Source)***
+
+![image](https://github.com/user-attachments/assets/c0ca110f-5fe5-4110-b4c1-413cf7daf43c)
+
+***Transient Graph for Vg - V_pol (Positive Source)***
+
+![image](https://github.com/user-attachments/assets/2c51b049-99f0-46af-9963-c7fdbdfeb89f)
+
+***Transient Graph for Vg - V_pol (Negative Source)***
+
+![image](https://github.com/user-attachments/assets/e41b66e6-d378-49e2-93ec-252ee4787c82)
+
+
 
 # References
 [1] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
