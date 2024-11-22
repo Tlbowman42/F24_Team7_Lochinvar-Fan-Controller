@@ -1,6 +1,8 @@
 # Function of the Subsystem
 The role of the Preprocessing subsystem is to prepare the incoming PWM and Tach signals to be read by the microcontroller. This subsystem will be responsible for isolation from the Molex connection. It also will step down the signals to the necessary 3.3V DC.
 
+The role of the Ports and Buttons subsystem is for taking in and distributing signals. 
+
 # Specifications and Constraints
 1. The Pre-processing shall step down the input PWM  and Tach signal to send to the Microcontroller subsystem.
 2. The Pre-processing shall isolate the signal from any fluctuations in the signal from the Molex.
@@ -31,8 +33,8 @@ The input PWM and Tach signals must be stepped down to an amplitude suitable for
 | Manufacturor | Manufacturor Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name|
 | :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
 | Sharp Microelectronics | PC817X1YSZW | Mouser |852-PC817X1YSZW | 2 | $1.28| https://www.mouser.com/ProductDetail/Sharp-Microelectronics/PC817X1YSZW?qs=t7xnP681wgVcLhY5Ec%252BPYQ%3D%3D | U3 and U4|
-| Vishay/Dale | CPF21K8000FKE14 | Mouser |71-CPF21K8000FKE14 | 2 | $4.12| https://www.mouser.com/ProductDetail/Vishay-Dale/CPF21K8000FKE14?qs=sGAEpiMZZMsPqMdJzcrNwgeiKxcYoFt34YmtFMkQd7c%3D | R3 and R6|
-| Vishay/Dale | 71-CMF55300R00BER6 | Mouser |CMF55300R00BER6 | 2 | $5.52| https://www.mouser.com/ProductDetail/Vishay-Dale/CMF55300R00BER6?qs=%2FI5vA73T%252BYIBRycreqlPGg%3D%3D | R4 and R5|
+| Yageo | FMP200JR-52-1K8 | Digikey |1.8KZCT-ND | 2 | $0.62| https://www.digikey.com/en/products/detail/yageo/FMP200JR-52-1K8/2058663 | R3 and R6|
+| Yageo | FMP200JR-52-5K1 | Digikey |5.1KZCT-ND | 2 | $0.64| https://www.digikey.com/en/products/detail/yageo/FMP200JR-52-5K1/2058704?s=N4IgjCBcoExaBjKAzAhgGwM4FMA0IB7KAbXADYBOMAFggF18AHAFyhAGVmAnASwDsA5iAC%2B%2BGAAYAHAFZ4IJJDRY8hEiGkA6MAAIA1gHkAFgFtMIBiBZsAqnx7N9yALLZUmAK5dsI-AFo40PJQ3O4qRJCksnSiIL5kcgohYWoAzCBi5sIxAaRemDyYzARc5vjxgTwAJmxpTKyQHNz8QvjMAJ6M3g1uSFlAA | R4 and R5|
 
 # Analysis
 <img width="546" alt="Preprocessing circuit ltspice V2" src="https://github.com/user-attachments/assets/0680a3c8-14f2-42e0-abc8-1b5adba8ef31">
