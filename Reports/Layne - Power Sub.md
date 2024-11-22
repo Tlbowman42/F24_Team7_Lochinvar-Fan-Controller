@@ -139,18 +139,23 @@ Therefore this circuit helps to achieve constraint one, due to allowing for a mo
 
 I am using the LM5180EVM-S05 Flyback Converter for our design. The purpose of this flyback converter is to step down our 10-40V DC source from the fan controller and output an isolated 5V DC for our diagnostic tool. The datasheet states, " The LM5180-Q1 single-output EVM is designed to use a regulated or non-regulated high-voltage input rail ranging from 10 V to 65 V to produce a tightly-regulated, isolated output voltage of 5V at load currents of 1 A(or higher depending on VIN)." [4] 
 
-As shown in the image below the Vin can be from 10V to 65V with a nominal voltage of 24V, which also aligns with the nominal voltage of the controller voltage that we will be provided. This voltage will then be stepped down to 4.95V to 5.1V with a nominal voltage of 5.025V.  
+As shown in the image below the Vin can be from 10V to 65V with a nominal voltage of 24V, which also aligns with the nominal voltage of the controller voltage that we will be provided. This voltage will then be stepped down to 4.95V to 5.1V with a nominal voltage of 5.025V. I have also shown the Kicad schematic downloaded from Texas Instruments website for reference. [5]  
+
+***LM5180EVM-S05 User's Guide***
 
 ![image](https://github.com/user-attachments/assets/7da3340c-f8d6-419a-9f0f-548b510badf8)
 
-I have also shown the Kicad schematic downloaded from Texas Instruments website for reference. [5]
+***Kicad Schematic of the LM5180EVM-S05 board from Texas Instruments***
 
 ![image](https://github.com/user-attachments/assets/1d33beff-ed7e-4b84-bdc2-cee85cc021db)
-
 
 The flyback converter shown above will also achieve constraint 1. By allowing our diagnostic tool to be electrically isolated from the "dirty" power supply.  
 
 ## Analysis over the Diode-oring Circuit and the LDO Voltage Regulator
+
+Since our design should incorporate being powered by two different sources, I choose a diode-oring circuit. The circuit is comprised of the 5.025 nominal DC voltage from the flyback converter, a schottky diode, a standard diode, and the 5V DC coming from the USB. As shown below in the circuit diagram the flyback converter is connected to the anode end of the schottky diode, and the USB 5V is connected to the anode of the standard diode. Then the two cathodes are connected together. In this connection the diode-oring circuit will output the highest voltage on the cathode end. Since I am using a schottky diode for the molex connection (coming out of the flyback converter) the molex connection if connected will have the priority to power the board. If the molex connection is not available then the USB 5V will be higher and therefore power the board. 
+
+Next the output of the diode-oring circuit is then inputted into the TPS79633DCQR LDO Voltage Regulator. As shown on the datasheet the Vin value for the TPS79633DCQR LDO is from 2.7 to 5.5 volts. In the case the molex connector is chosen by the diode circuit the Vin would be approximately 4.7V and if the USB connection is chosen the Vin is approximately 4.3V. Therefore the Vin parameter should not be violated. Additionally, the TPS79633DCQR model is specifically designed to output 3.3V at 1A max. Therefore the LDO should be able to provide enough current and voltage to all the components in the 3.3V circuit.
 
 ***Diode-oring with LDO Voltage Regulator Circuit Diagram in Ltspice***
 
@@ -167,6 +172,13 @@ The flyback converter shown above will also achieve constraint 1. By allowing ou
 ***Transient Graph for Vout (Only USB Connected)***
 
 ![image](https://github.com/user-attachments/assets/c1ab5732-d870-4444-9bd8-54b407603398)
+
+***TPS79633DCQR Data Sheet***
+
+![image](https://github.com/user-attachments/assets/f246cfa1-831e-49d3-baef-85470b1604a9)
+
+The diode-oring circuit will allow us to power the board through two different sources. It will also give us a managable 3.3V for our smaller components to run off.  
+
 
 # References
 [1] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
