@@ -31,26 +31,26 @@ The subsystem deemed third most important was the memory subsystem. This subsyst
 Finally, the other used pins were mapped out as not connected (NC), USART communication, I2C communication, or simple GPIO inputs for the 6 buttons the user can interact with. The USART and I2C communications were pinned out but not used as there is no need for these communication channels as of right now, but they may be used in the future. Furthermore, the GPIO input pins were configured as pull down buttons as to add to the simplicity of the circuit design. These IO buttons were deemed as the least important as they only serve to get user input in the form of up, down, left, right, ok, and back for the menus used.  
   
 # Interfacing with Other Subsystems
-1. Microcontroller
-   - The Microcontroller subsystem will receive an input power signal from the Power subsystem. The voltage will initially come from a Molex connection from the boiler controller or to from the USB. This will either be 24V DC or 5V DC respectively. The Power subsystem will then step down the voltage to a useable 3.3V for the microcontroller. It will additionally provide electrical isolation between the USB and Molex connector through the use of an opto-isolator. Therefore the Power subsystem will be outputting a 3.3V DC power signal.
+1. Display
+   - The display subsystem will take 11 pins of input from the microcontroller and ST-morpho connectors at all times. The first 8 account for DB0-DB7 also known as the data bus pins sent to the display and all reside on the same channel for added speed. The subsequent three pins left are used for the R/W select, enable, and register select functions.  
 
-2. Display
-   - The Display subsystem will also receive the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.
+2. Case
+   - The microcontroller subsystem does not interface with the case.  
 
-3. Case
-   - The Case and Power subsystems are not connected.
+3. Pre-Processing
+   - The pre-processing subsystem is connected to the microcontoller through the on board ST-morpho connectors. Due to the pre-processing subsystem taking in both Tach and PWM input signals, two specialized pins were given to this subsystem. Both pins have on board timers allowing for the cleanest and fastest replication and processing of input signals.  
 
-4. Pre-Processing
-   - The Pre-Processing will recieve the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal. ***The Pre-Processing may need to be updated due to the current design of the optocouplers pulling up to 3.3 and 24V***  
+4. Post-processing
+   - The post processing subsystem is connected to the nucleo board via the onboard ST-morpho connectors. Much like the pre-processing subsystem, the post requires specialized timer pins in order to output clear and correct PWM and Tach signals. Due to this two specialized pins were given to the post processing with both IO's being specialized for PWM and Tach out signals.  
 
-5. Post-processing
-   - The Post-Processing will recieve the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal. ***The Post-Processing may need to be updated due to the current design of the optocouplers pulling up to 3.3 and 24V***  
+5. Memory
+   - The memory and microcontroller are connected via the ST-morpho connectors on the PCB. From there traces are ran from 3 dedicated SPI pins and 1 standard GPIO pin. The three spi pins constitute the serial clock, mosi, and miso connections to the memory thus, allowing for proper clock generation and data transferral. The final GPIO pin sent to the memory allows for the EEPROM to use a chip select function for the inetgrated circuitry within the EEPROM.  
 
-6. Memory
-   - The Memory and Power subsystems are not connected.
+6. Ports and Buttons
+   - The ports and buttons subsystem is connected to various ports on the nucleo via the PCB's onboard ST-morpho connectors. First the buttons are connected to 6 GPIO pins on the nucleo board. These IO's have no special functionaility as they are simply movement commands for the diagnostic tools menus, however these pins are configured as active low as to make analysis easier for the team. The ports subsystem is connected to the nucleo physically through a USB-A to mini USB connection. This connection allows for power and data to be driven to the microcontroller for further processing and peripheral uses.  
 
-7. Ports and Buttons
-   - The Ports and Buttons subsystem is directly connected to the Power subsystem. Specifically the Molex and USB Ports providing the 24V DC and 5V DC needed to power the tool. Therefore the Ports and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words the DC voltage will be an input to the Power subsystem.
+7. Power
+   - The power subsystem is connected to the microcontroller via the PCB's St-morpho connectors. This power will be taken from the molex connection and stepped down to a usable 3.3V for the microcontroller, ensuring proper use and safety for the microcontroller. Furthermore, the microcontroller will be electrically isolated from the rest of the power circuit allowing for the utmost safety to the microcontroller and its peripherals.  
 
 # Buildable Schematic
 
