@@ -12,34 +12,24 @@ The microcontroller subsystem shall adhere to the following specifications and c
 4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.)  
 
 *Constraints*
-1. As of current circumstances the microcontroller does not face any known constraints.
-
-*Justification for Constraints*  
-
-Constraint one pertains to the specified mode abilities required from Lochinvar and ensures that first and foremost, the microcontrolleer will be able to accept and output PWM and TACH signals.  
-  
-Constraint two pertains to the connection between the microcontroller and display subsystems, this constraint ensures that the microcontroller will be able to send output information to the LCD for further user diagnosis.  
-
-Constraint three refers to the microcontrollers ability to take in user GPIO inputs and translate that to data sent and displayed on the LCD. This constraint makes sure of the microcontrollers ability to both input and output data through the subsystems.  
-  
-Constraint four refers to the software pass through mode required by the customer Lochinvar. This constraint ensures the microcontroller will have the proper GPIO functionality and peripherals to take in PSM and TACH signals and clean/process them to eliminate noise and unwanted signals.  
+1. As of current circumstances the microcontroller does not face any known constraints.  
   
 # Overview of Proposed Solution
-The Power Subsystem will be comprised of a few main parts:  
+The microcontroller subsystem consists of only two main parts.
 
-1. A flyback converter with one isolated output
-2. A diode-oring circuit to allow for two different sources to power the board
-3. A LDO voltage regulator to step 5V DC down to 3.3V DC.
-4. A reverse polarity protection circuit
+1. The Nucleo-L452RE development board.  
+2. The ST-morpho connectors on the PCB of the diagnostic tool.  
 
-First the board will be connected by Molex connection to a controller. This controller will provide 10-40V DC, at a nominal voltage of 24V DC. First the voltage will go through a reverse polarity protection circuit comprised of a PFET and clamping diode. This circuit will ensure that in the case of the Vdd and Gnd getting swapped the circuit will not be damaged.  
-
-Second after the reverse polarity protection the voltage will be fed into a flyback converter that will have one 5V DC output that will connect to the rest of the diagnostic tool. This will fufill the second constraint of providing an isolated power supply for our diagnostic tool.  
-
-Third the two 5V DC sources, one from a USB connection and one from the isolated output of the flyback converter, will enter into a diode-oring circuit. This circuit is set up so that the molex connection will be given priority to power the board if it is available. This will fulfill the first specification, allowing for the board to be powered by two different sources.  
-
-Lastly after the diode-oring circuit the voltage will be inputted into an Low Drop-out Voltage Regulator to step down the voltage to 3.3V DC for the rest of the components on the board.  
-
+Firstly, the nucleo board will be connected to the main PCB via the CN7 and CN10 ST-morpho connectors on the nucleo board. Once bridged onto the main PCB, traces will take various IO's and other pins to different areas for their seperate processes. Connections to the memory, lcd, buttons, power, post, and pre processing subsystems will all be estalished in this step.  
+  
+Currently 36 GPIO pins have been used or mapped out for possible integration on further projects. The first four pins were given to the post and pre processing subsystems as these systems needed the most specialized pins. The chosen 4 pins allow for the most optimized signal intake and outputting allwoing for the fastest and clearrest signal processing when in the monitoring or subsequent modes.  
+  
+The second most important subsystem was deemed as the LCD, to said LCD 11 GPIO pins were used. These pins have been assigned as output IO's and of the 11 pins 8 were used for a parallel connection to ensure stable and fast data transfer to the screen. The subsequent three pins were used for various functions on the LCD such as register select, enable, and W/R select. The gpios were selected based off of their lack of specialty functions and their locations al being on a singular channel, PBx.  
+  
+The subsystem deemed third most important was the memory subsystem. This subsystem required specialized SPI pins as the selected EEPROM uses SPI communication for data transfer. Due to this we chose to give the memory 3 specialized pins in the SCK, MOSI, MISO, and a single IO pin for the onboard chip select.  
+  
+Finally, the other used pins were mapped out as not connected (NC), USART communication, I2C communication, or simple GPIO inputs for the 6 buttons the user can interact with. The USART and I2C communications were pinned out but not used as there is no need for these communication channels as of right now, but they may be used in the future. Furthermore, the GPIO input pins were configured as pull down buttons as to add to the simplicity of the circuit design. These IO buttons were deemed as the least important as they only serve to get user input in the form of up, down, left, right, ok, and back for the menus used.  
+  
 # Interfacing with Other Subsystems
 1. Microcontroller
    - The Microcontroller subsystem will receive an input power signal from the Power subsystem. The voltage will initially come from a Molex connection from the boiler controller or to from the USB. This will either be 24V DC or 5V DC respectively. The Power subsystem will then step down the voltage to a useable 3.3V for the microcontroller. It will additionally provide electrical isolation between the USB and Molex connector through the use of an opto-isolator. Therefore the Power subsystem will be outputting a 3.3V DC power signal.
