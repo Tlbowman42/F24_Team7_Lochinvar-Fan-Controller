@@ -1,16 +1,18 @@
 # Function of the Subsystem
-The role of the Ports and Buttons subsystem is for taking in power and signals. 
+The role of the Ports and Buttons subsystem is for taking in power and signals to distribute throughout the board.
 
 # Specifications and Constraints
 The Ports and Buttons subsystem shall adhere to the following specifications and constraints:
 
 *Specifications*
+1. There shall be a molex and a USB port.  
+2. There shall be buttons to allow the user to easily navigate the menu on the display.
 
 *Constraints*
-1. 
+1. The subsystem must meet IPC J-STD-001.
 
 *Justifictation for Constraints*
-
+Constraint one requires that proper soldering procedures, training, equipment, and materials are used. Following such guidelines will ensure safety and stable connections for the user of the tool and those working on it.
 
 # Overview of Proposed Solution
 There will be two Molex connectors on the board. One is for Fan Driving mode, the Fan Molex, and the other is for Fan Simulation Mode, Control Molex. Both are used for the Monitoring mode. The Fan Molex has PWM Input and a Tach Output. The Control Molex has Tach Input and a PWM output. In other words, for the Fan Molex the board is receiving a PWM signal and sending a Tach signal and for the Control Molex the board is recieving a Tach signal and sending a PWM signal.  
@@ -56,7 +58,7 @@ As shown in the photo below, there are 6 SPST switches that will act as left, ri
 ![image](https://github.com/user-attachments/assets/5a6e39ef-8f56-4d20-a397-60724bc26a80)
 
 # BOM
-| Manufacturor | Manufacturor Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name|
+| Manufacturer | Manufacturer Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name|
 | :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
 | Molex | 39-30-3058 | Mouser Electronics | 538-39-30-3058 | 2 | $2.84 | https://www.mouser.com/ProductDetail/Molex/39-30-3058?qs=404muyNbhLG7BJxtPMLWWg%3D%3D | J1 and J2 |
 | TE Connectivity AMP Connectors | 2-215307-0 | Digikey | A106399-ND | 2 | $5.34 | https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/2-215307-0/1149668 | J3 and J4|
