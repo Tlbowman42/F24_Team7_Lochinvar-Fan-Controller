@@ -5,8 +5,8 @@ The role of the Ports and Buttons subsystem is for taking in power and signals t
 The Ports and Buttons subsystem shall adhere to the following specifications and constraints:
 
 *Specifications*
-1. There shall be a molex and a USB port.  
-2. There shall be buttons to allow the user to easily navigate the menu on the display.
+1. There shall be a Molex port and port to connect to the flyback converter. 
+2. There shall be buttons to allow the user to navigate the menu on the display.
 
 *Constraints*
 1. The subsystem must meet IPC J-STD-001.
