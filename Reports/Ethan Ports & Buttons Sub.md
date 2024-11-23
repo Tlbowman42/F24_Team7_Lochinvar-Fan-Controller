@@ -52,12 +52,16 @@ As shown in the photo below, there are 6 SPST switches that will act as left, ri
 # BOM
 | Manufacturor | Manufacturor Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name|
 | :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
+| Molex | 39-30-3058 | Mouser Electronics | 538-39-30-3058 | 2 | $2.84 | https://www.mouser.com/ProductDetail/Molex/39-30-3058?qs=404muyNbhLG7BJxtPMLWWg%3D%3D | J1 and J2 |
 | TE Connectivity AMP Connectors | 2-215307-0 | Digikey | A106399-ND | 2 | $5.34 | https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/2-215307-0/1149668 | J3 and J4|
 | Würth Elektronik |691137710002| Digikey | 732-10955-ND | 2 | $0.72 | https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/691137710002/6644051 | J5 and J6|
 | C&K |D6C90 F2 LFS| Digikey | 401-1988-ND | 6 | $7.47 | https://www.digikey.com/en/products/detail/c-k/D6C90-F2-LFS/1466345 | S1 to S6|
 
 # Analysis
 A 5 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because the lower resistance will use 0.66 mA as opposed to 0.33 mA. This higher current will allow the signal to be stronger and have more immunity to noise. This current is not high enough to cause a large drain in power or introduce exesscive heat, therefore it will benefit the system to use the lower resistance so that when a button is pressed there will be no doubt that it was a press based on the signal the microcontroller recieves.
+
+<img width="367" alt="Buttons circuit digital" src="https://github.com/user-attachments/assets/0720f8b8-fbec-4c69-850d-7378e6eab843">
+
 
 # References
 [1] IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Nov 22, 2024).
