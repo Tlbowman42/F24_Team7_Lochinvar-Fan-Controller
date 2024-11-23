@@ -17,7 +17,7 @@ There will be two Molex connectors on the board. One is for Fan Driving mode, th
 
 There will be two 40 pin receptacle connectors for the 80 Morpho pins on the Nucleo board. This will be what allows the rest of the board to send and recieve signals from the microcontroller.
 
-There will be two 2 wire terminal blocks for the board to connect to the external flyback converter that takes in 24 V and will return 5 V.
+There will be two 2 wire terminal blocks for the board to connect to the external flyback converter that takes in 24 V and will return 5 V. The flyback converter is a seperate smaller PCB from the main PCB
 
 Finally, there will be 6 SPST push buttons so that the user can interface with the board to adjust parameters and navigate the menu of the diagnostic tool.
 
@@ -42,7 +42,13 @@ Finally, there will be 6 SPST push buttons so that the user can interface with t
 # Buildable Schematic
 As shown in the photo below, there are 6 SPST switches that will act as left, right, up, down, ok, and select. They use 5000 Ohm pull down resistors to send a 3.3 V signal to their corresponding microcontroller pins. A pull down resistor circuit is chosen because that means power is only flowing to the pin when a button is pressed as opposed to pull up where power to all 6 pins would flow if they remain unpressed. This will cause less load demand from our power system.
 
-<img width="501" alt="Buttons circuit kicad V2" src="https://github.com/user-attachments/assets/c7abbf63-b4a9-4be4-9a27-9e698f18407b">
+*Buttons*
+
+<img width="501" alt="Buttons circuit kicad V2" src="https://github.com/user-attachments/assets/c7abbf63-b4a9-4be4-9a27-9e698f18407b">  
+  
+*Ports*
+
+<img width="425" alt="Portsandbuttonsbuildableschematic" src="https://github.com/user-attachments/assets/36490ba3-c1cd-41a3-ac82-004e6afb40bd">
 
 
 # PCB Layout
@@ -58,7 +64,7 @@ As shown in the photo below, there are 6 SPST switches that will act as left, ri
 | C&K |D6C90 F2 LFS| Digikey | 401-1988-ND | 6 | $7.47 | https://www.digikey.com/en/products/detail/c-k/D6C90-F2-LFS/1466345 | S1 to S6|
 
 # Analysis
-A 5 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because the lower resistance will use 0.66 mA as opposed to 0.33 mA. This higher current will allow the signal to be stronger and have more immunity to noise. This current is not high enough to cause a large drain in power or introduce exesscive heat, therefore it will benefit the system to use the lower resistance so that when a button is pressed there will be no doubt that it was a press based on the signal the microcontroller recieves.
+A 5 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because the lower resistance will use 0.66 mA as opposed to 0.33 mA. This higher current will allow the signal to be stronger and have more immunity to noise. This current is not high enough to cause a large drain in power or introduce exesscive heat, therefore it will benefit the system to use the lower resistance so that when a button is pressed there will be no doubt that it was a press based on the signal the microcontroller recieves. This clear signal will allow the user to focus on what decisions they need to make next instead of dealing with misinputs.
 
 <img width="367" alt="Buttons circuit digital" src="https://github.com/user-attachments/assets/0720f8b8-fbec-4c69-850d-7378e6eab843">
 
