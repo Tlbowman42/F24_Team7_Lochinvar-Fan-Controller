@@ -64,6 +64,12 @@ Finally, the other used pins were mapped out as not connected (NC), USART commun
 
 # PCB Layout  
 
+![image](https://github.com/user-attachments/assets/849807e7-b4b8-4666-b9a1-199ce473185d)
+
+![image](https://github.com/user-attachments/assets/0314ce70-081b-4594-97d4-b031bf1be61e)
+
+![Capstone pinout](https://github.com/user-attachments/assets/ac7318b6-d384-4e06-8a9a-fc43d43533bb)
+
 # Operational Flowchart  
 
 # BOM
