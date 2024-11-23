@@ -88,6 +88,5 @@ Analysis of the microcontroller subsystem begins with our choice for microcontro
 After determining the availability of the nucleo board the team moved to assessing the functionality and use of the board and its peripherals. First we calculated the determined of pins we would need compared to the amount that we had on board. With further examination we determined that the board had enough pins thus, we moved to the functionality of the pins and peripherals of the board. Beginning with the PWM and Tach signals we were able to determine that the board had both dedicated channels for PWM out as well as enough timers for all the needed signals. Next we assessed the possibility of I2C and SPI connectivity and determined that we had the choice for either on board. All of these considerations combined allowed for us to choose our other subsequent subsystems with ease as we had open availability for almost any communication protocol or IO function. 
 
 # References
-[1] A. Ward, “Questions for Initial Lochinvar Meeting (1) - Answered.” Lochinvar, Cookeville, Sep. 11, 2024  
-[2]bruce
+
 
