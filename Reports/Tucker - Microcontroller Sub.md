@@ -58,7 +58,7 @@ Finally, the other used pins were mapped out as not connected (NC), USART commun
 
 # Buildable Schematic
 
-![image](https://github.com/user-attachments/assets/799e6c8f-e0e2-4153-ae29-1e028998ebe8)
+![image]("C:\Users\tjbas\OneDrive\Pictures\Screenshots\alphabet.png")
 
 # PCB Layout  
 
