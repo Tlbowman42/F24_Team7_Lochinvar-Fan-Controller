@@ -12,7 +12,11 @@ The microcontroller subsystem shall adhere to the following specifications and c
 4. The microcontroller shall be able to clean and replicate the signals used in the software pass-through mode. (Hardware Specifications and not Software Specifications.)  
 
 *Constraints*
-1. As of current circumstances the microcontroller does not face any known constraints.  
+1. The microcontroller must be able to take in both PWM/Tach signals at the same time whilst being able to clean and replicate the same signas on th ePSM and Tach output ports.
+
+*Justification for Constraints*  
+
+Constraint one is applicable to the microcontroller due to the required fan pass through mode where the diagnostic tool must take in and output PWM and Tach signals at the same time after cleaning the input signals up. This constraint puts pressure on the microcontroller timer channels and requires proper IO pinouts in order to complete the signal pass through mode specified by Lochinvar.  
   
 # Overview of Proposed Solution
 The microcontroller subsystem consists of only two main parts.
