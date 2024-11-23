@@ -4,11 +4,21 @@ The role of the Preprocessing subsystem is to prepare the incoming PWM and Tach 
 The role of the Ports and Buttons subsystem is for taking in and distributing signals. 
 
 # Specifications and Constraints
-1. The Pre-processing shall step down the input PWM  and Tach signal to send to the Microcontroller subsystem.
-2. The Pre-processing shall isolate the signal from any fluctuations in the signal from the Molex.
+The Preprocessing subsystem shall adhere to the following specifications and constraints:
+
+*Specifications*
+1. The Preprocessing shall step down the input PWM  and Tach signal to send to the Microcontroller subsystem.
+2. The Preprocessing shall isolate the signal from any fluctuations in the signal from the Molex.
+
+*Constraints*
+1. The Preprocessing must process the signal well enough for the microcontroller to read a clear PWM or Tach signal.
+
+*Justifictation for Constraints*
+Constraint one is applicable to the preprocessing because the signal must go be safe for the microcontroller to take in, while also not leaving out information or causing the microcontroller to read it inaccurately.
 
 # Overview of Proposed Solution
-There will be two molex connectors on the board. One is for Fan Simulation mode, the Fan Molex, and the other is for Fan Simulation Mode, Control Molex. Both are used for the Monitoring mode. The Fan Molex has PWM Input and a Tach Output. The Control Molex has Tach Input and a PWM output. In other words, for the Fan Molex the board is receiving a PWM signal and sending a Tach signal and for the Control Molex the board is recieving a Tach signal and sending a PWM signal.
+There will be two molex connectors on the board. One is for Fan Driving mode, the Fan Molex, and the other is for Fan Simulation Mode, Control Molex. Both are used for the Monitoring mode. The Fan Molex has PWM Input and a Tach Output. The Control Molex has Tach Input and a PWM output. In other words, for the Fan Molex the board is receiving a PWM signal and sending a Tach signal and for the Control Molex the board is recieving a Tach signal and sending a PWM signal.  
+
 The input PWM and Tach signals must be stepped down to an amplitude suitable for our microcontroller, which is 3.3 V. In addition to this, the signal must be isolated to protect the system from power surges. To accomplish this, an opto-coupler circuit will be implemented to meet both of these requirements. This circuit will consist of an opto-coupler, a current limiting resistor, and a pull up resistor. After a signal is processed by this circuit it can be read and interpreted by the microcontroller.
 
 
@@ -16,18 +26,26 @@ The input PWM and Tach signals must be stepped down to an amplitude suitable for
 1. Microcontroller
    - The Microcontroller subsystem will receive the input Tach and PWM signals that has went through the pre-processing circuit.
 2. Display
-   - The Display subsystem will display the interpreted version of the signals from the microcontroller.
+   - The Display subsystem will display the interpreted version of the processed signals from the microcontroller.
 3. Case
-   - The Case will account for the opening needed for the Molex connector.
+   - The Case and Preprocessing are not connected.
+4. Power
+   - The Power subsystem will provide the 3.3 V that the preprocessing will use to pull up to for the PWM and Tach signals.
+5. Post-processing
+   - The Post-Processing and Pre-Processing and not connected. 
+6. Memory
+   - The Memory and Pre-processing subsystems are not connected.
+7. Ports and Buttons
+   - The Ports and Buttons subsystem is not connected to the Pre-Processing.
+
 
 
 # Buildable Schematic
-
 <img width="378" alt="Preprocessing circuit kicad V5" src="https://github.com/user-attachments/assets/1d3b6077-40df-40d8-b309-3004df6fd68e">
-<img width="501" alt="Buttons circuit kicad V2" src="https://github.com/user-attachments/assets/852243e5-a7fa-45b8-b416-8c54ed998564">
-
 
 # PCB Layout
+![image](https://github.com/user-attachments/assets/a5741e4c-52d9-4d9b-85f0-4c882c560005)
+![image](https://github.com/user-attachments/assets/5a6e39ef-8f56-4d20-a397-60724bc26a80)
 
 # BOM
 | Manufacturor | Manufacturor Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name|
