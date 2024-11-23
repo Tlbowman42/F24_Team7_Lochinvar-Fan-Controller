@@ -71,6 +71,10 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 
 # PCB Layout
 
+![image](https://github.com/user-attachments/assets/a5741e4c-52d9-4d9b-85f0-4c882c560005)
+
+![image](https://github.com/user-attachments/assets/5a6e39ef-8f56-4d20-a397-60724bc26a80)
+
 # BOM
 
 | Manufacteror | Manufacteror Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name  |
