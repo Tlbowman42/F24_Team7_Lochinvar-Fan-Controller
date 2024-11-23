@@ -13,9 +13,7 @@ The power subsystem shall adhere to the following specifications and constraints
 5. The Power shall be placed in a design such that all I/O ports are properly mapped and subsection Ports are clear and efficient.
 6. The Power shall output DC power to the display and microcontroller.
 7. The Power shall ensure stable power is output to all sensitive components such as the microcontroller.
-8. The Power shall have safety measures in place to deal with noise and surges.
-
-***I may end up taking away some of these specifications depending on what the group consensus is***  
+8. The Power shall have safety measures in place to deal with noise and surges.  
 
 *Constraints*
 1. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples. [2]
@@ -51,13 +49,13 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
    - The Display subsystem will also receive the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.
 
 3. Case
-   - The Case and Power subsystems are not connected.
+   - The Case and Power Subsystem are not connected with signals. They are connected through needing to allow slots for the flyback converter and the molex connections to bring power in.
 
 4. Pre-Processing
-   - The Pre-Processing will recieve the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal. ***The Pre-Processing may need to be updated due to the current design of the optocouplers pulling up to 3.3 and 24V***  
+   - The Pre-Processing will recieve the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.  
 
 5. Post-processing
-   - The Post-Processing will recieve the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal. ***The Post-Processing may need to be updated due to the current design of the optocouplers pulling up to 3.3 and 24V***  
+   - The Post-Processing will be connected to the 24V DC power signal from the molex's Vin terminal. This signal will not be electrically isolated from power surges due to its design; however, the optocoupler is electrically isolated the molex's power from the rest of the circuit. Finally, the Power subsystem will be outputting a 3.3V DC power signal. 
 
 6. Memory
    - The Memory and Power subsystems are not connected.
@@ -77,7 +75,7 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 
 # BOM
 
-| Manufacteror | Manufacteror Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name  |
+| Manufacteror | Manufacterrr Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name  |
 | :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
 | Texas Instruments | LM5180EVM-S05 | Digikey | 296-LM5180EVM-S05-ND | 1 | $118.80 | https://www.digikey.com/en/products/detail/texas-instruments/LM5180EVM-S05/10434463 | N/A |
 | Texas Instruments | TPS79633DCQR | Digikey | 296-13766-1-ND - Cut Tape (CT) | 1 | $2.92 | https://www.digikey.com/en/products/detail/texas-instruments/TPS79633DCQR/509964 | U2 |
@@ -92,7 +90,7 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 | TDK Corporation | FK28X5R1A105KN000 | Digikey | 445-FK28X5R1A105K-ND | 1 | $0.36 | https://www.digikey.com/en/products/detail/tdk-corporation/FK28X5R1A105KN000/1008877 | C3 |
 | TDK Corporation | FG28X7R1A225KRT06 | Digikey | 445-173582-1-ND - Cut Tape (CT) | 1 | $0.33 | https://www.digikey.com/en/products/detail/tdk-corporation/FG28X7R1A225KRT06/5803196?s=N4IgTCBcDaIGIHEwA4AaB2ASgRgIJjAFYBpTAFQAYA2EAXQF8g | C1 |
 | KEMET | C322C103K3G5TA | Mouser Electronics | 80-C322C103K3G5TA | 1 | $0.51 | https://www.mouser.com/ProductDetail/KEMET/C322C103K3G5TA?qs=h3%2Fj8evtlm2CUEq59T%2FBjg%3D%3D | C2 |
-| Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | S0.26 | 1 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
+| Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | 1 | S0.26 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
 | Total | | | | | $147.90   | |
 
 # Analysis
