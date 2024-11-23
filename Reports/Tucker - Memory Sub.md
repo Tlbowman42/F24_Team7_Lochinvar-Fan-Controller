@@ -1,7 +1,7 @@
 
 # Function of the Subsystem
 
-The role of the memory subsystem is to act as the non-volatile storage for the diagnostic tool. The microcontroller will handle all of the data processing and signal modulation within the diagnostic tool. Alongside signal processing the microcontroller will handle all of the user inputs and data being sent to the LCD and EEPROM respectively.  
+The role of the memory subsystem is to act as the non-volatile storage for the diagnostic tools data logs and error messages. The memory subsystem will handle the containment and output of important log files when the diagnostic tool is off and on respectively.
 
 # Specifications and Constraints
 The memory subsystem shall adhere to the following specifications and constraints:
@@ -14,42 +14,33 @@ The memory subsystem shall adhere to the following specifications and constraint
 1. As of current circumstances the memory subsystem does not face any known constraints.  
   
 # Overview of Proposed Solution
-The microcontroller subsystem consists of only two main parts.
+The memory subsystem contains only one main part.
 
-1. The Nucleo-L452RE development board.  
-2. The ST-morpho connectors on the PCB of the diagnostic tool.  
+1. The 25AA640-I/SN	64kbit EEPROM.  
 
-Firstly, the nucleo board will be connected to the main PCB via the CN7 and CN10 ST-morpho connectors on the nucleo board. Once bridged onto the main PCB, traces will take various IO's and other pins to different areas for their seperate processes. Connections to the memory, lcd, buttons, power, post, and pre processing subsystems will all be estalished in this step.  
-  
-Currently 36 GPIO pins have been used or mapped out for possible integration on further projects. The first four pins were given to the post and pre processing subsystems as these systems needed the most specialized pins. The chosen 4 pins allow for the most optimized signal intake and outputting allwoing for the fastest and clearrest signal processing when in the monitoring or subsequent modes.  
-  
-The second most important subsystem was deemed as the LCD, to said LCD 11 GPIO pins were used. These pins have been assigned as output IO's and of the 11 pins 8 were used for a parallel connection to ensure stable and fast data transfer to the screen. The subsequent three pins were used for various functions on the LCD such as register select, enable, and W/R select. The gpios were selected based off of their lack of specialty functions and their locations al being on a singular channel, PBx.  
-  
-The subsystem deemed third most important was the memory subsystem. This subsystem required specialized SPI pins as the selected EEPROM uses SPI communication for data transfer. Due to this we chose to give the memory 3 specialized pins in the SCK, MOSI, MISO, and a single IO pin for the onboard chip select.  
-  
-Finally, the other used pins were mapped out as not connected (NC), USART communication, I2C communication, or simple GPIO inputs for the 6 buttons the user can interact with. The USART and I2C communications were pinned out but not used as there is no need for these communication channels as of right now, but they may be used in the future. Furthermore, the GPIO input pins were configured as pull down buttons as to add to the simplicity of the circuit design. These IO buttons were deemed as the least important as they only serve to get user input in the form of up, down, left, right, ok, and back for the menus used.  
+The memory subsystem will be connect to the man PCB via through whole soldering points. Furthermore, the memory subsystem will be connected to the microcontrollers ST-morpho connectors allowing for read and write via a serial SPI interface.
   
 # Interfacing with Other Subsystems
 1. Display
-   - The display subsystem will take 11 pins of input from the microcontroller and ST-morpho connectors at all times. The first 8 account for DB0-DB7 also known as the data bus pins sent to the display and all reside on the same channel for added speed. The subsequent three pins left are used for the R/W select, enable, and register select functions.  
+   - The memory subsystem does not interface with the display LCD.  
 
 2. Case
-   - The microcontroller subsystem does not interface with the case.  
+   - The memory subsystem does not interface with the case.  
 
 3. Pre-Processing
-   - The pre-processing subsystem is connected to the microcontoller through the on board ST-morpho connectors. Due to the pre-processing subsystem taking in both Tach and PWM input signals, two specialized pins were given to this subsystem. Both pins have on board timers allowing for the cleanest and fastest replication and processing of input signals.  
+   - The memory subsystem does not interface with the pre-processing subsystem.   
 
 4. Post-processing
-   - The post processing subsystem is connected to the nucleo board via the onboard ST-morpho connectors. Much like the pre-processing subsystem, the post requires specialized timer pins in order to output clear and correct PWM and Tach signals. Due to this two specialized pins were given to the post processing with both IO's being specialized for PWM and Tach out signals.  
+   - The memory subsystem does not interface with the post-processing subsystem.  
 
-5. Memory
-   - The memory and microcontroller are connected via the ST-morpho connectors on the PCB. From there traces are ran from 3 dedicated SPI pins and 1 standard GPIO pin. The three spi pins constitute the serial clock, mosi, and miso connections to the memory thus, allowing for proper clock generation and data transferral. The final GPIO pin sent to the memory allows for the EEPROM to use a chip select function for the inetgrated circuitry within the EEPROM.  
+5. Microcontroller
+   -  The memory subsystem will interface to the microcontroller via an SPI connection containing 4 IO pins. These pins have various uses with three being meant for EEPROM functions such as serial clock (SCK), serial data out (SO), and serial data in (SI). The final pin is a simple IO pin that will determine the functin of teh EEPROMS chip select for its integrated circuits. Furthermore, the memory subsystem will recieve power from the mircocontroller via the ST-morpho connectors +3.3V pin, allowing for proper power distribution to the EEPROM.  
 
-6. Ports and Buttons
-   - The ports and buttons subsystem is connected to various ports on the nucleo via the PCB's onboard ST-morpho connectors. First the buttons are connected to 6 GPIO pins on the nucleo board. These IO's have no special functionaility as they are simply movement commands for the diagnostic tools menus, however these pins are configured as active low as to make analysis easier for the team. The ports subsystem is connected to the nucleo physically through a USB-A to mini USB connection. This connection allows for power and data to be driven to the microcontroller for further processing and peripheral uses.  
+7. Ports and Buttons
+   - The memory subsystem does not interface with the ports and buttons subsystem.  
 
-7. Power
-   - The power subsystem is connected to the microcontroller via the PCB's St-morpho connectors. This power will be taken from the molex connection and stepped down to a usable 3.3V for the microcontroller, ensuring proper use and safety for the microcontroller. Furthermore, the microcontroller will be electrically isolated from the rest of the power circuit allowing for the utmost safety to the microcontroller and its peripherals.  
+8. Power
+   - The memory subsystem does not interface with the power subsystem.   
 
 # Buildable Schematic
 
@@ -61,30 +52,15 @@ Finally, the other used pins were mapped out as not connected (NC), USART commun
 
 | Manufacteror | Manufacteror Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name  |
 | :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
-| Texas Instruments | LM5180EVM-S05 | Digikey | 296-LM5180EVM-S05-ND | 1 | $118.80 | https://www.digikey.com/en/products/detail/texas-instruments/LM5180EVM-S05/10434463 | N/A |
-| Texas Instruments | TPS79633DCQR | Digikey | 296-13766-1-ND - Cut Tape (CT) | 1 | $2.92 | https://www.digikey.com/en/products/detail/texas-instruments/TPS79633DCQR/509964 | U2 |
-| Infineon Technologies | IRF9540NPBF | Digikey | IRF9540NPBF-ND | 1 | $1.99 | https://www.digikey.com/en/products/detail/infineon-technologies/IRF9540NPBF/812088?utm_adgroup=SKU&utm_source=bing&utm_medium=cpc&utm_campaign=EN_Supplier_Infineon&utm_term=irf9540npbf&utm_content=SKU&utm_id=bi_cmp-274565063_adg-1311717702316159_ad-81982426159089_kwd-81982547982542:loc-190_dev-c_ext-_prd-&msclkid=84791e75f0e21e813ab1794f7705a4d1 | Q1 |
-| Molex | 39-30-3058 | Mouser Electronics | 538-39-30-3058 | 2 | $2.84 | https://www.mouser.com/ProductDetail/Molex/39-30-3058?qs=404muyNbhLG7BJxtPMLWWg%3D%3D | J1 and J2 |
-| TE Connectivity AMP Connectors | 2-215307-0 | Digikey | A106399-ND | 2 | $5.34 | https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/2-215307-0/1149668 | J3 and J4 |
-| Würth Elektronik | 691137710002 | Digikey | 732-10955-ND | 2 | $0.40 | https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/691137710002/6644051 | J5 and J6 |
-| Onsemi | MBRS410LT3G | Mouser Electronics | 863-MBRS410LT3G | 1 | $1.81 | https://www.mouser.com/ProductDetail/onsemi/MBRS410LT3G?qs=3JMERSakebpTz7AxvU6YQw%3D%3D | D1 |
-| Onsemi / Fairchild | 1N4743A | Mouser Electronics | 512-1N4743A | 1 | $0.16 | https://www.mouser.com/ProductDetail/onsemi-Fairchild/1N4743A?qs=SSucg2PyLi6p0vxmcuBOaA%3D%3D | D2 |
-| Diotec Semiconductor | 1N4007 | Digikey | 4878-1N4007CT-ND - Cut Tape (CT) | 1 | $0.10 | https://www.digikey.com/en/products/detail/diotec-semiconductor/1N4007/18833652 | D3 |
-| C&K | S102031MS02Q | Mouser Electronics | 611-S1020301 | 1 | $3.50 | https://www.mouser.com/ProductDetail/CK/S102031MS02Q?qs=qUgWstB0J2PTi4u40fuqgg%3D%3D | N/A |
-| Micro USB |  | Digikey |  | 1 |  |  |
-| TDK Corporation | FK28X5R1A105KN000 | Digikey | 445-FK28X5R1A105K-ND | 1 | $0.36 | https://www.digikey.com/en/products/detail/tdk-corporation/FK28X5R1A105KN000/1008877 | C3 |
-| TDK Corporation | FG28X7R1A225KRT06 | Digikey | 445-173582-1-ND - Cut Tape (CT) | 1 | $0.33 | https://www.digikey.com/en/products/detail/tdk-corporation/FG28X7R1A225KRT06/5803196?s=N4IgTCBcDaIGIHEwA4AaB2ASgRgIJjAFYBpTAFQAYA2EAXQF8g | C1 |
-| KEMET | C322C103K3G5TA | Mouser Electronics | 80-C322C103K3G5TA | 1 | $0.51 | https://www.mouser.com/ProductDetail/KEMET/C322C103K3G5TA?qs=h3%2Fj8evtlm2CUEq59T%2FBjg%3D%3D | C2 |
-| Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | S0.26 | 1 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
-| Total | | | | | $147.64   | |
+| Microchip Technology | 25AA640-I/SN	| Digikey | 25AA640-I/SN-ND | 1 | $0.93 | https://www.digikey.com/en/products/detail/microchip-technology/25AA640-I-SN/318777 | EEPROM Memory IC 64Kbit SPI 1 MHz 8-SOIC |
+| Total | | | | | $0.93 | |
 
 # Analysis
 
-I will split my analysis into three main parts.  
+The memory analysis will be done in one complete part including,  
 
-1. Analysis over the Reverse Polarity Protection Circuit
-2. Analysis over the Flyback Converter with an Isolated Output
-3. Analysis over the Diode-oring Circuit and the LDO Voltage Regulator
+1. Analysis of micrcontroller serial connections  
+2. Uses/Functionality of the EEPROM memory  
 
 ## Analysis over the Reverse Polarity Protection Circuit
 
