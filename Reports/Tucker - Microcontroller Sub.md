@@ -1,6 +1,6 @@
 # Function of the Subsystem
 
-The role of the microcontroller subsystem is to act as the brain and heart of the diagnostic tool. The microcontroller will handle all of the data processing and signal modulation within the diagnostic tool. Alongside signal processing the microcontroller will handle all of the user inputs and data being sent to the LCD and EEPROM respectively.  
+The role of the microcontroller subsystem is to act as the brain and heart of the diagnostic tool. The microcontroller will handle almost all of the data processing and signal modulation within the diagnostic tool. Alongside signal processing the microcontroller will handle all of the user inputs and data being sent to the LCD and EEPROM respectively.  
 
 # Specifications and Constraints
 The microcontroller subsystem shall adhere to the following specifications and constraints:
@@ -24,7 +24,7 @@ The microcontroller subsystem consists of only two main parts.
 1. The Nucleo-L452RE development board.  
 2. The ST-morpho connectors on the PCB of the diagnostic tool.  
 
-Firstly, the nucleo board will be connected to the main PCB via the CN7 and CN10 ST-morpho connectors on the nucleo board. Once bridged onto the main PCB, traces will take various IO's and other pins to different areas for their seperate processes. Connections to the memory, lcd, buttons, power, post, and pre processing subsystems will all be estalished in this step.  
+Firstly, the nucleo board will be connected to the main PCB via the CN7 and CN10 ST-morpho connectors on the nucleo board. Once bridged onto the main PCB, traces will take various IO's and other pins to different areas for their seperate processes. Connections to the memory, lcd, buttons, power, post, and pre processing subsystems will all be established in this step.  
   
 Currently 36 GPIO pins have been used or mapped out for possible integration on further projects. The first four pins were given to the post and pre processing subsystems as these systems needed the most specialized pins. The chosen 4 pins allow for the most optimized signal intake and outputting allwoing for the fastest and clearrest signal processing when in the monitoring or subsequent modes.  
   
@@ -72,7 +72,7 @@ Finally, the other used pins were mapped out as not connected (NC), USART commun
 
 Due to the microcontrollers software being primarily behind the scenes the flowchart is composed of the necessary functions to complete the fan simulation mode.  
 
-![Komiket](https://github.com/user-attachments/assets/0200c72b-d0ef-4a40-96c8-1d3dbda0b6ff)
+![alcoa](https://github.com/user-attachments/assets/7672da28-8014-4667-8e0b-39a8f6dfb135)  
 
 # BOM
 
@@ -80,11 +80,7 @@ Due to the microcontrollers software being primarily behind the scenes the flowc
 | :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
 | TE Connectivity AMP connectors | 2-215307-0 | Digikey | A106399-ND | 2 | $10.68 | https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/2-215307-0/1149668 | N/A |
 | STM Electronics | Nucleo-L452RE | Digikey | 497-17008-ND | 1 | $14.85 | https://www.digikey.com/en/products/detail/stmicroelectronics/NUCLEO-L452RE/6559190 | Nucleo-L452RE | 
-| Total | | | | | $25.53 | |
-
-# Analysis
-
-My analysis will be encapsulated in one large complete analysis.  
+| Total | | | | | $25.53 | |  
 
 ## Analysis of the microcontroller and ST-morpho connections
 Analysis of the microcontroller subsystem begins with our choice for microcontrollers. The choice began with two major considerations, those being availability of the microcontroller and functionality of the pins. Availability was quickly determined based on the prior use of STM32 products and advice from our capstone advisor. Furthermore, with continuous advising we landed at the need for a development board that felt like something we had worked with previously. Thus, we bagan looking into the STM32 family of chips and development boards, with careful consideration we chose to use the STM32L family of chips. This selecton was made because of the low power functionaility of the chip and eventually led us to the Nucleo-L452RE board. Bringing this to our advisor we were made aware of our advisors OS he had created and how portable it was to the nucleo board.  
