@@ -92,7 +92,7 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 | KEMET | C322C103K3G5TA | Mouser Electronics | 80-C322C103K3G5TA | 1 | $0.51 | https://www.mouser.com/ProductDetail/KEMET/C322C103K3G5TA?qs=h3%2Fj8evtlm2CUEq59T%2FBjg%3D%3D | C2 |
 | Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | 1 | S0.26 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
 | JLCPCB | N/A | N/A | N/A | 5 | $17.60 | https://cart.jlcpcb.com/quote?rand=0.22722900529384749 | N/A |
-| Total | | | | | $147.90   | |
+| Total | | | | | $165.50   | |
 
 # Analysis
 
