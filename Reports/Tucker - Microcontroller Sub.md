@@ -70,6 +70,9 @@ Finally, the other used pins were mapped out as not connected (NC), USART commun
 
 # Operational Flowchart  
 
+Due to the microcontrollers software being primarily behind the scenes the flowchart is primarily composed of the necessary functions to take in and modulate the PWM and Tach signals.  
+
+
 # BOM
 
 | Manufacteror | Manufacteror Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name  |
