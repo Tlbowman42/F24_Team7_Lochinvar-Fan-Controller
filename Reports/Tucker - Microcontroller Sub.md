@@ -70,8 +70,9 @@ Finally, the other used pins were mapped out as not connected (NC), USART commun
 
 # Operational Flowchart  
 
-Due to the microcontrollers software being primarily behind the scenes the flowchart is primarily composed of the necessary functions to take in and modulate the PWM and Tach signals.  
+Due to the microcontrollers software being primarily behind the scenes the flowchart is composed of the necessary functions to complete the fan simulation mode.  
 
+![Komiket](https://github.com/user-attachments/assets/0200c72b-d0ef-4a40-96c8-1d3dbda0b6ff)
 
 # BOM
 
