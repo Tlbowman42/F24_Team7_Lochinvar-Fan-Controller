@@ -1,7 +1,7 @@
 
 # Function of the Subsystem
 
-The role of the memory subsystem is to act as the non-volatile storage for the diagnostic tools data logs and error messages. The memory subsystem will handle the containment and output of important log files when the diagnostic tool is off and on respectively.
+The role of the memory subsystem is to act as the non-volatile storage for the users testing configurations and the input and output of specific crucial data logs. The memory subsystem will handle the containment and output of such settings and log files when the diagnostic tool is off and on respectively.
 
 # Specifications and Constraints
 The memory subsystem shall adhere to the following specifications and constraints:
