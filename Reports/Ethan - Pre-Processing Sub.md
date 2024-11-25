@@ -16,9 +16,6 @@ The Preprocessing subsystem shall adhere to the following specifications and con
 1. Constraint one applies because it is possible for the amplitude of the signals to be a range of values, but a constant 3.3 V will be wanted by the microcontroller to accurately read the signal.
 2. Constraint two requires that proper soldering procedures, training, equipment, and materials are used. Following such guidelines will ensure safety and stable connections for the user of the tool and those working on it.
 
-*Justifictation for Constraints*
-Constraint one is applicable to the preprocessing because the signal must go be safe for the microcontroller to take in, while also not leaving out information or causing the microcontroller to read it inaccurately.
-
 # Overview of Proposed Solution
 There will be two Molex connectors on the board. One is for Fan Driving mode, the Fan Molex, and the other is for Fan Simulation Mode, Control Molex. Both are used for the Monitoring mode. The Fan Molex has PWM Input and a Tach Output. The Control Molex has Tach Input and a PWM output. In other words, for the Fan Molex the board is receiving a PWM signal and sending a Tach signal and for the Control Molex the board is recieving a Tach signal and sending a PWM signal.  
 
@@ -39,7 +36,7 @@ The input PWM and Tach signals must be stepped down to an amplitude suitable for
 6. Memory
    - The Memory and Pre-processing subsystems are not connected.
 7. Ports and Buttons
-   - The Ports and Buttons subsystem is not connected to the Pre-Processing.
+   - The Ports and Buttons subsystem provides the PWM and Tach inputs for the Pre-processing.
 
 
 
@@ -59,7 +56,7 @@ The input PWM and Tach signals must be stepped down to an amplitude suitable for
 | Total       |       |     |     |   | $2.54 |  |  |
 
 # Analysis
-This is the analysis of the preprocessing circuit that the incoming Tach and PWM signals will go through before going to the microcontroller. As shown in the LTSpice simulation, two pulse signals are generated to simulate a Tach and PWM input signal. The incoming signal then goes through a 1800 Ohm current limiting resisitor. This will make the forward current going through the opto-coupler's LED stay within the desired range to increase the longevity of the component and provide an accurate signal to read. The incoming signals could be 10-40 Vdc, so this resistor was picked so that at 10 V the forward current is roughly 5 mA and at 40 V the current is roughly 20 mA. This is based on the LED's forward voltage being 1.2 V. So if the desired current is 5 mA at 10 V, then using the equation V-Vf/If = R = (10 - 1.2) / 0.005 ≈ 1800 Ohms. This current range ensures a reliable signal while not overheating the component. On the output side of the opto-coupler, a 300 Ohm resistor is used to pull up to the 3.3 V coming from the LDO. The output, now isolated, 3.3 V, and switching at the frequency of the incoming signal is ready to be read by the microcontroller. The opto-coupler chosen is a PC817A. This opto-coupler is good for the 6 kHz PWM signal that will need to be processed and can handle the above the maximum 40 Vdc that can be seen.
+This is the analysis of the preprocessing circuit that the incoming Tach and PWM signals will go through before going to the microcontroller. As shown in the LTSpice simulation, two pulse signals are generated to simulate a Tach and PWM input signal. The incoming signal then goes through a 1800 Ohm current limiting resisitor. This will make the forward current going through the opto-coupler's LED stay within the desired range to increase the longevity of the component and provide an accurate signal to read. The incoming signals could be 10-40 Vdc, so this resistor was picked so that at 10 V the forward current is roughly 5 mA and at 40 V the current is roughly 20 mA. This is based on the LED's forward voltage being 1.2 V. So if the desired current is 5 mA at 10 V, then using the equation V-Vf/If = R = (10 - 1.2) / 0.005 ≈ 1800 Ohms. This current range ensures a reliable signal while not overheating the component. On the output side of the opto-coupler, a 300 Ohm resistor is used to pull up to the 3.3 V coming from the LDO. The output, now isolated, 3.3 V, and switching at the frequency of the incoming signal is ready to be read by the microcontroller. The opto-coupler chosen is a PC817A. This opto-coupler is good for the 6 kHz PWM signal that will need to be processed and can handle the above the maximum 40 Vdc that can be seen. The datasheet specifies a cutoff frequency of 80 kHz and includes rise and fall times of up to 18 µs, which supports operation well above 6 kHz. This means the component can handle the 6 kHz frequency signal without significant distortion or delay​ [2].
 
 <img width="546" alt="Preprocessing circuit ltspice V2" src="https://github.com/user-attachments/assets/0680a3c8-14f2-42e0-abc8-1b5adba8ef31">
 
