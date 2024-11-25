@@ -37,7 +37,7 @@ Finally, there will be 6 SPST push buttons so that the user can interface with t
 6. Pre-processing
    - The Pre-Processing recieves Tach and PWM signals from the Molex ports.
 7. Memory
-   - The Memory, Ports, and Buttons are not directly connected.
+   - The Memory Subsystem and the Ports and Buttons Subsystems are not connected.
 
 
 
