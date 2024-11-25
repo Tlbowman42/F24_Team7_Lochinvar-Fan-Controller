@@ -91,8 +91,8 @@ Lastly after the diode-oring circuit the voltage will be inputted into an Low Dr
 | TDK Corporation | FG28X7R1A225KRT06 | Digikey | 445-173582-1-ND - Cut Tape (CT) | 1 | $0.33 | https://www.digikey.com/en/products/detail/tdk-corporation/FG28X7R1A225KRT06/5803196?s=N4IgTCBcDaIGIHEwA4AaB2ASgRgIJjAFYBpTAFQAYA2EAXQF8g | C1 |
 | KEMET | C322C103K3G5TA | Mouser Electronics | 80-C322C103K3G5TA | 1 | $0.51 | https://www.mouser.com/ProductDetail/KEMET/C322C103K3G5TA?qs=h3%2Fj8evtlm2CUEq59T%2FBjg%3D%3D | C2 |
 | Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | 1 | S0.26 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
-| JLCPCB | N/A | N/A | N/A | 5 | $17.60 | https://cart.jlcpcb.com/quote?rand=0.22722900529384749 | N/A |
-| Total | | | | | $165.50   | |
+| JLCPCB | N/A | N/A | N/A | 5 | $16.60 | https://cart.jlcpcb.com/quote?rand=0.22722900529384749 | N/A |
+| Total | | | | | $164.50   | |
 
 # Analysis
 
