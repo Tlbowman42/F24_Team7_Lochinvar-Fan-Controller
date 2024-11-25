@@ -1,5 +1,5 @@
 # Function of the Subsystem
-The goal of this subsystem is to display the options avalible for the user to interact with our tools software.  
+The goal of this subsystem is to display the options available for the user to interact with our tools software.  
 
 # Specifications and Constraints
 ## Specifications
@@ -31,10 +31,10 @@ The Display will interface directly with the microcontroller through a parallel 
 | Newhaven Display Intl | NHD-0420H1Z-FL-GBW-33V3 | Digikey | NHD-0420H1Z-FL-GBW-33V3-ND | 1 | $20.30 | https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0420H1Z-FL-GBW-33V3/2773594 | LCD1 |
 
 # Analysis
-The development of the Display subsystem was a very simple matter. Firstly, the screen was chosen such that more than one row of text could be shown at the same time, but not too many rows either. This balanced approuch insured that the user would not be annoyed by how little they could see at once, while also not too big as to be wasteful. Next, the screen needed to have a backlight and adjustable contrast. This would insure that text will be able to be viewed in the intended setting.  
+The development of the Display subsystem was a very simple matter. Firstly, the screen was chosen such that more than one row of text could be shown at the same time, but not too many rows either. This balanced approach insured that the user would not be annoyed by how little they could see at once, while also not too big as to be wasteful. Next, the screen needed to have a backlight and adjustable contrast. This would insure that text will be able to be viewed in the intended setting.  
   
-The Display that fullfilled these design decsions was the HD-0420H1Z-FL-GBW-33V3. It is plenty large at 79mm by 36mm. It can display 4 lines 20 characters each [1].  
+The Display that fulfilled these design decisions was the HD-0420H1Z-FL-GBW-33V3. It is plenty large at 79mm by 36mm. It can display 4 lines 20 characters each [1].  
   
-For the primary mode of operation, Fan Simulation, about 8 lines are needed. This means that the user would only have to go to one other screen to see all options. If this seems odd later on, other menu setups could be created such that no screen scroll would be necassary, but this seems to be adequate. Through the microcontroller and connected buttons, user inputs will easily be reflected upon the display. Therefore, the selected screen will be able to show all desired information and user input, thus meeting all specified constraints and specfications.
+For the primary mode of operation, Fan Simulation, about 8 lines are needed. This means that the user would only have to go to one other screen to see all options. If this seems odd later on, other menu setups could be created such that no screen scroll would be necassary, but this seems to be adequate. Through the microcontroller and connected buttons, user inputs will easily be reflected upon the display. Therefore, the selected screen will be able to show all desired information and user input, thus meeting all specified constraints and specfications.  
 # References
 [1] Newhaven Display International, Inc., “Character Liquid Crystal Display Module.” [Online]. Available: https://newhavendisplay.com/content/specs/NHD-0420H1Z-FL-GBW-33V3.pdf (accessed Nov. 24, 2024).
