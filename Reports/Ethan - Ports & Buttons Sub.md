@@ -42,7 +42,7 @@ Finally, there will be 6 SPST push buttons so that the user can interface with t
 
 
 # Buildable Schematic
-As shown in the photo below, there are 6 SPST switches that will act as left, right, up, down, ok, and select. They use 5000 Ohm pull down resistors to send a 3.3 V signal to their corresponding microcontroller pins. A pull down resistor circuit is chosen because that means power is only flowing to the pin when a button is pressed as opposed to pull up where power to all 6 pins would flow if they remain unpressed. This will cause less load demand from our power system.
+As shown in the photo below, there are 6 SPST switches that will act as left, right, up, down, ok, and back. They use 5000 Ohm pull down resistors to send a 3.3 V signal to their corresponding microcontroller pins. A pull down resistor circuit is chosen because that means power is only flowing to the pin when a button is pressed as opposed to pull up where power to all 6 pins would flow if they remain unpressed. This will cause less load demand from our power system.
 
 *Buttons*
 
