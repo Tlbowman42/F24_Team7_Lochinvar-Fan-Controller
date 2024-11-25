@@ -72,7 +72,7 @@ Finally, the other used pins were mapped out as not connected (NC), USART commun
 
 Due to the microcontrollers software being primarily behind the scenes the flowchart is composed of the necessary functions to complete the fan simulation mode.  
 
-![alcoa](https://github.com/user-attachments/assets/7672da28-8014-4667-8e0b-39a8f6dfb135)  
+![1234568](https://github.com/user-attachments/assets/59cfb57d-88f2-40c2-82c3-dded829a4f42)
 
 # BOM
 
