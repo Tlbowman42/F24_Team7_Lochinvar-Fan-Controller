@@ -1,14 +1,12 @@
 # Function of the Subsystem
 The role of the Preprocessing subsystem is to prepare the incoming PWM and Tach signals to be read by the microcontroller. This subsystem will be responsible for isolation from the Molex connection. It also will step down the signals to the necessary 3.3V DC.
 
-The role of the Ports and Buttons subsystem is for taking in and distributing signals. 
-
 # Specifications and Constraints
 The Preprocessing subsystem shall adhere to the following specifications and constraints:
 
 *Specifications*
-1. The Preprocessing shall step down the input PWM  and Tach signal to send to the Microcontroller subsystem.
-2. The Preprocessing shall isolate the signal from any fluctuations in the signal from the Molex.
+1. The Preprocessing shall step down the input PWM and Tach signal to send to the Microcontroller subsystem.
+2. The Preprocessing shall electrically isolate the signal from any fluctuations in the signal from the Molex.
 
 *Constraints*
 1. The Preprocessing must step the signal down to a clear 3.3 V from a range of 10-40 V.
