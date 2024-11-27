@@ -11,7 +11,7 @@ The goal of this subsystem is to display the options available to the user, disp
 ## Constraints
 1. The display's menu system will be able to be viewed with relative ease.  
 
-This constraint is increadbly important when considering display choice. If the text on screen is hard to read, everything else is secondary.  
+This constraint is incredibly important when considering display choice. If the text on screen is hard to read, everything else is secondary.  
 # Overview of Proposed Solution
 The proposed solution for this subsystem is the use of a character LCD. This will be adequate to show the PWM and TACH signals. It will easily be able to show all the options available to the user and reflect the user's input appropriately.  
 
