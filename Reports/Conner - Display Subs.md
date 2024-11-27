@@ -19,7 +19,8 @@ The proposed solution for this subsystem is the use of a character LCD. This wil
 The Display will interface directly with the microcontroller through a parallel serial connection (SPI). This will allow the microcontroller to send the required information to the display, so the display can show the information to the user. It will also require a connection to the power subsystem in order for the display to turn on and be used.  
 
 # Buildable Schematic
-![image](https://github.com/user-attachments/assets/24272c97-a461-4797-a994-7c1d2c60ee36)  
+![image](https://github.com/user-attachments/assets/514f43c3-295f-49f8-9994-b7b562f46038)
+  
 
 # PCB Layout
 ![image](https://github.com/user-attachments/assets/a5741e4c-52d9-4d9b-85f0-4c882c560005)  
@@ -28,7 +29,10 @@ The Display will interface directly with the microcontroller through a parallel 
 # BOM
 | Manufacteror | Manufacteror Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name  |
 | :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
-| Newhaven Display Intl | NHD-0420H1Z-FL-GBW-33V3 | Digikey | NHD-0420H1Z-FL-GBW-33V3-ND | 1 | $20.30 | https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0420H1Z-FL-GBW-33V3/2773594 | LCD1 |
+| Newhaven Display Intl | NHD-0420H1Z-FL-GBW-33V3 | Digikey | NHD-0420H1Z-FL-GBW-33V3-ND | 1 | $20.30 | https://www.digikey.com/en/products/detail/newhaven-display-intl/NHD-0420H1Z-FL-GBW-33V3/2773594 | LCD1 |  
+| YAGEO | RSF100JB-73-2R | Digikey | 13-RSF100JB-73-2R-ND | 1 | $0.29 | https://www.digikey.com/en/products/detail/yageo/RSF100JB-73-2R/18018 | R18 |  
+| YAGEO | FMP100JR-52-100R | Digikey | 100WCT-ND | 1 | $0.20 | https://www.digikey.com/en/products/detail/yageo/FMP100JR-52-100R/2058569?s=N4IgTCBcDaIGIFkAKBGADGgUgJQLQFYxd01sQBdAXyA | R19 |  
+TOTAL COST = $20.79
 
 # Analysis
 The development of the Display subsystem was a very simple matter. Firstly, the screen was chosen such that more than one row of text could be shown at the same time, but not too many rows either. This balanced approach insured that the user would not be annoyed by how little they could see at once, while also not too big as to be wasteful. Next, the screen needed to have a backlight and adjustable contrast. This would insure that text will be able to be viewed in the intended setting.  
