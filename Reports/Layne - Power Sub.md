@@ -23,45 +23,45 @@ The power subsystem shall adhere to the following specifications and constraints
 
 Constraint one is applicable to the Power Subsystem due to the electrical safety concerns for equipment that is used for measurement, control, and in laboratories.  
 
-Constraint two is applicable to the Power Subsystem due to the nature of the DC voltage supply the Fan Diagnostic Tool will be supplied by. This constraint was never written in words; however, through discussion with our customer, Lochinvar, we will need an isolated power output for our Diagnostic Tool.  
+Constraint two applies to the Power Subsystem due to the nature of the DC voltage supply the Fan Diagnostic Tool will be supplied by. This constraint was never written in words; however, after discussing it with our customer, Lochinvar, we will need an isolated power output for our Diagnostic Tool.   
 
 # Overview of Proposed Solution
 The Power Subsystem will be comprised of a few main parts:  
 
 1. A flyback converter with one isolated output
 2. A diode-oring circuit to allow for two different sources to power the board
-3. A LDO voltage regulator to step 5V DC down to 3.3V DC.
+3. An LDO voltage regulator to step 5V DC down to 3.3V DC.
 4. A reverse polarity protection circuit
 
-First the board will be connected by Molex connection to a controller. This controller will provide 10-40V DC, at a nominal voltage of 24V DC. First the voltage will go through a reverse polarity protection circuit comprised of a PFET and clamping diode. This circuit will ensure that in the case of the Vdd and Gnd getting swapped the circuit will not be damaged.  
+First, the board will be connected by Molex connection to a controller. This controller will provide 10-40V DC, at a nominal voltage of 24V DC. First, the voltage will go through a reverse polarity protection circuit comprised of a PFET and a clamping diode. This circuit will ensure that in the case of the Vdd and Gnd getting swapped the circuit will not be damaged.  
 
-Second after the reverse polarity protection the voltage will be fed into a flyback converter that will have one 5V DC output that will connect to the rest of the diagnostic tool. This will fufill the second constraint of providing an isolated power supply for our diagnostic tool.  
+Second, after the reverse polarity protection, the voltage will be fed into a flyback converter that will have one 5V DC output that will connect to the rest of the diagnostic tool. This will fulfill the second constraint of providing an isolated power supply for our diagnostic tool.  
 
-Third the two 5V DC sources, one from a USB connection and one from the isolated output of the flyback converter, will enter into a diode-oring circuit. This circuit is set up so that the molex connection will be given priority to power the board if it is available. This will fulfill the first specification, allowing for the board to be powered by two different sources.  
+Third the two 5V DC sources, one from a USB connection and one from the isolated output of the flyback converter, will enter into a diode-oring circuit. This circuit is set up so that the Molex connection will be given priority to power the board if it is available. This will fulfill the first specification, allowing for the board to be powered by two different sources.  
 
-Lastly after the diode-oring circuit the voltage will be inputted into an Low Drop-out Voltage Regulator to step down the voltage to 3.3V DC for the rest of the components on the board.  
+Lastly, after the diode-oring circuit, the voltage will be inputted into a Low Drop-Out Voltage Regulator to step down the voltage to 3.3V DC for the rest of the components on the board.  
 
 # Interfacing with Other Subsystems
 1. Microcontroller
-   - The Microcontroller subsystem will receive an input power signal from the Power subsystem. The voltage will initially come from a Molex connection from the boiler controller or to from the USB. This will either be 24V DC or 5V DC respectively. The Power subsystem will then step down the voltage to a useable 3.3V for the microcontroller. It will additionally provide electrical isolation between the USB and Molex connector through the use of an opto-isolator. Therefore the Power subsystem will be outputting a 3.3V DC power signal.
+   - The Microcontroller subsystem will receive an input power signal from the Power subsystem. The voltage will initially come from a Molex connection from the boiler controller or the USB. This will either be 24V DC or 5V DC respectively. The Power subsystem will then step down the voltage to a usable 3.3V for the microcontroller. It will additionally provide electrical isolation between the USB and Molex connector through the use of an opto-isolator. Therefore, the Power subsystem will be outputting a 3.3V DC power signal.
 
 2. Display
-   - The Display subsystem will also receive the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.
+   - The Display subsystem will also receive the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore, this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.
 
 3. Case
-   - The Case and Power Subsystem are not connected with signals. They are connected through needing to allow slots for the flyback converter and the molex connections to bring power in.
+   - The Case and Power Subsystem are not connected with signals. They are connected through needing to allow slots for the flyback converter and the Molex connections to bring power in.
 
 4. Pre-Processing
-   - The Pre-Processing will recieve the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.  
+   - The Pre-Processing will receive the same 3.3V DC power signal the microcontroller subsystem receives from the Power subsystem. Therefore, this signal will also be electrically isolated from any power surges. Finally, the Power subsystem will be outputting a 3.3V DC power signal.  
 
 5. Post-processing
-   - The Post-Processing will be connected to the 24V DC power signal from the molex's Vin terminal. This signal will not be electrically isolated from power surges due to its design; however, the optocoupler is electrically isolated the molex's power from the rest of the circuit. Finally, the Power subsystem will be outputting a 3.3V DC power signal. 
+   - The Post-Processing will be connected to the 24V DC power signal from the Molex's Vin terminal. This signal will not be electrically isolated from power surges due to its design; however, the optocoupler is electrically isolated from the Molex's power from the rest of the circuit. Finally, the Power subsystem will be outputting a 3.3V DC power signal. 
 
 6. Memory
    - The Memory and Power subsystems are not connected.
 
 7. Ports and Buttons
-   - The Ports and Buttons subsystem is directly connected to the Power subsystem. Specifically the Molex and USB Ports providing the 24V DC and 5V DC needed to power the tool. Therefore the Ports and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words the DC voltage will be an input to the Power subsystem.
+   - The Ports and Buttons subsystem is directly connected to the Power subsystem. Specifically, the Molex and USB Ports provide the 24V DC and 5V DC needed to power the tool. Therefore, the Ports and Buttons subsystem will be outputting the DC power signals to the Power Subsystem, in other words, the DC voltage will be an input to the Power subsystem.
 
 # Buildable Schematic
 
@@ -142,7 +142,7 @@ Therefore this circuit helps to achieve constraint one, due to allowing for a mo
 
 I am using the LM5180EVM-S05 Flyback Converter for our design. The purpose of this flyback converter is to step down our 10-40V DC source from the fan controller and output an isolated 5V DC for our diagnostic tool. The datasheet states, " The LM5180-Q1 single-output EVM is designed to use a regulated or non-regulated high-voltage input rail ranging from 10 V to 65 V to produce a tightly-regulated, isolated output voltage of 5V at load currents of 1 A(or higher depending on VIN)." [4] 
 
-As shown in the image below the Vin can be from 10V to 65V with a nominal voltage of 24V, which also aligns with the nominal voltage of the controller voltage that we will be provided. This voltage will then be stepped down to 4.95V to 5.1V with a nominal voltage of 5.025V. I have also shown the Kicad schematic downloaded from Texas Instruments website for reference. [5]  
+As shown in the image below, the Vin can be from 10V to 65V with a nominal voltage of 24V, which also aligns with the nominal voltage of the controller voltage that we will be provided. This voltage will then be stepped down to 4.95V to 5.1V with a nominal voltage of 5.025V. I have also shown the Kicad schematic downloaded from Texas Instruments website for reference. [5]  
 
 ***LM5180EVM-S05 User's Guide***
 
@@ -156,9 +156,9 @@ The flyback converter shown above will also achieve constraint 1. By allowing ou
 
 ## Analysis over the Diode-oring Circuit and the LDO Voltage Regulator
 
-Since our design should incorporate being powered by two different sources, I choose a diode-oring circuit. The circuit is comprised of the 5.025 nominal DC voltage from the flyback converter, a schottky diode, a standard diode, and the 5V DC coming from the USB. As shown below in the circuit diagram the flyback converter is connected to the anode end of the schottky diode, and the USB 5V is connected to the anode of the standard diode. Then the two cathodes are connected together. In this connection the diode-oring circuit will output the highest voltage on the cathode end. Since I am using a schottky diode for the molex connection (coming out of the flyback converter) the molex connection if connected will have the priority to power the board. If the molex connection is not available then the USB 5V will be higher and therefore power the board. 
+Since our design should incorporate being powered by two different sources, I chose a diode-oring circuit. The circuit is comprised of the 5.025 nominal DC voltage from the flyback converter, a Schottky diode, a standard diode, and the 5V DC coming from the USB. As shown below in the circuit diagram the flyback converter is connected to the anode end of the Schottky diode, and the USB 5V is connected to the anode of the standard diode. Then the two cathodes are connected. In this connection, the diode-oring circuit will output the highest voltage on the cathode end. Since I am using a Schottky diode for the Molex connection (coming out of the flyback converter) the Molex connection if connected will have the priority to power the board. If the Molex connection is not available then the USB 5V will be higher and therefore power the board. 
 
-Next the output of the diode-oring circuit is then inputted into the TPS79633DCQR LDO Voltage Regulator. As shown on the datasheet the Vin value for the TPS79633DCQR LDO is from 2.7 to 5.5 volts. In the case the molex connector is chosen by the diode circuit the Vin would be approximately 4.7V and if the USB connection is chosen the Vin is approximately 4.3V. Therefore the Vin parameter should not be violated. Additionally, the TPS79633DCQR model is specifically designed to output 3.3V at 1A max. Therefore the LDO should be able to provide enough current and voltage to all the components in the 3.3V circuit.
+Next, the output of the diode-oring circuit is then inputted into the TPS79633DCQR LDO Voltage Regulator. As shown on the datasheet the Vin value for the TPS79633DCQR LDO is from 2.7 to 5.5 volts. In the case the Molex connector is chosen by the diode circuit the Vin would be approximately 4.7V and if the USB connection is chosen the Vin is approximately 4.3V. Therefore, the Vin parameter should not be violated. Additionally, the TPS79633DCQR model is specifically designed to output 3.3V at 1A max. Therefore, the LDO should be able to provide enough current and voltage to all the components in the 3.3V circuit.
 
 ***Diode-oring with LDO Voltage Regulator Circuit Diagram in Ltspice***
 
