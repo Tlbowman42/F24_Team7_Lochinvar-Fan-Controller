@@ -1,5 +1,5 @@
 # Function of the Subsystem
-The goal of this subsystem is to display the options available for the user to interact with our tools software.  
+The goal of this subsystem is to display the options available to the user, display data relevant to the user, and to show the user's inputs do what they intended them to do.
 
 # Specifications and Constraints
 ## Specifications
