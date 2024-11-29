@@ -50,7 +50,7 @@ As shown in the photo below, there are 6 SPST switches that will act as left, ri
   
 *Ports*
 
-<img width="425" alt="Portsandbuttonsbuildableschematic" src="https://github.com/user-attachments/assets/36490ba3-c1cd-41a3-ac82-004e6afb40bd">
+<img width="394" alt="Portsandbuttonsbuildableschematic" src="https://github.com/user-attachments/assets/ef3c10f8-6d92-41cf-bca7-c7da5a17ddef">
 
 
 # PCB Layout
