@@ -19,3 +19,10 @@ Display
 -The Display subsystem will display the interpreted version of the tachometer signal from the microcontroller.  
 Case  
 -The Case will account for the openings needed for the Molex connector and buttons.  
+
+# Buildable Schematic
+![Screenshot (187)](https://github.com/user-attachments/assets/0fdb1b9f-381f-4eac-a8ed-c6e90f26a2d8)
+![Screenshot (186)](https://github.com/user-attachments/assets/6c45987b-5658-4cb2-9177-ca0bef23dbe7)
+
+
+
