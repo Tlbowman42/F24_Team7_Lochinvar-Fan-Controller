@@ -20,6 +20,16 @@ Display
 Case  
 -The Case will account for the openings needed for the Molex connector and buttons.  
 
+# 3D design for case
+Lid  
+![Screenshot (190)](https://github.com/user-attachments/assets/c09ec1a6-7c91-4c66-9755-fb48292fd73b)
+
+Inside  
+![Screenshot (189)](https://github.com/user-attachments/assets/bd7f446f-c940-4ca3-9ba8-6cf0ce62fc3d)
+
+
+
+
 # Buildable Schematic
 ![Screenshot (187)](https://github.com/user-attachments/assets/0fdb1b9f-381f-4eac-a8ed-c6e90f26a2d8)
 ![Screenshot (186)](https://github.com/user-attachments/assets/6c45987b-5658-4cb2-9177-ca0bef23dbe7)
@@ -37,7 +47,8 @@ Case
 | Total       |       |     |     |   | $ |  |  |
 
 # Analysis
+This is the analysis of the post-procesing and case subsystem.
 
-
+![Screenshot (185)](https://github.com/user-attachments/assets/f15b72b3-fc62-4a0c-a634-47accde9ad2d)
 
 
