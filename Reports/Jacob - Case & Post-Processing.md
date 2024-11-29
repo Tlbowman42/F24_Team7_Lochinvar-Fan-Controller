@@ -2,6 +2,7 @@
 The role of the post-processing subsystem is to step up the incoming Tach signals coming from the microcontroller. This subsystem will be responsible for isolation from the Molex connection. It also will step up the signals to the necessary 5-12V DC. Then for the case the function is the protect and enclose the PCB.
 
 # Specifications and Constraints  
+*Specifications*
 The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.  
 The Post-processing shall isolate the signal from backfeed.  
 The case shall encase and protect the board.
