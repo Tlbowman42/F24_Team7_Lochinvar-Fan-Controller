@@ -24,5 +24,9 @@ Case
 ![Screenshot (187)](https://github.com/user-attachments/assets/0fdb1b9f-381f-4eac-a8ed-c6e90f26a2d8)
 ![Screenshot (186)](https://github.com/user-attachments/assets/6c45987b-5658-4cb2-9177-ca0bef23dbe7)
 
+# PCB
+![image](https://github.com/user-attachments/assets/a5741e4c-52d9-4d9b-85f0-4c882c560005)
+![image](https://github.com/user-attachments/assets/5a6e39ef-8f56-4d20-a397-60724bc26a80)
+
 
 
