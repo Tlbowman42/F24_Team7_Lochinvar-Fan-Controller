@@ -3,7 +3,7 @@ The role of the post-processing subsystem is to step up the incoming Tach and PW
 
 # Specifications and Constraints  
 *Specifications*  
-1. The Post-processing shall step up the tachometer signal, coming from the microcontroller, to send to the boiler controller.  
+1. The Post-processing shall step up the tachometer and PWM signal, coming from the microcontroller, to send to the boiler controller.  
 2. The Post-processing shall isolate the signal from backfeed.  
 3. The case shall encase and protect the board.
 4. The case shall have openings for the display, buttons, and ports.
@@ -11,7 +11,7 @@ The role of the post-processing subsystem is to step up the incoming Tach and PW
 6. The case shall include a raised bezel for the display for protection.  
 
 *Constraints*  
-1. The Post-processing must step the signal up from 3.3V to either 24V or 10V depenfing if its the tach or pwm signal.  
+1. The Post-processing must step the signal up from 3.3V to either 24V or 10V depending if its the tach or pwm signal.  
 2. The case must fully protect all components inside of it.  
 3. The subsystems must meet IPC J-STD-001.  
 
@@ -21,11 +21,11 @@ The role of the post-processing subsystem is to step up the incoming Tach and PW
 3. Constraint three requires that proper soldering procedures, training, equipment, and materials are used. Following such guidelines will ensure safety and stable connections for the user of the tool and those working on it.
 
 # Overview of Proposed Solution  
-The post-processing system starts off with a tachometer and pwm signal (3.3V) that it steps up from the microcontroller to send to the boiler controller 10-12V or 24V for the pwm. In addition to this, the signal must be isolated to protect the system from power surges. To accomplish this, an opto-coupler circuit will be implemented to meet both of these requirements. This circuit will consist of an opto-coupler, a current limiting resistor, and a pull up resistor. The case will be designed in solidworks then 3D printed.  
+The post-processing system starts off with a tachometer and PWMsignal (3.3V) that it steps up from the microcontroller to send to the boiler controller 10-12V or 24V for the pwm. In addition to this, the signal must be isolated to protect the system from power surges. To accomplish this, an opto-coupler circuit will be implemented to meet both of these requirements. This circuit will consist of an opto-coupler, a current limiting resistor, and a pull up resistor. The case will be designed in solidworks then 3D printed.  
 
 # Interfacing with Other Subsystems
 Microcontroller   
--The microcontroller subsystem will send a tachometer signal that has gone through the post-processing circuit.  
+-The microcontroller subsystem will send a tachometer and PWM signal that has gone through the post-processing circuit.  
 Display  
 -The Display subsystem will display the interpreted version of the tachometer signal from the microcontroller.  
 Case  
