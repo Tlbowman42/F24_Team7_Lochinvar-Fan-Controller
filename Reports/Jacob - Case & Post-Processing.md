@@ -25,7 +25,8 @@ Lid
 ![Screenshot (190)](https://github.com/user-attachments/assets/c09ec1a6-7c91-4c66-9755-fb48292fd73b)
 
 Inside  
-![Screenshot (189)](https://github.com/user-attachments/assets/bd7f446f-c940-4ca3-9ba8-6cf0ce62fc3d)
+![Screenshot (192)](https://github.com/user-attachments/assets/30ee5df7-b71c-4121-8ca5-8531643d1ac8)
+
 
 
 
@@ -47,8 +48,15 @@ Inside
 | Total       |       |     |     |   | $ |  |  |
 
 # Analysis
-This is the analysis of the post-procesing and case subsystem.
+This is the analysis of the post-procesing and case subsystem. The post-processing section is designed to take a PWM and TACH signale as an input from the microcontroller. Then the those signals will be stepped up to the appropriate voltage. The PWM will be go from 3.3V to 24V. While the TACH signal will go from 3.3V to 10V. The circuit starts off the PWM and TACH signal current flowing through a 210 Ohm resistor. This will make the forward current going through the opto-coupler's LED stay within the desired range to increase the longevity of the component and provide an accurate signal to read. I chose the 210 Ohm resistor by using this equation ((3.3V - 1.2V)/ 10mA) which is just ((V1-Vf)/i). On the other side of the opto-coupler for the PWM signal we have a 2k Ohm resistor which orignaly was a 1.2k Ohm resistor but we figured out through testing that the 2k Ohm resistor gives a better output signal. Next the TACH siganl was a little more complicated because lochinvar wanted it to only be stepped up to 10V. Like the PWM siganl we use a 2k Ohm resistor connected to the TACH_Out to provide a better signal. The difference between the two is that we had to use a 10V to 40V buck converter to get the desired 10V TACH output that we want.  
+
 
 ![Screenshot (185)](https://github.com/user-attachments/assets/f15b72b3-fc62-4a0c-a634-47accde9ad2d)
+
+
+Then for the case it is pretty simple. The box/internal design shows the two holes needed for the controller and fan molex connectors. As well I rounded the corners on the inside of the case to allow room to be able screw the lid to the top of the box. Then the 4 pegs is where the LDO will be mounted and secured. Finally for the lid of the case we just have an opening for the LCD display and holes for all of the buttons.
+
+
+
 
 
