@@ -78,7 +78,11 @@ This simulation shows that the chosen components will process and output the pro
 
 # References
 [1] IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Nov 22, 2024).
+
 [2] "PC817X1YSZW" Sharp Electronics, https://www.mouser.com/datasheet/2/365/Sharpelectronics_08292023_73758-3310502.pdf (accessed Nov. 22, 2024).
+
 [3] "FMP200JR-52-1K8" Yageo, https://www.yageo.com/upload/media/product/app/datasheet/lr/yageo-fmp_datasheet.pdf
+
 [4] "FMP200JR-52-5K1" Yageo, https://www.yageo.com/upload/media/product/app/datasheet/lr/yageo-fmp_datasheet.pdf
+
 [5] "FMP200JR-52-5K1" Stackpole Electronics Inc, https://www.seielect.com/catalog/sei-rsf_rsmf.pdf
