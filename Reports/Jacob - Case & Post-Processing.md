@@ -53,6 +53,20 @@ This is the analysis of the post-procesing and case subsystem. The post-processi
 
 ![Screenshot (185)](https://github.com/user-attachments/assets/f15b72b3-fc62-4a0c-a634-47accde9ad2d)
 
+These picture shows the PWM and TACH out signals. The PWM shows the 24V output and the TACH shows the how the buck converter needs about 15ms to hit peak output voltage. Then the current going to the opto-coupler will be the same for both.  
+
+PWM
+![Screenshot (194)](https://github.com/user-attachments/assets/2528b5af-7f39-4a92-a6d9-34c36d87c5c9)
+![Screenshot (196)](https://github.com/user-attachments/assets/e720a861-6325-4949-b159-21815681689c)  
+
+ 
+
+TACH
+![Screenshot (195)](https://github.com/user-attachments/assets/ecc39231-faba-461d-93f9-59bc61ffcf2e)
+![Screenshot (197)](https://github.com/user-attachments/assets/0cff14e8-354f-42ea-a11a-0b78a0fbf5f5)
+
+
+
 
 Then for the case it is pretty simple. The box/internal design shows the two holes needed for the controller and fan molex connectors. As well I rounded the corners on the inside of the case to allow room to be able screw the lid to the top of the box. Then the 4 pegs is where the LDO will be mounted and secured. Finally for the lid of the case we just have an opening for the LCD display and holes for all of the buttons.
 
