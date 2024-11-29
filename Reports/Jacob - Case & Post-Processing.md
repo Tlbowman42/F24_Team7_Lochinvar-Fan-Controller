@@ -1,5 +1,5 @@
 # Function of the Subsystem  
-The role of the post-processing subsystem is to step up the incoming Tach signals coming from the microcontroller. This subsystem will be responsible for isolation from the Molex connection. It also will step up the signals to the necessary 5-12V DC. Then for the case the function is the protect and enclose the PCB.
+The role of the post-processing subsystem is to step up the incoming Tach and PWM signals coming from the microcontroller. This subsystem will be responsible for isolation from the Molex connection. It also will step up the signals to the necessary 10-12V and 24V DC. Then for the case the function is the protect and enclose the PCB and other components.
 
 # Specifications and Constraints  
 *Specifications*  
