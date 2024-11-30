@@ -21,15 +21,25 @@ The role of the post-processing subsystem is to step up the incoming Tach and PW
 3. Constraint three requires that proper soldering procedures, training, equipment, and materials are used. Following such guidelines will ensure safety and stable connections for the user of the tool and those working on it.
 
 # Overview of Proposed Solution  
-The post-processing system starts off with a tachometer and PWMsignal (3.3V) that it steps up from the microcontroller to send to the boiler controller 10-12V or 24V for the pwm. In addition to this, the signal must be isolated to protect the system from power surges. To accomplish this, an opto-coupler circuit will be implemented to meet both of these requirements. This circuit will consist of an opto-coupler, a current limiting resistor, and a pull up resistor. The case will be designed in solidworks then 3D printed.  
+The post-processing system starts off with a tachometer and PWMsignal (3.3V) that it steps up from the microcontroller to send to the boiler controller 10-12V or 24V for the pwm. It will also have a voltage regulator for the tach signal along with its supporting components. In addition to this, the signal must be isolated to protect the system from power surges. To accomplish this, an opto-coupler circuit will be implemented to meet both of these requirements. This circuit will consist of an opto-coupler, a current limiting resistor, and a pull up resistor. The case will be designed in solidworks then 3D printed.  
 
 # Interfacing with Other Subsystems
+Pre-Processing  
+-The post-processing and case doesn't have any connection with the pre-processing sub system.  
+Memory  
+-The post-processing and the case doesn't have any connection with the memory sub system.
 Microcontroller   
 -The microcontroller subsystem will send a tachometer and PWM signal that has gone through the post-processing circuit.  
 Display  
 -The Display subsystem will display the interpreted version of the tachometer signal from the microcontroller.  
 Case  
 -The Case will account for the openings needed for the Molex connector and buttons.  
+Power  
+-The power system pulls up from the 24 V that went through the polarity checker.  
+Display  
+-The case will have an opening for the display.  
+Ports and Buttons  
+-The case will also have openings for all of the buttons and two openings for both of the molex connectors.  
 
 # 3D design for case
 Lid  
