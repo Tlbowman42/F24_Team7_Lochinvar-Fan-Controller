@@ -74,16 +74,18 @@ This is the analysis of the post-procesing and case subsystem. The post-processi
 
 ![Screenshot (185)](https://github.com/user-attachments/assets/f15b72b3-fc62-4a0c-a634-47accde9ad2d)
 
-These picture shows the PWM and TACH out signals. The PWM shows the 24V output and the TACH shows the how the buck converter needs about 15ms to hit peak output voltage. Then the current going to the opto-coupler will be the same for both. For the tach signal you can see how
+These picture shows the PWM and TACH out signals. The PWM shows the 24V output and the TACH shows the how the buck/boost converter needs about 15ms to hit peak output voltage. Then the current going to the opto-coupler will be the same for both. Also you can see in the TACH ouput that it ramps up over time due to the buck/boost converter.
 
 PWM
-![Screenshot (194)](https://github.com/user-attachments/assets/2528b5af-7f39-4a92-a6d9-34c36d87c5c9)
+![Screenshot (199)](https://github.com/user-attachments/assets/fb598a0b-784a-4177-8319-dc9a951d6bfa)
+
 ![Screenshot (196)](https://github.com/user-attachments/assets/e720a861-6325-4949-b159-21815681689c)  
 
  
 
 TACH
-![Screenshot (195)](https://github.com/user-attachments/assets/ecc39231-faba-461d-93f9-59bc61ffcf2e)
+![Screenshot (198)](https://github.com/user-attachments/assets/cdcda54e-6d69-4665-ac60-a4e057bf536e)
+
 ![Screenshot (197)](https://github.com/user-attachments/assets/0cff14e8-354f-42ea-a11a-0b78a0fbf5f5)
 
 
