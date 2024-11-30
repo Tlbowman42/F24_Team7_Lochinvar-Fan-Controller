@@ -113,11 +113,9 @@ Then for the case it is pretty simple. The box/internal design shows the two hol
 
 [2] "PC817X1YSZW" Sharp Electronics, https://www.mouser.com/datasheet/2/365/Sharpelectronics_08292023_73758-3310502.pdf (accessed Nov. 22, 2024).
 
-[3] "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/744065100/1638465?msockid=29ca711416706eb91ae8630a175c6f61"
+[3] "https://www.digikey.com/en/products/detail/analog-devices-inc/LTC3115EDHD-1-PBF/3074265"
 
-[4] "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61H106KE43L/10326316?msockid=29ca711416706eb91ae8630a175c6f61"
-
-[5] "https://www.digikey.com/en/products/detail/tdk-corporation/CKG57NX5R1H226M500JH/655485?msockid=29ca711416706eb91ae8630a175c6f61"
+[4] "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC3115-1.pdf"
 
 
 
