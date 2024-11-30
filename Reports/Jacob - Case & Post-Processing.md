@@ -64,9 +64,23 @@ Inside
 | Manufacturer | Manufacturer Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name|
 | :---:         | :---:                    | :---:       | :---:                   | :---:    | :---: | :---: | :---: |
 | Analog Devices Inc. | LTC3115EDHD-1#PBF | Digikey |505-LTC3115EDHD-1#PBF-ND | 1 | $15.15| https://www.digikey.com/en/products/detail/analog-devices-inc/LTC3115EDHD-1-PBF/3074265 | U3|
-| Yageo | FMP200JR-52-1K8 | Digikey |1.8KZCT-ND | 2 | $0.62| https://www.digikey.com/en/products/detail/yageo/FMP200JR-52-1K8/2058663 | R3 and R6|
-| Yageo | FMP200JR-52-5K1 | Digikey |5.1KZCT-ND | 2 | $0.64| https://www.digikey.com/en/products/detail/yageo/FMP200JR-52-5K1/2058704 | R4 and R5|
-| Total       |       |     |     |   | $ |  |  |
+| Würth Elektronik | 744065100 | Digikey |732-1060-2-ND | 1 | $1.62| https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/744065100/1638465?msockid=29ca711416706eb91ae8630a175c6f61 | L1|
+| Murata Electronics | GRM21BR61H106KE43L | Digikey |490-18663-2-ND | 1 | $0.26| https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61H106KE43L/10326316?msockid=29ca711416706eb91ae8630a175c6f61 | Cin|
+| TDK Corporation| CKG57NX5R1H226M500JH | Digikey |445-1655-2-ND | 1 | $4.62| https://www.digikey.com/en/products/detail/tdk-corporation/CKG57NX5R1H226M500JH/655485?msockid=29ca711416706eb91ae8630a175c6f61 | CO|
+| KYOCERA AVX | KGM31BR71H104KT | Digikey |732-1060-2-ND | 2 | $0.30| https://www.digikey.com/en/products/detail/kyocera-avx/KGM31BR71H104KT/563664?s=N4IgTCBcDaINIE0DyBhAogJQIIAIsDUANHARjAAYA2AVhRPIBY4sAVMLEAXQF8g | Cbst1 and Cbst2|
+| Vishay Dale | CRCW1206255KFKEAC | Digikey |CRCW1206255KFKEAC-ND | 1 | $0.08| https://www.digikey.com/en/products/detail/vishay-dale/CRCW1206255KFKEAC/7921419?s=N4IgTCBcDaIGoEsDOALAhgTwAQGEBKOA6gIxgAMAbGAKzUDSAYnQKICCOIAugL5A | R8|
+| Panasonic Electronic Components | ERA-8AEB3572V | Digikey |P35.7KBCTR-ND | 1 | $0.39| https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERA-8AEB3572V/3070983?s=N4IgTCBcDaIAoEMB2CDOB7JBLAxgAgFEAlAQQFoAOEggIQGYBWAdjADUQBdAXyA | Rt|
+| KEMET |C1206C475K5RAC7800 | Digikey |399-C1206C475K5RAC7800TR-ND| 1 | $.41| https://www.digikey.com/en/products/detail/kemet/C1206C475K5RAC7800/5119822?s=N4IgTCBcDaINIFECyCAqACAwgRjABgDZMAWAdgFY5yAlAQU1QFUQBdAXyA | C1|
+| Vishay Dale | CRCW12063K60FKEA | Digikey |541-3.60KFTR-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/vishay-dale/CRCW12063K60FKEA/1176706 | Rfb|
+| KEMET | C1206C821K5GAC7800 | Digikey |399-C1206C821K5GAC7800TR-ND | 1 | $0.44| https://www.digikey.com/en/products/detail/kemet/C1206C821K5GAC7800/411216 | Cfb|
+| Vishay Dale | CRCW12061M00FKEA | Digikey |541-1.00MFTR-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/vishay-dale/CRCW12061M00FKEA/1176986 | Rtop|
+| Vishay Dale | CRCW120690K9FKEA | Digikey |541-90.9KFTR-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/vishay-dale/CRCW120690K9FKEA/1176867| Rbot|
+| Vishay Dale | CRCW120610K0FKEA | Digikey |541-10.0KFTR-ND | 1 | $0.10|https://www.digikey.com/en/products/detail/vishay-dale/CRCW120610K0FKEA/1176758 | Rff|
+| TDK Corporation | C3216C0G2A333J160AA | Digikey |445-15415-2-ND | 1 | $1.02| https://www.digikey.com/en/products/detail/tdk-corporation/C3216C0G2A333J160AA/4278148?msockid=29ca711416706eb91ae8630a175c6f61 | Cff|
+| Stackpole Electronics Inc | RSMF1JT2K00 | Digikey |RSMF1JT2K00TR-ND | 2 | $0.40| https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1JT2K00/1694491 | R3 and R4|
+| Sharp Microelectronics | PC817X1YSZW | Mouser |852-PC817X1YSZW | 2 | $1.28| https://www.mouser.com/ProductDetail/Sharp-Microelectronics/PC817X1YSZW?qs=t7xnP681wgVcLhY5Ec%252BPYQ%3D%3D | U3 and U4|
+| YAGEO | MFR-25FRF52-210R | Digikey |13-MFR-25FRF52-210RTR-ND | 2 | $0.20|https://www.digikey.com/en/products/detail/yageo/MFR-25FRF52-210R/14826?s=N4IgTCBcDaILIDEBKBaMBWZD1jQRgAYkQBdAXyA | R1 and R2|
+| Total       |       |     |     |   | $ 26.51|  |  |
 
 # Analysis
 This is the analysis of the post-procesing and case subsystem. The post-processing section is designed to take a PWM and TACH signal as an input from the microcontroller. Then the those signals will be stepped up to the appropriate voltage. The PWM will go from 3.3V to 24V. While the TACH signal will go from 3.3V to 10-12V. The circuit starts off with the PWM and TACH signal current flowing through a 210 Ohm resistor. This will make the forward current going through the opto-coupler's LED stay within the desired range to increase the longevity of the component and provide an accurate signal to read. The opto-coupler chosen is a PC817A. This opto-coupler is good for the 6 kHz PWM signal that will need to be processed and can handle the above the maximum 40 Vdc that can be seen. The datasheet specifies a cutoff frequency of 80 kHz and includes rise and fall times of up to 18 µs, which supports operation well above 6 kHz. This means the component can handle the 6 kHz frequency signal without significant distortion or delay​. I chose the 210 Ohm resistor by using this equation ((3.3V - 1.2V)/ 10mA) which is just ((V1-Vf)/i). On the other side of the opto-coupler for the PWM signal we have a 2k Ohm resistor which orignaly was a 1.2k Ohm resistor but we figured out through testing that the 2k Ohm resistor gives a better output signal. Next the TACH siganl was a little more complicated because lochinvar wanted it to only be stepped up to 10V. Like the PWM siganl we use a 2k Ohm step up resistor to provide a better signal. The difference between the two is that we had to use a 10V to 40V buck/boost converter to get the desired 10-12V TACH output that we want. 
@@ -93,7 +107,16 @@ TACH
 
 Then for the case it is pretty simple. The box/internal design shows the two holes needed for the controller and fan molex connectors. As well I rounded the corners on the inside of the case to allow room to be able screw the lid to the top of the box. Then the 4 pegs is where the flyback converter will be mounted and secured. Finally for the lid of the case we just have an opening for the LCD display and holes for all of the buttons. Although the case is subject to change due to the PCB layout being updated and improved through Bruce's guidance.
 
+# References
+[1] IEC 61010-2-081 - safety requirements for electrical equipment for measurement, control, and laboratory use – part 2-081: Particular requirements for automatic and semi-automatic laboratory equipment for analysis and other purposes | Engineering360,” GlobalSpec, https://standards.globalspec.com/std/13207536/IEC%2061010-2-081 (accessed Nov 22, 2024).
 
+[2] "PC817X1YSZW" Sharp Electronics, https://www.mouser.com/datasheet/2/365/Sharpelectronics_08292023_73758-3310502.pdf (accessed Nov. 22, 2024).
+
+[3] "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/744065100/1638465?msockid=29ca711416706eb91ae8630a175c6f61"
+
+[4] "https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61H106KE43L/10326316?msockid=29ca711416706eb91ae8630a175c6f61"
+
+[5] "https://www.digikey.com/en/products/detail/tdk-corporation/CKG57NX5R1H226M500JH/655485?msockid=29ca711416706eb91ae8630a175c6f61"
 
 
 
