@@ -15,9 +15,9 @@ The Ports and Buttons subsystem shall adhere to the following specifications and
 Constraint one requires that proper soldering procedures, training, equipment, and materials are used. Following such guidelines will ensure safety and stable connections for the user of the tool and those working on it.
 
 # Overview of Proposed Solution
-There will be two Molex connectors on the board. One is for Fan Driving mode, the Fan Molex, and the other is for Fan Simulation Mode, Control Molex. Both are used for the Monitoring mode. The Fan Molex has PWM Input and a Tach Output. The Control Molex has Tach Input and a PWM output. In other words, for the Fan Molex the board is receiving a PWM signal and sending a Tach signal and for the Control Molex the board is recieving a Tach signal and sending a PWM signal.  
+There will be two Molex connectors on the board. One is for Fan Driving mode, the Fan Molex, and the other is for Fan Simulation Mode, Control Molex. Both are used for the Monitoring mode. The Fan Molex has PWM Input and a Tach Output. The Control Molex has Tach Input and a PWM output. In other words, for the Fan Molex the board is receiving a PWM signal and sending a Tach signal and for the Control Molex the board is receiving a Tach signal and sending a PWM signal.  
 
-There will be two 40 pin receptacle connectors for the 80 Morpho pins on the Nucleo board. This will be what allows the rest of the board to send and recieve signals from the microcontroller.
+There will be two 40 pin receptacle connectors for the 80 Morpho pins on the Nucleo board. This will be what allows the rest of the board to send and receive signals from the microcontroller.
 
 There will be two 2 wire terminal blocks for the board to connect to the external flyback converter that takes in 24 V and will return 5 V. The flyback converter is a seperate smaller PCB from the main PCB
 
@@ -25,17 +25,17 @@ Finally, there will be 6 SPST push buttons so that the user can interface with t
 
 # Interfacing with Other Subsystems
 1. Microcontroller
-   - The Microcontroller subsystem will be connected to the PCB by the morpho pin receptacle connectors. It will also recieve the user's inputs from the push buttons
+   - The Microcontroller subsystem will be connected to the PCB by the morpho pin receptacle connectors. It will also receive the user's inputs from the push buttons
 2. Display
    - The Display will react to the user's inputs based on what button is pressed.
 3. Case
    - The Case must have openings for the ports and the buttons so that they are accessible to the user.
 4. Power
-   - The Power subsystem will recieve power from the Molex ports and the terminal blocks to be able to distribute power throughout the board. The buttons will pull down 3.3 V to send a signal to the microcontroller when they are pressed.
+   - The Power subsystem will receive power from the Molex ports and the terminal blocks to be able to distribute power throughout the board. The buttons will pull down 3.3 V to send a signal to the microcontroller when they are pressed.
 5. Post-processing
-   - The Post-Processing recieves Tach and PWM signals from the Molex ports.
+   - The Post-Processing sends Tach and PWM signals to the Molex ports.
 6. Pre-processing
-   - The Pre-Processing recieves Tach and PWM signals from the Molex ports.
+   - The Pre-Processing receives Tach and PWM signals from the Molex ports.
 7. Memory
    - The Memory Subsystem and the Ports and Buttons Subsystems are not connected.
 
@@ -66,7 +66,7 @@ As shown in the photo below, there are 6 SPST switches that will act as left, ri
 | C&K |D6C90 F2 LFS| Digikey | 401-1988-ND | 6 | $7.47 | https://www.digikey.com/en/products/detail/c-k/D6C90-F2-LFS/1466345 | S1 to S6|
 
 # Analysis
-A 5 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because the lower resistance will use 0.66 mA as opposed to 0.33 mA. This higher current will allow the signal to be stronger and have more immunity to noise. This current is not high enough to cause a large drain in power or introduce exesscive heat, therefore it will benefit the system to use the lower resistance so that when a button is pressed there will be no doubt that it was a press based on the signal the microcontroller recieves. This clear signal will allow the user to focus on what decisions they need to make next instead of dealing with misinputs.
+A 5 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because the lower resistance will use 0.66 mA as opposed to 0.33 mA. This higher current will allow the signal to be stronger and have more immunity to noise. This current is not high enough to cause a large drain in power or introduce exesscive heat, therefore it will benefit the system to use the lower resistance so that when a button is pressed there will be no doubt that it was a press based on the signal the microcontroller receives. This clear signal will allow the user to focus on what decisions they need to make next instead of dealing with misinputs.
 
 <img width="367" alt="Buttons circuit digital" src="https://github.com/user-attachments/assets/0720f8b8-fbec-4c69-850d-7378e6eab843">
 
