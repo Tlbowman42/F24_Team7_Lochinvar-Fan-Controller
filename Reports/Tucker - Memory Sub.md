@@ -1,7 +1,7 @@
 
 # Function of the Subsystem
 
-The role of the memory subsystem is to act as the non-volatile storage for the users testing configurations and the input and output of specific crucial data logs. The memory subsystem will handle the containment and output of such settings and log files when the diagnostic tool is off and on respectively.
+The role of the memory subsystem is to act as the non-volatile storage for the users testing configurations. The memory subsystem will handle the containment and re-use of such settings upon diagnostic tool power cycles.
 
 # Specifications and Constraints
 The memory subsystem shall adhere to the following specifications and constraints:
@@ -11,16 +11,16 @@ The memory subsystem shall adhere to the following specifications and constraint
 2. The memory shall be able to communicate with the microcontroller through a serial protocol.  
 
 *Constraints*
-1. The memory subsystem must be able to store and transfer user settings, input, and output data.  
+1. The memory subsystem must be able to store and transfer user settings.  
 
-The reason for this constraint came from Lochinvar. They stated that there might be some use in being able to store user configurations and output/input data. Thus, the EEPROM memory must be able to store user configurations and data, so it can be transferred to another device.  
+The reason for this constraint came from Lochinvar, who stated that there might be some use in being able to store user configurations. Thus, the EEPROM memory must be able to store user configurations, so it can be transferred to another device.  
 
 # Overview of Proposed Solution
 The memory subsystem contains only one main part.
 
 1. The 25AA640-I/SN	64kbit EEPROM.  
 
-The memory subsystem will be connected to the microcontrollers ST-morpho connectors allowing for R/W functions and power via serial SPI communication and power ports. This EEPROMs purposed will be fulfilled by saving user configurations and specific input/output data logs from the user. This will allow the user to be able to have a more flexible experience by giving them the option to save their settings and data.  
+The memory subsystem will be connected to the microcontrollers ST-morpho connectors allowing for R/W functions and power via serial SPI communication and power ports. This EEPROMs purpose will be fulfilled by saving user configurations and re-applying them when requested by user. This will allow the user to be able to have a more flexible experience by giving them the option to save their settings and configurations.  
   
 # Interfacing with Other Subsystems
 1. Display
@@ -72,7 +72,7 @@ The memory analysis will be done in one complete part including,
 
 The choice for communication protocol started with determining if our microcontroller would have enough GPIO's to implement a 4 wire SPI interface rather than a 2 wire I2C. Upon estimating the diagnostic tools required GPIO's, the team felt as if there would be slight trouble in implementing an SPI communication channel to an EEPROM [2]. For this reason we initially went with an I2C design as this would allow for less IO's to be used while also keeping the communication channel simple and fast. Furthermore, using I2C we would be certain of our ability to keep an entire IO channel dedicated to the LCD for faster data transfer. However, we also wanted our memory to have a full-duplex communication channel allowing for simultaneous back and forth data transfer. Due to this, the possibility of an I2C EEPROM was thrown out, as I2C channels are only half duplex. Alongside I2C not having full-duplex we were also able to pin out the microcontroller such that we could implement the faster, full-duplex communication channel that we wanted originally. Thus, we chose to go with an SPI connection to the EEPROM as it would be a faster system that allowed for simulataneous back and forth communication whilst also not interfering with other subsystems [1].  
 
-Currently the EEPROM will serve to hold user configurations and specific input and output logs in non-volatile memory on board the diagnostic tool. Thus, allowing for the memory to meet the specifications and constraints. In order to do so the team will focus on generating log files and saving configured user profiles when applicable or requested by user. Furthermore, the team will strive to keep the data logs and user configurations in as small of data packet as possible due to the EEPROMs lack of capacity in only 64k bits. By using the EEPROM to store user configurations and input/output data from the tool, proper analysis can be done on the resulting effects of a fan simulation.  
+Currently the EEPROM will serve to hold user configurations in non-volatile memory on board the diagnostic tool. Thus, allowing for the memory to meet the specifications and constraints. In order to do so the team will focus on generating configured user profiles when applicable or requested by user. Furthermore, the team will strive to keep the user configurations in as small a form factor as possible due to the EEPROMs lack of capacity in only 64k bits. By using the EEPROM to store user configurations from the tool, rapid and proper analysis of the simulated fans can be completed.  
 
 # References
 [1] “25AA640/25LC640,” 21223H.book, https://ww1.microchip.com/downloads/en/DeviceDoc/21223H.pdf (accessed Nov. 20, 2024).  
