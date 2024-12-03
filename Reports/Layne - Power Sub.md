@@ -65,7 +65,7 @@ Lastly, after the diode-oring circuit, the voltage will be inputted into a Low D
 
 # Buildable Schematic
 
-![image](https://github.com/user-attachments/assets/799e6c8f-e0e2-4153-ae29-1e028998ebe8)
+![image](https://github.com/user-attachments/assets/9958300f-2711-47c1-a210-66c43ab90351)
 
 # PCB Layout
 
@@ -79,7 +79,7 @@ Lastly, after the diode-oring circuit, the voltage will be inputted into a Low D
 | :---         | :---:                    | :---:       | :---:                   | :---:    | :---: | :--- | :--- |
 | Texas Instruments | LM5180EVM-S05 | Digikey | 296-LM5180EVM-S05-ND | 1 | $118.80 | https://www.digikey.com/en/products/detail/texas-instruments/LM5180EVM-S05/10434463 | N/A |
 | Texas Instruments | TPS79633DCQR | Digikey | 296-13766-1-ND - Cut Tape (CT) | 1 | $2.92 | https://www.digikey.com/en/products/detail/texas-instruments/TPS79633DCQR/509964 | U2 |
-| Infineon Technologies | IRF9540NPBF | Digikey | IRF9540NPBF-ND | 1 | $1.99 | https://www.digikey.com/en/products/detail/infineon-technologies/IRF9540NPBF/812088?utm_adgroup=SKU&utm_source=bing&utm_medium=cpc&utm_campaign=EN_Supplier_Infineon&utm_term=irf9540npbf&utm_content=SKU&utm_id=bi_cmp-274565063_adg-1311717702316159_ad-81982426159089_kwd-81982547982542:loc-190_dev-c_ext-_prd-&msclkid=84791e75f0e21e813ab1794f7705a4d1 | Q1 |
+| Infineon Technologies | IRF4905PBF | Digikey | IRF4905PBF-ND | 1 | $2.93 | https://www.digikey.com/en/products/detail/infineon-technologies/IRF4905PBF/812139 | U8 |
 | Molex | 39-30-3058 | Mouser Electronics | 538-39-30-3058 | 2 | $2.84 | https://www.mouser.com/ProductDetail/Molex/39-30-3058?qs=404muyNbhLG7BJxtPMLWWg%3D%3D | J1 and J2 |
 | TE Connectivity AMP Connectors | 2-215307-0 | Digikey | A106399-ND | 2 | $5.34 | https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/2-215307-0/1149668 | J3 and J4 |
 | Würth Elektronik | 691137710002 | Digikey | 732-10955-ND | 2 | $0.40 | https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/691137710002/6644051 | J5 and J6 |
@@ -92,7 +92,8 @@ Lastly, after the diode-oring circuit, the voltage will be inputted into a Low D
 | KEMET | C322C103K3G5TA | Mouser Electronics | 80-C322C103K3G5TA | 1 | $0.51 | https://www.mouser.com/ProductDetail/KEMET/C322C103K3G5TA?qs=h3%2Fj8evtlm2CUEq59T%2FBjg%3D%3D | C2 |
 | Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | 1 | S0.26 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
 | JLCPCB | N/A | N/A | N/A | 5 | $16.60 | https://cart.jlcpcb.com/quote?rand=0.22722900529384749 | N/A |
-| Total | | | | | $164.50   | |
+| Fischer Elektronik | FK 222 SA TO 220 | Newark | 46T6596 | 10 | $9.51 | https://www.newark.com/fischer-elektronik/fk-222-sa/heat-sink-to-3-to-220-20-c-w-12/dp/46T6596 | N/A |
+| Total | | | | | $174.95   | |
 
 # Analysis
 
