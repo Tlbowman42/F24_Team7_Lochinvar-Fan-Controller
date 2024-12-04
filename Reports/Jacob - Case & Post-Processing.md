@@ -104,9 +104,10 @@ PWM
  
 
 TACH
-![Screenshot (198)](https://github.com/user-attachments/assets/cdcda54e-6d69-4665-ac60-a4e057bf536e)
+![Screenshot (208)](https://github.com/user-attachments/assets/8d78b4ef-27cf-4156-bf87-29df6faa6cc6)  
+![Screenshot (209)](https://github.com/user-attachments/assets/7145de99-3fa6-4100-ba58-e3cca6755f6c)  
 
-![Screenshot (197)](https://github.com/user-attachments/assets/0cff14e8-354f-42ea-a11a-0b78a0fbf5f5)
+
 
 
 
