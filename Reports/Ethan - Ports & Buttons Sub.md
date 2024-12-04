@@ -72,8 +72,8 @@ A 5 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because th
 
 
 # References
-[1] Flex PCB, “Joint Industry Standard (J-std-001): All you Need To Know,” Flex PCB, https://flexpcb.org/joint-industry-standard-j-std-001-all-you-need-to-know/#:~:text=What%20is%20the%20J-STD-001%20Standard%3F%20The%20J-STD-001%2C%20also,that%20provides%20guidelines%20for%20producing%20high-quality%20soldered%20interconnections. (accessed Sep. 21, 2024).
-[2] "39-30-3058" Molex, https://www.molex.com/en-us/products/part-detail/39303058?display=pdf
-[3] "2-215307-0" TE Connectivity AMP Connectors, https://www.te.com/usa-en/product-2-215307-0.datasheet.pdf
-[4] "691137710002" Würth Elektronik, https://www.we-online.com/components/products/datasheet/691137710002.pdf
-[5] "D6C90 F2 LFS" C&K, https://www.ckswitches.com/media/1341/d6.pdf
+[1] Flex PCB, “Joint Industry Standard (J-std-001): All you Need To Know,” Flex PCB, https://flexpcb.org/joint-industry-standard-j-std-001-all-you-need-to-know/#:~:text=What%20is%20the%20J-STD-001%20Standard%3F%20The%20J-STD-001%2C%20also,that%20provides%20guidelines%20for%20producing%20high-quality%20soldered%20interconnections. (accessed Sep. 21, 2024).  
+[2] "39-30-3058" Molex, https://www.molex.com/en-us/products/part-detail/39303058?display=pdf  
+[3] "2-215307-0" TE Connectivity AMP Connectors, https://www.te.com/usa-en/product-2-215307-0.datasheet.pdf  
+[4] "691137710002" Würth Elektronik, https://www.we-online.com/components/products/datasheet/691137710002.pdf  
+[5] "D6C90 F2 LFS" C&K, https://www.ckswitches.com/media/1341/d6.pdf  
