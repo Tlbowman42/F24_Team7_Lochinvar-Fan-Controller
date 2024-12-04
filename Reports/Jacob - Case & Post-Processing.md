@@ -11,9 +11,10 @@ The role of the post-processing subsystem is to step up the incoming Tach and PW
 6. The case shall include a raised bezel for the display for protection.  
 
 *Constraints*  
-1. The Post-processing must step the signal up from 3.3V to either 24V or 10V depending if its the tach or pwm signal.  
-2. The case must fully protect all components inside of it.  
-3. The subsystems must meet IPC J-STD-001.  
+1. The Post-processing must step up the PWM signal up from 3.3V to 24V.
+2. The Post-processing must step up the Tach signal up from 3.3V to 10-12V
+3. The case must fully protect all components inside of it.  
+4. The subsystems must meet IPC J-STD-001.  
 
 *Justifictation for Constraints*  
 1. Constraint one applies because it is possible for the amplitude of the signals to be a range of values, but the pwm should be 24V and the tach will be 10V to 12V for accurate measurments.  
