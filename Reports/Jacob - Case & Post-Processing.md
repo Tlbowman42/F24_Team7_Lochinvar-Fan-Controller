@@ -54,12 +54,14 @@ Inside
 
 
 # Buildable Schematic
-![Screenshot (187)](https://github.com/user-attachments/assets/0fdb1b9f-381f-4eac-a8ed-c6e90f26a2d8)
-![Screenshot (186)](https://github.com/user-attachments/assets/6c45987b-5658-4cb2-9177-ca0bef23dbe7)
+![Screenshot (204)](https://github.com/user-attachments/assets/018e694d-c6ce-43ee-a82b-ecea509981eb)  
+
+![Screenshot (205)](https://github.com/user-attachments/assets/7568b00c-22f1-4010-8761-22a9aa9d935a)  
 
 # PCB
-![image](https://github.com/user-attachments/assets/a5741e4c-52d9-4d9b-85f0-4c882c560005)
-![image](https://github.com/user-attachments/assets/5a6e39ef-8f56-4d20-a397-60724bc26a80)
+![Screenshot (206)](https://github.com/user-attachments/assets/3f0b9a97-10c4-402f-93e3-ddbac962168a)  
+
+
 
 # BOM
 | Manufacturer | Manufacturer Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name|
@@ -87,8 +89,9 @@ Inside
 # Analysis
 This is the analysis of the post-procesing and case subsystem. The post-processing section is designed to take a PWM and TACH signal as an input from the microcontroller. Then the those signals will be stepped up to the appropriate voltage. The PWM will go from 3.3V to 24V. While the TACH signal will go from 3.3V to 10-12V. The circuit starts off with the PWM and TACH signal current flowing through a 210 Ohm resistor. This will make the forward current going through the opto-coupler's LED stay within the desired range to increase the longevity of the component and provide an accurate signal to read. The opto-coupler chosen is a PC817A. This opto-coupler is good for the 6 kHz PWM signal that will need to be processed and can handle the above the maximum 40 Vdc that can be seen. The datasheet specifies a cutoff frequency of 80 kHz and includes rise and fall times of up to 18 µs, which supports operation well above 6 kHz. This means the component can handle the 6 kHz frequency signal without significant distortion or delay​. I chose the 210 Ohm resistor by using this equation ((3.3V - 1.2V)/ 10mA) which is just ((V1-Vf)/i). On the other side of the opto-coupler for the PWM signal we have a 2k Ohm resistor which orignaly was a 1.2k Ohm resistor but we figured out through testing that the 2k Ohm resistor gives a better output signal. Next the TACH siganl was a little more complicated because lochinvar wanted it to only be stepped up to 10V. Like the PWM siganl we use a 2k Ohm step up resistor to provide a better signal. The difference between the two is that we had to use a 10V to 40V buck/boost converter to get the desired 10-12V TACH output that we want. 
 
+![Screenshot (207)](https://github.com/user-attachments/assets/8d1cadf1-399b-4363-92d9-3d8111220846)  
 
-![Screenshot (202)](https://github.com/user-attachments/assets/6ad621d0-58d5-471a-a07a-d7bfb0d47f81)
+![Screenshot (202)](https://github.com/user-attachments/assets/66ba0ffc-c4e0-4318-ac71-99ebf315327a)  
 
 
 These picture shows the PWM and TACH out signals. The PWM shows the 24V output and the TACH shows the how the buck/boost converter needs about 15ms to hit peak output voltage. Then the current going to the opto-coupler will be the same for both. Also you can see in the TACH ouput that it ramps up over time due to the buck/boost converter.
