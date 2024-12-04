@@ -13,7 +13,8 @@ The power subsystem shall adhere to the following specifications and constraints
 5. The Power shall be placed in a design such that all I/O ports are properly mapped and subsection Ports are clear and efficient.
 6. The Power shall output DC power to the display and microcontroller.
 7. The Power shall ensure stable power is output to all sensitive components such as the microcontroller.
-8. The Power shall have safety measures in place to deal with noise and surges.  
+8. The Power shall have safety measures in place to deal with noise and surges.
+9. The Boiler Controller Board shall supply a max current of a 100mA, supplied from the 24V source. 
 
 *Constraints*
 1. IEC 61010-2-081: The IEC 61010 standard is for the safety requirements for electrical equipment for measurement, control and laboratory use. The specific subsection that we will need to follow is subsection 2-081. This subsection applies to automatic and semi-automatic laboratory equipment for analysis and other purposes. In other words this section pertains to equipment for measuring or modifying one or more characteristics or parameters of samples. [2]
@@ -92,9 +93,7 @@ Lastly, after the diode-oring circuit, the voltage will be inputted into a Low D
 | KEMET | C322C103K3G5TA | Mouser Electronics | 80-C322C103K3G5TA | 1 | $0.51 | https://www.mouser.com/ProductDetail/KEMET/C322C103K3G5TA?qs=h3%2Fj8evtlm2CUEq59T%2FBjg%3D%3D | C2 |
 | Stackpole Electronics Inc | RSMF1FT10K0 | Digikey | 738-RSMF1FT10K0CT-ND - Cut Tape (CT) | 1 | S0.26 | https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1FT10K0/1686586 | R1 |
 | JLCPCB | N/A | N/A | N/A | 5 | $16.60 | https://cart.jlcpcb.com/quote?rand=0.22722900529384749 | N/A |
-| Fischer Elektronik | FK 222 SA TO 220 | Newark | 46T6596 | 10 | $9.51 | https://www.newark.com/fischer-elektronik/fk-222-sa/heat-sink-to-3-to-220-20-c-w-12/dp/46T6596 | N/A |
-| Artic | MX-6 | Amazon | ARCTIC MX-6 (4 g, incl. 6 MX Cleaner) - Ultimate Performance Thermal Paste for CPU, Consoles, Graphics Cards, laptops, Very high Thermal Conductivity, Long Durability, Non-Conductive | 1 | $12.98 | https://www.amazon.com/ARCTIC-MX-6-incl-Cleaner-Non-Conductive/dp/B09VDKSMQL?th=1&psc=1&linkCode=sl1&tag=arctic-shop-20&linkId=521e56ecd7254002bcfa153e6b4abbbe&language=en_US&ref_=as_li_ss_tl | N/A |
-| Total | | | | | $187.93   | |
+| Total | | | | | $165.44   | |
 
 # Analysis
 
@@ -196,7 +195,7 @@ The standard diode has a max power dissipation of 1W. The power dissipated will 
 
 The TPS79633DCQR LDO Voltage regulator does not have a listed max power dissipation; however, we will need it to calculate the thermal limitations. The power dissipation can be calculated by P = (Vin - Vout) x Iout. If the Molex power supply is selected from the diode-oring circuit then the power dissipated will be P = (4.7 - 3.3) x 1 = 1.4W. If the USB power supply is selected from the diode-oring circuit then the power dissipated will be P = (4.3 - 3.3) x 1 = 1W. We will use the largest power dissipated for our calculations to be conservative. The junction temperature can be calculated by the same equation as the Schottky diode, Tj = Ta + (P x Roja). We will use the same ambient temperature assumption of 25 degrees Celsius, and the Roja value will be 70.4 degrees Celsius. [12] Therefore the junction temperature will be 123.56 degrees Celsius. Because of this, we will need to provide adequate thermal management to ensure it does not overheat. For this we will use PCB design techniques to help dissipate the heat throughout the board layout. To do this we will create a copper ground pour. We will solder the thermal tab directly to the copper pour, so we will need to ensure the solder mask is not present below the tab. To do this we will need to edit the footprint and adjust the solder mask clearance. Additionally, the datasheet recommends that the exposed pad is soldered to a 3 by 2 thermal via array. [12] Doing all of these should allow for adequate thermal dissipation throughout the PCB.  
 
-The IRF4905PBF power MOSFET can dissipate 200W. Therefore, with the max voltage of 40V and assuming the current of 10A. the Power dissipated will be P = Id^2 x Rdson, where Id is 10A and Rdson is 0.02 Ohm. [3] The dissipated power would be 2W, so the power dissipation limitation will not be violated. The junction temperature can be found using the same equation as the Schottky diode. The junction temperature will be Tj = Ta + (P x Roja), however Roja will be different since we will use the FK 222 SA heat sink. In addition to the heat sink we will be using a thermal paste to ensure the maximum heat transfer we can. The calculation is as follows for the thermal resistance with the heat sink: Roja = Rojc + Rocs + Rosa = 0.75 + 0.5 + 20 = 21.25 degrees Celsius. [3] Therefore the junction temperature would be 67.5 degrees Celsius. Which is well below the 175 degrees Celsius max junction temperature. [3]  
+The IRF4905PBF power MOSFET can dissipate 200W. Therefore, with the max voltage of 40V and current of 100 miliamps. The Power dissipated will be P = Id^2 x Rdson, where Id is 100mA and Rdson is 0.02 Ohm. [3] The dissipated power would be 0.2mW, so the power dissipation limitation will not be violated. The junction temperature can be found using the same equation as the Schottky diode. The junction temperature will be Tj = Ta + (P x Roja), where Roja is 62 degrees Celsius. [3] Therefore the junction temperature will be Tj = 25 + (0.2m * 62) = 25.0124 degrees Celsius. Therefore the junction temperature is well below the 175 degrees Celsius max. [3]  
 
 The 1N4743A Zener diode for the polarity checking circuit can dissipate 1W of power. Using the Ltspice circuit shown below the current flowing through the diode for the max 40V input would be 2.68mA. Therefore, the dissipated power can be calculated through P = Vf * If = 13 * 2.68m = 34.8mW. The diode will work as intended. [13]  
 
