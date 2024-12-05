@@ -67,19 +67,11 @@ Inside
 | Manufacturer | Manufacturer Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name| Device Designations |
 | :---:         | :---:                    | :---:       | :---:                   | :---:    | :---: | :---: | :---: | :---: |
 | Texas Instruments | LM317HVT/NOPB | Digikey |LM317HVT/NOPB-ND | 1 | $2.44| https://www.digikey.com/en/products/detail/texas-instruments/LM317HVT-NOPB/212662 | U1|
-| Würth Elektronik | 744065100 | Digikey |732-1060-2-ND | 1 | $1.62| https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/744065100/1638465?msockid=29ca711416706eb91ae8630a175c6f61 | L1|
-| Murata Electronics | GRM21BR61H106KE43L | Digikey |490-18663-2-ND | 1 | $0.26| https://www.digikey.com/en/products/detail/murata-electronics/GRM21BR61H106KE43L/10326316?msockid=29ca711416706eb91ae8630a175c6f61 | Cin|
-| TDK Corporation| CKG57NX5R1H226M500JH | Digikey |445-1655-2-ND | 1 | $4.62| https://www.digikey.com/en/products/detail/tdk-corporation/CKG57NX5R1H226M500JH/655485?msockid=29ca711416706eb91ae8630a175c6f61 | CO|
-| KYOCERA AVX | KGM31BR71H104KT | Digikey |732-1060-2-ND | 2 | $0.30| https://www.digikey.com/en/products/detail/kyocera-avx/KGM31BR71H104KT/563664?s=N4IgTCBcDaINIE0DyBhAogJQIIAIsDUANHARjAAYA2AVhRPIBY4sAVMLEAXQF8g | Cbst1 and Cbst2|
-| Vishay Dale | CRCW1206255KFKEAC | Digikey |CRCW1206255KFKEAC-ND | 1 | $0.08| https://www.digikey.com/en/products/detail/vishay-dale/CRCW1206255KFKEAC/7921419?s=N4IgTCBcDaIGoEsDOALAhgTwAQGEBKOA6gIxgAMAbGAKzUDSAYnQKICCOIAugL5A | R8|
-| Panasonic Electronic Components | ERA-8AEB3572V | Digikey |P35.7KBCTR-ND | 1 | $0.39| https://www.digikey.com/en/products/detail/panasonic-electronic-components/ERA-8AEB3572V/3070983?s=N4IgTCBcDaIAoEMB2CDOB7JBLAxgAgFEAlAQQFoAOEggIQGYBWAdjADUQBdAXyA | Rt|
-| KEMET |C1206C475K5RAC7800 | Digikey |399-C1206C475K5RAC7800TR-ND| 1 | $.41| https://www.digikey.com/en/products/detail/kemet/C1206C475K5RAC7800/5119822?s=N4IgTCBcDaINIFECyCAqACAwgRjABgDZMAWAdgFY5yAlAQU1QFUQBdAXyA | C1|
-| Vishay Dale | CRCW12063K60FKEA | Digikey |541-3.60KFTR-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/vishay-dale/CRCW12063K60FKEA/1176706 | Rfb|
-| KEMET | C1206C821K5GAC7800 | Digikey |399-C1206C821K5GAC7800TR-ND | 1 | $0.44| https://www.digikey.com/en/products/detail/kemet/C1206C821K5GAC7800/411216 | Cfb|
-| Vishay Dale | CRCW12061M00FKEA | Digikey |541-1.00MFTR-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/vishay-dale/CRCW12061M00FKEA/1176986 | Rtop|
-| Vishay Dale | CRCW120690K9FKEA | Digikey |541-90.9KFTR-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/vishay-dale/CRCW120690K9FKEA/1176867| Rbot|
-| Vishay Dale | CRCW120610K0FKEA | Digikey |541-10.0KFTR-ND | 1 | $0.10|https://www.digikey.com/en/products/detail/vishay-dale/CRCW120610K0FKEA/1176758 | Rff|
-| TDK Corporation | C3216C0G2A333J160AA | Digikey |445-15415-2-ND | 1 | $1.02| https://www.digikey.com/en/products/detail/tdk-corporation/C3216C0G2A333J160AA/4278148?msockid=29ca711416706eb91ae8630a175c6f61 | Cff|
+| KEMET | C333C104F5G5TA | Digikey |C333C104F5G5TA-ND | 1 | $6.10| https://www.digikey.com/en/products/detail/kemet/C333C104F5G5TA/6658919 | C1|
+| Nichicon| C333C104F5G5TA | Digikey |C333C104F5G5TA-ND | 1 | $0.43| https://www.digikey.com/en/products/detail/nichicon/UKL2A010KDD/2598552?s=N4IgjCBcoMxaBjKAzAhgGwM4FMA0IB7KAbXBgBYAGEAXXwAcAXKEAZUYCcBLAOwHMQAX3wA2AJzwQSSGix5CJEOTBgAHGIDstBs0htOvAcJAAmSuQnQpKDDnxFIpMAAIArQDFtIJiwCqPLkYAeWQAWWxUTABXDmwhfABaEUlpTij5B1I4fBNaYwTcq1SOdPtFAFY8wUEgA | C2|
+| TE Connectivity Passive Product| LR1F240R| Digikey |A121513CT-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/te-connectivity-passive-product/LR1F240R/2381208 | R1|
+| Vishay Beyschlag/Draloric/BC Components | MRS25000C1651FCT00 | Digikey |56-MRS25000C1651FCT00CT-ND | 1 | $0.38| https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS25000C1651FCT00/5064119| R2|
+| Vishay Dale | CMF5530R000FHEB | Digikey |541-CMF5530R000FHEBTR-ND | 1 | $0.80|https://www.digikey.com/en/products/detail/vishay-dale/CMF5530R000FHEB/3618953 | |
 | Stackpole Electronics Inc | RSMF1JT2K00 | Digikey |RSMF1JT2K00TR-ND | 2 | $0.40| https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1JT2K00/1694491 | R3 and R4|
 | Sharp Microelectronics | PC817X1YSZW | Mouser |852-PC817X1YSZW | 2 | $1.28| https://www.mouser.com/ProductDetail/Sharp-Microelectronics/PC817X1YSZW?qs=t7xnP681wgVcLhY5Ec%252BPYQ%3D%3D | U3 and U4|
 | YAGEO | MFR-25FRF52-210R | Digikey |13-MFR-25FRF52-210RTR-ND | 2 | $0.20|https://www.digikey.com/en/products/detail/yageo/MFR-25FRF52-210R/14826?s=N4IgTCBcDaILIDEBKBaMBWZD1jQRgAYkQBdAXyA | R1 and R2|
