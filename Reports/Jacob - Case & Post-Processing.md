@@ -64,18 +64,18 @@ Inside
 
 
 # BOM
-| Manufacturer | Manufacturer Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Component Name| Device Designations |
+| Manufacturer | Manufacturer Part Number | Distributor | Distributor Part Number | Quantity | Cost  | URL  | Lt Spice Name| Device Designations Kicad |
 | :---:         | :---:                    | :---:       | :---:                   | :---:    | :---: | :---: | :---: | :---: |
-| Texas Instruments | LM317HVT/NOPB | Digikey |LM317HVT/NOPB-ND | 1 | $2.44| https://www.digikey.com/en/products/detail/texas-instruments/LM317HVT-NOPB/212662 | U1|
-| KEMET | C333C104F5G5TA | Digikey |C333C104F5G5TA-ND | 1 | $6.10| https://www.digikey.com/en/products/detail/kemet/C333C104F5G5TA/6658919 | C1|
-| Nichicon| C333C104F5G5TA | Digikey |C333C104F5G5TA-ND | 1 | $0.43| https://www.digikey.com/en/products/detail/nichicon/UKL2A010KDD/2598552?s=N4IgjCBcoMxaBjKAzAhgGwM4FMA0IB7KAbXBgBYAGEAXXwAcAXKEAZUYCcBLAOwHMQAX3wA2AJzwQSSGix5CJEOTBgAHGIDstBs0htOvAcJAAmSuQnQpKDDnxFIpMAAIArQDFtIJiwCqPLkYAeWQAWWxUTABXDmwhfABaEUlpTij5B1I4fBNaYwTcq1SOdPtFAFY8wUEgA | C2|
-| TE Connectivity Passive Product| LR1F240R| Digikey |A121513CT-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/te-connectivity-passive-product/LR1F240R/2381208 | R1|
-| Vishay Beyschlag/Draloric/BC Components | MRS25000C1651FCT00 | Digikey |56-MRS25000C1651FCT00CT-ND | 1 | $0.38| https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS25000C1651FCT00/5064119| R2|
-| Vishay Dale | CMF5530R000FHEB | Digikey |541-CMF5530R000FHEBTR-ND | 1 | $0.80|https://www.digikey.com/en/products/detail/vishay-dale/CMF5530R000FHEB/3618953 | |
-| Stackpole Electronics Inc | RSMF1JT2K00 | Digikey |RSMF1JT2K00TR-ND | 2 | $0.40| https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1JT2K00/1694491 | R3 and R4|
-| Sharp Microelectronics | PC817X1YSZW | Mouser |852-PC817X1YSZW | 2 | $1.28| https://www.mouser.com/ProductDetail/Sharp-Microelectronics/PC817X1YSZW?qs=t7xnP681wgVcLhY5Ec%252BPYQ%3D%3D | U3 and U4|
-| YAGEO | MFR-25FRF52-210R | Digikey |13-MFR-25FRF52-210RTR-ND | 2 | $0.20|https://www.digikey.com/en/products/detail/yageo/MFR-25FRF52-210R/14826?s=N4IgTCBcDaILIDEBKBaMBWZD1jQRgAYkQBdAXyA | R1 and R2|
-| ANYCUBIC | PLA filament | Amazon |PLA filament| 2 | $11.99|https://www.amazon.com/ANYCUBIC-Printer-Filament-Dimensional-Accuracy/dp/B0834W2MQN/ref=asc_df_B0834W2MQN?mcid=aec3a78e66c631779c2da5151b689fd9&tag=hyprod-20&linkCode=df0&hvadid=693071814430&hvpos=&hvnetw=g&hvrand=9174619748980743316&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9013113&hvtargid=pla-1670291370690&psc=1 | Case|
+| Texas Instruments | LM317HVT/NOPB | Digikey |LM317HVT/NOPB-ND | 1 | $2.44| https://www.digikey.com/en/products/detail/texas-instruments/LM317HVT-NOPB/212662 | U1| U7 |
+| KEMET | C333C104F5G5TA | Digikey |C333C104F5G5TA-ND | 1 | $6.10| https://www.digikey.com/en/products/detail/kemet/C333C104F5G5TA/6658919 | C1| C4 |
+| Nichicon| UKL2A010KDD | Digikey |493-15407-ND | 1 | $0.43| https://www.digikey.com/en/products/detail/nichicon/UKL2A010KDD/2598552?s=N4IgjCBcoMxaBjKAzAhgGwM4FMA0IB7KAbXBgBYAGEAXXwAcAXKEAZUYCcBLAOwHMQAX3wA2AJzwQSSGix5CJEOTBgAHGIDstBs0htOvAcJAAmSuQnQpKDDnxFIpMAAIArQDFtIJiwCqPLkYAeWQAWWxUTABXDmwhfABaEUlpTij5B1I4fBNaYwTcq1SOdPtFAFY8wUEgA | C2| C5 |
+| TE Connectivity Passive Product| LR1F240R| Digikey |A121513CT-ND | 1 | $0.10| https://www.digikey.com/en/products/detail/te-connectivity-passive-product/LR1F240R/2381208 | R1| R2d |
+| Vishay Beyschlag/Draloric/BC Components | MRS25000C1651FCT00 | Digikey |56-MRS25000C1651FCT00CT-ND | 1 | $0.38| https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/MRS25000C1651FCT00/5064119| R2| R21 |
+| Vishay Dale | CMF5530R000FHEB | Digikey |541-CMF5530R000FHEBTR-ND | 1 | $0.80|https://www.digikey.com/en/products/detail/vishay-dale/CMF5530R000FHEB/3618953 | X | R22 |
+| Stackpole Electronics Inc | RSMF1JT2K00 | Digikey |RSMF1JT2K00TR-ND | 2 | $0.40| https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RSMF1JT2K00/1694491 | R3 and R4| R14 and R15 |
+| Sharp Microelectronics | PC817X1YSZW | Mouser |852-PC817X1YSZW | 2 | $1.28| https://www.mouser.com/ProductDetail/Sharp-Microelectronics/PC817X1YSZW?qs=t7xnP681wgVcLhY5Ec%252BPYQ%3D%3D | U3 and U4| U5 and U6 |
+| YAGEO | MFR-25FRF52-210R | Digikey |13-MFR-25FRF52-210RTR-ND | 2 | $0.20|https://www.digikey.com/en/products/detail/yageo/MFR-25FRF52-210R/14826?s=N4IgTCBcDaILIDEBKBaMBWZD1jQRgAYkQBdAXyA | R1 and R2| R16 and R17 |
+| ANYCUBIC | PLA filament | Amazon |PLA filament| 2 | $11.99|https://www.amazon.com/ANYCUBIC-Printer-Filament-Dimensional-Accuracy/dp/B0834W2MQN/ref=asc_df_B0834W2MQN?mcid=aec3a78e66c631779c2da5151b689fd9&tag=hyprod-20&linkCode=df0&hvadid=693071814430&hvpos=&hvnetw=g&hvrand=9174619748980743316&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9013113&hvtargid=pla-1670291370690&psc=1 | Case| Case |
 | Total       |       |     |     |   | $ 38.50|  |  |
 
 # Analysis
