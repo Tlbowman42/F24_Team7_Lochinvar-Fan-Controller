@@ -46,8 +46,8 @@ As shown in the photo below, there are 6 SPST switches that will act as left, ri
 
 *Buttons*
 
-<img width="501" alt="Buttons circuit kicad V2" src="https://github.com/user-attachments/assets/c7abbf63-b4a9-4be4-9a27-9e698f18407b">  
-  
+<img width="320" alt="Buttons circuit kicad V3" src="https://github.com/user-attachments/assets/d5a7d64b-aec9-48bc-84a7-42d1b4af4fd6">
+
 *Ports*
 
 <img width="394" alt="Portsandbuttonsbuildableschematic" src="https://github.com/user-attachments/assets/ef3c10f8-6d92-41cf-bca7-c7da5a17ddef">
@@ -64,9 +64,12 @@ As shown in the photo below, there are 6 SPST switches that will act as left, ri
 | TE Connectivity AMP Connectors | 2-215307-0 | Digikey | A106399-ND | 2 | $5.34 | https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/2-215307-0/1149668 | J3 and J4|
 | Würth Elektronik |691137710002| Digikey | 732-10955-ND | 2 | $0.72 | https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/691137710002/6644051 | J5 and J6|
 | C&K |D6C90 F2 LFS| Digikey | 401-1988-ND | 6 | $7.47 | https://www.digikey.com/en/products/detail/c-k/D6C90-F2-LFS/1466345 | S1 to S6|
+| Yageo | FMP200JR-52-5K1 | Digikey |5.1KZCT-ND | 6 | $1.92| https://www.digikey.com/en/products/detail/yageo/FMP200JR-52-5K1/2058704 | R4 and R5|
+| Total       |       |     |     |   | $18.29 |  |  |
+
 
 # Analysis
-A 5 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because the lower resistance will use 0.66 mA as opposed to 0.33 mA. This higher current will allow the signal to be stronger and have more immunity to noise. This current is not high enough to cause a large drain in power or introduce exesscive heat, therefore it will benefit the system to use the lower resistance so that when a button is pressed there will be no doubt that it was a press based on the signal the microcontroller receives. This clear signal will allow the user to focus on what decisions they need to make next instead of dealing with misinputs.
+A 5.1 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because the lower resistance will use 0.65 mA as opposed to 0.33 mA. This higher current will allow the signal to be stronger and have more immunity to noise. This current is not high enough to cause a large drain in power or introduce exesscive heat, therefore it will benefit the system to use the lower resistance so that when a button is pressed there will be no doubt that it was a press based on the signal the microcontroller receives. This clear signal will allow the user to focus on what decisions they need to make next instead of dealing with misinputs.
 
 <img width="367" alt="Buttons circuit digital" src="https://github.com/user-attachments/assets/0720f8b8-fbec-4c69-850d-7378e6eab843">
 
@@ -77,3 +80,4 @@ A 5 kOhm pull down resistor is chosen as opposed to a typical 10 kOhm because th
 [3] "2-215307-0" TE Connectivity AMP Connectors, https://www.te.com/usa-en/product-2-215307-0.datasheet.pdf  
 [4] "691137710002" Würth Elektronik, https://www.we-online.com/components/products/datasheet/691137710002.pdf  
 [5] "D6C90 F2 LFS" C&K, https://www.ckswitches.com/media/1341/d6.pdf  
+[6] "FMP200JR-52-5K1" Yageo, https://www.yageo.com/upload/media/product/app/datasheet/lr/yageo-fmp_datasheet.pdf  
