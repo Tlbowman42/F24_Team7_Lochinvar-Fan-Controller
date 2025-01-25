@@ -66,13 +66,13 @@ Lastly, after the diode-oring circuit, the voltage will be inputted into a Low D
 
 # Buildable Schematic
 
-![image](https://github.com/user-attachments/assets/9958300f-2711-47c1-a210-66c43ab90351)
+![image](https://github.com/user-attachments/assets/be286dfe-b881-440a-ba36-4b4ca94e4746)
 
 # PCB Layout
 
-![image](https://github.com/user-attachments/assets/a5741e4c-52d9-4d9b-85f0-4c882c560005)
+![image](https://github.com/user-attachments/assets/474c728e-ce54-487f-9e94-da73d0295dd3)
 
-![image](https://github.com/user-attachments/assets/5a6e39ef-8f56-4d20-a397-60724bc26a80)
+![image](https://github.com/user-attachments/assets/cf633714-c845-4ccb-b4f8-997074a4de3e)
 
 # BOM
 
