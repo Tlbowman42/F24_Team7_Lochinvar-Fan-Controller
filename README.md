@@ -47,25 +47,35 @@ The faculty superviosr for this project is [Dr. JW Bruce](https://www.linkedin.c
 
 ### Stakeholders
 
-Tell a bit about the customer for the project. Also discuss any other groups (specific or general) that are expected to be impacted by the project.
+The primary customer for the project is Lochinvar, which is a apart of the AO-Smith Corporation. There will be no future teams for this project.  
 
 ### Recognitions
 
-Use this space to recognize anyone that you feel has had an impact on the project. Be sure to recognize the work of previous teams if you referenced it for style or content. 
+We would like to recognize and thank Dr. JW Bruce, Micah Rentschler, and our contacts at Lochinvar for their support and guidance throughout this project.  
 
 ## Repo Organization
 
+### [Reports](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/tree/main/Reports)
+
+The [Project Proposal](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Project%20Proposal.md) is the intial document for the project where the problem is defined and the goals for the project.  
+
+The [Conceptual Design](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Conceptual%20Design%20and%20Planning.md) gives a more detailed solution to the problem as well as breakdowns the subsystems and gives a projected timeline and budget.  
+
+**Place in Experimentation**  
+
+**Place in the poster**  
+
+**Place in the final presentation**
 Give the layout of the repo and what can be found where. Make it easy on those who are interested by making the headings of the various things in this section clickable links to the relevant folder or file in the repo.
-
-
-### Reports
 
 In the reports section of this repository information about the individual expectations for the reports and how they should be housed is provided.
 
-### Documentation
+### [Documentation](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/tree/main/Documentation)
 
-In the documentaion section information regarding the documentation that is required and how it should be organized is given.
+All documentation for the project is included in the above folder. Documentation includes all schematics, images, models, BOM, and designs used in the project.
 
-### Software
+The [Meeting Minutes](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/tree/main/Documentation/Meeting%20Minutes) folder contains the dated minutes from weekly meetings and allows a quick view into the progress of the team.
 
-In the software directory of the repo information regarding how each team is expected to document software can be found.
+### [Software](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/tree/main/Software)
+
+All software used and created is listed in the [Software](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/tree/main/Software) directory. For each subsystem, there are specific folders listed to find the necessary code.
