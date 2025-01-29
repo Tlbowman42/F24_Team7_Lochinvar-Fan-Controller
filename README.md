@@ -1,7 +1,4 @@
 # Lochinvar Fan Controller
-
-The descriptions and information in all readme files in the starter repo (including this one) must be edited. All section descriptions must be deleted. Any failure to remove the description information (like the statement that you are currently reading) will be heavily penalized!
-
 ## Executive Summary
 
 Give the elevator pitch and abstract for the project. It should allow interested visitors to broadly understand the motivation for the project and what the project has accomplished.
@@ -9,12 +6,18 @@ Give the elevator pitch and abstract for the project. It should allow interested
 
 ## Capabilities
 
-Here explain in more detail (though not as much as will be given in the datasheet) what the version of this project in this repo is capable of doing.
+The current version of our Fan Diagnostic Tool has the following capabilities:
+
+1. Simulate a boiler fan
+2. Generate PWM and Tachometer signals that can replicate boiler fans
+3. Save real-time data to output files as well as user and fan configurations
 
 
 ## Salient Outcomes
 
-Projects often have some outcomes that are more interesting than others. Here, highlight those things that you found interesting!
+As the project progresses these are the outcomes we thought were more impressive than others. Listed below are our salient outcomes for this project:
+
+1. Generate any Lochinvar designated fan signal
 
 
 ## Project Demonstration & Images
@@ -28,7 +31,15 @@ Below the video link show some well-taken, appropriately sized images of the pro
 
 ### Team
 
-Give a brief bio for each team member and their broad contribution to the project (no need to be terribly specifc).
+[Layne Bowman](https://www.linkedin.com/in/laynebowman/), an electrical engineering major at Tennessee Technological University, has a strong interest in power systems and renewable energy technologies. Layne oversees the power management systems for the fan diagnostic tool.  
+
+Ethan Haynes  
+
+Jacob Brewer  
+
+Tucker Basham  
+
+Conner Vick  
 
 ### Faculty Supervisor
 
