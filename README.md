@@ -65,7 +65,7 @@ The [Conceptual Design](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Co
 
 **Place in the poster**  
 
-**Place in the final presentation**
+**Place in the final presentation**  
 Give the layout of the repo and what can be found where. Make it easy on those who are interested by making the headings of the various things in this section clickable links to the relevant folder or file in the repo.
 
 In the reports section of this repository information about the individual expectations for the reports and how they should be housed is provided.
