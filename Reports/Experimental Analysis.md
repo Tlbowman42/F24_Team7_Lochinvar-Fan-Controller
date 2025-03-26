@@ -47,10 +47,10 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 
 **Step 2: Setting up the Load on the Breadboard** 
-1. Connect one of the female to male wire connectors to Pin 34 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, three spaces from the right hand side)
+1. Connect one of the female to male wire connectors to Pin 34 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, three spaces from the right hand side)  
 ![image](https://github.com/user-attachments/assets/84d45f88-e8e3-4bd0-8c14-e212e9e2e53d)
 2. Connect the male end of the wire connector to the bread board.
-3. Connect the other female to male wire connector to Pin 20 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, ten spaces from the left hand side)
+3. Connect the other female to male wire connector to Pin 20 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, ten spaces from the left hand side)  
 ![image](https://github.com/user-attachments/assets/64daddf7-a7d7-4181-91dc-b8813e26a552)
 4. Connect the male end of the wire connector to the ground rail to the bread board.
 5. Connect the Multimeter across the resistor to measure the voltage across the load.
@@ -67,27 +67,27 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 
 ## Expected Results
-
+I expect the Power Source Configuration to not effect the 
 
 ## Actual Results
 
-| Power Source Configuration | Resistor Value (Ω) | Voltage (V) | Current (mA) | Power (mW) | Voltage Drop (%) |
-| :------------ | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| Lochinvar Control Board Only | 1k | Content Cell | Content Cell | Content Cell | Content Cell |
-| Lochinvar Control Board Only | 500 | Content Cell | Content Cell | Content Cell | Content Cell |
-| Lochinvar Control Board Only | 100 | Content Cell | Content Cell | Content Cell | Content Cell |
-| Lochinvar Control Board Only | 10 | Content Cell | Content Cell | Content Cell | Content Cell |
-| Lochinvar Control Board Only | 4.7 | Content Cell | Content Cell | Content Cell | Content Cell |
-| USB Only | 1k | Content Cell | Content Cell | Content Cell | Content Cell |
-| USB Only | 500 | Content Cell | Content Cell | Content Cell | Content Cell |
-| USB Only | 100 | Content Cell | Content Cell | Content Cell | Content Cell |
-| USB Only | 10 | Content Cell | Content Cell | Content Cell | Content Cell |
-| USB Only | 4.7 | Content Cell | Content Cell | Content Cell | Content Cell |
-| Dual Power | 1k | Content Cell | Content Cell | Content Cell | Content Cell |
-| Dual Power | 500 | Content Cell | Content Cell | Content Cell | Content Cell |
-| Dual Power | 100 | Content Cell | Content Cell | Content Cell | Content Cell |
-| Dual Power | 10 | Content Cell | Content Cell | Content Cell | Content Cell |
-| Dual Power | 4.7 | Content Cell | Content Cell | Content Cell | Content Cell |
+| Power Source Configuration   | Resistor Value (Ω) | Voltage (V)  | Current (mA) | Power (mW)   | Voltage Drop (%) |
+| :--------------------------- | :----------------: | :-----------:| :----------: | :----------: | :--------------: |
+| Lochinvar Control Board Only | 1k                 | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Lochinvar Control Board Only | 500                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Lochinvar Control Board Only | 100                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Lochinvar Control Board Only | 10                 | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Lochinvar Control Board Only | 4.7                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| USB Only                     | 1k                 | Content Cell | Content Cell | Content Cell | Content Cell     |
+| USB Only                     | 500                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| USB Only                     | 100                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| USB Only                     | 10                 | Content Cell | Content Cell | Content Cell | Content Cell     |
+| USB Only                     | 4.7                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Dual Power                   | 1k                 | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Dual Power                   | 500                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Dual Power                   | 100                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Dual Power                   | 10                 | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Dual Power                   | 4.7                | Content Cell | Content Cell | Content Cell | Content Cell     |
 
 
 ## Interpretation and Conclusions
