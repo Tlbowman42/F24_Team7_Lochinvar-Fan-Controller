@@ -23,7 +23,9 @@ Below is a list of the experiments conducted for Experimental Analysis
 
 ### Setup
 
-1. 
+1. Connect the Fan Diagnostic Tool to a variable DC power supply set to 24 Vdc to simulate the Fan Control Board power.
+2. Connect the positive of the power supply to the 1st pin of either of the MOLEX connections and the negative of the power supply to the 5th pin of either of the MOLEX connections.
+3. 
 
 ## Expected Results
 
