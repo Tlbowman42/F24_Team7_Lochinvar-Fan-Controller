@@ -9,9 +9,21 @@ Below is a list of the experiments conducted for Experimental Analysis
 5. Insert Here
 
 # Power Source Stability and Redundancy Test
+
 ## Purpose and Justification
 
+1. To verify the the Fan Diagnostic Tool operates stably when powered by:
+ 
+   - The Fan Control Board (~24 Vdc)
+   - USB Connection (5 Vdc)
+   - Both power sources simultaneously
+2. To ensure power switching does not disrupt tool operation.
+
 ## Detailed Procedure
+
+### Setup
+
+1. 
 
 ## Expected Results
 
