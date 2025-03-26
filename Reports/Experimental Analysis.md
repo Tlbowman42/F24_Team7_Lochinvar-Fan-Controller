@@ -1,6 +1,6 @@
 # Experiment List
 
-Below is a list of the experiments conducted for Experimental Analysis
+Below is a list of the experiments conducted for Experimental Analysis.
 
 1. Power Source Stability and Redundancy Test
 2. User Parameter Storage Test
@@ -13,7 +13,6 @@ Below is a list of the experiments conducted for Experimental Analysis
 ## Purpose and Justification
 
 1. To verify the the Fan Diagnostic Tool operates stably when powered by:
- 
    - The Fan Control Board (~24 Vdc)
    - USB Connection (5 Vdc)
    - Both power sources simultaneously
@@ -22,10 +21,50 @@ Below is a list of the experiments conducted for Experimental Analysis
 ## Detailed Procedure
 
 ### Setup
+***Equipment Needed***
+1. Lochinvar Control Board (24 Vdc)
+2. Fan Diagnostic Tool
+3. One Female to Male MOLEX wire harness
+4. Resistors of varying amounts
+   - 500 Ω
+   - 1 kΩ
+   - 5 kΩ
+   - 10 kΩ
+   - 100 kΩ
+5. Digital Multimeter (for voltage and current measurements)
+6. 2 Female to Male Wire connectors
+7. USB Power Supply (5 Vdc source)
 
-1. Connect the Fan Diagnostic Tool to a variable DC power supply set to 24 Vdc to simulate the Fan Control Board power.
-2. Connect the positive of the power supply to the 1st pin of either of the MOLEX connections and the negative of the power supply to the 5th pin of either of the MOLEX connections.
-3. 
+***Simulating Fan Control Board Power Supply***  
+**Step 1: Setting up the Power Source**  
+1. Lochinvar Control Board Power (24 Vdc)
+   - Connect the female end of the MOLEX wire harness to the male end of the wire harness coming from the Lochinvar Control Board.
+   - Connect the male end of the MOLEX wire harness to the Fan Diagnostic Tool's first MOLEX connector. (Side closest to the SD-Card)
+
+
+2. USB Power (5 Vdc)
+   - Connect the Fan Diagnostic tool to a USB power supply or to a laptop.
+
+
+**Step 2: Setting up the Load on the Breadboard** 
+1. Connect one of the female to male wire connectors to Pin 34 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, three spaces from the right hand side)
+![image](https://github.com/user-attachments/assets/84d45f88-e8e3-4bd0-8c14-e212e9e2e53d)
+2. Connect the male end of the wire connector to the bread board.
+3. Connect the other female to male wire connector to Pin 20 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, ten spaces from the left hand side)
+![image](https://github.com/user-attachments/assets/64daddf7-a7d7-4181-91dc-b8813e26a552)
+4. Connect the male end of the wire connector to the ground rail to the bread board.
+5. Connect the Multimeter across the resistor to measure the voltage across the load.
+6. Connect the Multimeter in series with the resistor to measure the current through the load.
+
+
+**Step 3: Testing Load Conditions**
+1. Test the following resistor values to simulate varying loads
+   - 1 kΩ (Minimal Load)
+   - 500 Ω
+   - 100 Ω
+   - 10 Ω
+   - 4.7 Ω (Highest Load)  
+
 
 ## Expected Results
 
