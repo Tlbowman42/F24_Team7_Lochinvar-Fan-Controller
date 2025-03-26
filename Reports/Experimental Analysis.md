@@ -68,6 +68,26 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 ## Expected Results
 
+
 ## Actual Results
+
+| Power Source Configuration | Resistor Value (Ω) | Voltage (V) | Current (mA) | Power (mW) | Voltage Drop (%) |
+| :------------ | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| Lochinvar Control Board Only | 1k | Content Cell | Content Cell | Content Cell | Content Cell |
+| Lochinvar Control Board Only | 500 | Content Cell | Content Cell | Content Cell | Content Cell |
+| Lochinvar Control Board Only | 100 | Content Cell | Content Cell | Content Cell | Content Cell |
+| Lochinvar Control Board Only | 10 | Content Cell | Content Cell | Content Cell | Content Cell |
+| Lochinvar Control Board Only | 4.7 | Content Cell | Content Cell | Content Cell | Content Cell |
+| USB Only | 1k | Content Cell | Content Cell | Content Cell | Content Cell |
+| USB Only | 500 | Content Cell | Content Cell | Content Cell | Content Cell |
+| USB Only | 100 | Content Cell | Content Cell | Content Cell | Content Cell |
+| USB Only | 10 | Content Cell | Content Cell | Content Cell | Content Cell |
+| USB Only | 4.7 | Content Cell | Content Cell | Content Cell | Content Cell |
+| Dual Power | 1k | Content Cell | Content Cell | Content Cell | Content Cell |
+| Dual Power | 500 | Content Cell | Content Cell | Content Cell | Content Cell |
+| Dual Power | 100 | Content Cell | Content Cell | Content Cell | Content Cell |
+| Dual Power | 10 | Content Cell | Content Cell | Content Cell | Content Cell |
+| Dual Power | 4.7 | Content Cell | Content Cell | Content Cell | Content Cell |
+
 
 ## Interpretation and Conclusions
