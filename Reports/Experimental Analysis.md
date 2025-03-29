@@ -71,23 +71,23 @@ I expect the Power Source Configuration to not effect the
 
 ## Actual Results
 
-| Power Source Configuration   | Resistor Value (Ω) | Voltage (V)  | Current (mA) | Power (mW)   | Voltage Drop (%) |
-| :--------------------------- | :----------------: | :-----------:| :----------: | :----------: | :--------------: |
-| Lochinvar Control Board Only | 1k                 | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Lochinvar Control Board Only | 500                | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Lochinvar Control Board Only | 100                | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Lochinvar Control Board Only | 10                 | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Lochinvar Control Board Only | 4.7                | Content Cell | Content Cell | Content Cell | Content Cell     |
-| USB Only                     | 1k                 | Content Cell | Content Cell | Content Cell | Content Cell     |
-| USB Only                     | 500                | Content Cell | Content Cell | Content Cell | Content Cell     |
-| USB Only                     | 100                | Content Cell | Content Cell | Content Cell | Content Cell     |
-| USB Only                     | 10                 | Content Cell | Content Cell | Content Cell | Content Cell     |
-| USB Only                     | 4.7                | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Dual Power                   | 1k                 | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Dual Power                   | 500                | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Dual Power                   | 100                | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Dual Power                   | 10                 | Content Cell | Content Cell | Content Cell | Content Cell     |
-| Dual Power                   | 4.7                | Content Cell | Content Cell | Content Cell | Content Cell     |
+| Power Source Configuration   | Resistor Value (Ω) | Measured Resistance (Ω) | Voltage (V)  | Current (mA) | Power Dissipated (mW)   |
+| :--------------------------- | :----------------: | :---------------------: | :----------: | :----------: | :---------------------: |
+| Lochinvar Control Board Only | 1k                 | 987.1                   | 3.309        | 3.353        | 11.1                    |
+| Lochinvar Control Board Only | 470                | 467.1                   | 3.304        | 7.083        | 23.4                    |
+| Lochinvar Control Board Only | 100                | 97.63                   | 3.264        | 33.576       | 109.6                   |
+| Lochinvar Control Board Only | 10                 | 9.98                    | 3.189        | 331.79       | 1064.5                  |
+| Lochinvar Control Board Only | 4.7                | 4.75                    | 3.0394       | 685.73       | 2084.2                  |
+| USB Only                     | 1k                 | 987.1                   | 3.309        | 3.356        | 11.1                    |
+| USB Only                     | 470                | 467.1                   | 3.304        | 7.083        | 23.4                    |
+| USB Only                     | 100                | 97.63                   | 3.266        | 33.589       | 109.7                   |
+| USB Only                     | 10                 | 9.98                    | 3.197        | 333.23       | 1065.3                  |
+| USB Only                     | 4.7                | 4.75                    | 3.036        | 693.72       | 2106.1                  |
+| Dual Power                   | 1k                 | 987.1                   | 3.309        | 3.356        | 11.1                    |
+| Dual Power                   | 470                | 467.1                   | 3.304        | 7.083        | 23.4                    |
+| Dual Power                   | 100                | 97.63                   | 3.265        | 33.590       | 109.7                   |
+| Dual Power                   | 10                 | 9.98                    | 3.194        | 333.21       | 1064.3                  |
+| Dual Power                   | 4.7                | 4.75                    | 3.065        | 695.77       | 2132.5                  |
 
 
 ## Interpretation and Conclusions
