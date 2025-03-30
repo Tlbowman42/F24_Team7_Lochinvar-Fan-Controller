@@ -166,7 +166,7 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 
 
 |                                                    | Test 1 *    | Test 2 *     | Test 3 *     | Test 4 *    | Test 5 *     |
-| :------------------------------------------------: | :---------: | :----------: | :----------: | :---------: | :------_---: |
+| :------------------------------------------------: | :---------: | :----------: | :----------: | :---------: | :----------: |
 | Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       | 0 / 0        | 0 / 0        | 100 / 3.3   | 0 / 0        |
 | Actual RPM at 15% Duty / Actual Tach Frequency     | 0 / 0       | 0 / 0        | 0 / 0        | 100 / 15.0  | 0 / 0        |
 | Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 | 500 / 25.0   | 2000 / 166.7 | 100 / 3.3   | 250 / 8.3    |
