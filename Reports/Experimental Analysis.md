@@ -173,10 +173,11 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 | Actual RPM at 75% Duty / Actual Tach Frequency     | 2166 / 72.5 | 2185 / 109.0 |        |        |        |
 | Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 | 3875 / 193.8 |        |        |        |
 | Actual RPM at 90% Duty / Actual Tach Frequency     | 2708 / 90.9 | 4011 / 201.2 |        |        |        |
-| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 | 0000 / 00.0 |        |        |        |
-| Actual RPM at 98% Duty / Actual Tach Frequency     | 2927 / 98.0 | 0000 / 00.0 |        |        |        |
+| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 | 4775 / 238.8 |        |        |        |
+| Actual RPM at 98% Duty / Actual Tach Frequency     | 2927 / 98.0 | 4750 / 237.8 |        |        |        |
 
-* At 90% duty cycle for test 2 we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal) 
+***Footnotes***  
+*At 90% duty cycle for test 2 we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal)* 
 
 
 ## Interpretation and Conclusions
