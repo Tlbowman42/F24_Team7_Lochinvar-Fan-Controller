@@ -35,7 +35,6 @@ Below is a list of the experiments conducted for Experimental Analysis.
 6. 2 Female to Male Wire connectors
 7. USB Power Supply (5 Vdc source)
 
-***Simulating Fan Control Board Power Supply***  
 **Step 1: Setting up the Power Source**  
 1. Lochinvar Control Board Power (24 Vdc)
    - Connect the female end of the MOLEX wire harness to the male end of the wire harness coming from the Lochinvar Control Board.
@@ -67,7 +66,7 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 
 ## Expected Results
-I expect the Power Source Configuration to not effect the 
+I expect the Power Source Configuration to not effect the voltage stability across the board. I expect that as the resistance gets lower (Higher load) the current will increase and therefore the power dissipated should increase as well. Finally, I believe that the voltage consistency should remain relatively constant. (The voltage drop across the resistor should stay close to 3.3 Vdc)  
 
 ## Actual Results
 
@@ -91,3 +90,14 @@ I expect the Power Source Configuration to not effect the
 
 
 ## Interpretation and Conclusions
+
+The purpose of this experiment was to evaluate voltage stability and redundancy of the Fan Diagnostic Tool when being powered from different sources (Lochinvar Control Board, USB, or both). By applying different resistive loads and measuring the voltage, current, and power dissipation, we were able to assess the power's delivery system under different levels of stress. Doing this we were able to identify signs of power stability or instability.  
+
+Across all three power source configurations the voltage readings remained consistently within a small range, even when going from low load (High resistance) to high load (Low resistance). For example, when using USB power along the voltage dropps from 3.309 V (1 kΩ) to 3.036 V (4.7 Ω). This is about an 8.2 % decrease despite a large rise in current. We can see the same concept for only being powered by the Lochinvar Control Board and when being powered by both sources.  
+
+When using the Dual Power configuration (Both USB and Lochinvar Control Board) we can see it had nearly identical results to either power source being used independently. This shows that the redundant power sources work effectively with no evidence of voltage instability when both sources are connected.  
+
+
+
+# Statement of Contributions
+
