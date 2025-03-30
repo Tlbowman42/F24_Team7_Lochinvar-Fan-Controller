@@ -137,32 +137,32 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 
 
 | Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
-| :-------------------------------: | :---: |  :---: |  :---: |  :---: |  :---: |
-| Max Fan Speed (RPM)               | | | | | |
-| Min Fan Speed (RPM)               | | | | | |
-| Min Duty Cycle (%)                | | | | | |
-| Continuous Duty Cycle (%)         | | | | | |
-| Transcient Timing Factor Increase | | | | | |
-| Transcient Timing Factor Decrease | | | | | |
-| Pulses Per Revolution             | | | | | |
+| :-------------------------------: | :-----------: |  :-----------: |  :-----------: |  :----------: |  :-----------: |
+| Max Fan Speed (RPM)               |               |                |                |               |                |
+| Min Fan Speed (RPM)               |               |                |                |               |                |
+| Min Duty Cycle (%)                |               |                |                |               |                |
+| Continuous Duty Cycle (%)         |               |                |                |               |                |
+| Transcient Timing Factor Increase |               |                |                |               |                |
+| Transcient Timing Factor Decrease |               |                |                |               |                |
+| Pulses Per Revolution             |               |                |                |               |                |
 
 
 |                                                    | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 |
 | :------------------------------------------------: | :----: | :----: | :----: | :----: | :----: |
-| Expected RPM at 15% Duty / Expected Tach Frequency |  |  |  | | |
-| Actual RPM at 15% Duty / Actual Tach Frequency |  |  |  | | |
-| Expected RPM at 30% Duty / Expected Tach Frequency |  |  |  | | |
-| Actual RPM at 30% Duty / Actual Tach Frequency |  |  |  | | |
-| Expected RPM at 45% Duty / Expected Tach Frequency |  |  |  | | |
-| Actual RPM at 45% Duty / Actual Tach Frequency |  |  |  | | |
-| Expected RPM at 60% Duty / Expected Tach Frequency |  |  |  | | |
-| Actual RPM at 60% Duty / Actual Tach Frequency |  |  |  | | |
-| Expected RPM at 75% Duty / Expected Tach Frequency |  |  |  | | |
-| Actual RPM at 75% Duty / Actual Tach Frequency |  |  |  | | |
-| Expected RPM at 90% Duty / Expected Tach Frequency |  |  |  | | |
-| Actual RPM at 90% Duty / Actual Tach Frequency |  |  |  | | |
-| Expected RPM at 99% Duty / Expected Tach Frequency |  |  |  | | |
-| Actual RPM at 99% Duty / Actual Tach Frequency |  |  |  | | |
+| Expected RPM at 15% Duty / Expected Tach Frequency |        |        |        |        |        |
+| Actual RPM at 15% Duty / Actual Tach Frequency     |        |        |        |        |        |
+| Expected RPM at 30% Duty / Expected Tach Frequency |        |        |        |        |        |
+| Actual RPM at 30% Duty / Actual Tach Frequency     |        |        |        |        |        |
+| Expected RPM at 45% Duty / Expected Tach Frequency |        |        |        |        |        |
+| Actual RPM at 45% Duty / Actual Tach Frequency     |        |        |        |        |        |
+| Expected RPM at 60% Duty / Expected Tach Frequency |        |        |        |        |        |
+| Actual RPM at 60% Duty / Actual Tach Frequency     |        |        |        |        |        |
+| Expected RPM at 75% Duty / Expected Tach Frequency |        |        |        |        |        |
+| Actual RPM at 75% Duty / Actual Tach Frequency     |        |        |        |        |        |
+| Expected RPM at 90% Duty / Expected Tach Frequency |        |        |        |        |        |
+| Actual RPM at 90% Duty / Actual Tach Frequency     |        |        |        |        |        |
+| Expected RPM at 99% Duty / Expected Tach Frequency |        |        |        |        |        |
+| Actual RPM at 99% Duty / Actual Tach Frequency     |        |        |        |        |        |
 
 
 ## Interpretation and Conclusions
