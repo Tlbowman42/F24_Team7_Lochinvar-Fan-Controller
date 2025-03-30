@@ -184,7 +184,7 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 
 ***Footnotes***  
 *At 90% duty cycle for all tests we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal)*   
-*At 98% duty cycle due to the opto-coupler rounding we cannot properly measure the signal due to the voltage range on the microcontroller's pins not being a clear high or low level*   
+*At 98% duty cycle due to the opto-coupler rounding we cannot properly measure the signal due to the voltage range on the microcontroller's pins not being a clear high or low level. (Test 3)*   
 *For test 4 the minimum hertz that the oscilliscope can read is 15 Hz; therefore, the frequency measurements for duty cycles 15-60% will not be read properly.*
 
 ## Interpretation and Conclusions
