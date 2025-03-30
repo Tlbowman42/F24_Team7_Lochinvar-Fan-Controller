@@ -123,7 +123,7 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 2. USB to USB Micro cable
 
 **Step 1: Setting up the Power Source** 
-1. Connect the USB to USB micro cable between a laptop and the Fan Diagnosti Tool.
+1. Connect the USB to USB micro cable between a laptop and the Fan Diagnostic Tool.
 
 ## Expected Results
 
