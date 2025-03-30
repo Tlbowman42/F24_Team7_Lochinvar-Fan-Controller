@@ -159,22 +159,24 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 
 
-|                                                    | Test 1      | Test 2 | Test 3 | Test 4 | Test 5 |
-| :------------------------------------------------: | :---------: | :----: | :----: | :----: | :----: |
-| Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       |        |        |        |        |
-| Actual RPM at 15% Duty / Actual Tach Frequency     | 0 / 0       |        |        |        |        |
-| Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 |        |        |        |        |
-| Actual RPM at 30% Duty / Actual Tach Frequency     | 1000 / 33.3 |        |        |        |        |
-| Expected RPM at 45% Duty / Expected Tach Frequency | 1167 / 38.9 |        |        |        |        |
-| Actual RPM at 45% Duty / Actual Tach Frequency     | 1151 / 38.5 |        |        |        |        |
-| Expected RPM at 60% Duty / Expected Tach Frequency | 1667 / 55.6 |        |        |        |        |
-| Actual RPM at 60% Duty / Actual Tach Frequency     | 1655 / 55.2 |        |        |        |        |
-| Expected RPM at 75% Duty / Expected Tach Frequency | 2167 / 72.2 |        |        |        |        |
-| Actual RPM at 75% Duty / Actual Tach Frequency     | 2166 / 72.5 |        |        |        |        |
-| Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 |        |        |        |        |
-| Actual RPM at 90% Duty / Actual Tach Frequency     | 2708 / 90.9 |        |        |        |        |
-| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 |        |        |        |        |
-| Actual RPM at 98% Duty / Actual Tach Frequency     | 2927 / 98.0 |        |        |        |        |
+|                                                    | Test 1      | Test 2 *     | Test 3      | Test 4      | Test 5      |
+| :------------------------------------------------: | :---------: | :----------: | :---------: | :---------: | :---------: |
+| Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       | 0 / 0        |        |        |        |
+| Actual RPM at 15% Duty / Actual Tach Frequency     | 0 / 0       | 0 / 0        |        |        |        |
+| Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 | 500 / 25.0   |        |        |        |
+| Actual RPM at 30% Duty / Actual Tach Frequency     | 1000 / 33.3 | 500 / 25.1   |        |        |        |
+| Expected RPM at 45% Duty / Expected Tach Frequency | 1167 / 38.9 | 500 / 25.0   |        |        |        |
+| Actual RPM at 45% Duty / Actual Tach Frequency     | 1151 / 38.5 | 500 / 25.1   |        |        |        |
+| Expected RPM at 60% Duty / Expected Tach Frequency | 1667 / 55.6 | 500 / 25.0   |        |        |        |
+| Actual RPM at 60% Duty / Actual Tach Frequency     | 1655 / 55.2 | 500 / 25.1   |        |        |        |
+| Expected RPM at 75% Duty / Expected Tach Frequency | 2167 / 72.2 | 2187 / 109.4 |        |        |        |
+| Actual RPM at 75% Duty / Actual Tach Frequency     | 2166 / 72.5 | 2185 / 109.0 |        |        |        |
+| Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 | 3875 / 193.8 |        |        |        |
+| Actual RPM at 90% Duty / Actual Tach Frequency     | 2708 / 90.9 | 4011 / 201.2 |        |        |        |
+| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 | 0000 / 00.0 |        |        |        |
+| Actual RPM at 98% Duty / Actual Tach Frequency     | 2927 / 98.0 | 0000 / 00.0 |        |        |        |
+
+* At 90% duty cycle for test 2 we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal) 
 
 
 ## Interpretation and Conclusions
