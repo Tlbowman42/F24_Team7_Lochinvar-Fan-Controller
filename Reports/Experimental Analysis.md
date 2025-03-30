@@ -5,8 +5,7 @@ Below is a list of the experiments conducted for Experimental Analysis.
 1. Power Source Stability and Redundancy Test
 2. User Parameter Storage Test
 3. Fan Simulation Testing
-4. Insert Here
-5. Insert Here
+
 
 # Power Source Stability and Redundancy Test
 
