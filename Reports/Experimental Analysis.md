@@ -108,6 +108,13 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 
 ## Purpose and Justification
 
+1. To verify that the user-defined settings can be saved to the onboard SD card.
+
+2. To verify that we can retrieve and load the settings accurately from memory after a power cycle or restart.
+
+3. To maintain data integrity across multiple read/write cycles and to ensure the system resumes operations using the most recently saved data configuration.
+
+
 ## Detailed Procedure
 
 ## Expected Results
@@ -126,6 +133,24 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 ## Expected Results
 
 ## Actual Results
+
+
+| | Max Fan Speed (RPM) | Min Fan Speed (RPM) | Min Duty Cycle (%) | Continuous Duty Cycle (%) | Transcient Timing Factor Increase | Transcient Timing Factor Decrease | Pulses Per Revolution |
+| :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :----: |
+| Expected 15% Duty Cycle |  |  |  |  |  |  |  |
+| Actual 15% Duty Cycle |  |   |   |  |  |   |  |
+| Expected 30% Duty Cycle |  |   |   |  |  |   |  |
+| Actual 30% Duty Cycle |  |   |   |  |  |   |  |
+| Expected 45% Duty Cycle |  |   |   |  |  |   |  |
+| Actual 45% Duty Cycle |  |   |   |  |  |   |  |
+| Expected 60% Duty Cycle |  |   |   |  |  |   |  |
+| Actual 60% Duty Cycle |  |   |   |  |  |   |  |
+| Expected 75% Duty Cycle |  |   |   |  |  |   |  |
+| Actual 75% Duty Cycle |  |   |   |  |  |   |  |
+| Expected 90% Duty Cycle |  |   |   |  |  |   |  |
+| Actual 90% Duty Cycle |  |   |   |  |  |   |  |
+| Expected 99% Duty Cycle |  |   |   |  |  |   |  |
+| Actual 99% Duty Cycle |  |   |   |  |  |   |  |
 
 ## Interpretation and Conclusions
 
