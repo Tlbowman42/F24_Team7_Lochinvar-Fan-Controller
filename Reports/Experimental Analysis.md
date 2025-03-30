@@ -121,15 +121,17 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 
 ## Actual Results
 
-| Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
-| :-------------------------------: | :-----------: |  :-----------: |  :-----------: |  :----------: |  :-----------: |
-| Max Fan Speed (RPM)               |               |                |                |               |                |
-| Min Fan Speed (RPM)               |               |                |                |               |                |
-| Min Duty Cycle (%)                |               |                |                |               |                |
-| Continuous Duty Cycle (%)         |               |                |                |               |                |
-| Transcient Timing Factor Increase |               |                |                |               |                |
-| Transcient Timing Factor Decrease |               |                |                |               |                |
-| Pulses Per Revolution             |               |                |                |               |                |
+| Saved Parameter                   | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
+| :-------------------------------: | :-----------: | :------------: | :------------: | :-----------: | :------------: |
+| Max Fan Speed (RPM)               | 3000          | 5000           | 10000          | 1000          | 5000           |
+| Min Fan Speed (RPM)               | 1000          | 500            | 2000           | 100           | 250            |
+| Min Duty Cycle (%)                | 10            | 20             | 25             | 5             | 30             |
+| Continuous Duty Cycle (%)         | 40            | 60             | 60             | 50            | 50             |
+| Transcient Timing Factor Increase | 100           | 150            | 200            | 50            | 100            |
+| Transcient Timing Factor Decrease | 100           | 50             | 200            | 100           | 175            |
+| Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
+| **Success / Failed**              | Success       | Success        | Success        | Success       | Success        |
+
 
 ## Interpretation and Conclusions
 
@@ -157,22 +159,22 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 
 
-|                                                    | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 |
-| :------------------------------------------------: | :----: | :----: | :----: | :----: | :----: |
-| Expected RPM at 15% Duty / Expected Tach Frequency |        |        |        |        |        |
-| Actual RPM at 15% Duty / Actual Tach Frequency     |        |        |        |        |        |
-| Expected RPM at 30% Duty / Expected Tach Frequency |        |        |        |        |        |
-| Actual RPM at 30% Duty / Actual Tach Frequency     |        |        |        |        |        |
-| Expected RPM at 45% Duty / Expected Tach Frequency |        |        |        |        |        |
-| Actual RPM at 45% Duty / Actual Tach Frequency     |        |        |        |        |        |
-| Expected RPM at 60% Duty / Expected Tach Frequency |        |        |        |        |        |
-| Actual RPM at 60% Duty / Actual Tach Frequency     |        |        |        |        |        |
-| Expected RPM at 75% Duty / Expected Tach Frequency |        |        |        |        |        |
-| Actual RPM at 75% Duty / Actual Tach Frequency     |        |        |        |        |        |
-| Expected RPM at 90% Duty / Expected Tach Frequency |        |        |        |        |        |
-| Actual RPM at 90% Duty / Actual Tach Frequency     |        |        |        |        |        |
-| Expected RPM at 99% Duty / Expected Tach Frequency |        |        |        |        |        |
-| Actual RPM at 99% Duty / Actual Tach Frequency     |        |        |        |        |        |
+|                                                    | Test 1      | Test 2 | Test 3 | Test 4 | Test 5 |
+| :------------------------------------------------: | :---------: | :----: | :----: | :----: | :----: |
+| Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       |        |        |        |        |
+| Actual RPM at 15% Duty / Actual Tach Frequency     | 0 / 0       |        |        |        |        |
+| Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 |        |        |        |        |
+| Actual RPM at 30% Duty / Actual Tach Frequency     | 1000 / 33.3 |        |        |        |        |
+| Expected RPM at 45% Duty / Expected Tach Frequency | 1167 / 38.9 |        |        |        |        |
+| Actual RPM at 45% Duty / Actual Tach Frequency     | 1151 / 38.5 |        |        |        |        |
+| Expected RPM at 60% Duty / Expected Tach Frequency | 1667 / 55.6 |        |        |        |        |
+| Actual RPM at 60% Duty / Actual Tach Frequency     | 1655 / 55.2 |        |        |        |        |
+| Expected RPM at 75% Duty / Expected Tach Frequency | 2167 / 72.2 |        |        |        |        |
+| Actual RPM at 75% Duty / Actual Tach Frequency     | 2166 / 72.5 |        |        |        |        |
+| Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 |        |        |        |        |
+| Actual RPM at 90% Duty / Actual Tach Frequency     | 2708 / 90.9 |        |        |        |        |
+| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 |        |        |        |        |
+| Actual RPM at 98% Duty / Actual Tach Frequency     | 2927 / 98.0 |        |        |        |        |
 
 
 ## Interpretation and Conclusions
