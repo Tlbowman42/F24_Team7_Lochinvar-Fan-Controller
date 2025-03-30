@@ -44,6 +44,10 @@ Below is a list of the experiments conducted for Experimental Analysis.
 2. USB Power (5 Vdc)
    - Connect the Fan Diagnostic tool to a USB power supply or to a laptop.
 
+![image](https://github.com/user-attachments/assets/879e7e65-9841-4369-b25e-331a32be9c48)  
+
+![image](https://github.com/user-attachments/assets/4d7895df-d5ae-4ad9-b52e-4187c88b428c)
+
 
 **Step 2: Setting up the Load on the Breadboard** 
 1. Connect one of the female to male wire connectors to Pin 34 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, three spaces from the right hand side)  
@@ -54,6 +58,9 @@ Below is a list of the experiments conducted for Experimental Analysis.
 4. Connect the male end of the wire connector to the ground rail to the bread board.
 5. Connect the Multimeter across the resistor to measure the voltage across the load.
 6. Connect the Multimeter in series with the resistor to measure the current through the load.
+
+![image](https://github.com/user-attachments/assets/631592ae-0ab6-4a85-9a25-c4efdd974490)
+
 
 
 **Step 3: Testing Load Conditions**
