@@ -143,6 +143,7 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 
 ## Interpretation and Conclusions
 
+The purpose of this experiment was to verify that the user could accurately save and read data from the SD Card. The results show that we can accurately save data to the SD Card and then read the data back in.  
 
 # Fan Simulation Test
 
