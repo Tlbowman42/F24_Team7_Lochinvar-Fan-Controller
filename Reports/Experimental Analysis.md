@@ -121,6 +121,16 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 
 ## Actual Results
 
+| Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
+| :-------------------------------: | :-----------: |  :-----------: |  :-----------: |  :----------: |  :-----------: |
+| Max Fan Speed (RPM)               |               |                |                |               |                |
+| Min Fan Speed (RPM)               |               |                |                |               |                |
+| Min Duty Cycle (%)                |               |                |                |               |                |
+| Continuous Duty Cycle (%)         |               |                |                |               |                |
+| Transcient Timing Factor Increase |               |                |                |               |                |
+| Transcient Timing Factor Decrease |               |                |                |               |                |
+| Pulses Per Revolution             |               |                |                |               |                |
+
 ## Interpretation and Conclusions
 
 
@@ -137,14 +147,14 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 
 
 | Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
-| :-------------------------------: | :-----------: |  :-----------: |  :-----------: |  :----------: |  :-----------: |
-| Max Fan Speed (RPM)               |               |                |                |               |                |
-| Min Fan Speed (RPM)               |               |                |                |               |                |
-| Min Duty Cycle (%)                |               |                |                |               |                |
-| Continuous Duty Cycle (%)         |               |                |                |               |                |
-| Transcient Timing Factor Increase |               |                |                |               |                |
-| Transcient Timing Factor Decrease |               |                |                |               |                |
-| Pulses Per Revolution             |               |                |                |               |                |
+| :-------------------------------: | :-----------: | :------------: | :------------: | :-----------: | :------------: |
+| Max Fan Speed (RPM)               | 3000          | 5000           | 10000          | 1000          | 5000           |
+| Min Fan Speed (RPM)               | 1000          | 500            | 2000           | 100           | 250            |
+| Min Duty Cycle (%)                | 10            | 20             | 25             | 5             | 30             |
+| Continuous Duty Cycle (%)         | 40            | 60             | 60             | 50            | 50             |
+| Transcient Timing Factor Increase | 100           | 150            | 200            | 50            | 100            |
+| Transcient Timing Factor Decrease | 100           | 50             | 200            | 100           | 175            |
+| Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 
 
 |                                                    | Test 1 | Test 2 | Test 3 | Test 4 | Test 5 |
