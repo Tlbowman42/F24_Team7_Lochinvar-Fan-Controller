@@ -33,7 +33,7 @@ Below is a list of the experiments conducted for Experimental Analysis.
    - 100 kΩ
 5. Digital Multimeter (for voltage and current measurements)
 6. 2 Female to Male Wire connectors
-7. USB Power Supply (5 Vdc source)
+7. USB to USB Micro cable (5 Vdc source)
 
 **Step 1: Setting up the Power Source**  
 1. Lochinvar Control Board Power (24 Vdc)
@@ -117,7 +117,17 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 
 ## Detailed Procedure
 
+### Setup
+***Equipment Needed***
+1. SD-Card reader
+2. USB to USB Micro cable
+
+**Step 1: Setting up the Power Source** 
+1. Connect the USB to USB micro cable between a laptop and the Fan Diagnosti Tool.
+
 ## Expected Results
+
+I expect the SD card to accurately save the inputted user parameters, and then correctly read in the most recently saved data. 
 
 ## Actual Results
 
@@ -132,7 +142,6 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 | **Success / Failed**              | Success       | Success        | Success        | Success       | Success        |
 
-
 ## Interpretation and Conclusions
 
 
@@ -145,8 +154,6 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 ## Expected Results
 
 ## Actual Results
-
-
 
 | Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
 | :-------------------------------: | :-----------: | :------------: | :------------: | :-----------: | :------------: |
@@ -178,7 +185,6 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 
 ***Footnotes***  
 *At 90% duty cycle for test 2 we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal)* 
-
 
 ## Interpretation and Conclusions
 
