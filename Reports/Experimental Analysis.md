@@ -178,9 +178,9 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 | Expected RPM at 75% Duty / Expected Tach Frequency | 2167 / 72.2 | 2187 / 109.4 | 5000 / 416.7 | 550 / 18.3  | 2625 / 87.5  |
 | Actual RPM at 75% Duty / Actual Tach Frequency     | 2166 / 72.5 | 2185 / 109.0 | 4995 / 417.3 | 550 / 18.3  | 2625 / 87.7  |
 | Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 | 3875 / 193.8 | 8000 / 666.7 | 820 / 27.3  | 4050 / 135.0 |
-| Actual RPM at 90% Duty / Actual Tach Frequency     | 2708 / 90.9 | 4011 / 201.2 | 8250 / 689.8 | 840 / 28.5  | 4170 / 138.7 |
+| Actual RPM at 90% Duty / Actual Tach Frequency     | 2709 / 91.1 | 4011 / 201.2 | 8250 / 689.8 | 840 / 28.5  | 4170 / 138.7 |
 | Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 | 4775 / 238.8 | 9600 / 800.0 | 964 / 32.1  | 4810 / 160.3 |
-| Actual RPM at 98% Duty / Actual Tach Frequency     | 2927 / 98.0 | 4750 / 237.8 | 9558 / 798.1 | 962 / 31.8  | 4796 / 159.8 |
+| Actual RPM at 98% Duty / Actual Tach Frequency     | 2928 / 97.2 | 4750 / 237.8 | 9558 / 798.1 | 962 / 31.8  | 4796 / 159.8 |
 
 ***Footnotes***  
 *At 90% duty cycle for all tests we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal)*   
