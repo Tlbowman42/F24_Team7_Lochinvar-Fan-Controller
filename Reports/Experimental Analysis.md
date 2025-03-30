@@ -137,20 +137,21 @@ When using the Dual Power configuration (Both USB and Lochinvar Control Board) w
 
 | | Max Fan Speed (RPM) | Min Fan Speed (RPM) | Min Duty Cycle (%) | Continuous Duty Cycle (%) | Transcient Timing Factor Increase | Transcient Timing Factor Decrease | Pulses Per Revolution |
 | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :----: |
-| Expected 15% Duty Cycle |  |  |  |  |  |  |  |
-| Actual 15% Duty Cycle |  |   |   |  |  |   |  |
-| Expected 30% Duty Cycle |  |   |   |  |  |   |  |
-| Actual 30% Duty Cycle |  |   |   |  |  |   |  |
-| Expected 45% Duty Cycle |  |   |   |  |  |   |  |
-| Actual 45% Duty Cycle |  |   |   |  |  |   |  |
-| Expected 60% Duty Cycle |  |   |   |  |  |   |  |
-| Actual 60% Duty Cycle |  |   |   |  |  |   |  |
-| Expected 75% Duty Cycle |  |   |   |  |  |   |  |
-| Actual 75% Duty Cycle |  |   |   |  |  |   |  |
-| Expected 90% Duty Cycle |  |   |   |  |  |   |  |
-| Actual 90% Duty Cycle |  |   |   |  |  |   |  |
-| Expected 99% Duty Cycle |  |   |   |  |  |   |  |
-| Actual 99% Duty Cycle |  |   |   |  |  |   |  |
+| Expected 15% Duty Cycle / Expected Tach Frequency |  |  |  |  |  |  |  |
+| Actual 15% Duty Cycle / Actual Tach Frequency |  |   |   |  |  |   |  |
+| Expected 30% Duty Cycle / Expected Tach Frequency |  |   |   |  |  |   |  |
+| Actual 30% Duty Cycle / Actual Tach Frequency |  |   |   |  |  |   |  |
+| Expected 45% Duty Cycle / Expected Tach Frequency |  |   |   |  |  |   |  |
+| Actual 45% Duty Cycle / Actual Tach Frequency |  |   |   |  |  |   |  |
+| Expected 60% Duty Cycle / Expected Tach Frequency |  |   |   |  |  |   |  |
+| Actual 60% Duty Cycle / Actual Tach Frequency |  |   |   |  |  |   |  |
+| Expected 75% Duty Cycle / Expected Tach Frequency |  |   |   |  |  |   |  |
+| Actual 75% Duty Cycle / Actual Tach Frequency |  |   |   |  |  |   |  |
+| Expected 90% Duty Cycle / Expected Tach Frequency |  |   |   |  |  |   |  |
+| Actual 90% Duty Cycle / Actual Tach Frequency |  |   |   |  |  |   |  |
+| Expected 99% Duty Cycle / Expected Tach Frequency |  |   |   |  |  |   |  |
+| Actual 99% Duty Cycle / Actual Tach Frequency |  |   |   |  |  |   |  |
+
 
 ## Interpretation and Conclusions
 
