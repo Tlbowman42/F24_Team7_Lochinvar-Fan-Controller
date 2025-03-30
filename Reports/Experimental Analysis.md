@@ -165,25 +165,27 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 
 
-|                                                    | Test 1      | Test 2 *     | Test 3      | Test 4      | Test 5      |
-| :------------------------------------------------: | :---------: | :----------: | :---------: | :---------: | :---------: |
-| Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       | 0 / 0        |        |        |        |
-| Actual RPM at 15% Duty / Actual Tach Frequency     | 0 / 0       | 0 / 0        |        |        |        |
-| Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 | 500 / 25.0   |        |        |        |
-| Actual RPM at 30% Duty / Actual Tach Frequency     | 1000 / 33.3 | 500 / 25.1   |        |        |        |
-| Expected RPM at 45% Duty / Expected Tach Frequency | 1167 / 38.9 | 500 / 25.0   |        |        |        |
-| Actual RPM at 45% Duty / Actual Tach Frequency     | 1151 / 38.5 | 500 / 25.1   |        |        |        |
-| Expected RPM at 60% Duty / Expected Tach Frequency | 1667 / 55.6 | 500 / 25.0   |        |        |        |
-| Actual RPM at 60% Duty / Actual Tach Frequency     | 1655 / 55.2 | 500 / 25.1   |        |        |        |
-| Expected RPM at 75% Duty / Expected Tach Frequency | 2167 / 72.2 | 2187 / 109.4 |        |        |        |
-| Actual RPM at 75% Duty / Actual Tach Frequency     | 2166 / 72.5 | 2185 / 109.0 |        |        |        |
-| Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 | 3875 / 193.8 |        |        |        |
-| Actual RPM at 90% Duty / Actual Tach Frequency     | 2708 / 90.9 | 4011 / 201.2 |        |        |        |
-| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 | 4775 / 238.8 |        |        |        |
-| Actual RPM at 98% Duty / Actual Tach Frequency     | 2927 / 98.0 | 4750 / 237.8 |        |        |        |
+|                                                    | Test 1 *    | Test 2 *     | Test 3 *     | Test 4 *    | Test 5 *     |
+| :------------------------------------------------: | :---------: | :----------: | :----------: | :---------: | :------_---: |
+| Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       | 0 / 0        | 0 / 0        | 100 / 3.3   | 0 / 0        |
+| Actual RPM at 15% Duty / Actual Tach Frequency     | 0 / 0       | 0 / 0        | 0 / 0        | 100 / 15.0  | 0 / 0        |
+| Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 | 500 / 25.0   | 2000 / 166.7 | 100 / 3.3   | 250 / 8.3    |
+| Actual RPM at 30% Duty / Actual Tach Frequency     | 1000 / 33.3 | 500 / 25.1   | 2000 / 167.7 | 100 / 15.0  | 250 / 15.0   |
+| Expected RPM at 45% Duty / Expected Tach Frequency | 1167 / 38.9 | 500 / 25.0   | 2000 / 166.7 | 100 / 3.3   | 250 / 8.3    |
+| Actual RPM at 45% Duty / Actual Tach Frequency     | 1151 / 38.5 | 500 / 25.1   | 2000 / 167.7 | 100 / 15.0  | 250 / 15.0   |
+| Expected RPM at 60% Duty / Expected Tach Frequency | 1667 / 55.6 | 500 / 25.0   | 2000 / 166.7 | 280 / 9.3   | 1200 / 40.0  |
+| Actual RPM at 60% Duty / Actual Tach Frequency     | 1655 / 55.2 | 500 / 25.1   | 2000 / 167.7 | 274 / 15.0  | 1170 / 39.1  |
+| Expected RPM at 75% Duty / Expected Tach Frequency | 2167 / 72.2 | 2187 / 109.4 | 5000 / 416.7 | 550 / 18.3  | 2625 / 87.5  |
+| Actual RPM at 75% Duty / Actual Tach Frequency     | 2166 / 72.5 | 2185 / 109.0 | 4995 / 417.3 | 550 / 18.3  | 2625 / 87.7  |
+| Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 | 3875 / 193.8 | 8000 / 666.7 | 820 / 27.3  | 4050 / 135.0 |
+| Actual RPM at 90% Duty / Actual Tach Frequency     | 2708 / 90.9 | 4011 / 201.2 | 8250 / 689.8 | 840 / 28.5  | 4170 / 138.7 |
+| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 | 4775 / 238.8 | 9600 / 800.0 | 964 / 32.1  | 4810 / 160.3 |
+| Actual RPM at 98% Duty / Actual Tach Frequency     | 2927 / 98.0 | 4750 / 237.8 | 9558 / 798.1 | 962 / 31.8  | 4796 / 159.8 |
 
 ***Footnotes***  
-*At 90% duty cycle for test 2 we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal)* 
+*At 90% duty cycle for all tests we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal)*   
+*At 98% duty cycle due to the opto-coupler rounding we cannot properly measure the signal due to the voltage range on the microcontroller's pins not being a clear high or low level*   
+*For test 4 the minimum hertz that the oscilliscope can read is 15 Hz; therefore, the frequency measurements for duty cycles 15-60% will not be read properly.*
 
 ## Interpretation and Conclusions
 
