@@ -148,8 +148,8 @@ The purpose of this experiment is to verify that the user could accurately save 
 # Fan Simulation Test
 
 ## Purpose and Justification
-1. To verify that the diagnostic tool takes in a PWM signal.
-2. To verify that the diagnostic tool outputs a tachometer signal based on user parameters and the incomming PWM signal.
+1. To verify that the Fan Diagnostic Tool takes in a PWM signal.
+2. To verify that the Fan Diagnostic Tool outputs a tachometer signal based on user parameters and the incomming PWM signal.
 
 ## Detailed Procedure
 
