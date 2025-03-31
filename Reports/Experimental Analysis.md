@@ -171,7 +171,7 @@ The purpose of this experiment is to verify that the user could accurately save 
 ## Expected Results
 
 
-|                                                    | Test 1 *    | Test 2 *     | Test 3 *     | Test 4 *    | Test 5 *     |
+|                                                    | Test 1      | Test 2       | Test 3       | Test 4      | Test 5       |
 | :------------------------------------------------: | :---------: | :----------: | :----------: | :---------: | :----------: |
 | Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       | 0 / 0        | 0 / 0        | 100 / 3.3   | 0 / 0        |
 | Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 | 500 / 25.0   | 2000 / 166.7 | 100 / 3.3   | 250 / 8.3    |
