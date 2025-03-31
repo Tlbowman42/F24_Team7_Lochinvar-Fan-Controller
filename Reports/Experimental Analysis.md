@@ -242,5 +242,5 @@ The experiments shown above have demonstrated that the Fan Diagnostic Tool can b
 Layne Bowman helped with all three experiments, along with formatting the Experimental Analysis document.  
 Tucker Basham helped with the SD card and fan simulation testing, alongside writing the interpretations and conclusions section for the fan sim.  
 Conner Vick was present for some experiments to help troubleshoot if needed.  
-Ethan Haynes helped with the fan simulation testing and writing the fan simulation test setup, steps, and expected results.
+Ethan Haynes helped with the fan simulation testing and writing the fan simulation test setup, steps, and expected results.  
 Jacob Brewer was present for some experiments to help troubleshoot if needed. Also reviewed this document.
