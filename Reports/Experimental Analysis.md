@@ -171,7 +171,7 @@ The purpose of this experiment is to verify that the user can accurately save an
 6. Enter the user parameters in the Diagnostic Tool and hit "RUN" to output a tachometer signal.
 
 ## Expected Results
-When testing with the 5 sets of parameters shown below, we are expect to see the corresponding tachometer signal for that duty cycle of the PWM signal.
+When testing with the 5 sets of parameters in the first table we expect to see the corresponding tachometer signal in the second table for that duty cycle of the PWM signal.
 
 | Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
 | :-------------------------------: | :-----------: | :------------: | :------------: | :-----------: | :------------: |
@@ -182,6 +182,7 @@ When testing with the 5 sets of parameters shown below, we are expect to see the
 | Transient Timing Factor Increase  | 100           | 150            | 200            | 50            | 100            |
 | Transient Timing Factor Decrease  | 100           | 50             | 200            | 100           | 175            |
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
+
 
 |             Tachometer                            | Test 1      | Test 2       | Test 3       | Test 4      | Test 5       |
 | :------------------------------------------------: | :---------: | :----------: | :----------: | :---------: | :----------: |
