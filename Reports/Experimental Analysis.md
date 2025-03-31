@@ -158,14 +158,15 @@ The purpose of this experiment is to verify that the user could accurately save 
 1. Function generator
 2. Fan Diagnostic Tool
 3. Oscilloscope
-4. Power supply
+4. Variable Power supply (24 Vdc, 0.3 A)
 
 **Step 1: Making Connections** 
-1. Connect 24 V to the power pin of the Diagnostic Tool.
-2. Connect the postive of the function generator to the PWM pin and the negative to the ground pin.
-3. Connect an oscilloscope probe to the tachometer pin to read the output.
-4. Set the function generator to a 20 V square wave with 3.2 kHz frequency and the corresponding duty cycle.
-5. Enter the user parameters in the Diagnostic Tool and confirm to output a tachometer signal.
+1. Connect the positive probe of the 24 Vdc power supply to pin one of the first MOLEX connectoer (MOLEX closest to the SD Card) of the Diagnostic Tool.
+2. Connect the negative probe of the 24 Vdc power supply to pin five of the first MOLEX connectoer (MOLEX closest to the SD Card) of the Diagnostic Tool.
+3. Connect the postive of the function generator to the PWM pin and the negative to the ground pin.
+4. Connect an oscilloscope probe to the tachometer pin to read the output.
+5. Set the function generator to a 20 V square wave with 3.2 kHz frequency and the corresponding duty cycle.
+6. Enter the user parameters in the Diagnostic Tool and confirm to output a tachometer signal.
 
 ## Expected Results
 
