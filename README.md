@@ -37,7 +37,7 @@ Ethan Haynes
 
 Jacob Brewer  
 
-Tucker Basham  
+[Tucker Basham](www.linkedin.com/in/tucker-basham-b77896290) as a computer engineer at Tennessee Tech University, has a strong passion for embedded, control systems, and signal processing. Tucker oversees the signal generaton and storage capabilities of the fan diagnostic tool.  
 
 Conner Vick  
 
