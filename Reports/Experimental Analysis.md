@@ -148,8 +148,24 @@ The purpose of this experiment is to verify that the user could accurately save 
 # Fan Simulation Test
 
 ## Purpose and Justification
+1. To verify that the diagnostic tool takes in a PWM signal.
+2. To verify that the diagnostic tool outputs a tachometer signal based on user parameters and the incomming PWM signal.
 
 ## Detailed Procedure
+
+### Setup
+***Equipment Needed***
+1. Function generator
+2. Fan Diagnostic Tool
+3. Oscilloscope
+4. Power supply
+
+**Step 1: Making Connections** 
+1. Connect 24 V to the power pin of the Diagnostic Tool.
+2. Connect the postive of the function generator to the PWM pin and the negative to the ground pin.
+3. Connect an oscilloscope probe to the tachometer pin to read the output.
+4. Set the function generator to a 20 V square wave with 3.2 kHz frequency and the corresponding duty cycle.
+5. Enter the user parameters in the Diagnostic Tool and confirm to output a tachometer signal.
 
 ## Expected Results
 
