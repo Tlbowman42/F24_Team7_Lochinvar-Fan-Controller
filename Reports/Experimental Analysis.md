@@ -205,6 +205,15 @@ The purpose of this experiment is to verify that the user could accurately save 
 *At 98% duty cycle due to the opto-coupler rounding we cannot properly measure the signal due to the voltage range on the microcontroller's pins not being a clear high or low level. (Test 3)*   
 *For test 4 the minimum hertz that the oscilliscope can read is 15 Hz; therefore, the frequency measurements for duty cycles 15-60% will not be read properly.*
 
+
+![image](https://github.com/user-attachments/assets/10247939-4d04-448b-82ca-75f33d0d7b7d)
+
+
+![image](https://github.com/user-attachments/assets/7e067242-1b91-453a-8daa-cffc765fafdf)
+
+
+
+
 ## Interpretation and Conclusions
 
 
