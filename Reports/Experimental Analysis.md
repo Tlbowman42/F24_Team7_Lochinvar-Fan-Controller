@@ -166,7 +166,7 @@ The purpose of this experiment is to verify that the user could accurately save 
 3. Connect the postive of the function generator to the PWM pin and the negative to the ground pin.
 4. Connect an oscilloscope probe to the tachometer pin to read the output.
 5. Set the function generator to a 20 V square wave with 3.2 kHz frequency and the corresponding duty cycle.
-6. Enter the user parameters in the Diagnostic Tool and confirm to output a tachometer signal.
+6. Enter the user parameters in the Diagnostic Tool and hit "RUN" to output a tachometer signal.
 
 ## Expected Results
 
