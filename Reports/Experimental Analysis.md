@@ -11,11 +11,11 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 ## Purpose and Justification
 
-1. To verify the the Fan Diagnostic Tool operates stably when powered by:
+1. To verify that the Fan Diagnostic Tool operates stably when powered by:
    - The Fan Control Board (~24 Vdc)
    - USB Connection (5 Vdc)
    - Both power sources simultaneously
-2. To ensure power switching does not disrupt tool operation.
+2. To ensure that power switching does not disrupt tool operation.
 
 ## Detailed Procedure
 
@@ -31,7 +31,7 @@ Below is a list of the experiments conducted for Experimental Analysis.
    - 10 kΩ
    - 100 kΩ
 5. Digital Multimeter (for voltage and current measurements)
-6. 2 Female to Male Wire connectors
+6. 2 Female to Male Wire Connectors
 7. USB to USB Micro cable (5 Vdc source)
 
 **Step 1: Setting up the Power Source**  
@@ -49,12 +49,12 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 
 **Step 2: Setting up the Load on the Breadboard** 
-1. Connect one of the female to male wire connectors to Pin 34 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, three spaces from the right hand side)  
+1. Connect one of the female to male wire connectors to Pin 34 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, three spaces from the right-hand side)  
 ![image](https://github.com/user-attachments/assets/84d45f88-e8e3-4bd0-8c14-e212e9e2e53d)
-2. Connect the male end of the wire connector to the bread board.
-3. Connect the other female to male wire connector to Pin 20 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, ten spaces from the left hand side)  
+2. Connect the male end of the wire connector to the breadboard.
+3. Connect the other female to male wire connector to Pin 20 of the microcontroller (It is located on the bottom Morpho connector, the bottom row, ten spaces from the left-hand side)  
 ![image](https://github.com/user-attachments/assets/64daddf7-a7d7-4181-91dc-b8813e26a552)
-4. Connect the male end of the wire connector to the ground rail to the bread board.
+4. Connect the male end of the wire connector to the ground rail on the breadboard.
 5. Connect the Multimeter across the resistor to measure the voltage across the load.
 6. Connect the Multimeter in series with the resistor to measure the current through the load.
 
@@ -72,7 +72,7 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 
 ## Expected Results
-I expect the Power Source Configuration to not effect the voltage stability across the board. I expect that as the resistance gets lower (Higher load) the current will increase and therefore the power dissipated should increase as well. Finally, I believe that the voltage consistency should remain relatively constant. (The voltage drop across the resistor should stay close to 3.3 Vdc)  
+I expect the Power Source Configuration not to affect the voltage stability across the board. I expect that as the resistance gets lower (Higher load), the current will increase, and therefore the power dissipated should increase as well. Finally, I believe that the voltage consistency should remain relatively constant. (The voltage drops across the resistor should stay close to 3.3 Vdc)  
 
 ## Actual Results
 
@@ -97,9 +97,9 @@ I expect the Power Source Configuration to not effect the voltage stability acro
 
 ## Interpretation and Conclusions
 
-The purpose of this experiment was to evaluate voltage stability and redundancy of the Fan Diagnostic Tool when being powered from different sources (Lochinvar Control Board, USB, or both). By applying different resistive loads and measuring the voltage, current, and power dissipation, we were able to assess the power's delivery system under different levels of stress. Doing this we were able to identify signs of power stability or instability.  
+The purpose of this experiment was to evaluate voltage stability and redundancy of the Fan Diagnostic Tool when being powered from different sources (Lochinvar Control Board, USB, or both). By applying different resistive loads and measuring the voltage, current, and power dissipation, we were able to assess the power delivery system under different levels of stress. Doing this, we were able to identify signs of power stability or instability.  
 
-Across all three power source configurations the voltage readings remained consistently within a small range, even when going from low load (High resistance) to high load (Low resistance). For example, when using USB power along the voltage dropps from 3.309 V (1 kΩ) to 3.036 V (4.7 Ω). This is about an 8.2 % decrease despite a large rise in current. We can see the same concept for only being powered by the Lochinvar Control Board and when being powered by both sources.  
+Across all three power source configurations, the voltage readings remained consistently within a small range, even when going from low load (High resistance) to high load (Low resistance). For example, when using USB power along the voltage drops from 3.309 V (1 kΩ) to 3.036 V (4.7 Ω). This is about an 8.2 % decrease despite a large rise in current. We can see the same concept for only being powered by the Lochinvar Control Board and when being powered by both sources.  
 
 When using the Dual Power configuration (Both USB and Lochinvar Control Board) we can see it had nearly identical results to either power source being used independently. This shows that the redundant power sources work effectively with no evidence of voltage instability when both sources are connected.  
 
@@ -136,20 +136,20 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 | Min Fan Speed (RPM)               | 1000          | 500            | 2000           | 100           | 250            |
 | Min Duty Cycle (%)                | 10            | 20             | 25             | 5             | 30             |
 | Continuous Duty Cycle (%)         | 40            | 60             | 60             | 50            | 50             |
-| Transcient Timing Factor Increase | 100           | 150            | 200            | 50            | 100            |
-| Transcient Timing Factor Decrease | 100           | 50             | 200            | 100           | 175            |
+| Transient Timing Factor Increase | 100           | 150            | 200            | 50            | 100            |
+| Transient Timing Factor Decrease | 100           | 50             | 200            | 100           | 175            |
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 | **Success / Failed**              | Success       | Success        | Success        | Success       | Success        |
 
 ## Interpretation and Conclusions
 
-The purpose of this experiment is to verify that the user could accurately save and read data from the SD Card. The results show that we can accurately save data to the SD Card and then read the data back in.  
+The purpose of this experiment is to verify that the user can accurately save and read data from the SD Card. The results show that we can accurately save data to the SD Card and then read the data back in.  
 
 # Fan Simulation Test
 
 ## Purpose and Justification
 1. To verify that the Fan Diagnostic Tool takes in a PWM signal.
-2. To verify that the Fan Diagnostic Tool outputs a tachometer signal based on user parameters and the incomming PWM signal.
+2. To verify that the Fan Diagnostic Tool outputs a tachometer signal based on user parameters and the incoming PWM signal.
 
 ## Detailed Procedure
 
@@ -161,11 +161,11 @@ The purpose of this experiment is to verify that the user could accurately save 
 4. Variable Power supply (24 Vdc, 0.3 A)
 
 **Step 1: Making Connections** 
-1. Connect the positive probe of the 24 Vdc power supply to pin one of the first MOLEX connectoer (MOLEX closest to the SD Card) of the Diagnostic Tool.
-2. Connect the negative probe of the 24 Vdc power supply to pin five of the first MOLEX connectoer (MOLEX closest to the SD Card) of the Diagnostic Tool.
-3. Connect the postive of the function generator to the PWM pin and the negative to the ground pin.
+1. Connect the positive probe of the 24 Vdc power supply to pin one of the first MOLEX connector (MOLEX closest to the SD Card) of the Diagnostic Tool.
+2. Connect the negative probe of the 24 Vdc power supply to pin five of the first MOLEX connector (MOLEX closest to the SD Card) of the Diagnostic Tool.
+3. Connect the positive of the function generator to the PWM pin and the negative to the ground pin.
 4. Connect an oscilloscope probe to the tachometer pin to read the output.
-5. Set the function generator to a 20 V square wave with 3.2 kHz frequency and the corresponding duty cycle.
+5. Set the function generator to a 20 V square wave with a 3.2 kHz frequency and the corresponding duty cycle.
 6. Enter the user parameters in the Diagnostic Tool and hit "RUN" to output a tachometer signal.
 
 ## Expected Results
@@ -189,8 +189,8 @@ The purpose of this experiment is to verify that the user could accurately save 
 | Min Fan Speed (RPM)               | 1000          | 500            | 2000           | 100           | 250            |
 | Min Duty Cycle (%)                | 10            | 20             | 25             | 5             | 30             |
 | Continuous Duty Cycle (%)         | 40            | 60             | 60             | 50            | 50             |
-| Transcient Timing Factor Increase | 100           | 150            | 200            | 50            | 100            |
-| Transcient Timing Factor Decrease | 100           | 50             | 200            | 100           | 175            |
+| Transient Timing Factor Increase | 100           | 150            | 200            | 50            | 100            |
+| Transient Timing Factor Decrease | 100           | 50             | 200            | 100           | 175            |
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 
 
@@ -212,9 +212,9 @@ The purpose of this experiment is to verify that the user could accurately save 
 | Actual RPM at 98% Duty / Actual Tach Frequency     | 2928 / 97.2 | 4750 / 237.8 | 9558 / 798.1 | 962 / 31.8  | 4796 / 159.8 |
 
 ***Footnotes***  
-*At 90% duty cycle for all tests we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal)*   
-*At 98% duty cycle due to the opto-coupler rounding we cannot properly measure the signal due to the voltage range on the microcontroller's pins not being a clear high or low level. (Test 3)*   
-*For test 4 the minimum hertz that the oscilliscope can read is 15 Hz; therefore, the frequency measurements for duty cycles 15-60% will not be read properly.*
+*At 90% duty cycle for all tests, we are reading 91.2 % duty cycle due to opto-coupler rounding. (When given a 90% duty cycle signal)*   
+*At 98% duty cycle, due to the opto-coupler rounding, we cannot properly measure the signal due to the voltage range on the microcontroller's pins not being a clear high or low level. (Test 3)*   
+*For test 4, the minimum hertz that the oscilloscope can read is 15 Hz; therefore, the frequency measurements for duty cycles 15-60% will not be read properly.*
 
 
 ![image](https://github.com/user-attachments/assets/10247939-4d04-448b-82ca-75f33d0d7b7d)
@@ -223,8 +223,10 @@ The purpose of this experiment is to verify that the user could accurately save 
 ![image](https://github.com/user-attachments/assets/7e067242-1b91-453a-8daa-cffc765fafdf)
 
 
+
+
 ## Interpretation and Conclusions
-The purpose of this experiment is to verify that diagnostic tool can take in different user parameters and a PWM signal to output the corresponding tachometer signal. 
+
 
 
 # Statement of Contributions
