@@ -41,7 +41,7 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 
 2. USB Power (5 Vdc)
-   - Connect the Fan Diagnostic tool to a USB power supply or to a laptop.
+   - Connect the Fan Diagnostic tool to a USB power supply or a laptop.
 
 ![image](https://github.com/user-attachments/assets/879e7e65-9841-4369-b25e-331a32be9c48)  
 
@@ -145,7 +145,7 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 
 ## Interpretation and Conclusions
 
-The purpose of this experiment is to verify that the user can accurately save and read data from the SD Card. The results show that we can accurately save data to the SD Card and then read the data back in. In conclusion, the user should be able to save the user inputted data, and then read back in the latest saved data.  
+The purpose of this experiment is to verify that the user can accurately save and read data from the SD Card. The results show that we can accurately save data to the SD Card and then read the data back in. In conclusion, the user should be able to save the user-inputted data, and then read back the latest saved data.  
 
 # Fan Simulation Test
 
@@ -171,7 +171,7 @@ The purpose of this experiment is to verify that the user can accurately save an
 6. Enter the user parameters in the Diagnostic Tool and hit "RUN" to output a tachometer signal.
 
 ## Expected Results
-When testing with the 5 sets of parameters in the first table we expect to see the corresponding tachometer signal in the second table for that duty cycle of the PWM signal.
+When testing with the 5 sets of parameters in the first table, we expect to see the corresponding tachometer signal in the second table for that duty cycle of the PWM signal.
 
 | Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
 | :-------------------------------: | :-----------: | :------------: | :------------: | :-----------: | :------------: |
@@ -234,8 +234,8 @@ Across almost all our tests, we achieved proper results based on the specified u
 
 
 
-# Experimental Analysis Conculsion
-The experiments shown above have demonstrated that the Fan Diagnostic Tool can be powered by two different sources (Lochinvar Control Board and USB). Additionally, we showed that we can save user parameters and accurately read back in the latest saved data. Futhermore we showed that we can take in a PWM and then simulate a fan given user specified parameters such as: max fan speed, minimum fan speed, minimum duty cycle, continuous duty cycle to run, transient timing factor increase, transient timing factor decrease, and pulses per revolution. Therefore, we have successfully met the criteria we laid out in our original conceptual design
+# Experimental Analysis Conclusion
+The experiments shown above have demonstrated that the Fan Diagnostic Tool can be powered by two different sources (Lochinvar Control Board and USB). Additionally, we showed that we can save user parameters and accurately read back in the latest saved data. Furthermore, we showed that we can take in a PWM and then simulate a fan given user-specified parameters such as: max fan speed, minimum fan speed, minimum duty cycle, continuous duty cycle to run, transient timing factor increase, transient timing factor decrease, and pulses per revolution. Therefore, we have successfully met the criteria we laid out in our original conceptual design.
 
 
 # Statement of Contributions
