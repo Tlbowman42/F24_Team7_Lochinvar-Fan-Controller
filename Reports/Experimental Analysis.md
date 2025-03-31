@@ -225,7 +225,9 @@ When testing with the 5 sets of parameters shown below, we are expect to see the
 
 
 ## Interpretation and Conclusions
+The purpose of this experiment was to ensure that the fan diagnostic tool could perform its minimum required duty of fan simulation. By allowing the user to adjust fan parameters and subsequently input a fan-driving PWM signal, we were able to assess the upper and lower limits of our diagnostic tool. In doing so, we identified the tool’s weak points and developed methods to mitigate these issues.  
 
+Across almost all our tests, we achieved proper results based on the specified user parameters and an input signal of 3.2 kHz with varying duty cycle percentages. As observed in the tables and graphs above, there was little to no error between our expected signal and the actual response. However, small errors began to appear at higher PWM duty cycles due to the optocouplers not being fast enough. This is because the optocouplers were unable to provide the microcontroller with a suitable voltage range for high and low inputs. According to the microcontroller specifications, high inputs are recognized from 2.7–3.3 V, whereas low inputs are recognized from 0.0–1.0 V. As we increased the PWM duty cycle, around 95% the microcontroller began receiving a voltage range of 3.3–1.0 V with additional noise. Thus, there is a need for faster optocouplers with larger bandwidth and lower capacitance. Furthermore, observable signals below 15 Hz were unattainable due to limitations of our oscilloscope. Regardless, we expect the tool to output tach signals with allowable frequencies as low as 1 Hz.  
 
 
 # Statement of Contributions
