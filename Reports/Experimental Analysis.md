@@ -136,8 +136,8 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 | Min Fan Speed (RPM)               | 1000          | 500            | 2000           | 100           | 250            |
 | Min Duty Cycle (%)                | 10            | 20             | 25             | 5             | 30             |
 | Continuous Duty Cycle (%)         | 40            | 60             | 60             | 50            | 50             |
-| Transient Timing Factor Increase | 100           | 150            | 200            | 50            | 100            |
-| Transient Timing Factor Decrease | 100           | 50             | 200            | 100           | 175            |
+| Transient Timing Factor Increase  | 100           | 150            | 200            | 50            | 100            |
+| Transient Timing Factor Decrease  | 100           | 50             | 200            | 100           | 175            |
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 | **Success / Failed**              | Success       | Success        | Success        | Success       | Success        |
 
@@ -189,8 +189,8 @@ The purpose of this experiment is to verify that the user can accurately save an
 | Min Fan Speed (RPM)               | 1000          | 500            | 2000           | 100           | 250            |
 | Min Duty Cycle (%)                | 10            | 20             | 25             | 5             | 30             |
 | Continuous Duty Cycle (%)         | 40            | 60             | 60             | 50            | 50             |
-| Transient Timing Factor Increase | 100           | 150            | 200            | 50            | 100            |
-| Transient Timing Factor Decrease | 100           | 50             | 200            | 100           | 175            |
+| Transient Timing Factor Increase  | 100           | 150            | 200            | 50            | 100            |
+| Transient Timing Factor Decrease  | 100           | 50             | 200            | 100           | 175            |
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 
 
