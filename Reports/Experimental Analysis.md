@@ -169,19 +169,7 @@ The purpose of this experiment is to verify that the user can accurately save an
 6. Enter the user parameters in the Diagnostic Tool and hit "RUN" to output a tachometer signal.
 
 ## Expected Results
-
-
-|                                                    | Test 1      | Test 2       | Test 3       | Test 4      | Test 5       |
-| :------------------------------------------------: | :---------: | :----------: | :----------: | :---------: | :----------: |
-| Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       | 0 / 0        | 0 / 0        | 100 / 3.3   | 0 / 0        |
-| Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 | 500 / 25.0   | 2000 / 166.7 | 100 / 3.3   | 250 / 8.3    |
-| Expected RPM at 45% Duty / Expected Tach Frequency | 1167 / 38.9 | 500 / 25.0   | 2000 / 166.7 | 100 / 3.3   | 250 / 8.3    |
-| Expected RPM at 60% Duty / Expected Tach Frequency | 1667 / 55.6 | 500 / 25.0   | 2000 / 166.7 | 280 / 9.3   | 1200 / 40.0  |
-| Expected RPM at 75% Duty / Expected Tach Frequency | 2167 / 72.2 | 2187 / 109.4 | 5000 / 416.7 | 550 / 18.3  | 2625 / 87.5  |
-| Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 | 3875 / 193.8 | 8000 / 666.7 | 820 / 27.3  | 4050 / 135.0 |
-| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 | 4775 / 238.8 | 9600 / 800.0 | 964 / 32.1  | 4810 / 160.3 |
-
-## Actual Results
+When testing with the 5 sets of parameters shown below, we are expect to see the corresponding tachometer signal for that duty cycle of the PWM signal.
 
 | Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
 | :-------------------------------: | :-----------: | :------------: | :------------: | :-----------: | :------------: |
@@ -193,6 +181,17 @@ The purpose of this experiment is to verify that the user can accurately save an
 | Transient Timing Factor Decrease  | 100           | 50             | 200            | 100           | 175            |
 | Pulses Per Revolution             | 2             | 3              | 5              | 2             | 2              |
 
+|             Tachometer                            | Test 1      | Test 2       | Test 3       | Test 4      | Test 5       |
+| :------------------------------------------------: | :---------: | :----------: | :----------: | :---------: | :----------: |
+| Expected RPM at 15% Duty / Expected Tach Frequency | 0 / 0       | 0 / 0        | 0 / 0        | 100 / 3.3   | 0 / 0        |
+| Expected RPM at 30% Duty / Expected Tach Frequency | 1000 / 33.3 | 500 / 25.0   | 2000 / 166.7 | 100 / 3.3   | 250 / 8.3    |
+| Expected RPM at 45% Duty / Expected Tach Frequency | 1167 / 38.9 | 500 / 25.0   | 2000 / 166.7 | 100 / 3.3   | 250 / 8.3    |
+| Expected RPM at 60% Duty / Expected Tach Frequency | 1667 / 55.6 | 500 / 25.0   | 2000 / 166.7 | 280 / 9.3   | 1200 / 40.0  |
+| Expected RPM at 75% Duty / Expected Tach Frequency | 2167 / 72.2 | 2187 / 109.4 | 5000 / 416.7 | 550 / 18.3  | 2625 / 87.5  |
+| Expected RPM at 90% Duty / Expected Tach Frequency | 2667 / 88.9 | 3875 / 193.8 | 8000 / 666.7 | 820 / 27.3  | 4050 / 135.0 |
+| Expected RPM at 98% Duty / Expected Tach Frequency | 2933 / 97.8 | 4775 / 238.8 | 9600 / 800.0 | 964 / 32.1  | 4810 / 160.3 |
+
+## Actual Results
 
 |                                                    | Test 1 *    | Test 2 *     | Test 3 *     | Test 4 *    | Test 5 *     |
 | :------------------------------------------------: | :---------: | :----------: | :----------: | :---------: | :----------: |
