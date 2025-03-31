@@ -103,7 +103,7 @@ Across all three power source configurations, the voltage readings remained cons
 
 When using the Dual Power configuration (Both USB and Lochinvar Control Board) we can see it had nearly identical results to either power source being used independently. This shows that the redundant power sources work effectively with no evidence of voltage instability when both sources are connected.  
 
-In conclusion, the results show that the Fan Diagnostic Tool mains stable voltage levels across a range of load conditions and power source configurations. The Dual Power configuration shows that the tool can draw from redundant sources without introducing instability.  
+In conclusion, the results show that the Fan Diagnostic Tool maintains stable voltage levels across a range of load conditions and power source configurations. The Dual Power configuration shows that the tool can draw from redundant sources without introducing instability.  
 
 # User Parameter Storage Test
 
