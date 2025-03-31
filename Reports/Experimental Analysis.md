@@ -193,4 +193,4 @@ The purpose of this experiment is to verify that the user could accurately save 
 
 
 # Statement of Contributions
-
+Layne Bowman helped with all three experiments, along with formatting the Experimental Analysis document.  
