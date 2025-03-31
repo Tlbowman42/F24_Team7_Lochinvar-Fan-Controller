@@ -232,3 +232,4 @@ Across almost all our tests, we achieved proper results based on the specified u
 
 # Statement of Contributions
 Layne Bowman helped with all three experiments, along with formatting the Experimental Analysis document.  
+Tucker Basham helped with the SD card and fan simulation testing, alongside writing the interpretations and conclusions section for the fan sim.  
