@@ -223,10 +223,8 @@ The purpose of this experiment is to verify that the user could accurately save 
 ![image](https://github.com/user-attachments/assets/7e067242-1b91-453a-8daa-cffc765fafdf)
 
 
-
-
 ## Interpretation and Conclusions
-
+The purpose of this experiment is to verify that diagnostic tool can take in different user parameters and a PWM signal to output the corresponding tachometer signal. 
 
 
 # Statement of Contributions
