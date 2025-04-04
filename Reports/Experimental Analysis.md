@@ -97,11 +97,11 @@ The expectation is that the Power Source Configuration will not affect the volta
 
 ## Interpretation and Conclusions
 
-The purpose of this experiment was to evaluate voltage stability and redundancy of the Fan Diagnostic Tool when being powered from different sources (Lochinvar Control Board, USB, or both). By applying different resistive loads and measuring the voltage, current, and power dissipation, we were able to assess the power delivery system under different levels of stress. Doing this, we were able to identify signs of power stability or instability.  
+The purpose of this experiment was to evaluate the voltage stability and redundancy of the Fan Diagnostic Tool when powered from different sources, including the Lochinvar Control Board, USB, and both. By applying different resistive loads and measuring the voltage, current, and power dissipation, we were able to assess the power delivery system under different levels of stress. Doing this, we were able to identify signs of power stability or instability.  
 
 Across all three power source configurations, the voltage readings remained consistently within a small range, even when going from low load (High resistance) to high load (Low resistance). For example, when using USB power along the voltage drops from 3.309 V (1 kΩ) to 3.036 V (4.7 Ω). This is about an 8.2 % decrease despite a large rise in current. We can see the same concept for only being powered by the Lochinvar Control Board and when being powered by both sources.  
 
-When using the Dual Power configuration (Both USB and Lochinvar Control Board) we can see it had nearly identical results to either power source being used independently. This shows that the redundant power sources work effectively with no evidence of voltage instability when both sources are connected.  
+When using the Dual Power configuration (Both USB and Lochinvar Control Board), we can see it had nearly identical results to either power source being used independently. This shows that the redundant power sources work effectively with no evidence of voltage instability when both sources are connected.  
 
 In conclusion, the results show that the Fan Diagnostic Tool maintains stable voltage levels across a range of load conditions and power source configurations. The Dual Power configuration shows that the tool can draw from redundant sources without introducing instability.  
 
@@ -127,11 +127,11 @@ In conclusion, the results show that the Fan Diagnostic Tool maintains stable vo
 **Step 1: Setting up the Power Source** 
 1. Connect the USB to USB micro cable between a laptop and the Fan Diagnostic Tool.
 
-**Step 2: Entering in Values to Save**
+**Step 2: Entering Values to Save**
 1. Power the Fan Diagnostic Tool with your USB to power the tool.
 2. Hit the "Ok" button while "Fan Sim" is selected on the menu.
 3. Change the following parameters to the values the user wishes: Max FS, Min FS, PWM Run, PWM Cont, TTF In, TTF De, and PPR.
-4. After you have entered in your values scroll down and hit "Ok" while "Save" is selected.
+4. After you have entered your values, scroll down and hit "Ok" while "Save" is selected.
 
 **Step 3: Loading Values**
 1. Power the Fan Diagnostic Tool with your USB to power the tool.
@@ -140,9 +140,9 @@ In conclusion, the results show that the Fan Diagnostic Tool maintains stable vo
 
 **Step 4: Checking Values**
 ***Saving***  
-1. Remove the SD-Card and place it in an SD-Card reader.
+1. Remove the SD card and place it in an SD card reader.
 2. Plug the SD-Card reader with the SD-Card inserted into the reader into your computer.
-3. Verify the values are correcting saved.
+3. Verify the values are correctly saved.
 
 ***Loading***
 1. Verify that the values match what was last saved to the SD-Card on the LCD.
@@ -150,7 +150,7 @@ In conclusion, the results show that the Fan Diagnostic Tool maintains stable vo
 
 ## Expected Results
 
-I expect the SD card to accurately save the inputted user parameters, and then correctly read in the most recently saved data. 
+The SD card is expected to accurately save the inputted user parameters, and then correctly read in the most recently saved data. 
 
 ## Actual Results
 
@@ -167,7 +167,7 @@ I expect the SD card to accurately save the inputted user parameters, and then c
 
 ## Interpretation and Conclusions
 
-The purpose of this experiment is to verify that the user can accurately save and read data from the SD Card. The results show that we can accurately save data to the SD Card and then read the data back in. In conclusion, the user should be able to save the user-inputted data, and then read back the latest saved data.  
+The purpose of this experiment was to verify that the system can accurately save and read data from the SD Card. The results confirm that the tool can successfully store user data and retrieve the latest saved values. In conclusion, the Fan Diagnostic Tool is capable of saving user-inputted parameters and reading back the most recent configuration after a restart or power cycle.  
 
 # Fan Simulation Test
 
@@ -193,7 +193,7 @@ The purpose of this experiment is to verify that the user can accurately save an
 6. Enter the user parameters in the Diagnostic Tool and hit "RUN" to output a tachometer signal.
 
 ## Expected Results
-When testing with the 5 sets of parameters in the first table, we expect to see the corresponding tachometer signal in the second table for that duty cycle of the PWM signal.
+When testing with the 5 sets of parameters in the first table, the corresponding tachometer signal is expected in the second table based on the duty cycle of the PWM signal.
 
 | Parameter                         | Test 1 Values |  Test 2 Values |  Test 3 Values | Test 4 Values |  Test 5 Values |
 | :-------------------------------: | :-----------: | :------------: | :------------: | :-----------: | :------------: |
@@ -250,14 +250,14 @@ When testing with the 5 sets of parameters in the first table, we expect to see 
 
 
 ## Interpretation and Conclusions
-The purpose of this experiment was to ensure that the fan diagnostic tool could perform its minimum required duty of fan simulation. By allowing the user to adjust fan parameters and subsequently input a fan-driving PWM signal, we were able to assess the upper and lower limits of our diagnostic tool. In doing so, we identified the tool’s weak points and developed methods to mitigate these issues.  
+The purpose of this experiment was to ensure that the Fan Diagnostic Tool could perform its minimum required duty of fan simulation. By allowing the user to adjust fan parameters and subsequently input a fan-driving PWM signal, the upper and lower limits of the diagnostic tool can be assessed. In doing so, the tool’s weak points have been identified, and methods to mitigate these issues have been proposed.  
 
-Across almost all our tests, we achieved proper results based on the specified user parameters and an input signal of 3.2 kHz with varying duty cycle percentages. As observed in the tables and graphs above, there was little to no error between our expected signal and the actual response. However, small errors began to appear at higher PWM duty cycles due to the optocouplers not being fast enough. This is because the optocouplers were unable to provide the microcontroller with a suitable voltage range for high and low inputs. According to the microcontroller specifications, high inputs are recognized from 2.7–3.3 V, whereas low inputs are recognized from 0.0–1.0 V. As we increased the PWM duty cycle, around 95% the microcontroller began receiving a voltage range of 3.3–1.0 V with additional noise. Thus, there is a need for faster optocouplers with larger bandwidth and lower capacitance. Furthermore, observable signals below 15 Hz were unattainable due to limitations of our oscilloscope. Regardless, we expect the tool to output tach signals with allowable frequencies as low as 1 Hz.  
+Across almost all the tests, proper results based on the specified user parameters and an input signal of 3.2 kHz with varying duty cycle percentages were achieved. As observed in the tables and graphs above, there was little to no error between the expected signal and the actual response. However, small errors began to appear at higher PWM duty cycles due to the optocouplers not being fast enough. This is because the optocouplers were unable to provide the microcontroller with a suitable voltage range for high and low inputs. According to the microcontroller specifications, high inputs are recognized from 2.7–3.3 V, whereas low inputs are recognized from 0.0–1.0 V. When the PWM duty cycle increased, to around 95%, the microcontroller began receiving a voltage range of 3.3–1.0 V with additional noise. Thus, there is a need for faster optocouplers with larger bandwidth and lower capacitance. Furthermore, observable signals below 15 Hz were unattainable due to limitations of the oscilloscope. Regardless, the tool is expected to output tachometer signals with allowable frequencies as low as 1 Hz.  
 
 
 
 # Experimental Analysis Conclusion
-The experiments shown above have demonstrated that the Fan Diagnostic Tool can be powered by two different sources (Lochinvar Control Board and USB). Additionally, we showed that we can save user parameters and accurately read back in the latest saved data. Furthermore, we showed that we can take in a PWM and then simulate a fan given user-specified parameters such as: max fan speed, minimum fan speed, minimum duty cycle, continuous duty cycle to run, transient timing factor increase, transient timing factor decrease, and pulses per revolution. Therefore, we have successfully met the criteria we laid out in our original conceptual design.
+The experiments shown above have demonstrated that the Fan Diagnostic Tool can be powered by two different sources (Lochinvar Control Board and USB). Additionally, the tool successfully saves user parameters and accurately reads back the latest saved data. The tool accepts a PWM input and simulates fan behavior based on user-defined parameters, including: max fan speed, minimum fan speed, minimum duty cycle, continuous duty cycle to run, transient timing factor increase, transient timing factor decrease, and pulses per revolution. Therefore, the tool has successfully met the criteria established in the original conceptual design.  
 
 
 # Statement of Contributions
