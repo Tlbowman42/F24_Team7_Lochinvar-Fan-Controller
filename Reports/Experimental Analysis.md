@@ -72,7 +72,7 @@ Below is a list of the experiments conducted for Experimental Analysis.
 
 
 ## Expected Results
-I expect the Power Source Configuration not to affect the voltage stability across the board. I expect that as the resistance gets lower (Higher load), the current will increase, and therefore the power dissipated should increase as well. Finally, I believe that the voltage consistency should remain relatively constant. (The voltage drops across the resistor should stay close to 3.3 Vdc)  
+The expectation is that the Power Source Configuration will not affect the voltage stability across the board. As the resistance decreases (indicating a higher load), the current is expected to increase, resulting in greater power dissipation. Finally, it is believed that the voltage consistency should remain relatively constant, with the voltage drops across the resistor staying close to 3.3 Vdc.  
 
 ## Actual Results
 
@@ -122,9 +122,31 @@ In conclusion, the results show that the Fan Diagnostic Tool maintains stable vo
 ***Equipment Needed***
 1. SD-Card reader
 2. USB to USB Micro cable
+3. USB Power (5 Vdc)
 
 **Step 1: Setting up the Power Source** 
 1. Connect the USB to USB micro cable between a laptop and the Fan Diagnostic Tool.
+
+**Step 2: Entering in Values to Save**
+1. Power the Fan Diagnostic Tool with your USB to power the tool.
+2. Hit the "Ok" button while "Fan Sim" is selected on the menu.
+3. Change the following parameters to the values the user wishes: Max FS, Min FS, PWM Run, PWM Cont, TTF In, TTF De, and PPR.
+4. After you have entered in your values scroll down and hit "Ok" while "Save" is selected.
+
+**Step 3: Loading Values**
+1. Power the Fan Diagnostic Tool with your USB to power the tool.
+2. Hit the "Ok" button while "Fan Sim" is selected on the menu.
+3. Scroll down and hit the "Ok" button while "Load" is selected.
+
+**Step 4: Checking Values**
+***Saving***  
+1. Remove the SD-Card and place it in an SD-Card reader.
+2. Plug the SD-Card reader with the SD-Card inserted into the reader into your computer.
+3. Verify the values are correcting saved.
+
+***Loading***
+1. Verify that the values match what was last saved to the SD-Card on the LCD.
+
 
 ## Expected Results
 
