@@ -35,7 +35,7 @@ Below the video link show some well-taken, appropriately sized images of the pro
 
 Ethan Haynes  
 
-[Jacob Brewer](https://www.linkedin.com/in/jacob-brewer-6b72a1254/) an electrical engineering major at Tennessee Tech University, has an strong interest in power distribution and renewable energy. Jacob oversees the production of the case and the  post-processing sub-system.  
+[Jacob Brewer](https://www.linkedin.com/in/jacob-brewer-6b72a1254/) an electrical engineering major at Tennessee Tech University, has an strong interest in power distribution and renewable energy. Jacob oversees the production of the case with Ethan and the post-processing sub-system.  
 
 [Tucker Basham](www.linkedin.com/in/tucker-basham-b77896290) as a computer engineer at Tennessee Tech University, has a strong passion for embedded, control systems, and signal processing. Tucker oversees the signal generaton and storage capabilities of the fan diagnostic tool.  
 
