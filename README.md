@@ -61,7 +61,7 @@ The [Project Proposal](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Con
 
 The [Conceptual Design](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Conceptual%20Design%20and%20Planning.md) gives a more detailed solution to the problem as well as breakdowns the subsystems and gives a projected timeline and budget.  
 
-**Place in Experimentation**  
+The [Experimental Analysis](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Experimental%20Analysis.md) is where we designed and tested our Fan Diagnostic Tool to see if we met our success criteria set out in the Conceptual Design. 
 
 **Place in the poster**  
 
