@@ -39,7 +39,7 @@ Below the video link show some well-taken, appropriately sized images of the pro
 
 [Tucker Basham](www.linkedin.com/in/tucker-basham-b77896290) as a computer engineer at Tennessee Tech University, has a strong passion for embedded, control systems, and signal processing. Tucker oversees the signal generation and storage capabilities of the fan diagnostic tool.  
 
-Conner Vick  
+[Conner Vick] (https://www.linkedin.com/in/matthew-c-vick/) , an electrical engineering major at Tennessee Technological University, has a strong interest in design. Conner oversees the display for the fan diagnostic tool.  
 
 ### Faculty Supervisor
 
