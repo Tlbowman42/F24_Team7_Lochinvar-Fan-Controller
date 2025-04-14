@@ -33,11 +33,11 @@ Below the video link show some well-taken, appropriately sized images of the pro
 
 [Layne Bowman](https://www.linkedin.com/in/laynebowman/), an electrical engineering major at Tennessee Technological University, has a strong interest in power systems and renewable energy technologies. Layne oversees the power management systems for the fan diagnostic tool.  
 
-Ethan Haynes  
+[Ethan Haynes](https://www.linkedin.com/in/ethan-haynes-306a162b0/), an electrical engineering major at Tennessee Technological University, has a strong interest in power systems and renewable energy technologies. Ethan oversees the pre-processing subsystem for the fan diagnostic tool.    
 
-[Jacob Brewer](https://www.linkedin.com/in/jacob-brewer-6b72a1254/) an electrical engineering major at Tennessee Tech University, has an strong interest in power distribution and renewable energy. Jacob oversees the production of the case with Ethan and the post-processing sub-system.  
+[Jacob Brewer](https://www.linkedin.com/in/jacob-brewer-6b72a1254/) an electrical engineering major at Tennessee Tech University, has an strong interest in power distribution and renewable energy. Jacob oversees the production of the case with Ethan and the post-processing subsystem.  
 
-[Tucker Basham](www.linkedin.com/in/tucker-basham-b77896290) as a computer engineer at Tennessee Tech University, has a strong passion for embedded, control systems, and signal processing. Tucker oversees the signal generaton and storage capabilities of the fan diagnostic tool.  
+[Tucker Basham](www.linkedin.com/in/tucker-basham-b77896290) as a computer engineer at Tennessee Tech University, has a strong passion for embedded, control systems, and signal processing. Tucker oversees the signal generation and storage capabilities of the fan diagnostic tool.  
 
 Conner Vick  
 
