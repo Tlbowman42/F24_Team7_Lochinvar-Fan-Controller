@@ -10,7 +10,7 @@ The current version of our Fan Diagnostic Tool has the following capabilities:
 
 1. Simulate a boiler fan
 2. Generate PWM and Tachometer signals that can replicate boiler fans
-3. Save real-time data to output files as well as user and fan configurations
+3. Save user-parameters and load back the lastest saved data.
 
 
 ## Salient Outcomes
@@ -63,7 +63,7 @@ The [Conceptual Design](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Co
 
 The [Experimental Analysis](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Experimental%20Analysis.md) is where we designed and tested our Fan Diagnostic Tool to see if we met our success criteria set out in the Conceptual Design. 
 
-**Place in the poster**  
+The [Poster](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Capstone_Poster.pdf) is where we showcase our final project to advisors, faculty, and the public.
 
 **Place in the final presentation**  
 Give the layout of the repo and what can be found where. Make it easy on those who are interested by making the headings of the various things in this section clickable links to the relevant folder or file in the repo.
