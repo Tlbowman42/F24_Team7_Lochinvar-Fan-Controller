@@ -1,0 +1,246 @@
+% Gemini theme
+% https://github.com/anishathalye/gemini
+
+\documentclass[final]{beamer}
+
+% ====================
+% Packages
+% ====================
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[size=custom,width=106.68,height=60.96,scale=0.85]{beamerposter}
+\usetheme{custom}
+\usecolortheme{tntech}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgf}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+
+% ====================
+% Lengths
+% ====================
+
+% If you have N columns, choose \sepwidth and \colwidth such that
+% (N+1)*\sepwidth + N*\colwidth = \paperwidth
+\newlength{\sepwidth}
+\newlength{\colwidth}
+\setlength{\sepwidth}{0.025\paperwidth}
+\setlength{\colwidth}{0.3\paperwidth}
+
+\newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
+
+\newcommand{\minus}{\scalebox{0.75}[1.0]{$-$}}
+\newcommand{\smallequals}{\scalebox{0.75}[1.0]{$=$}}
+\newcommand{\sectionHeading}[1]{\vskip2.0ex \textbf{#1} \vskip0.25ex}
+
+% ====================
+% Title
+% ====================
+
+\logotitle{
+
+    \raisebox{2.5cm}{\includegraphics[height=4.0cm]{tntechgold.png}}
+  \hspace{70cm} % spacing between logos
+  \includegraphics[scale=0.4]{Images/Lochinvar_Logo.png}
+}
+\title{Fan Diagnostic Tool}
+\author{Ethan Haynes \and Conner Vick \and Tucker Basham \and Jacob Brewer \and Layne Bowman}
+\institute[shortinst]{Tennessee Technological University}
+
+
+
+% ====================
+% Body
+% ====================
+\pgfplotsset{compat=1.16}
+\begin{document}
+
+\begin{frame}[t]
+
+
+\begin{columns}[t]
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{block}{\LARGE{Project Overview}}
+  \Large
+  Lochinvar tasked the team with developing a multifunctional boiler/fan diagnostic tool, with the primary focus on fan simulation. The tool accepts a pulse-width modulated (PWM) input signal and produces a tachometer output that indicates fan speed. During the development of the fan simulator, the team also designed and built hardware capable of boiler simulation and data logging.
+  \end{block}
+
+  \begin{block}{\LARGE{Capabilities}}
+  \Large
+
+    \begin{itemize}
+      \item Take in a Pulse Width Modulation (PWM) signal from the boiler controller, and output a tachometer signal.
+      \item Users can modify settings that are directly linked to the simulated fan’s behavior.
+      \item Save the user modified settings to a SD-Card and load the most recent save back into the tool.
+    \end{itemize}
+
+    
+    \begin{figure}[!tbp]
+    \centering
+    \subfloat{\includegraphics[scale = 0.83]{Images/Hardware Block Diagram V2.png}}
+    \caption{Block Diagram}
+    \end{figure}
+    
+  \end{block}
+
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+  
+  \begin{figure}[!tbp]
+  \centering
+  \subfloat{\includegraphics[scale = 0.14]{Images/Team Photo.jpeg}}
+  \caption{(Left to Right) Ethan Haynes, Jacob Brewer, Tucker Basham, Conner Vick, Layne Bowman}
+  \end{figure}
+
+
+    % \begin{columns}[t]
+    %   \begin{column}{0.4\colwidth}
+
+    %     \begin{table}[ht]
+    %       % increase table row spacing, adjust to taste
+    %       \caption{Gen 1 ANN Model Assumptions}
+    %       \label{Table:Gen1ANNAssumptions}
+    %       \centering
+    %       % Some packages, such as MDW tools, offer better commands for making tables
+    %       % than the plain LaTeX2e tabular which is used here.
+    %       \resizebox{\columnwidth}{!}{%
+    %       \begin{tabular}{ c l }
+    %         \toprule
+    %         \textbf{Number} & \textbf{Assumption}\\
+    %         \midrule
+    %         1 & Firing Frequency Encoding\\
+
+    %         2 & Steady State\\
+
+    %         3 & Unity Static Firing Rate\\
+
+    %         4 & Learned Inhibition\\
+
+    %         5 & Unconditional Weighting\\
+    %        \bottomrule
+    %       \end{tabular}}
+    %     \end{table}
+    %   \end{column}
+
+    %   \begin{column}{0.4\colwidth}
+    %     \begin{table}[ht]
+    %       % increase table row spacing, adjust to taste
+    %       \caption{Gen 2 ANN Model Assumptions}
+    %       \label{Table:Gen2ANNAssumptions}
+    %       \centering
+    %       % Some packages, such as MDW tools, offer better commands for making tables
+    %       % than the plain LaTeX2e tabular which is used here.
+    %       \resizebox{\columnwidth}{!}{%
+    %       \begin{tabular}{ c l }
+    %         \toprule
+    %         \textbf{Number} & \textbf{Assumption}\\
+    %         \midrule
+    %         1 & Firing Frequency Encoding\\
+
+    %         2 & Steady State\\
+
+    %         3 & Learned Inhibition\\
+
+    %         4 & Unconditional Weighting\\
+    %         & \\
+    %         \bottomrule
+    %       \end{tabular}}
+    %     \end{table}
+    %   \end{column}
+
+    % \end{columns}
+
+
+\vskip-1em
+  \begin{block}{\Large{Design}}
+  \Large
+
+    \begin{wrapfigure}{l}{0pt}  % 'l' for left-aligned image
+  \includegraphics[scale=0.12]{Images/Tool Photo.jpeg}
+  \caption{Diagnostic Tool}
+\end{wrapfigure}
+
+
+   \textbf{Power:}
+   The power subsystem converts and distributes regulated power to the Fan Diagnostic Tool’s components. It supports dual input sources (24 V and USB).
+
+   \textbf{Memory:}
+   The memory subsystem can save and load the inputted user parameters for the Fan Simulation mode.
+
+   \textbf{Pre-Processing:}
+   The pre-processing system takes in 24 V PWM and tachometer signals. It then electrically isolates both signals and steps them down to a 3.3 V for the microcontroller.
+
+   
+   \textbf{Post-Processing:}
+   The post-processing system takes 3.3 V tachometer and PWM signals from the microcontroller, electrically isolates them, and steps up the tachometer signal to 10 V and the PWM signal to 24 V.
+
+   \textbf{User Interface:}
+   The user interface displays user parameters and subsequent simulation modes, allowing for alterations to these parameters. 
+
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+
+  \begin{block}{\Large{Experimental Results}}
+  \Large
+
+  \begin{wrapfigure}{l}{0pt}  % 'l' for left-aligned image
+  \includegraphics[scale=0.85]{Images/Expected vs Actual RPM.png}
+  \caption{Expected vs Actual RPM Test Results}
+\end{wrapfigure}
+
+  In the figure to the left, the expected and actual results for the fan speed simulation tests are compared with one another. For each test, using different user parameters, there are corresponding solid and dashed lines. The solid line represents the actual values, and the dashed line represents the expected values. As seen in the graph, the expected values and actual values align closely with one another. Therefore, the simulated fan speeds are within a close margin of an ideal fan.
+
+  %\vspace{15cm} %Change this value depending on how much text we write explaining the graph.
+    
+
+  \end{block}
+
+  \begin{block}{\Large{Conclusion and Future Work}}
+  \Large
+
+   The team successfully created a Fan Diagnostic Tool that meets the sponsor's primary objective of simulating fan behavior in boiler systems. In addition to Fan Simulation mode, the tool's hardware supports the Signal Pass-Through and Fan Driving modes. Future work may focus on expanding the software to encompass the Signal Pass-Through and Fan Driving modes. Further work could be done with testing real fans to incorporate realistic data into the tool.
+
+  \end{block}
+
+  \begin{block}{\Large{Acknowledgments}}
+  \Large
+  
+\begin{wrapfigure}{1}{0pt}
+    \vspace{1cm}
+    %\hspace{23.5cm}
+    \includegraphics[width=0.25\linewidth]{Screenshot 2025-04-09 163324.png}
+    \label{fig:enter-label}
+\end{wrapfigure}
+
+  We would like to thank our supervisor JW Bruce, our capstone instructor Micah Rentschler, and our contacts at Lochinvar Abbey Ward and Ben Putnam for their advice and support throughout our Capstone experience.
+
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+\end{columns}
+\end{frame}
+
+\end{document}
