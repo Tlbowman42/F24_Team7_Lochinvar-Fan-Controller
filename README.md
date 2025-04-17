@@ -43,7 +43,7 @@ Below the video link show some well-taken, appropriately sized images of the pro
 
 ### Faculty Supervisor
 
-The faculty superviosr for this project is [Dr. JW Bruce](https://www.linkedin.com/in/jw-bruce-0b434326?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Br21aFXOjRFWFtSjYzqXp4Q%3D%3D). He completed his electrical engineering Bachelor's degree from The University of Alabama in Huntsville. He then went on and completed his Masters in electrical engineering at the Georgia Institue of Technology and his PhD in electrical engineering from the University of Nevada-Las Vegas in electrical engineering.  
+The faculty superviosr for this project is [Dr. JW Bruce](https://www.linkedin.com/in/jw-bruce-0b434326?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Br21aFXOjRFWFtSjYzqXp4Q%3D%3D). He completed his electrical engineering Bachelor's degree from The University of Alabama in Huntsville. He then went on and completed his Masters in electrical engineering at the Georgia Institue of Technology and his PhD in electrical engineering from the University of Nevada-Las Vegas.
 
 ### Stakeholders
 
