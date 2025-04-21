@@ -1,8 +1,7 @@
 # Lochinvar Fan Controller
 ## Executive Summary
 
-Give the elevator pitch and abstract for the project. It should allow interested visitors to broadly understand the motivation for the project and what the project has accomplished.
-
+The Fan Diagnostic Tool is a compact, modular system designed to test, simulate, and monitor blower fans used in boiler control systems. It streamlines diagnostics by offering multiple modes for real-time monitoring, fan simulation, and signal simulation. By improving testing speed and accuracy, the tool helps reduce development time, and enhance product reliability.
 
 ## Capabilities
 
