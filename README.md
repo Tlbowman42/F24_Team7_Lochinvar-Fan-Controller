@@ -48,7 +48,7 @@ The faculty superviosr for this project is [Dr. JW Bruce](https://www.linkedin.c
 
 ### Stakeholders
 
-The primary customer for the project is Lochinvar, which is a apart of the AO-Smith Corporation. There will be no future teams for this project.  
+The primary customer for the project is Lochinvar, which is a apart of the AO-Smith Corporation. There are plans for future capstone teams to develop both the Fan Driving mode and the Signal Passthrough mode.
 
 ### Recognitions
 
