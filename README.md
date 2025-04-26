@@ -16,7 +16,9 @@ The current version of our Fan Diagnostic Tool has the following capabilities:
 
 As the project progresses these are the outcomes we thought were more impressive than others. Listed below are our salient outcomes for this project:
 
-1. Generate any Lochinvar designated fan signal
+1. Generate any Lochinvar designated fan signal.
+2. Load and save user parameters.
+3. Interface both with a function generator and the Lochinvar Control Board.
 
 
 ## Project Demonstration & Images
