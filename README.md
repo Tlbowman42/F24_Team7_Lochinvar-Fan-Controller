@@ -66,10 +66,7 @@ The [Experimental Analysis](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fa
 
 The [Poster](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Capstone_Poster.pdf) is where we showcase our final project to advisors, faculty, and the public.
 
-**Place in the final presentation**  
-Give the layout of the repo and what can be found where. Make it easy on those who are interested by making the headings of the various things in this section clickable links to the relevant folder or file in the repo.
-
-In the reports section of this repository information about the individual expectations for the reports and how they should be housed is provided.
+The [Final Presentation]() is where we showcase our time in Capstone to the Industrial Advisory Board.
 
 ### [Documentation](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/tree/main/Documentation)
 
