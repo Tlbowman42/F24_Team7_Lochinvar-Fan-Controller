@@ -22,10 +22,16 @@ As the project progresses these are the outcomes we thought were more impressive
 
 
 ## Project Demonstration & Images
+Photo of the final version of the tool, a video of the tool in Fam Simulation Mode, and a photo of the Lochinvar Control Board.
 
-Give a link to a video of the project being demonstrated. The video should be hosted on the capstone youtube.
+![image](https://github.com/user-attachments/assets/31b66d4d-48d2-4629-870e-839734233974)
 
-Below the video link show some well-taken, appropriately sized images of the project.
+![image](https://github.com/user-attachments/assets/5111e516-100f-4a51-af77-86e51988ff91)
+
+**Video of the Fan Diagnostic Tool running in Fan Simulation Mode**
+https://youtube.com/shorts/UyiWjI823Lc?feature=share
+
+
 
 
 ## About Us
