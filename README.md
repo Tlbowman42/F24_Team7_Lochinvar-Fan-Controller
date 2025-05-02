@@ -66,7 +66,7 @@ The [Experimental Analysis](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fa
 
 The [Poster](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Capstone_Poster.pdf) is where we showcase our final project to advisors, faculty, and the public.
 
-The [Final Presentation]() is where we showcase our time in Capstone to the Industrial Advisory Board.
+The [Final Presentation](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/blob/main/Reports/Final%20Capstone%20Presentation.pptx) is where we showcase our time in Capstone to the Industrial Advisory Board.
 
 ### [Documentation](https://github.com/Tlbowman42/F24_Team7_Lochinvar-Fan-Controller/tree/main/Documentation)
 
